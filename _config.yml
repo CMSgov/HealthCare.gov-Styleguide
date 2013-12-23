@@ -1,0 +1,20 @@
+auto : true
+permalink : /:title/
+exclude : ['library/sass', 'config.rb', 'README.md']
+
+title : GitHub Pages Boilerplate
+description : GitHub Pages Boilerplate by Nelson Joyce.
+url : https://github.com/gnelsonj/GitHub-Pages-Boilerplate
+author :
+  firstName : Nelson
+  lastName : Joyce
+  jobTitle : Product Designer
+  email : nellyvan@gmail.com
+  github : gnelsonj
+  linkedIn : gnelsonj
+  twitter : nelsonjoyce
+  twitterId : 216396668
+  dribbble : nelsonjoyce
+  googlePlus : 116388594856737469980
+  feedBurner : nelsonjoyce
+  location : Boston MA
