@@ -1,0 +1,22 @@
+@import "susy"
+
+// Settings
+
+$total-columns  : 7
+$column-width   : 4em
+$gutter-width   : 1em
+$grid-padding   : $gutter-width
+
+$break          : 12
+
+// container
+
+.site-header, .site-footer, .site-promo, .page-content
+  @include container($total-columns, $break)
+
+// Layout
+
+@include at-breakpoint($break)
+  .page-content
+    .main
+      @include pad(2,2,$break)

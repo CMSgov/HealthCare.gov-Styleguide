@@ -344,3 +344,85 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* line 14, ../sass/_grid.sass */
+.site-header, .site-footer, .site-promo, .page-content {
+  *zoom: 1;
+  max-width: 34em;
+  _width: 34em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.site-header:after, .site-footer:after, .site-promo:after, .page-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 59em) {
+  /* line 14, ../sass/_grid.sass */
+  .site-header, .site-footer, .site-promo, .page-content {
+    max-width: 59em;
+  }
+}
+
+@media (min-width: 59em) {
+  /* line 21, ../sass/_grid.sass */
+  .page-content .main {
+    padding-left: 16.94915%;
+    padding-right: 16.94915%;
+  }
+}
+/* line 3, ../sass/_typography.sass */
+p, h6, h5, h4, h3, h2, h1, hr, ul, ol, dl, table, pre, blockquote, fieldset {
+  margin: 0 0 27px;
+}
+
+/* line 6, ../sass/_typography.sass */
+html {
+  font-size: 100%;
+}
+
+/* line 8, ../sass/_typography.sass */
+p {
+  font-size: 1em;
+  line-height: 27px;
+}
+
+/* line 13, ../sass/_typography.sass */
+h6 {
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+/* line 18, ../sass/_typography.sass */
+h5 {
+  font-size: 1em;
+  line-height: 1;
+}
+
+/* line 23, ../sass/_typography.sass */
+h4 {
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+/* line 28, ../sass/_typography.sass */
+h3 {
+  font-size: 2em;
+  line-height: 1;
+}
+
+/* line 33, ../sass/_typography.sass */
+h2 {
+  font-size: 2.5em;
+  line-height: 1;
+}
+
+/* line 38, ../sass/_typography.sass */
+h1 {
+  font-size: 3em;
+  line-height: 1;
+}

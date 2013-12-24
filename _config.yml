@@ -1,6 +1,6 @@
 auto : true
 permalink : /:title/
-exclude : ['library/sass', 'config.rb', 'README.md']
+exclude : ['sass', 'config.rb', 'README.md']
 
 title : GitHub Pages Boilerplate
 description : GitHub Pages Boilerplate by Nelson Joyce.
