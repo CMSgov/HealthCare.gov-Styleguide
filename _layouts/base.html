@@ -13,6 +13,10 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 </head>
 <body>
-  {{ content }}
+	{% include header.html %}
+
+	{{ content }}
+
+	{% include footer.html %}
 </body>
 </html>
