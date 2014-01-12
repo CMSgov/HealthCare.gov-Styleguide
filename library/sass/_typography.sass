@@ -1,5 +1,5 @@
 $typecsset-base-font-size:      18px
-$typecsset-base-line-height:    24px
+$typecsset-base-line-height:    32px
 $typecsset-show-baseline:       true
 
 @import "typecsset"
@@ -7,3 +7,10 @@ $typecsset-show-baseline:       true
 body
     font-family: Georgia, serif
     padding: $typecsset-magic-number
+
+hr
+    @extend %typecsset-vertical-rhythm
+
+fieldset
+    @include typecsset-space(padding);
+    @extend %typecsset-vertical-rhythm

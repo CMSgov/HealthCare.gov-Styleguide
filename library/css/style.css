@@ -1,609 +1,86 @@
-@charset "UTF-8";
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
-/* ==========================================================================
- * HTML5 display definitions
- * ========================================================================== */
 /*
- * Correct `block` display not defined in IE 8/9. */
-/* line 10, ../sass/_normalize.sass */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-  display: block;
-}
+Syntax error: Invalid CSS after "(padding)": expected expression (e.g. 1px, bold), was ";"
+        on line 15 of /Users/njoyce/git/GitHub-Pages-Boilerplate/library/sass/_typography.sass
+        from line 6 of /Users/njoyce/git/GitHub-Pages-Boilerplate/library/sass/style.sass
 
-/*
- * Correct `inline-block` display not defined in IE 8/9. */
-/* line 16, ../sass/_normalize.sass */
-audio, canvas, video {
-  display: inline-block;
-}
-
-/*
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices. */
-/* line 23, ../sass/_normalize.sass */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/*
- * Address `[hidden]` styling not present in IE 8/9.
- * Hide the `template` element in IE, Safari, and Firefox < 22. */
-/* line 31, ../sass/_normalize.sass */
-[hidden], template {
-  display: none;
-}
-
-/* ==========================================================================
- * Base
- * ========================================================================== */
-/*
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom. */
-/* line 43, ../sass/_normalize.sass */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/*
- * Remove default margin. */
-/* line 54, ../sass/_normalize.sass */
-body {
-  margin: 0;
-}
-
-/* ==========================================================================
- * Links
- * ========================================================================== */
-/*
- * Remove the gray background color from active links in IE 10. */
-/* line 64, ../sass/_normalize.sass */
-a {
-  background: transparent;
-}
-/* line 66, ../sass/_normalize.sass */
-a:focus {
-  outline: thin dotted;
-}
-/* line 68, ../sass/_normalize.sass */
-a:active, a:hover {
-  outline: 0;
-}
-
-/*
- * Address `outline` inconsistency between Chrome and other browsers. */
-/*
- * Improve readability when focused and also mouse hovered in all browsers. */
-/* ==========================================================================
- * Typography
- * ========================================================================== */
-/*
- * Address styling not present in IE 8/9, Safari 5, and Chrome. */
-/* line 84, ../sass/_normalize.sass */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/*
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
-/* line 90, ../sass/_normalize.sass */
-b, strong {
-  font-weight: bold;
-}
-
-/*
- * Address styling not present in Safari 5 and Chrome. */
-/* line 96, ../sass/_normalize.sass */
-dfn {
-  font-style: italic;
-}
-
-/*
- * Address differences between Firefox and other browsers. */
-/* line 102, ../sass/_normalize.sass */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/*
- * Address styling not present in IE 8/9. */
-/* line 110, ../sass/_normalize.sass */
-mark {
-  background: yellow;
-  color: black;
-}
-
-/*
- * Correct font family set oddly in Safari 5 and Chrome. */
-/* line 117, ../sass/_normalize.sass */
-code, kbd, pre, samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-
-/*
- * Improve readability of pre-formatted text in all browsers. */
-/* line 124, ../sass/_normalize.sass */
-pre {
-  white-space: pre-wrap;
-}
-
-/*
- * Set consistent quote types. */
-/* line 130, ../sass/_normalize.sass */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-/*
- * Address inconsistent and variable font size in all browsers. */
-/* line 136, ../sass/_normalize.sass */
-small {
-  font-size: 80%;
-}
-
-/*
- * Prevent `sub` and `sup` affecting `line-height` in all browsers. */
-/* line 142, ../sass/_normalize.sass */
-sub {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 148, ../sass/_normalize.sass */
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  top: -0.5em;
-}
-
-/* line 155, ../sass/_normalize.sass */
-sub {
-  bottom: -0.25em;
-}
-
-/* ==========================================================================
- * Embedded content
- * ========================================================================== */
-/*
- * Remove border when inside `a` element in IE 8/9. */
-/* line 165, ../sass/_normalize.sass */
-img {
-  border: 0;
-}
-
-/*
- * Correct overflow displayed oddly in IE 9. */
-/* line 171, ../sass/_normalize.sass */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* ==========================================================================
- * Figures
- * ========================================================================== */
-/*
- * Address margin not present in IE 8/9 and Safari 5. */
-/* line 181, ../sass/_normalize.sass */
-figure {
-  margin: 0;
-}
-
-/* ==========================================================================
- * Forms
- * ========================================================================== */
-/*
- * Define consistent border, margin, and padding. */
-/* line 191, ../sass/_normalize.sass */
-fieldset {
-  border: 1px solid silver;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/*
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets. */
-/* line 200, ../sass/_normalize.sass */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/*
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome. */
-/* line 211, ../sass/_normalize.sass */
-button, input, select, textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 2 */
-  margin: 0;
-  /* 3 */
-}
-
-/*
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet. */
-/* line 223, ../sass/_normalize.sass */
-button, input {
-  line-height: normal;
-}
-
-/*
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera. */
-/* line 232, ../sass/_normalize.sass */
-button, select {
-  text-transform: none;
-}
-
-/*
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others. */
-/* line 242, ../sass/_normalize.sass */
-button, html input[type="button"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-}
-
-/* line 249, ../sass/_normalize.sass */
-input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-}
-
-/*
- * Re-set default cursor for disabled elements. */
-/* line 258, ../sass/_normalize.sass */
-button[disabled], html input[disabled] {
-  cursor: default;
-}
-
-/*
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10. */
-/* line 266, ../sass/_normalize.sass */
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-/* line 271, ../sass/_normalize.sass */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box;
-}
-/* line 278, ../sass/_normalize.sass */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/*
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof). */
-/*
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X. */
-/*
- * Remove inner padding and border in Firefox 4+. */
-/* line 293, ../sass/_normalize.sass */
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/*
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers. */
-/* line 301, ../sass/_normalize.sass */
-textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */
-}
-
-/* ==========================================================================
- * Tables
- * ========================================================================== */
-/*
- * Remove most spacing between table cells. */
-/* line 314, ../sass/_normalize.sass */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 14, ../sass/_grid.sass */
-.site-header, .site-footer, .site-promo, .page-content {
-  *zoom: 1;
-  max-width: 34em;
-  _width: 34em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.site-header:after, .site-footer:after, .site-promo:after, .page-content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media (min-width: 59em) {
-  /* line 14, ../sass/_grid.sass */
-  .site-header, .site-footer, .site-promo, .page-content {
-    max-width: 59em;
-  }
-}
-
-@media (min-width: 59em) {
-  /* line 21, ../sass/_grid.sass */
-  .page-content .main {
-    padding-left: 16.94915%;
-    padding-right: 16.94915%;
-  }
-}
-/**
- * Typecsset
- *
- * Typecsset is a small, unopinionated library for creating beautifully set type
- * on the web. Typecsset gives perfect vertical rhythm at any configurable font
- * size, as well as many other typographical niceties.
- */
-/*------------------------------------*\
-    #SHARED
-\*------------------------------------*/
-/**
- * A lot of elements in Typecsset need to share some declarations (mainly for
- * vertical rhythm), so we `@extend` some silent classes.
- */
-/* line 100, ../sass/_typecsset.scss */
-h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, pre, blockquote, table {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 105, ../sass/_typecsset.scss */
-h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, pre, blockquote, table {
-  margin-bottom: 24px;
-  margin-bottom: 1.33333rem;
-}
-
-/*------------------------------------*\
-    #BASE
-\*------------------------------------*/
-/**
- * 1. Set the base element’s `font-size` to the value of your choosing. Set in
- *    ems, assuming a browser default of 16px.
- * 2. Work out the unitless `line-height` for your project based around your
- *    desired `line-height` (defined previously in pixels), and your project’s
- *    base font size.
- */
-/**
- * 3. If you have chosen to display a baseline grid, we turn it on here.
- */
-/* line 132, ../sass/_typecsset.scss */
-html {
-  font-size: 1.125em;
-  /* [1] */
-  line-height: 1.33333;
-  /* [2] */
-  background-image: url(http://basehold.it/i/24);
-  /* [3] */
-}
-
-/* line 146, ../sass/_typecsset.scss */
-body {
-  margin: 0;
-}
-
-/*------------------------------------*\
-    #HEADINGS
-\*------------------------------------*/
-/* line 157, ../sass/_typecsset.scss */
-h1 {
-  font-size: 48px;
-  font-size: 2.66667rem;
-  line-height: 1;
-}
-
-/* line 162, ../sass/_typecsset.scss */
-h2 {
-  font-size: 36px;
-  font-size: 2rem;
-  line-height: 1.33333;
-}
-
-/* line 167, ../sass/_typecsset.scss */
-h3 {
-  font-size: 30px;
-  font-size: 1.66667rem;
-  line-height: 1.6;
-}
-
-/* line 172, ../sass/_typecsset.scss */
-h4 {
-  font-size: 24px;
-  font-size: 1.33333rem;
-  line-height: 1;
-}
-
-/* line 177, ../sass/_typecsset.scss */
-h5 {
-  font-size: 20px;
-  font-size: 1.11111rem;
-  line-height: 1.2;
-}
-
-/* line 182, ../sass/_typecsset.scss */
-h6 {
-  font-size: 18px;
-  font-size: 1rem;
-  line-height: 1.33333;
-}
-
-/*------------------------------------*\
-    #LISTS
-\*------------------------------------*/
-/* line 194, ../sass/_typecsset.scss */
-ul, ol, dd {
-  margin-left: 48px;
-  margin-left: 2.66667rem;
-}
-
-/* line 200, ../sass/_typecsset.scss */
-li > ul,
-li > ol {
-  margin-bottom: 0;
-}
-
-/*------------------------------------*\
-    #PARAGRAPHS
-\*------------------------------------*/
-/**
- * Not strictly a paragraph, but probably doesn’t need its own section.
- */
-/*------------------------------------*\
-    #CODE
-\*------------------------------------*/
-/**
- * 1. Fix an odd quirk whereby, without this, code blocks are rendered at a
- *    font-size smaller than 1em.
- */
-/* line 251, ../sass/_typecsset.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  /* [1] */
-}
-
-/*------------------------------------*\
-    #QUOTES
-\*------------------------------------*/
-/**
- * 1. Hang the opening quote of the blockquote.
- */
-/* line 265, ../sass/_typecsset.scss */
-blockquote {
-  text-indent: -0.41em;
-  /* [1] */
-}
-
-/**
- * Set up quote marks on quoting elements. This is very English-based, so we are
- * using “, ”, ‘, and ’ quotes.
- */
-/* line 273, ../sass/_typecsset.scss */
-blockquote {
-  quotes: "“" "”";
-  margin-left: 48px;
-  margin-left: 2.66667rem;
-}
-/* line 280, ../sass/_typecsset.scss */
-blockquote p:before {
-  content: "“";
-  content: open-quote;
-}
-/* line 285, ../sass/_typecsset.scss */
-blockquote p:after {
-  content: "";
-  content: no-close-quote;
-}
-/* line 290, ../sass/_typecsset.scss */
-blockquote p:last-of-type:after {
-  content: "”";
-  content: close-quote;
-}
-
-/* line 299, ../sass/_typecsset.scss */
-q {
-  quotes: "‘" "’" "“" "”";
-  /**
-   * If an element opens with an inline quote, let’s hang that.
-   */
-}
-/* line 302, ../sass/_typecsset.scss */
-q:before {
-  content: "‘";
-  content: open-quote;
-}
-/* line 307, ../sass/_typecsset.scss */
-q:after {
-  content: "’";
-  content: close-quote;
-}
-/* line 312, ../sass/_typecsset.scss */
-q q:before {
-  content: "“";
-  content: open-quote;
-}
-/* line 317, ../sass/_typecsset.scss */
-q q:after {
-  content: "”";
-  content: close-quote;
-}
-/* line 325, ../sass/_typecsset.scss */
-q:first-child {
-  display: inline-block;
-  text-indent: -0.22em;
-}
-
-/*------------------------------------*\
-    #TABLES
-\*------------------------------------*/
-/**
- * Crude table styles; tables are very difficult to keep on the baseline.
- */
-/* line 342, ../sass/_typecsset.scss */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 350, ../sass/_typecsset.scss */
-th,
-td {
-  padding: 12px;
-}
-
-/* line 7, ../sass/_typography.sass */
-body {
-  font-family: Georgia, serif;
-  padding: 24px;
-}
+Backtrace:
+/Users/njoyce/git/GitHub-Pages-Boilerplate/library/sass/_typography.sass:15
+/Users/njoyce/git/GitHub-Pages-Boilerplate/library/sass/style.sass:6
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/scss/parser.rb:1148:in `expected'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/script/lexer.rb:199:in `expected!'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/script/parser.rb:486:in `assert_done'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/script/parser.rb:87:in `parse_mixin_include_arglist'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:861:in `parse_mixin_include'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:666:in `parse_directive'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:566:in `parse_line'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:471:in `build_tree'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:490:in `block in append_children'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:489:in `each'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:489:in `append_children'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:480:in `block in build_tree'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:473:in `each'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:473:in `build_tree'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:490:in `block in append_children'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:489:in `each'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:489:in `append_children'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:345:in `_to_tree'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:274:in `to_tree'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/bin/compass:44:in `call'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/bin/compass:23:in `load'
+/Users/njoyce/.rvm/gems/ruby-1.9.3-p194/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"(padding)\": expected expression (e.g. 1px, bold), was \";\"\A         on line 15 of /Users/njoyce/git/GitHub-Pages-Boilerplate/library/sass/_typography.sass\A         from line 6 of /Users/njoyce/git/GitHub-Pages-Boilerplate/library/sass/style.sass"; }
