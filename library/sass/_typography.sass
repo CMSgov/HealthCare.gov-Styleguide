@@ -1,66 +1,9 @@
-$line-height: 27px
+$typecsset-base-font-size:      18px
+$typecsset-base-line-height:    24px
+$typecsset-show-baseline:       true
 
-%single-direction-margin
-	margin: 0 0 $line-height
+@import "typecsset"
 
-html
-	font-size: 100%
-
-p
-	@extend %single-direction-margin
-	font-size: 1em
-	line-height: $line-height
-
-h6
-	@extend %single-direction-margin
-	font-size: 0.8em
-	line-height: 1
-
-h5
-	@extend %single-direction-margin
-	font-size: 1em
-	line-height: 1
-
-h4
-	@extend %single-direction-margin
-	font-size: 1.5em
-	line-height: 1
-
-h3
-	@extend %single-direction-margin
-	font-size: 2em
-	line-height: 1
-
-h2
-	@extend %single-direction-margin
-	font-size: 2.5em
-	line-height: 1
-
-h1
-	@extend %single-direction-margin
-	font-size: 3em
-	line-height: 1
-
-hr
-	@extend %single-direction-margin
-
-ul
-	@extend %single-direction-margin
-
-ol
-	@extend %single-direction-margin
-
-dl
-	@extend %single-direction-margin
-
-table
-	@extend %single-direction-margin
-
-pre
-	@extend %single-direction-margin
-
-blockquote
-	@extend %single-direction-margin
-
-fieldset
-	@extend %single-direction-margin
+body
+    font-family: Georgia, serif
+    padding: $typecsset-magic-number
