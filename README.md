@@ -6,16 +6,16 @@ By creating a single place where developers and designers can come to understand
 
 ##High Level Requirements
 * The product should be a single place for:
-** Overview Experience
-** Digital Branding
-** Consumer Flows & Scenarios
-** Screen Patterns
-** Visual Design Specifications
-** Themes? Dark/Light?
-** UI Components
-** Examples
-** Code Snippet
-** Rationale, Parameters, Considerations for Use
+  * Overview Experience
+  * Digital Branding
+  * Consumer Flows & Scenarios
+  * Screen Patterns
+  * Visual Design Specifications
+  * Themes? Dark/Light?
+  * UI Components
+  * Examples
+  * Code Snippet
+  * Rationale, Parameters, Considerations for Use
 * The product should define a governance structure for maintaining and updating the style of HealthCare.gov
 * The product should be built using the provided governance structure within GitHub (for instance, organization / teams and fork-pull model for updates)
 * The product should give guidance to internal designers, content and developers involved in building products under the HealthCare.gov umbrella.
