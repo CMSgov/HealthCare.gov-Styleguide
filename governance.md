@@ -1,6 +1,6 @@
-Table of Contents
+##Table of Contents
 
-Introduction and Purpose
+*Introduction and Purpose
 Objectives of the Assets Framework
 Roles and Responsibilities
 Responsibilities of the Governance Committee
