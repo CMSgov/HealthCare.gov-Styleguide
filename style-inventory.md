@@ -2,7 +2,7 @@
 
 ##Style Inventory by Tool/Site
 * <a href="#">Learn side</a> 
-* <a href="#">PET and Tax Tool</a>
+* [PET and Tax Tool](/style-inventory-PET-TAXTool.md)
 * <a href="#">App 2.0</a>
 * <a href="#">SHOP Calculators</a>
 * <a href="#">SEP and Exemptions tool</a>
