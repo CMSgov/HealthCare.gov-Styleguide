@@ -20,11 +20,12 @@ By creating a single place where developers and designers can come to understand
 * The product should give guidance to internal designers, content and developers involved in building products under the HealthCare.gov umbrella.
 * The product should provide an easy interface for developers to use assets via versions (for example, using something like Bower)
 * The product should be able to handle: 
-** adding new patterns and styles into global styleguide
-** changing existing patterns and styles
-*The product should ensure 508 and accessibility for UI components
+ * adding new patterns and styles into global styleguide
+ * changing existing patterns and styles
+* The product should ensure 508 and accessibility for UI components
 * The product should ensure responsive design best practice
 * The product should account for user analytics and research team feedback
+
 ##Success Criteria
 * All HealthCare.gov develeopment teams are complying with the governance outlined through this product.
 * All HealthCare.gov development teams are complying integrating with this product for UI components and design assets.
