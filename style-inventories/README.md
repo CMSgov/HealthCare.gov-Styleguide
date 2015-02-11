@@ -15,7 +15,7 @@ There are many rouge colors that used on HC.gov and Tools, however these are the
 
 Light Blues | Medium Blues | Dark Blues | 
 ------------ | ------------- | ------------- 
-`#cfeffc bgcolor="#cfeffc”` | `#04689b` | `#063346`
+`#cfeffc` | `#04689b` | `#063346`
 `#94d2eb` | `#085c7e` | `#052635`
 `#b0e6fc` | `#085271` | `#063346`
 `#029cd2` | `#025a80` | `#17415f`
