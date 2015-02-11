@@ -7,6 +7,19 @@
 * [SHOP Calculators](/style-inventory-SHOP-Calculators.md)
 * [SEP and Exemptions tool](/style-inventory-SEP-Exemptions.md)
 
+##Global Color Palette
+*Light Blues*
+- `#cfeffc`
+- `#94d2eb`
+- `#b0e6fc`
+- `#029cd2`
+- `#048fc6`
+- `#0376a5`
+- `#046f9d`
+*Medium Blues*
+- 
+
+
 ##Typography
 * H1
 * H2
