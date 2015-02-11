@@ -53,23 +53,14 @@ Oranges | Reds | Yellow
 	  |           |
 
 
-##Typography
-* H1
-* H2
-* H3
-* H4
+##Basic Page Typography
+
+* H1 - Bitter Regular - 36px
+* H2 - Bitter Regular - 24px
+* H3 - Bitter Regular - 21px
+* H4 - Open Sans Bold - 16px
 * H5
 * H6
+* Body - Open Sans Regular - 16px
 
-##Buttons
-* Primary
-* Secondary
-* Miscellaneous
 
-##Form Inputs
-* Text Inputs
-* Dropdowns
-* Radio Buttons
-* Check boxes
-
-##Progress Bars
