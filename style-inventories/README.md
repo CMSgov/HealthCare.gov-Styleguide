@@ -9,6 +9,8 @@
 
 ##Global Color Palette
 
+There are many rouge colors that used on HC.gov and Tools, however these are the standard ones that to be considered first before using/adding new colors.
+
 ###Blues
 
 Light Blues | Medium Blues | Dark Blues
