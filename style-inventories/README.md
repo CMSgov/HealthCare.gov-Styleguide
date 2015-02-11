@@ -8,16 +8,18 @@
 * [SEP and Exemptions tool](/style-inventory-SEP-Exemptions.md)
 
 ##Global Color Palette
-*Light Blues*
-- `#cfeffc`
-- `#94d2eb`
-- `#b0e6fc`
-- `#029cd2`
-- `#048fc6`
-- `#0376a5`
-- `#046f9d`
-*Medium Blues*
-- 
+
+Light Blues | Medium Blues | Dark Blues
+------------ | ------------- | -------------
+`#cfeffc` | `#04689b` | `#063346`
+`#94d2eb` | `#085c7e` | `#052635`
+`#b0e6fc` | `#085271` | `#063346`
+`#029cd2` | `#025a80` | `#17415f`
+`#048fc6` | `#065274` | `#03425f`
+`#0376a5` | `#01435f` | `#04689b`
+`#046f9d` | `#074866` |
+`#046792` | 
+`#0d76ad` | 
 
 
 ##Typography
@@ -31,7 +33,7 @@
 ##Buttons
 * Primary
 * Secondary
-* Micsellanous
+* Miscellaneous
 
 ##Form Inputs
 * Text Inputs
