@@ -1,11 +1,11 @@
 #Style Inventory
 
 ##Style Inventory by Tool/Site
-* [Learn side](/style-inventory-Learn.md)
-* [PET and Tax Tool](/style-inventory-PET-TAXTool.md)
-* [App 2.0](/style-inventory-APP2-0.md)
-* [SHOP Calculators](/style-inventory-SHOP-Calculators.md)
-* [SEP and Exemptions tool](/style-inventory-SEP-Exemptions.md)
+* [Learn side](/style-inventories/style-inventory-Learn.md)
+* [PET and Tax Tool](/style-inventories/style-inventory-PET-TAXTool.md)
+* [App 2.0](/style-inventories/style-inventory-APP2-0.md)
+* [SHOP Calculators](/style-inventories/style-inventory-SHOP-Calculators.md)
+* [SEP and Exemptions tool](/style-inventories/style-inventory-SEP-Exemptions.md)
 
 ##Global Color Palette
 
