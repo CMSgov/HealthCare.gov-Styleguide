@@ -47,7 +47,7 @@ Light Greens | Medium Greens | Dark Greens
 Oranges | Reds | Yellow 
 ------------ | ------------- | -------------
 `#ec6841` | `#990000` | `#f5eb7a`
-`#d44116  | `#b93610` | 
+`#d44116` | `#b93610` | 
 	  |           |
 
 
