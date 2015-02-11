@@ -9,6 +9,8 @@
 
 ##Global Color Palette
 
+###Blues
+
 Light Blues | Medium Blues | Dark Blues
 ------------ | ------------- | -------------
 `#cfeffc` | `#04689b` | `#063346`
@@ -20,6 +22,33 @@ Light Blues | Medium Blues | Dark Blues
 `#046f9d` | `#074866` |
 `#046792` | 
 `#0d76ad` | 
+
+###Grays
+
+Light Grays | Medium Grays | Dark Grays 
+------------ | ------------- | -------------
+`#d9d9d9` | `#888888` | `#3c3c3c`
+`#cccccc` | `#666666` | `#282828`
+`#e0e0e0` | 	      | `#333333`
+`#f1f1f1` |
+`#e8e9ea` |
+
+###Greens
+
+Light Greens | Medium Greens | Dark Greens 
+------------ | ------------- | -------------
+`#6edf37` | `#2d8611` | `#216c0a`
+	  | `#12890e` |
+	  | `#138f0e` |
+
+
+###Accent Colors
+
+Oranges | Reds | Yellow 
+------------ | ------------- | -------------
+`#ec6841` | `#990000` | `#f5eb7a`
+`#d44116  | `#b93610` | 
+	  |           |
 
 
 ##Typography
