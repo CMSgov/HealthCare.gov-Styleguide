@@ -1,1 +1,0 @@
-#SHOP Calculators Style Inventory
