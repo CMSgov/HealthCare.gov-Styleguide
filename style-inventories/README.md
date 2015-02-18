@@ -64,4 +64,5 @@ Oranges | Reds | Yellow
 
 ## Global Iconography 
 
-[Glyhicons](http://glyphicons.com/)
+* [Glyhicons](http://glyphicons.com/)
+* [handbook](/style-inventories/glyphicons_handbook.pdf)
