@@ -8,22 +8,22 @@ Last update: 2/10/2015
 - h2 page (title version)
   <h2 class="title">Section title</h2>
 
-- h3 page (title version)  
+- h3 page (title version)
   <h3 class="title">Section title</h3>
 
-- h4 page (title version)  
+- h4 page (title version)
   <h4 class="title">Element title</h4>
 
-- h5 page (title version)  
+- h5 page (title version)
   <h5 class="title">Element title</h5>
 
-- h6 page (title version)  
+- h6 page (title version)
   <h6 class="title">Element title</h6>
 
 - h2 standard title
   <h2>Standard title</h2>
 
-- h3 page  
+- h3 page
   <h3>Standard title</h3>
 
 - h4 page
@@ -49,7 +49,7 @@ Last update: 2/10/2015
 - Tel input (standard size)
   <input type ="tel" placeholder="placeholder text">
 
-- Textarea input (standard size)  
+- Textarea input (standard size)
   <input type ="textarea" placeholder="placeholder text">
 
 ## Text input (large size)
@@ -103,17 +103,17 @@ Last update: 2/10/2015
 - Button (Standard HC.gov Secondary Button, full width)
   <button class="btn btn-full col-xs-12 btn-lg btn-secondary" title="Button Title" role="button">
     Standard Secondary Button
-  </button>  
+  </button>
 
 - Standard HC.gov mini buttons, pulled right (with screen reader text sample)
   <button class="btn btn-xs btn-edit pull-right" role="button">
     <span>Edit
       <span class="sr-only">your income</span>
     </span>
-  </button>  
+  </button>
 
 - Minimal button
-  <a class="btn btn-minimal btn-full" href="#">Back to results</a>  
+  <a class="btn btn-minimal btn-full" href="#">Back to results</a>
 
 ## Step summary
 <ol class="summary">
@@ -205,7 +205,7 @@ Last update: 2/10/2015
   <div class="alert" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close this alert message"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
     <p>
-      <strong>Important:</strong>  
+      <strong>Important:</strong>
       The premiums below are only estimates. You’ll need to fill out a Marketplace application to get actual plan prices. Some plans and details you see here may change.
     </p>
   </div>
@@ -247,7 +247,7 @@ Last update: 2/10/2015
   <div class="panel panel-default">
     <h5>Premium</h5>
     <div id="premium" class="panel-collapse in collapse">
-      <div class="panel-body">  
+      <div class="panel-body">
         <div class="select-filter">
           <div class="filter-item">
             <a class="apply" href="#" title="16 less than $200 plans available if you add this filter">less than $200&nbsp;<span class="count">(16)</span><span class="sr-only"> less than $200 plans available if you add this filter</span></a>
@@ -382,7 +382,7 @@ Last update: 2/10/2015
 
   </div>
 
-### Summary boxes  
+### Summary boxes
 
 <div class="row equal">
 
@@ -474,7 +474,7 @@ Last update: 2/10/2015
     <div class="col-sm-12">
       <div class="small">
         <b>Important</b>: Emailing or sharing plan details can expose information about your income, household members, smoking status, and other sensitive matters. Share this information only with people you trust.
-      </div>  
+      </div>
     </div>
   </div>
 
@@ -527,4 +527,4 @@ Last update: 2/10/2015
       <strong>Person #2 (age 4)</strong>
       <span class="household-member">may be eligible for <a href="#">Medicaid</a> and/or <abbr><a href="#">CHIP</a></abbr> in their state.</span>
     </li>
-  </ul>  
+  </ul>
