@@ -1,0 +1,12 @@
+---
+published: true
+en:
+  header:
+    title:  "Styleguide"
+    nav:
+      - { link: 'Assets', location: '/assets', title: 'assets' }
+      - { link: 'Design', location: '/design', title: 'design' }
+      - { link: 'Governance', location: '/governance', title: 'governance' }
+
+tag: translations
+---
