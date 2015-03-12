@@ -1,20 +1,22 @@
-auto : true
-permalink : /:title/
-exclude : ['sass', 'config.rb', 'README.md']
-
-title : GitHub Pages Boilerplate
-description : GitHub Pages Boilerplate by Nelson Joyce.
-url : https://github.com/gnelsonj/GitHub-Pages-Boilerplate
-author :
-  firstName : Nelson
-  lastName : Joyce
-  jobTitle : Product Designer
-  email : nellyvan@gmail.com
-  github : gnelsonj
-  linkedIn : gnelsonj
-  twitter : nelsonjoyce
-  twitterId : 216396668
-  dribbble : nelsonjoyce
-  googlePlus : 116388594856737469980
-  feedBurner : nelsonjoyce
-  location : Boston MA
+title: HealthCare.gov Styleguide
+baseurl: 
+permalink: /:categories/:title
+markdown: rdiscount
+highlighter: null
+encoding: utf-8
+#exclude : ['sass', 'config.rb', 'README.md']
+exclude:
+  - .gitignore
+  - README.md
+  - privatekey.p12
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .gitattributes
+  - Gruntfile.js
+  - package.json
+languages: &languages
+  - name: 'English'
+    value: 'en'
+  - name: 'Español'
+    value: 'es'
