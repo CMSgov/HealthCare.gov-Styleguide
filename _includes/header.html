@@ -1,17 +1,19 @@
 <section class="header-wrap">
-  <header class="site-header" role="banner">
+  <header class="site-header clearfix" role="banner">
+
+  	{% comment %}<!-- Site Title and Logo -->{% endcomment %}
+  	<div class="logo clearfix">
+	  	<img src="images/OfficialLogo.png" />
+		<span class="title">{{ t.[page.lang].header.title }}</span>
+	</div>
 
   	{% comment %}<!-- Navigation -->{% endcomment %}
 	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	  	<img src="images/OfficialLogo.png" />
-	  	{{ t.[page.lang].global.styleguide-title }}
-	  	<ul>
+	  	<ul class="clearfix">
 		  	{% for navItem in t.[page.lang].header.nav %}
 		  		<li><a href="{{ navItem.location }}">{{ navItem.link }}</a></lI>
 		  	{% endfor %}
 	  	</ul>
-	  </div>
 	</nav>
   </header>
 </section>

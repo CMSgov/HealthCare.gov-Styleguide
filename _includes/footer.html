@@ -1,5 +1,59 @@
 <section class="footer-wrap">
-  <footer class="site-footer">
-    <h1>Footer</h1>
+  <footer class="site-footer clearfix">
+  	{% comment %}<!-- Site Title and Logo -->{% endcomment %}
+    <div class="logo">
+	  	<img src="images/OfficialLogo.png" />
+		<span class="title">{{ t.[page.lang].header.title }}</span>
+	</div>
+
+	{% comment %}<!-- Design -->{% endcomment %}
+	<div class="col-sm-2">
+		<h3>{{ t.[page.lang].footer.link-headers.design }}</h3>
+		<ul>
+			<li><a href="#">Identity</a></li>
+			<li><a href="#">Colors</a></li>
+			<li><a href="#">Typography</a></li>
+			<li><a href="#">Iconography</a></li>
+			<li><a href="#">Photography</a></li>
+			<li><a href="#">Page Layouts</a></li>
+			<li><a href="#">Modules</a></li>
+		</ul>
+	</div>
+
+	{% comment %}<!-- Assets -->{% endcomment %}
+	<div class="col-sm-2">
+		<h3>{{ t.[page.lang].footer.link-headers.assets }}</h3>
+		<ul>
+			<li><a href="#">Foundation</a></li>
+			<li><a href="#">Components</a></li>
+			<li><a href="#">Patterns</a></li>
+		</ul>
+	</div>
+
+	{% comment %}<!-- Governance -->{% endcomment %}
+	<div class="col-sm-2">
+		<h3>{{ t.[page.lang].footer.link-headers.governance }}</h3>
+		<ul>
+			<li><a href="#">Intro & Purpose</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+
+	{% comment %}<!-- Helpful Links -->{% endcomment %}
+	<div class="col-sm-2">
+		<h3>{{ t.[page.lang].footer.link-headers.helpful }}</h3>
+		<ul>
+			<li><a class="external" href="#">Accessibility</a></li>
+			<li><a class="external" href="#">Freedom of Information Act</a></li>
+			<li><a class="external" href="#">Plain Writing</a></li>
+		</ul>
+	</div>
+  </footer>
+  <footer class="sub-footer">
+  	<ul class="clearfix">
+  		<li>{{ t.[page.lang].footer.manage }}</li>
+  		<li><a href="/contact">{{ t.[page.lang].footer.contact }}</a></li>
+  		<li><a href="https://www.healthcare.gov/">{{ t.[page.lang].footer.website }}</a></li>
+  	</ul>
   </footer>
 </section>

@@ -8,5 +8,33 @@ en:
       - { link: 'Design', location: '/design', title: 'design' }
       - { link: 'Governance', location: '/governance', title: 'governance' }
 
+  footer: 
+    link-headers:
+      design: "Design"
+      assets: "Assets"
+      governance: "Governance"
+      helpful: "Helpful Links"
+    manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244"
+    contact: Contact
+    website: Healthcare.gov
+
+es:
+  header:
+    title:  "Styleguide"
+    nav:
+      - { link: 'Assets', location: '/assets', title: 'assets' }
+      - { link: 'Design', location: '/design', title: 'design' }
+      - { link: 'Governance', location: '/governance', title: 'governance' }
+
+  footer: 
+    link-headers:
+      design: "Design"
+      assets: "Assets"
+      governance: "Governance"
+      helpful: "Helpful Links"
+    manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244"
+    contact: Contact
+    website: Healthcare.gov
+
 tag: translations
 ---
