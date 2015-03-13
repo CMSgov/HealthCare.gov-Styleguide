@@ -29,5 +29,3 @@ By creating a single place where developers and designers can come to understand
 ##Success Criteria
 * All HealthCare.gov develeopment teams are complying with the governance outlined through this product.
 * All HealthCare.gov development teams are complying integrating with this product for UI components and design assets.
-
-

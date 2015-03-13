@@ -1,0 +1,34 @@
+{% assign t = site.tags.translations[0] %}
+<!DOCTYPE html>
+
+<html lang='{{page.lang}}'>
+
+<head>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name='viewport' content='initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'/>
+
+  <link rel="stylesheet" type="text/css" href="library/css/style.css">
+
+  <script src="//assets.healthcare.gov/resources/libs/jquery/1.11/js/jquery.min.js"></script>
+  <script src="//assets.healthcare.gov/resources/libs/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+  <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
+
+  <!--[if lt IE 9]>
+
+  <![endif]-->
+  <!--[if IE]>
+      <style>
+      </style>
+  <![endif]-->
+
+</head>
+<body>
+	{% include header.html %}
+
+	{{ content }}
+
+	{% include footer.html %}
+</body>
+</html>

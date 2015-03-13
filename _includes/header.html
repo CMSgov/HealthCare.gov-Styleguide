@@ -1,0 +1,17 @@
+<section class="header-wrap">
+  <header class="site-header" role="banner">
+
+  	{% comment %}<!-- Navigation -->{% endcomment %}
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	  	<img src="images/OfficialLogo.png" />
+	  	{{ t.[page.lang].global.styleguide-title }}
+	  	<ul>
+		  	{% for navItem in t.[page.lang].header.nav %}
+		  		<li><a href="{{ navItem.location }}">{{ navItem.link }}</a></lI>
+		  	{% endfor %}
+	  	</ul>
+	  </div>
+	</nav>
+  </header>
+</section>

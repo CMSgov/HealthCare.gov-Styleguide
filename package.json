@@ -1,0 +1,11 @@
+{
+  "name": "HC_styleguide",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~0.11.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
