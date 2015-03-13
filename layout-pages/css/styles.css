@@ -78,6 +78,13 @@
 }
 
 /* CSS */
+ body {
+    color:#333;
+    font-family:"Open Sans",sans-serif;
+ }
+
+p a {border-bottom:1px solid transparent;}
+p a:hover {text-decoration:none; border-bottom:1px solid #0c648c;}
 
 h1 {
 
@@ -132,6 +139,8 @@ h3 {
 	margin:10px;
 	font-weight:bold;
 }
+
+.subnav .active a { color:#333;}
 
 .subnav .glyphicon {
 
