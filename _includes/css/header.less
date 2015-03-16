@@ -1,3 +1,66 @@
 .header-wrap{
-	background:#eee;
+	border-top: #046791 5px solid;
+
+	.site-header{
+		width:@mainWidth;
+		margin:0 auto;
+		padding: 15px 0;
+
+		.logo{
+			float:left;
+
+			img{
+				float:left;
+				width:264px;
+				height:33px;
+			    margin:10px 20px 0 0;
+			}
+
+			.title{
+				float:left;
+				display:block;
+				font-size:32px;
+				line-height:32px;
+				font-weight:bold;
+				padding: 10px 0 10px 20px;
+				border-left:#ccc 1px solid;
+			}
+		}
+
+		.navbar{
+			float:right;
+			background:none;
+			border:none;
+			border-radius:0;
+			position:static;
+			min-height:0px;
+			margin:0;
+
+			ul{
+				margin:5px 0 0 0;
+
+				li{
+					float:left;
+					list-style:none;
+					margin: 0 0 0 20px;
+
+					&:first-child{
+						margin:0;
+					}
+
+					a{
+						display:block;
+						text-decoration:none;
+						font-weight:bold;
+						padding: 10px 15px;
+						font-size:16px;
+
+						&:hover{
+							background:#dedede;
+						}
+					}
+				}
+			}
+		}
+	}
 }
