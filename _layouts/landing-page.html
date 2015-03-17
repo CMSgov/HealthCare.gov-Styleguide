@@ -2,25 +2,12 @@
 layout: base
 ---
 
-{% comment %}
-
-<h1>Landing</h1>
-
-<!-- This loops through the paginated posts -->
-
-
-{% for post in site.posts %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-{% endfor %}
-
-{% endcomment %}
-
 <div id="landing-page">
 	<div class="banner">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<span class="landing-page-title">Design</span>
+					<span class="landing-page-title">{{ page.section }}</span>
 				</div>
 			</div>
 		</div>
@@ -28,34 +15,52 @@ layout: base
 	<div class="container">
 			<div class="col-sm-3">
 				<ul class="subnav">
-					<li><a href="#">Identity</a></li>
-					<li><a href="#">Colors</a></li>
-					<li><a href="#">Typography</a></li>
-					<li><a href="#">Iconography</a></li>
-					<li><a href="#">Photography</a></li>
-					<li><a href="#">Page Layouts</a></li>
-					<li><span class="glyphicon glyphicon-chevron-right"></span><a href="#">Modules</a>
-						<ul>
-							<li><a href="#">Global</a></li>
-							<li><a href="#">Hero</a></li>
-							<li><a href="#">Secondary CTA</a></li>
-							<li><a href="#">Action Bar</a></li>
+					{% comment %}<!-- Variable Assignment -->{% endcomment %}
+					{% assign subNav = false %}
+					{% assign currentCategory = "" %}
+
+					{% for post in site.posts reversed %}
+						{% comment %}<!-- Iterate Over Pages that match landing page / section -->{% endcomment %}
+						{% if post.section == page.section and post.layout != "landing-page" %}
+
+							{% comment %}<!-- Starting a new subcategory -->{% endcomment %}
+							{% if currentCategory != post.categories[0] and post.categories[0] != nil %}
+								{% if subNav == true%}
+										</li>
+									</ul>
+								{% endif %}
+								{% assign subNav = true %}
+								{% assign currentCategory = post.categories[0] %}
+								<li><span class="glyphicon glyphicon-chevron-right"></span><a href="#">{{ post.categories[0] }}</a>
+									<ul>
+										<li><a href="{{ post.url }}">{{ post.nav-title }}</a></li>
+
+							{% comment %}<!-- No subcategory -->{% endcomment %}
+							{% elsif post.categories[0] == nil %}
+								{% if subNav == true %}
+										</ul>
+									</li>
+									Some stuff
+								{% endif %}
+								<li><a href="{{ post.url }}">{{ post.nav-title }}</a></li>
+								{% assign subNav = false %}
+
+							{% comment %}<!-- Inside subcategory -->{% endcomment %}
+							{% else %}
+								<li><a href="{{ post.url }}">{{ post.nav-title }}</a></li>
+							{% endif %}
+					  	{% endif %}
+					{% endfor %}
+
+					{% comment %}<!-- Cleanup if last link was inside subcategory -->{% endcomment %}
+					{% if subNav == true%}
+							</li>
 						</ul>
-					</li>
+					{% endif %}
 				</ul>
 			</div>
 			<div class="col-sm-9">
-				<h1>Healthcare.gov Design</h1>
-
-				<p>The overall design direction for healthcare.gov can be summed up in one word - TRUST. We invite users to trust us from the moment they see the first screen until the moment they leave the site from an inside page. This underlying principle determines the look, feel, voice, message, image, and overall brand for the site.</p>
-
-				<div class="hr"></div>
-
-				<h2>Consumer Experience</h2>
-
-				<p>In order to promote a positive user experience, we maintain ease of use throughout the site. All content must be clear, concise and easily accessible. Likewise the application process should cut out clutter and simplify tasks. The user is guided throughout the process.</p>
-
-				<p><img src="{{site.baseurl}}/images/screen.png" alt="screen" title="screen"/></p>
+				{{ content }}
 			</div>
 		</div>
 	</div>
