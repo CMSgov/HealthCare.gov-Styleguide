@@ -6742,7 +6742,7 @@ h3 {
 }
 .hr {
   margin: 36px 0 28px;
-  background-image: url("/images/hr-pattern.png");
+  background-image: url("{{site.baseurl}}/images/hr-pattern.png");
   width: 100%;
   height: 8px;
 }
@@ -6949,19 +6949,19 @@ h3 {
   }
   #homepage .deep-dive-link.design {
     margin-top: 0;
-    background: url("/images/DesignDefault.png") center;
+    background: url("{{site.baseurl}}/images/DesignDefault.png") center;
     background-size: cover;
   }
   #homepage .deep-dive-link.design:hover .description {
-    background: url("/images/DesignRollover.png") center;
+    background: url("{{site.baseurl}}/images/DesignRollover.png") center;
     background-size: cover;
   }
   #homepage .deep-dive-link.assets {
-    background: url("/images/AssetsDefault.png") center;
+    background: url("{{site.baseurl}}/images/AssetsDefault.png") center;
     background-size: cover;
   }
   #homepage .deep-dive-link.assets:hover .description {
-    background: url("/images/AssetsRollover.png") center;
+    background: url("{{site.baseurl}}/images/AssetsRollover.png") center;
     background-size: cover;
   }
 }
