@@ -2,19 +2,6 @@
 layout: base
 ---
 
-{% comment %}
-
-<h1>Landing</h1>
-
-<!-- This loops through the paginated posts -->
-
-
-{% for post in site.posts %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-{% endfor %}
-
-{% endcomment %}
-
 <div id="landing-page">
 	<div class="banner">
 		<div class="container">
@@ -45,17 +32,7 @@ layout: base
 				</ul>
 			</div>
 			<div class="col-sm-9">
-				<h1>Healthcare.gov Design</h1>
-
-				<p>The overall design direction for healthcare.gov can be summed up in one word - TRUST. We invite users to trust us from the moment they see the first screen until the moment they leave the site from an inside page. This underlying principle determines the look, feel, voice, message, image, and overall brand for the site.</p>
-
-				<div class="hr"></div>
-
-				<h2>Consumer Experience</h2>
-
-				<p>In order to promote a positive user experience, we maintain ease of use throughout the site. All content must be clear, concise and easily accessible. Likewise the application process should cut out clutter and simplify tasks. The user is guided throughout the process.</p>
-
-				<p><img src="{{site.baseurl}}/images/screen.png" alt="screen" title="screen"/></p>
+				{{ content }}
 			</div>
 		</div>
 	</div>
