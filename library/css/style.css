@@ -261,8 +261,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../../fonts/glyphicons-halflings-regular.eot');
+  src: url('../../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6627,54 +6627,54 @@ button.close {
 }
 @font-face {
   font-family: 'Bitter';
-  src: url('/fonts/Bitter-Regular.woff') format('woff'), url('/fonts/Bitter-Regular.ttf') format('truetype');
+  src: url('../../fonts/Bitter-Regular.woff') format('woff'), url('../../fonts/Bitter-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Bitter';
-  src: url('/fonts/Bitter-Bold.woff') format('woff'), url('/fonts/Bitter-Bold.ttf') format('truetype');
+  src: url('../../fonts/Bitter-Bold.woff') format('woff'), url('../../fonts/Bitter-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Bitter';
-  src: url('/fonts/Bitter-Italic.woff') format('woff'), url('/fonts/Bitter-Italic.ttf') format('truetype');
+  src: url('../../fonts/Bitter-Italic.woff') format('woff'), url('../../fonts/Bitter-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/OpenSans-Light-webfont.eot');
-  src: url('/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Light-webfont.woff') format('woff'), url('/fonts/OpenSans-Light-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Light-webfont.eot');
+  src: url('../../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../../fonts/OpenSans-Light-webfont.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/OpenSans-Regular-webfont.eot');
-  src: url('/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Regular-webfont.woff') format('woff'), url('/fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/OpenSans-Italic-webfont.eot');
-  src: url('/fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Italic-webfont.woff') format('woff'), url('/fonts/OpenSans-Italic-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Italic-webfont.eot');
+  src: url('../../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Italic-webfont.woff') format('woff'), url('../../fonts/OpenSans-Italic-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/OpenSans-Semibold-webfont.eot');
-  src: url('/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('/fonts/OpenSans-Semibold-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Semibold-webfont.eot');
+  src: url('../../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('../../fonts/OpenSans-Semibold-webfont.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/OpenSans-Bold-webfont.eot');
-  src: url('/fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/OpenSans-Bold-webfont.woff') format('woff'), url('/fonts/OpenSans-Bold-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Bold-webfont.eot');
+  src: url('../../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../../fonts/OpenSans-Bold-webfont.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -6708,7 +6708,6 @@ h3 {
 }
 .banner {
   background: #006093;
-  margin-bottom: 54px;
 }
 .landing-page-title {
   display: block;
@@ -6743,9 +6742,14 @@ h3 {
 }
 .hr {
   margin: 36px 0 28px;
-  background-image: url("/images/hr-pattern.png");
+  background-image: url("../../images/hr-pattern.png");
   width: 100%;
   height: 8px;
+}
+@media (min-width: 768px) {
+  .banner {
+    margin-bottom: 54px;
+  }
 }
 * {
   margin: 0;
@@ -6833,6 +6837,13 @@ h3 {
   margin-top: 36px;
   width: 100%;
 }
+#homepage {
+  padding-bottom: 20px;
+}
+#homepage h3 {
+  margin-top: 0;
+  font-family: "Bitter", "Georgia", serif;
+}
 #homepage .banner {
   color: #fff;
   padding: 60px 0;
@@ -6852,6 +6863,107 @@ h3 {
 }
 #homepage .banner img {
   width: 100%;
+}
+#homepage .deep-dive-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#homepage .deep-dive-link .title {
+  display: block;
+}
+#homepage .deep-dive-link .title .glyphicon {
+  font-size: 40px;
+  font-weight: bold;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+#homepage .deep-dive-link .description {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 206px;
+  padding: 0 20px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#homepage .deep-dive-link .description h4 {
+  margin-top: 60px;
+  font-size: 25px;
+}
+#homepage .deep-dive-link .description span {
+  color: #e3e1e4;
+}
+#homepage .deep-dive-link.design {
+  margin-top: 20px;
+  background: #22a4db;
+}
+#homepage .deep-dive-link.assets {
+  background: #017aad;
+}
+#homepage .banner img {
+  display: none;
+}
+@media (min-width: 768px) {
+  #homepage {
+    padding-bottom: 70px;
+  }
+  #homepage h1 {
+    margin-top: 30px;
+  }
+  #homepage h2 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  #homepage h3 {
+    margin-top: 20px;
+  }
+  #homepage .banner {
+    margin-bottom: 24px;
+  }
+  #homepage .banner img {
+    display: inline;
+  }
+  #homepage .deep-dive-link {
+    margin-bottom: 0;
+    height: 206px;
+  }
+  #homepage .deep-dive-link .title {
+    margin-left: 0;
+    padding: 10px;
+  }
+  #homepage .deep-dive-link:hover .title {
+    display: none;
+  }
+  #homepage .deep-dive-link:hover .description {
+    display: block;
+  }
+  #homepage .deep-dive-link.design {
+    margin-top: 0;
+    background: url("../../images/DesignDefault.png") center;
+    background-size: cover;
+  }
+  #homepage .deep-dive-link.design:hover .description {
+    background: url("../../images/DesignRollover.png") center;
+    background-size: cover;
+  }
+  #homepage .deep-dive-link.assets {
+    background: url("../../images/AssetsDefault.png") center;
+    background-size: cover;
+  }
+  #homepage .deep-dive-link.assets:hover .description {
+    background: url("../../images/AssetsRollover.png") center;
+    background-size: cover;
+  }
 }
 .footer-wrap {
   background: #dedede;
