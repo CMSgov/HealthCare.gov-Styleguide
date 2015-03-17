@@ -2,7 +2,7 @@
 published: true
 en:
   header:
-    title:  "Styleguide"
+    title: "Styleguide"
     nav:
       - { link: 'Assets', location: '/assets', title: 'assets' }
       - { link: 'Design', location: '/design', title: 'design' }
@@ -17,6 +17,11 @@ en:
     manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244"
     contact: Contact
     website: Healthcare.gov
+
+  campaign:
+    title: "HealthCare.gov"
+    title-two: "Styleguide"
+    description: "Version 1.0 design and development guidelines"
 
 es:
   header:
