@@ -6977,6 +6977,9 @@ h3 {
     padding-bottom: 70px;
   }
 }
+#detail-page .half {
+  width: 48%;
+}
 #detail-page .circle {
   margin: 0 20px 20px 0;
   width: 50px;
