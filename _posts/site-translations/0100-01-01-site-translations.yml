@@ -23,6 +23,16 @@ en:
     title-two: "Styleguide"
     description: "Version 1.0 design and development guidelines"
 
+  home-secondary:
+    title: "A Unified Experience"
+    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the general guidelines outlined."
+    breakdown:
+      title: "Breakdown"
+      text: '[Visual styles](/# "styles") lipsum dollir sit amet inventore veritatis laudantium et quasi [assets](/# "assets") beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati.'
+    boxes:
+      - { css-class: "design", title: "Design", subtitle: "Design", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
+      - { css-class: "assets", title: "Assets", subtitle: "Assets", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
+
 es:
   header:
     title:  "Styleguide"
@@ -40,6 +50,21 @@ es:
     manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244"
     contact: Contact
     website: Healthcare.gov
+
+  campaign:
+    title: "HealthCare.gov"
+    title-two: "Styleguide"
+    description: "Version 1.0 design and development guidelines"
+
+  home-secondary:
+    title: "A Unified Experience"
+    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the general guidelines outlined."
+    breakdown:
+      title: "Breakdown"
+      text: '[Visual styles](/# "styles") lipsum dollir sit amet inventore veritatis laudantium et quasi [assets](/# "assets") beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati.'
+    boxes:
+      - { css-class: "design", title: "Design", subtitle: "Design", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
+      - { css-class: "assets", title: "Assets", subtitle: "Assets", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
 
 tag: translations
 ---
