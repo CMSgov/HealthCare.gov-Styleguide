@@ -1,34 +1,13 @@
 ---
 layout: base
+lang: en
 ---
 
+{% assign t = site.tags.translations[0] %}
 <div id="homepage">
-	{% include hero-area.html %}
-	<div class="container">
-		{% include introduction.html %}
-		<div class="row">
-			<div class="col-sm-4">
-				<h3>Breakdown</h3>
-				<p><a href="#">Visual styles</a> lipsum dollir sit amet inventore veritatis laudantium et quasi <a href="#">assets</a> beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati.</p>
-			</div>
-			<div class="col-sm-4">
-				<a href="#" class="deep-dive-link design">
-					<span class="title"><span class="glyphicon glyphicon-plus"></span>Design</span>
-					<span class="description">
-						<h4>Design</h4>
-						<span>beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati</span>
-					</span>
-				</a>
-			</div>
-			<div class="col-sm-4">
-				<a href="#" class="deep-dive-link assets">
-					<span class="title"><span class="glyphicon glyphicon-plus"></span>Assets</span>
-					<span class="description">
-						<h4>Assets</h4>
-						<span>beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati</span>
-					</span>
-				</a>
-			</div>
-		</div>
-	</div>
+	{% comment %}<!-- Home Page Campaign Area -->{% endcomment %}
+	{% include home-campaign.html %}
+
+	{% comment %}<!-- Home Page Secondary Area -->{% endcomment %}
+	{% include home-secondary.html %}
 </div>

@@ -1,8 +1,10 @@
 ---
 published: true
-layout: post
+layout: detail-page
 lang: en
+section: design
 title: "Iconography"
+nav-title: "Iconography"
 "meta-title": "Healthcare.gov's Design Style Guide Page"
 "meta-description": "Healthcare.gov's Design Style Guide Page"
 ---
