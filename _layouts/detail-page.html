@@ -1,0 +1,58 @@
+---
+layout: base
+---
+
+<div id="landing-page">
+	<div class="container">
+			<div class="col-sm-3">
+				<ul class="subnav">
+					{% comment %}<!-- Variable Assignment -->{% endcomment %}
+					{% assign subNav = false %}
+					{% assign currentCategory = "" %}
+
+					{% for post in site.posts reversed %}
+						{% comment %}<!-- Iterate Over Pages that match landing page / section -->{% endcomment %}
+						{% if post.section == page.section and post.layout != "landing-page" %}
+
+							{% comment %}<!-- Starting a new subcategory -->{% endcomment %}
+							{% if currentCategory != post.categories[0] and post.categories[0] != nil %}
+								{% if subNav == true%}
+										</li>
+									</ul>
+								{% endif %}
+								{% assign subNav = true %}
+								{% assign currentCategory = post.categories[0] %}
+								<li><span class="glyphicon glyphicon-chevron-right"></span><a href="#">{{ post.categories[0] }}</a>
+									<ul>
+										<li><a href="{{ post.url }}">{{ post.nav-title }}</a></li>
+
+							{% comment %}<!-- No subcategory -->{% endcomment %}
+							{% elsif post.categories[0] == nil %}
+								{% if subNav == true %}
+										</ul>
+									</li>
+									Some stuff
+								{% endif %}
+								<li><a href="{{ post.url }}">{{ post.nav-title }}</a></li>
+								{% assign subNav = false %}
+
+							{% comment %}<!-- Inside subcategory -->{% endcomment %}
+							{% else %}
+								<li><a href="{{ post.url }}">{{ post.nav-title }}</a></li>
+							{% endif %}
+					  	{% endif %}
+					{% endfor %}
+
+					{% comment %}<!-- Cleanup if last link was inside subcategory -->{% endcomment %}
+					{% if subNav == true%}
+							</li>
+						</ul>
+					{% endif %}
+				</ul>
+			</div>
+			<div class="col-sm-9">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</div>
