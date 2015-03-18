@@ -6979,6 +6979,13 @@ h3 {
 #detail-page .half {
   width: 48%;
 }
+#detail-page .usage .full {
+  margin: 20px 0 10px;
+}
+#detail-page .caption {
+  margin-bottom: 10px;
+  text-decoration: uppercase;
+}
 @media (min-width: 768px) {
   #detail-page {
     padding-bottom: 70px;
