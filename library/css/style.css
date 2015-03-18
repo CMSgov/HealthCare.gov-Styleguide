@@ -6709,14 +6709,6 @@ h3 {
 .banner {
   background: #006093;
 }
-.landing-page-title {
-  display: block;
-  margin: 15px 0;
-  color: #fff;
-  font-family: "Bitter", "Georgia", serif;
-  font-size: 38px;
-  font-weight: 400;
-}
 .subnav {
   margin: 0;
   padding: 0;
@@ -6748,7 +6740,7 @@ h3 {
 }
 @media (min-width: 768px) {
   .banner {
-    margin-bottom: 54px;
+    margin-bottom: 35px;
   }
 }
 * {
@@ -6833,9 +6825,21 @@ h3 {
 .header-wrap .site-header .navbar ul li a:hover {
   background: #dedede;
 }
+#landing-page {
+  padding-bottom: 90px;
+}
 #landing-page img {
   margin-top: 36px;
   width: 100%;
+}
+.landing-page-title {
+  display: block;
+  margin: 15px 0;
+  color: #fff;
+  font-family: "Bitter", "Georgia", serif;
+  font-size: 38px;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 #homepage {
   padding-bottom: 20px;
@@ -6964,6 +6968,28 @@ h3 {
     background: url("../../images/AssetsRollover.png") center;
     background-size: cover;
   }
+}
+#detail-page {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  #detail-page {
+    padding-bottom: 70px;
+  }
+}
+#detail-page .half {
+  width: 48%;
+}
+#detail-page .circle {
+  margin: 0 20px 20px 0;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+#detail-page .description {
+  margin-bottom: 20px;
 }
 .footer-wrap {
   background: #dedede;
