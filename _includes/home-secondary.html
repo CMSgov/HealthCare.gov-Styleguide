@@ -15,7 +15,7 @@
 		</div>
 		{% for box in t.[page.lang].home-secondary.boxes %}
 			<div class="col-sm-4">
-				<a href="{{{ site.baseurl }}{{ box.location }}" class="deep-dive-link {{ box.css-class }}">
+				<a href="{{ site.baseurl }}{{ box.location }}" class="deep-dive-link {{ box.css-class }}">
 					<span class="title"><span class="glyphicon glyphicon-plus"></span>{{ box.title }}</span>
 					<span class="description">
 						<h4>{{ box.subtitle }}</h4>
