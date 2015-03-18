@@ -30,8 +30,8 @@ en:
       title: "Breakdown"
       text: '[Visual styles](/# "styles") lipsum dollir sit amet inventore veritatis laudantium et quasi [assets](/# "assets") beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati.'
     boxes:
-      - { css-class: "design", title: "Design", subtitle: "Design", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
-      - { css-class: "assets", title: "Assets", subtitle: "Assets", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
+      - { css-class: "design", title: "Design", location: "/design", subtitle: "Design", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
+      - { css-class: "assets", title: "Assets", location: "/assets", subtitle: "Assets", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
 
 es:
   header:
@@ -63,8 +63,8 @@ es:
       title: "Breakdown"
       text: '[Visual styles](/# "styles") lipsum dollir sit amet inventore veritatis laudantium et quasi [assets](/# "assets") beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati.'
     boxes:
-      - { css-class: "design", title: "Design", subtitle: "Design", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
-      - { css-class: "assets", title: "Assets", subtitle: "Assets", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
+      - { css-class: "design", title: "Design", location: "/design", subtitle: "Design", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
+      - { css-class: "assets", title: "Assets", location: "/assets", subtitle: "Assets", description: "beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati" }
 
 tag: translations
 ---
