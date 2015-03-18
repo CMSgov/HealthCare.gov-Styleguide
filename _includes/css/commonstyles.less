@@ -1,13 +1,39 @@
-body {
+@mainWidth:1162px;
+
+* {
     color:#333;
     font-family:"Open Sans",sans-serif;
+    margin:0;
+	padding:0;
 }
 
-p a {border-bottom:1px solid transparent;}
-p a:hover {text-decoration:none; border-bottom:1px solid #0c648c;}
+.clearfix:after { 
+   content: " "; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+ol, ul{
+	padding: 0 0 0 20px;
+}
+
+p{
+	line-height: 24px;
+	margin: 0 0 20px 0;
+
+	a{
+		border-bottom:1px solid transparent;
+
+		&:hover{
+			text-decoration:none;
+			border-bottom:1px solid #0c648c;
+		}
+	}
+}
 
 h1 {
-
 	color:#333;
 	font-family:"Bitter","Georgia",serif;
 	font-size:34px;
@@ -17,7 +43,6 @@ h1 {
 }
 
 h2 {
-
 	color:#333;
 	font-family:"Bitter","Georgia",serif;
 	font-size:22px;
@@ -25,7 +50,6 @@ h2 {
 }
 
 h3 {
-
 	color:#333;
 	font-family:"Open Sans",sans-serif;
 	font-size:16px;
@@ -39,33 +63,33 @@ h3 {
 	margin:0;
 	padding:0;
 	list-style-type:none;
-}
 
-.subnav a {
+	a{
+		display:inline-block;
+		margin:10px;
+		font-weight:bold;
+	}
 
-	display:inline-block;
-	margin:10px;
-	font-weight:bold;
-}
+	.active{
+		a{
+			color:#333;
+		}
+	}
 
-.subnav .active a { color:#333;}
+	.glyphicon{
+		color: #999;
+		display:inline-block;
+		margin-left:-14px;
+	}
 
-.subnav .glyphicon {
-
-	color: #999;
-	display:inline-block;
-	margin-left:-14px;
-}
-
-.subnav ul {
-
-	margin:0;
-	padding:0 0 0 16px;
-	list-style-type:none;
+	ul{
+		margin:0;
+		padding:0 0 0 16px;
+		list-style-type:none;
+	}
 }
 
 .hr {
-
 	margin:36px 0 28px;
 	background-image:url("../../images/hr-pattern.png");
 	width:100%;
