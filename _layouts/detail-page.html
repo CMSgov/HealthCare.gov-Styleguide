@@ -26,7 +26,7 @@ layout: base
 								{% assign currentCategory = post.categories[0] %}
 								<li><span class="glyphicon glyphicon-chevron-right"></span><a href="#">{{ post.categories[0] }}</a>
 									<ul>
-										<li><a href="{{ post.url }}">{{ post.nav-title }}</a></li>
+										<li><a href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
 
 							{% comment %}<!-- No subcategory -->{% endcomment %}
 							{% elsif post.categories[0] == nil %}
@@ -35,12 +35,12 @@ layout: base
 									</li>
 									Some stuff
 								{% endif %}
-								<li><a href="{{ post.url }}">{{ post.nav-title }}</a></li>
+								<li><a href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
 								{% assign subNav = false %}
 
 							{% comment %}<!-- Inside subcategory -->{% endcomment %}
 							{% else %}
-								<li><a href="{{ post.url }}">{{ post.nav-title }}</a></li>
+								<li><a href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
 							{% endif %}
 					  	{% endif %}
 					{% endfor %}
@@ -58,3 +58,4 @@ layout: base
 		</div>
 	</div>
 </div>
+
