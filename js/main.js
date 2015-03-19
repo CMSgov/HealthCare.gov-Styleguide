@@ -3,7 +3,8 @@
 })();
 
 $(document).ready(function() {
-	var clip = new ZeroClipboard($(".copy-button"));
+  // Zero Clipboard
+  var clip = new ZeroClipboard($(".copy-button"));
 
   	clip.on("ready", function() {
     	//console.log("Flash movie loaded and ready.");
@@ -17,5 +18,18 @@ $(document).ready(function() {
     	$(".demo-area").hide();
     	console.og('error[name="' + event.name + '"]: ' + event.message);
     	ZeroClipboard.destroy();
-	});
+  });
+
+  // Popover Initialization
+  $('body').popover({
+        selector: 'a[data-toggle=popover]',
+        container: 'body'
+    }).tooltip({
+        selector: "a[data-toggle=tooltip]",
+        container: 'body'
+  });
+
+  $('a.popover').click(function(e){
+    e.preventDefault();
+  });
 });
