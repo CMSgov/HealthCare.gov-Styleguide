@@ -12,7 +12,9 @@ categories: modules
 
 # Secondary CTA
 
+<div class="intro">
 There are two variations of the secondary CTA. The Individuals & Families and Small Businesses are slight variations of one another. This module is “dynamic” in the sense that it can be turned “off” or “on” by the content team when there is no messaging to display to the user. The container height should be fixed at 100px. Character limitations exist to prevent copy from wrapping in the English version of the site. Glyphicons are used for the icons and the green CTA uses the standard green button treatment.
+</div>
 
 <div class="hr"></div>
 
