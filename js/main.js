@@ -22,24 +22,35 @@ $(document).ready(function() {
 
   // Popover Initialization
   $('body').popover({
-        selector: 'a[data-toggle=popover]',
-        container: 'body'
-    }).tooltip({
-        selector: "a[data-toggle=tooltip]",
-        container: 'body'
+    selector: 'a[data-toggle=popover]',
+    container: 'body'
+  }).tooltip({
+    selector: "a[data-toggle=tooltip]",
+    container: 'body'
   });
 
+  // Bootstrap based select component modifcation
   $('.form-control').selectpicker({
     style: 'btn-info',
     size: 4
   });
 
+  // Go to Top button
   $('#back-to-top a').click(function(){
     window.scrollTo(0, 0);
   });
 
+  // Toggle submenu in interior navigation
   $('.toggle-interior-nav').click(function(){
     $(this).toggleClass('closed');
     $(this).siblings('ul').toggle();
+  });
+
+  // Sticky left navigation
+  $('.subnav').affix({
+    offset: {
+      top: $('.subnav').offset().top,
+      bottom: ($('.site-footer').outerHeight(true) + $('.sub-footer').outerHeight(true)) + 40
+    }
   });
 });
