@@ -6770,6 +6770,34 @@ h3 {
   width: 100%;
   height: 8px;
 }
+.btn {
+  color: #277dba;
+  background: #eee;
+  padding: 7px 12px;
+  margin: 0 5px 0 0;
+  font-size: 14px;
+  border-radius: 0;
+  font-weight: 600;
+}
+.btn.btn-green,
+.btn.active {
+  color: #fff;
+  background: #11890e;
+}
+.btn.btn-sm {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+.btn.btn-md {
+  padding: 10px 16px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.btn.btn-lg {
+  padding: 5px 18px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
 @media (min-width: 768px) {
   .banner {
     margin-bottom: 35px;
@@ -7037,6 +7065,9 @@ h3 {
 .code-wrapper pre {
   padding: 20px 14px;
   background: #f0f9ff;
+}
+.code-wrapper div.line {
+  margin: 0 0 15px 0;
 }
 .code-wrapper div.preview {
   border: #ccc 1px solid;

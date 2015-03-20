@@ -28,8 +28,4 @@ $(document).ready(function() {
         selector: "a[data-toggle=tooltip]",
         container: 'body'
   });
-
-  $('a.popover').click(function(e){
-    e.preventDefault();
-  });
 });
