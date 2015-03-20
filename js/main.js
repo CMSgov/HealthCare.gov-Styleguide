@@ -29,7 +29,12 @@ $(document).ready(function() {
         container: 'body'
   });
 
-  $('a.popover').click(function(e){
-    e.preventDefault();
+  $('.form-control').selectpicker({
+    style: 'btn-info',
+    size: 4
+  });
+
+  $('#back-to-top a').click(function(){
+    window.scrollTo(0, 0);
   });
 });
