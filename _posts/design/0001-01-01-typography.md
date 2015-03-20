@@ -11,7 +11,9 @@ nav-title: "Typography"
 
 # Typography
 
+<div class="intro">
 Designs have been stripped of all the unnecessary bells and whistles to place extra emphasis on the content. This magnifies the importance of well thought-out typography. With fewer distractions for the user, the text must maintain attention and lead the user down the page.
+</div>
 
 <div class="hr"></div>
 

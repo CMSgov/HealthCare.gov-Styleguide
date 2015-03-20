@@ -11,7 +11,9 @@ nav-title: "Iconography"
 
 # Iconography
 
+<div class="intro">
 The Iconography used on HealthCare.gov is meant to provide a simple, easy-to-distinguish visual indicator of key actions or tasks and to provide visual interest or emphasis.
+</div>
 
 <div class="hr"></div>
 

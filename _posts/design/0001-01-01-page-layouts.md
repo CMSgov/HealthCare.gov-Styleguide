@@ -11,7 +11,9 @@ nav-title: "Page Layouts"
 
 # Page Layouts
 
+<div class="intro">
 A series of new templates have been introduced as a part of an updated Header/Footer. There are two home pages (Individuals & Families and Small Businesses), 4 interior landing pages (Get Coverage, Keep or Change Your Plan, For Employers, For Employees) and 2 Get Answers templates.
+</div>
 
 <div class="hr"></div>
 
