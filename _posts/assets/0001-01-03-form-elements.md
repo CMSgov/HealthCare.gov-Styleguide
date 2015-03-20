@@ -81,13 +81,13 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 <div class="code-wrapper">
 <div class="preview">
 	<fieldset>
-		<legend>Fieldset</legend>
+		<legend>Fieldset with Instructions</legend>
 		<p class="instructions">Instructions</p>
 	</fieldset>
 </div>
 <pre>
 <code id="fieldset-instructions-code">&ltfieldset&gt
-	&ltlegend&gtFieldset&lt/legend&gt
+	&ltlegend&gtFieldset with Instructions&lt/legend&gt
 	&ltp class="instructions"&gtInstructions&lt/p&gt
 &lt/fieldset&gt
 </code>
