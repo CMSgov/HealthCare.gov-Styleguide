@@ -37,4 +37,9 @@ $(document).ready(function() {
   $('#back-to-top a').click(function(){
     window.scrollTo(0, 0);
   });
+
+  $('.toggle-interior-nav').click(function(){
+    $(this).toggleClass('closed');
+    $(this).siblings('ul').toggle();
+  });
 });
