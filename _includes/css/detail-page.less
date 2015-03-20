@@ -39,6 +39,7 @@
 
 .code-wrapper{
 	position:relative;
+	margin:0 0 30px 0;
 
 	.copy-button{
 		display:block;
@@ -70,31 +71,76 @@
 	div.line{
 		margin: 0 0 15px 0;
 	}
+}
 
-	div.preview{
-		border: #ccc 1px solid;
-		padding:20px 14px;
-		background:#fff;
+.preview{
+	border: #ccc 1px solid;
+	padding:20px 14px;
+	background:#fff;
+	margin:0;
+
+	&.has-background{
+		padding: 0;
+
+		>div{
+			padding:20px 14px;
+		}
+	}
+
+	h1, h2, h3, h4{
+		margin:0 0 20px 0;
+
+		&.rule{
+			padding-bottom: 15px;
+			border-bottom:#ccc 1px solid;
+			display:inline-block;
+		}
+	}
+
+	h4{
+		font-size:14px;
+	}
+
+	ul{
+		padding: 0;
+		
+		li{
+			list-style:none;
+		}
+	}
+
+	.no-margin{
 		margin:0;
+	}
+}
 
-		h1, h2, h3, h4{
-			margin:0 0 20px 0;
+/* Bootstrap specific overrides */
+.code-wrapper{
+	.container{
+		width:100%;
+
+		.top-content{
+			width: 100%;
+		}
+	}
+
+	.alert{
+		width:100%;
+		margin: 0;
+		text-align:center;
+		border-radius:0;
+		padding:8px 15px;
+
+		&.blue-bg{
+			background: #065073;
 		}
 
-		h4{
-			font-size:14px;
+		&.alert-danger{
+			background: #e51626;
 		}
 
-		ul{
-			padding: 0;
-			
-			li{
-				list-style:none;
-			}
-		}
-
-		.no-margin{
-			margin:0;
+		p{
+			color:#fff;
 		}
 	}
 }

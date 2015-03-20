@@ -28,4 +28,13 @@ $(document).ready(function() {
         selector: "a[data-toggle=tooltip]",
         container: 'body'
   });
+
+  $('.form-control').selectpicker({
+    style: 'btn-info',
+    size: 4
+  });
+
+  $('#back-to-top a').click(function(){
+    window.scrollTo(0, 0);
+  });
 });

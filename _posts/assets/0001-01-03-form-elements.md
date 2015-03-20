@@ -23,7 +23,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 <code id="form-code">&ltdiv id="table-form-container"&gt&lt/div&gt
 </code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="form-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="form-code">Copy</a>
 </div>
 
 <div class="code-wrapper">
@@ -52,7 +52,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 }),
 </code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="view-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="view-code">Copy</a>
 </div>
 
 * * *
@@ -71,7 +71,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 &lt/fieldset&gt
 </code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-code">Copy</a>
 </div>
 
 * * *
@@ -92,7 +92,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 &lt/fieldset&gt
 </code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-instructions-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-instructions-code">Copy</a>
 </div>
 
 * * *
@@ -100,8 +100,8 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 ## Blue Background with subtitle
 
 <div class="code-wrapper">
-<div class="preview">
-	<div class="blu-bg">
+<div class="preview has-background">
+	<div class="blue-bg">
 		<div class="lite-card-inner">
 			<h2 id="blue-bg">Blue Background</h2>
 			<div class="subtitle">Blue background subtitle.</div>
@@ -109,7 +109,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 	</div>
 </div>
 <pre>
-<code id="blue-code">&ltdiv class="blu-bg"&gt
+<code id="blue-code">&ltdiv class="blue-bg"&gt
 	&ltdiv class="lite-card-inner"&gt
 		&lth2 id="blue-bg"&gtBlue Background&lt/h2&gt
 		&ltdiv class="subtitle"&gtBlue background subtitle.&lt/div&gt
@@ -117,7 +117,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 &lt/div&gt
 </code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="blue-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-code">Copy</a>
 </div>
 
 * * *
@@ -125,16 +125,16 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 ## Screener Statements Blue Background
 
 <div class="code-wrapper">
-<div class="preview">
-	<div class="question-section">
+<div class="preview has-background">
+	<div class="question-section blue-bg clearfix">
 		<div class="filter-question form-group">
 			<div class="visible-radio-label sm hidden-md hidden-lg">When we have many screener statements, stack them as filter questions.</div>
 			<div class="toggle-buttons" data-toggle="buttons">
-				<a href="javascript:;" class="btn btn-primaryy radio-label active">
+				<a href="javascript:;" class="btn btn-primary radio-label active">
 					<input type="radio" name="filter-question-name" value="true" aria-label="yes" checked="checked" />
 					yes
 				</a>
-				<a href="javascript:;" class="btn btn-primaryy radio-label active">
+				<a href="javascript:;" class="btn btn-primary radio-label">
 					<input type="radio" name="filter-question-name" value="false" aria-label="no" checked="checked" />
 					no
 				</a>
@@ -145,15 +145,15 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 	</div>
 </div>
 <pre>
-<code id="blue-screener-code">&ltdiv class="question-section"&gt
+<code id="blue-screener-code">&ltdiv class="question-section blue-bg clearfix"&gt
 	&ltdiv class="filter-question form-group"&gt
 		&ltdiv class="visible-radio-label sm hidden-md hidden-lg"&gtWhen we have many screener statements, stack them as filter questions.&lt/div&gt
 		&ltdiv class="toggle-buttons" data-toggle="buttons"&gt
-			&lta href="javascript:;" class="btn btn-primaryy radio-label active"&gt
+			&lta href="javascript:;" class="btn btn-primary radio-label active"&gt
 				&ltinput type="radio" name="filter-question-name" value="true" aria-label="yes" checked="checked" /&gt
 				yes
 			&lt/a&gt
-			&lta href="javascript:;" class="btn btn-primaryy radio-label active"&gt
+			&lta href="javascript:;" class="btn btn-primary radio-label"&gt
 				&ltinput type="radio" name="filter-question-name" value="false" aria-label="no" checked="checked" /&gt
 				no
 			&lt/a&gt
@@ -163,7 +163,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 	&lt/div&gt
 &lt/div&gt</code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="blue-screener-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-screener-code">Copy</a>
 </div>
 
 * * *
@@ -171,8 +171,8 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 ## Multiple Choice Questions Blue Background
 
 <div class="code-wrapper">
-<div class="preview">
-	<div class="question">
+<div class="preview has-background">
+	<div class="question blue-bg">
 		<div class="question-label">When we have a multiple choice question here, display the choices vertically.</div>
 		<div class="btn-group btn-group-vertical" data-toggle="buttons">
 			<label class="btn radio-label">
@@ -191,7 +191,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 	</div>
 </div>
 <pre>
-<code id="blue-multiple-code">&ltdiv class="question"&gt
+<code id="blue-multiple-code">&ltdiv class="question blue-bg"&gt
 	&ltdiv class="question-label"&gtWhen we have a multiple choice question here, display the choices vertically.&lt/div&gt
 	&ltdiv class="btn-group btn-group-vertical" data-toggle="buttons"&gt
 		&ltlabel class="btn radio-label"&gt
@@ -209,7 +209,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 	&lt/div&gt
 &lt/div&gt</code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="blue-multiple-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-multiple-code">Copy</a>
 </div>
 
 * * *
@@ -217,41 +217,39 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 ## Dropdown Questions Blue Background
 
 <div class="code-wrapper">
-<div class="preview">
-	<div class="question">
+<div class="preview has-background">
+	<div class="question blue-bg">
 		<div class="question-label">A blue background screener select question.</div>
 		<div class="row">
-			<div class="col-sm-3">
+			<div class="col-sm-4">
 				<div class="form-select">
 					<select class="form-control" name="dropdown-name" aria-label="Dropdown label" data-type="">
 						<option value="option-value-1">Option 1</option>
 						<option value="option-value-2">Option 2</option>
 						<option value="option-value-3">Option 3</option>
 					</select>
-					<span class="caret"></span>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <pre>
-<code id="blue-dropdown-code">&ltdiv class="question"&gt
+<code id="blue-dropdown-code">&ltdiv class="question blue-bg"&gt
 	&ltdiv class="question-label"&gtA blue background screener select question.&lt/div&gt
 	&ltdiv class="row"&gt
-		&ltdiv class="col-sm-3"&gt
+		&ltdiv class="col-sm-4"&gt
 			&ltdiv class="form-select"&gt
 				&ltselect class="form-control" name="dropdown-name" aria-label="Dropdown label" data-type=""&gt
 					&ltoption value="option-value-1"&gtOption 1&lt/option&gt
 					&ltoption value="option-value-2"&gtOption 2&lt/option&gt
 					&ltoption value="option-value-3"&gtOption 3&lt/option&gt
 				&lt/select&gt
-				&ltspan class="caret"&gt&lt/span&gt
 			&lt/div&gt
 		&lt/div&gt
 	&lt/div&gt
 &lt/div&gt</code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="blue-dropdown-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-dropdown-code">Copy</a>
 </div>
 
 * * *
@@ -260,26 +258,68 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 
 <div class="code-wrapper">
 <div class="preview">
-	<div class="form-select">
-		<select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
-			<option value="option-value-1">Option 1</option>
-			<option value="option-value-2">Option 2</option>
-			<option value="option-value-3">Option 3</option>
-		</select>
-		<span class="caret"></span>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="form-select">
+				<span>Dropdown</span>
+				<select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
+					<option value="option-value-1">Option 1</option>
+					<option value="option-value-2">Option 2</option>
+					<option value="option-value-3">Option 3</option>
+				</select>
+			</div>
+		</div>
 	</div>
 </div>
 <pre>
 <code id="white-dropdown-code">&ltdiv class="form-select"&gt
-	&ltselect class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type=""&gt
-		&ltoption value="option-value-1"&gtOption 1&lt/option&gt
-		&ltoption value="option-value-2"&gtOption 2&lt/option&gt
-		&ltoption value="option-value-3"&gtOption 3&lt/option&gt
-	&lt/select&gt
-	&ltspan class="caret"&gt&lt/span&gt
+	&ltdiv class="row"&gt
+		&ltdiv class="col-sm-4"&gt
+			&ltspan&gtDropdown&lt/span&gt
+			&ltselect class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type=""&gt
+				&ltoption value="option-value-1"&gtOption 1&lt/option&gt
+				&ltoption value="option-value-2"&gtOption 2&lt/option&gt
+				&ltoption value="option-value-3"&gtOption 3&lt/option&gt
+			&lt/select&gt
+		&lt/div&gt
+	&lt/div&gt
 &lt/div&gt</code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code">Copy</a>
+</div>
+
+<div class="code-wrapper">
+<div class="preview">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="form-select">
+				<span>Dropdown with default text</span>
+				<select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
+					<option value="" selected="selected">Select Option</option>
+					<option value="option-value-1">Option 1</option>
+					<option value="option-value-2">Option 2</option>
+					<option value="option-value-3">Option 3</option>
+				</select>
+			</div>
+		</div>
+	</div>
+</div>
+<pre>
+<code id="white-dropdown-code">&ltdiv class="form-select"&gt
+	&ltdiv class="row"&gt
+		&ltdiv class="col-sm-4"&gt
+			&ltspan&gtDropdown with default text&lt/span&gt
+			&ltselect class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type=""&gt
+				&ltoption value="" selected="selected"&gtSelect Option&lt/option&gt
+				&ltoption value="option-value-1"&gtOption 1&lt/option&gt
+				&ltoption value="option-value-2"&gtOption 2&lt/option&gt
+				&ltoption value="option-value-3"&gtOption 3&lt/option&gt
+			&lt/select&gt
+		&lt/div&gt
+	&lt/div&gt
+&lt/div&gt</code>
+</pre>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code">Copy</a>
 </div>
 
 * * *
@@ -299,7 +339,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 	&ltinput class="form-control" type="text" value="Yes!"&gt
 &lt/div&gt</code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="questions-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="questions-code">Copy</a>
 </div>
 
 * * *
@@ -319,5 +359,5 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 	&ltlabel class="btn radio-label"&gtDefault radio select&lt/label&gt
 &lt/div&gt</code>
 </pre>
-<a href="" class="copy-button" title="Click to copy me." data-clipboard-target="radio-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="radio-code">Copy</a>
 </div>
