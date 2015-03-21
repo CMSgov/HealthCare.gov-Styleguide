@@ -40,6 +40,7 @@ $(document).ready(function() {
     window.scrollTo(0, 0);
   });
 
+
   // Toggle submenu in interior navigation
   $('.toggle-interior-nav').click(function(){
     $(this).toggleClass('closed');
