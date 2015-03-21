@@ -2,7 +2,6 @@
 published: true
 en:
   header:
-    title: "Styleguide"
     nav:
       - { link: 'Design', location: '/design', title: 'design' }  
       - { link: 'Assets', location: '/assets', title: 'assets' }      
@@ -34,7 +33,6 @@ en:
 
 es:
   header:
-    title:  "Styleguide"
     nav:
       - { link: 'Design', location: '/design', title: 'design' }
       - { link: 'Assets', location: '/assets', title: 'assets' }

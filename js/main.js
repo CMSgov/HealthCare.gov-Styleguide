@@ -37,4 +37,12 @@ $(document).ready(function() {
   $('#back-to-top a').click(function(){
     window.scrollTo(0, 0);
   });
+
+  // Sticky header
+  $('.header-wrap').affix({
+    offset: {
+      top: 0,
+      bottom: ($('.sub-footer').outerHeight(true)) + 40
+    }
+  });
 });
