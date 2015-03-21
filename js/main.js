@@ -49,7 +49,7 @@ $(document).ready(function() {
   // Sticky left navigation
   $('.subnav').affix({
     offset: {
-      top: $('.subnav').offset().top,
+      top: $('.subnav').offset().top - 84,
       bottom: ($('.site-footer').outerHeight(true) + $('.sub-footer').outerHeight(true)) + 40
     }
   });
