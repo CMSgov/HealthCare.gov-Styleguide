@@ -2,13 +2,13 @@
   <header class="site-header clearfix" role="banner">
 
   	{% comment %}<!-- Site Title and Logo -->{% endcomment %}
-  	<div class="logo clearfix">
-	  	<img src="{{site.baseurl}}/images/OfficialLogo.png" />
-		<span class="title">{{ t.[page.lang].header.title }}</span>
+  	<div class="logo">
+	  	<img src="{{site.baseurl}}/images/styleguide_logo.png" />
 	</div>
 
   	{% comment %}<!-- Navigation -->{% endcomment %}
 	<nav class="navbar navbar-default">
+	  	<a class="github-link" href="https://github.com/CMSgov/cmsgov.github.io"><img src="{{site.baseurl}}/images/RepoIcon.png" /></a>
 	  	<ul class="clearfix">
 		  	{% for navItem in t.[page.lang].header.nav %}
 		  		<li><a href="{{site.baseurl}}{{ navItem.location }}">{{ navItem.link }}</a></lI>

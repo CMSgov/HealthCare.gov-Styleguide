@@ -1,29 +1,18 @@
 .header-wrap{
-	border-top: #046791 5px solid;
+	border-top: #1295e8 3px solid;
+	box-shadow: 0 2px 2px #e6e6e6;
 
 	.site-header{
 		width:@mainWidth;
+		height:60px;
 		margin:0 auto;
-		padding: 15px 0;
+
 
 		.logo{
 			float:left;
 
 			img{
-				float:left;
-				width:264px;
-				height:33px;
-			    margin:10px 20px 0 0;
-			}
-
-			.title{
-				float:left;
-				display:block;
-				font-size:32px;
-				line-height:32px;
-				font-weight:bold;
-				padding: 10px 0 10px 20px;
-				border-left:#ccc 1px solid;
+			    margin:14px 0 13px 60px;
 			}
 		}
 
@@ -36,8 +25,20 @@
 			min-height:0px;
 			margin:0;
 
+			.github-link{
+				display:block;
+				float:right;
+				margin:17px 0 0 0;
+
+				img{
+					width:17px;
+					height:14px;
+				}
+			}
+
 			ul{
-				margin:5px 0 0 0;
+				margin:9px 25px 9px 0;
+				width:354px;
 
 				li{
 					float:left;
@@ -51,12 +52,17 @@
 					a{
 						display:block;
 						text-decoration:none;
-						font-weight:bold;
+						font-weight:700;
 						padding: 10px 15px;
-						font-size:16px;
+						font-size:15px;
 
 						&:hover{
-							background:#dedede;
+							background-color:#eee;
+							-webkit-transition: background-color 100ms linear;
+						    -moz-transition: background-color 100ms linear;
+						    -o-transition: background-color 100ms linear;
+						    -ms-transition: background-color 100ms linear;
+						    transition: background-color 100ms linear;
 						}
 					}
 				}
