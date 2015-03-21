@@ -64,24 +64,16 @@ h3 {
 	margin:0;
 	padding:0;
 	list-style-type:none;
-}
 
-.subnav a {
-
-	display:inline-block;
-	margin:10px;
-	font-weight:bold;
-	text-transform:capitalize;
-}
-
-.subnav .active a { color:#333;}
-
-.subnav .glyphicon {
 	a{
 		display:inline-block;
 		margin:10px;
 		font-weight:bold;
 		text-transform:capitalize;
+
+		&.current{
+			color:#333;
+		}
 	}
 
 	.active{
@@ -90,16 +82,41 @@ h3 {
 		}
 	}
 
-	.glyphicon{
-		color: #999;
-		display:inline-block;
-		margin-left:-14px;
+	li ul li{
+		list-style-type:none;
 	}
 
-	ul{
-		margin:0;
-		padding:0 0 0 16px;
-		list-style-type:none;
+	.glyphicon{
+		a{
+			display:inline-block;
+			margin:10px;
+			font-weight:bold;
+			text-transform:capitalize;
+		}
+
+		.active a{
+			color:#333;
+		}
+
+		.glyphicon{
+			color: #999;
+			display:inline-block;
+			margin-left:-14px;
+		}
+
+		ul{
+			margin:0;
+			padding:0 0 0 16px;
+			list-style-type:none;
+		}
+	}
+
+	&.affix{
+		top:80px;
+	}
+
+	&.affix-bottom{
+		position:absolute;
 	}
 }
 
