@@ -18,6 +18,7 @@ layout: base
 					{% comment %}<!-- Variable Assignment -->{% endcomment %}
 					{% assign subNav = false %}
 					{% assign currentCategory = "" %}
+					{% assign currentURL = page.url %}	
 
 					{% for post in site.posts reversed %}
 						{% comment %}<!-- Iterate Over Pages that match landing page / section -->{% endcomment %}
@@ -33,7 +34,7 @@ layout: base
 								{% assign currentCategory = post.categories[0] %}
 								<li><span class="glyphicon glyphicon-chevron-right"></span><a class="toggle-interior-nav" href="javascript:;">{{ post.categories[0] }}</a>
 									<ul>
-										<li><a href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
+										<li><a class="{% if currentURL == post.url %}current{% endif %}" href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
 
 							{% comment %}<!-- No subcategory -->{% endcomment %}
 							{% elsif post.categories[0] == nil %}
@@ -41,12 +42,12 @@ layout: base
 										</ul>
 									</li>
 								{% endif %}
-								<li><a href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
+								<li><a class="{% if currentURL == post.url %}current{% endif %}" href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
 								{% assign subNav = false %}
 
 							{% comment %}<!-- Inside subcategory -->{% endcomment %}
 							{% else %}
-								<li><a href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
+								<li><a class="{% if currentURL == post.url %}current{% endif %}" href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
 							{% endif %}
 					  	{% endif %}
 					{% endfor %}
