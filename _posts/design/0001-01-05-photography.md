@@ -11,7 +11,9 @@ nav-title: "Photography"
 
 # Photography
 
+<div class="intro">
 Photography is used predominantly on the unauthenticated side of Healthcare.gov, the homepage and audience landing pages. Photos are used to support the message on the page, engage the user with identifiable images, and build trust.
+</div>
 
 ## Photo Style
 
