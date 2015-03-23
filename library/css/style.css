@@ -7007,11 +7007,13 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
+.main-content {
+  margin: 63px 0 0 0;
+}
 .banner {
   background: #006093;
 }
 .subnav {
-  margin: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -7182,11 +7184,6 @@ legend {
 .adjust-margin-top {
   margin-top: 28px;
 }
-@media (min-width: 768px) {
-  .banner {
-    margin-bottom: 35px;
-  }
-}
 .header-wrap {
   border-top: #1295e8 3px solid;
   box-shadow: 0 2px 2px #e6e6e6;
@@ -7254,6 +7251,12 @@ legend {
 #landing-page {
   padding-bottom: 90px;
 }
+#landing-page .container .col-sm-3 {
+  padding-top: 20px;
+}
+#landing-page .container .col-sm-9 {
+  padding-top: 35px;
+}
 #landing-page img {
   margin-top: 36px;
   width: 100%;
@@ -7268,7 +7271,6 @@ legend {
   text-transform: capitalize;
 }
 #homepage {
-  margin: 63px 0 0 0;
   padding-bottom: 20px;
 }
 #homepage h2 {
@@ -7418,6 +7420,12 @@ legend {
 }
 #detail-page {
   padding-bottom: 20px;
+}
+#detail-page .container .col-sm-3 {
+  padding-top: 20px;
+}
+#detail-page .container .col-sm-9 {
+  padding-top: 35px;
 }
 #detail-page h3 {
   font-weight: 600;
