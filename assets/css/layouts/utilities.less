@@ -1,0 +1,74 @@
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spacer-top5 {
+  margin-bottom: 5px;
+}
+
+.spacer-bottom5 {
+  margin-bottom: 5px;
+}
+
+.spacer-top10 {
+  margin-top: 10px;
+}
+
+.spacer-bottom10 {
+  margin-bottom: 10px;
+}
+
+.spacer-top20 {
+  margin-top: 20px;
+}
+
+.spacer-bottom20 {
+  margin-bottom: 20px;
+}
+
+.spacer-top25 {
+  margin-top: 25px;
+}
+
+.spacer-bottom25 {
+  margin-bottom: 25px;
+}
+
+.spacer-top40 {
+  margin-top: 40px;
+}
+
+.spacer-bottom40 {
+  margin-bottom: 40px;
+}
+
+.spacer-top60 {
+  margin-top: 60px;
+}
+
+.spacer-bottom60 {
+  margin-bottom: 60px;
+}
+
+.spacer-right10 {
+  margin-right: 10px;
+}
+
+/*
+ * In some cases we want to pull-right things on wider layouts, but have everything
+ * left-aligned in mobile to not create weird white spaces or page flows. We're
+ * only extending pull-right because by default columns are floated left.
+ * */
+.pull-right-md {
+  @media (min-width: @screen-md-min) {
+    .pull-right();
+  }
+}
+
+// everything larger than xs, pull-right
+.pull-right-sm {
+  @media (min-width: @screen-sm-min) {
+    .pull-right();
+  }
+}

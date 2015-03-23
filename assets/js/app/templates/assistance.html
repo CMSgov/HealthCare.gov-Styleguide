@@ -1,0 +1,44 @@
+<div>
+  <h2><%- content.assistanceHeading_text %><span><%- model.getFullName() %></span></h2>
+
+  <fieldset class="" data-error-style="inline">
+    <legend><%- content.existingMedicalConditionlegend_text %> <small><%- content.optionalQuestion_text %></small></legend>
+
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn radio-label" for="existingMedicalConditionYes">
+        <%- content.existingMedicalConditionYes_text %>
+        <input type="radio" name="existingMedicalCondition" id="existingMedicalConditionYes" value="false">
+      </label>
+      <label class="btn radio-label" for="existingMedicalConditionNo">
+        <%- content.existingMedicalConditionNo_text %>
+        <input type="radio" name="existingMedicalCondition" id="existingMedicalConditionNo" value="false">
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="spacer-top25" data-error-style="inline">
+    <legend><%- content.needsPhysicalAssistancelegend_text %> <small><%- content.optionalQuestion_text %></small></legend>
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn radio-label" for="needsPhysicalAssistanceYes">
+        <%- content.needsPhysicalAssistanceYes_text %>
+        <input type="radio" name="needsPhysicalAssistance" id="needsPhysicalAssistanceYes" value="false">
+      </label>
+      <label class="btn radio-label" for="needsPhysicalAssistanceNo">
+        <%- content.needsPhysicalAssistanceNo_text %>
+        <input type="radio" name="needsPhysicalAssistance" id="needsPhysicalAssistanceNo" value="false">
+      </label>
+    </div>
+  </fieldset>
+  <fieldset class="spacer-top25" data-error-style="inline">
+    <legend><%- content.wantRecentBillAssistancelegend_text %> <small><%- content.optionalQuestion_text %></small></legend>
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn radio-label" for="wantRecentBillAssistanceYes">
+        <%- content.wantRecentBillAssistanceYes_text %>
+        <input type="radio" name="wantRecentBillAssistance" id="wantRecentBillAssistanceYes" value="false">
+      </label>
+      <label class="btn radio-label" for="wantRecentBillAssistanceNo">
+        <%- content.wantRecentBillAssistanceNo_text %>
+        <input type="radio" name="wantRecentBillAssistance" id="wantRecentBillAssistanceNo" value="false">
+      </label>
+    </div>
+  </fieldset>
+</div>

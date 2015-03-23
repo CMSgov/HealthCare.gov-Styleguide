@@ -1,0 +1,34 @@
+<div class="security-questions-section spacer-top25">
+  <div class="spacer-bottom10 input-label">
+    <%- content.securityQuestionsInstructions %>
+  </div>
+  <% _.times(3, function(i) { %>
+  <div class="question-container form-group">
+    <div class="form-select">
+      <select class="form-control security-question unselected"
+          name="securityQuestions[<%- i %>]" data-index="<%- i %>">
+        <option value="__unselected__"><%- content.pickAQuestion %></option>
+        <% _.each(questions, function(question, qi) { %>
+          <option value="<%- qi %>"><%- question %></option>
+        <% }) %>
+      </select>
+      <span class="caret"></span>
+    </div>
+    <div class="answer-container">
+      <input type="text" class="form-control answer-input"
+        name="securityAnswers[<%- i %>]"
+        data-index="<%- i %>"
+        aria-label="<%- content.answer %>"
+        placeholder="<%- content.answer %>"
+        >
+    </div>
+    <div class="glyphicon icon-ok hidden" aria-hidden="true">
+      <span class="glyphicon-ok" aria-hidden="true"></span>
+    </div>
+    <div class="glyphicon icon-error hidden" aria-hidden="true">
+      <span class="glyphicon-remove" aria-hidden="true"></span>
+    </div>
+  </div>
+  <% }) %>
+</div>
+

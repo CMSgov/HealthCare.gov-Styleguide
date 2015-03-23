@@ -1,0 +1,246 @@
+@import url("forms/question.less");
+
+.checkbox-label {
+  cursor: pointer;
+  .user-select(none);
+}
+
+// spacing for laying out .radio-label buttons
+.toggle-buttons {
+  float: left;
+  margin-right: 15px;
+
+  .radio-label {
+    margin-right: 5px;
+  }
+
+  a,
+  label {
+    float: left;
+  }
+}
+
+.visible-radio-label {
+
+  // when the screen is small (tablet or phone) we show the yes/no buttons
+  // underneath the .filter-question statements, so we want to add space
+  // between the yes/no buttons and the next .filter-question so that there
+  // is no amibguity which statement this toggle refers to.
+  &.sm {
+    margin-bottom: 5px;
+  }
+}
+
+.form-control {
+  border-color: @light-gray;
+  border-radius: 0;
+  color: @black;
+  .box-shadow(none);
+
+  &.disabled {
+    background-color: @input-bg-disabled;
+  }
+}
+
+.has-error {
+  .form-control {
+    border-width: 1;
+    .box-shadow(none);
+  }
+}
+
+.dropdown {
+
+  button {
+    // override default text-align centering for button tags
+    text-align: left;
+  }
+
+  .dropdown-menu {
+    &.scrollable {
+      overflow-y: scroll;
+      max-height: 230px;
+    }
+  }
+}
+
+// wrapper around select dropdowns
+// TODO: new dropdown arrow, alter opacity on focus
+.form-select {
+  // Must be the positioning context for the dropdown arrow.
+  color: @black;
+  position: relative;
+
+  select {
+    cursor: pointer;
+    color: @black;
+    border: solid 1px @light-gray;
+    padding-right: 28px; // make space for the chevron
+    font-weight: normal;
+    .appearance-none;
+  }
+}
+
+// styling the pointy caret on dropdowns
+.dropdown,
+.form-select {
+  .caret {
+    position: absolute;
+    pointer-events: none;
+    top: 20px;
+    right: 12px;
+  }
+}
+
+// [yes|no] questions used in screener and application
+.filter-question.form-group,
+.filter-question {
+  margin-bottom: 20px;
+  line-height: 34px;
+  width: 100%;
+  .clearfix;
+
+  > .error-message {
+    padding-left: 4px;
+    margin-bottom: 0;
+  }
+
+  label,
+  span {
+    float: left;
+  }
+}
+
+.input-group {
+  .btn {
+    border-color: @light-gray;
+    color: @black;
+
+    &:hover {
+      background-color: darken(@light-gray, 5%);
+
+      // we keep the width but set the color to be transparent
+      // so that the text in the button doesn't move around on hover
+      border-color: transparent;
+      border-width: 1px;
+    }
+  }
+}
+
+.input-group-addon {
+  .font-md();
+
+  border: none;
+  border-radius: 0;
+  background: darken(@light-gray, 10%);
+}
+
+.input-group-btn {
+  .border-right-radius(0);
+
+  .btn {
+    .border-right-radius(0);
+  }
+
+  &.form-select {
+
+    select {
+      background: white;
+      width: auto;
+    }
+  }
+}
+
+.checkbox {
+  @checkbox-spacing: 30px;
+  padding-left: @checkbox-spacing;
+
+  &.small,
+  &.medium {
+    // get checkbox row heights to match input in order to flow correctly in col-sm
+    min-height: 46px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    padding-left: 47px;
+
+    label {
+      .font-sm();
+    }
+  }
+
+  // match input height when inline
+  &.medium {
+    min-height: 65px;
+    margin-top: 22px;
+    padding-top: 9px;
+  }
+
+  input[type="checkbox"] {
+    margin-left: -@checkbox-spacing;
+  }
+}
+
+.has-error {
+  .btn {
+    border-left-width: 0;
+    border-color: @state-danger-text;
+  }
+}
+
+.ie {
+
+  .form-select {
+
+    select {
+      padding-right: 5px;
+    }
+  }
+}
+
+.placeholder(@color: @input-color-placeholder) {
+  &:extend(.placeholder);
+
+  // Override bootstrap's placeholder mixin so that we can also apply the
+  // color styles to the adjacent 'placeholder' element that's generated
+  // by the polyfill library (used for IE).
+  & + .placeholder {
+    color: @color;
+  }
+}
+
+// "Unstyles" a native input (e.g. <select>) for webkit/firefox.
+// Is a noop for IE.
+.appearance-none {
+  -webkit-appearance: none;
+
+  // http://stackoverflow.com/questions/6787667/what-is-the-correct-moz-appearance-value-to-hide-dropdown-arrow-of-a-select
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+
+  // Removing dropdown arrow in IE 10+
+  // http://stackoverflow.com/questions/16603979/select-removing-dropdown-arrow
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+/* vertically align firefox dropdowns */
+@-moz-document url-prefix() {
+  .form-inline,
+  .form-select {
+
+    select {
+      padding-top: 8px;
+      padding-left: 8px;
+    }
+
+    // Hide the caret in Firefox, FF 30+ no longer supports -moz-appearance
+    // TODO(sha): when this changes, we can remove this rule
+    // http://www.currelis.com/firefox-30-0-select-arrow-css-longer-works.html
+    .caret {
+      display: none;
+    }
+  }
+}

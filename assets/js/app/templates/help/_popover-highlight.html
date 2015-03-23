@@ -1,0 +1,47 @@
+<%
+  /**
+   *
+   * Sometimes we want to just highlight parts of a sentence as the popover.
+   * Oftentimes this is because we want to have help content in multiple parts
+   * in a sentence, so we are expecting an array of highlights to be passed in,
+   * with similar options to _popover-label.
+   *
+   **/
+  var fullHTML = label,
+    highlightTemplate = "<a href=\"javascript:;\" class=\"help-popover glossary-term\" {0}>{1}</a>",
+    footerTemplate = "<div class=&quot;popover-footer&quot;><a href=&quot;{0}&quot; target=&quot;hcgov_help&quot;>{1}</a></div>";
+
+  for (var i = 0; i < highlights.length; i++) {
+    var highlight = highlights[i],
+      content = highlight.content;
+
+    if (highlight.externalLink && highlight.externalText) {
+      content += Strings.format(footerTemplate, highlight.externalLink, highlight.externalText);
+    }
+
+    if (highlight.escapePopover) {
+      var dataContent = 'data-content="' + _.escape(content) + '"';
+    } else {
+      var dataContent = 'data-content="' + content + '" data-html="true"';
+    }
+
+    /**
+     *
+     * If we don't have a defined highlight, just append the help content
+     * as a question mark glyph at the end of the sentence.
+     *
+     * We currently only have one instance of this intentionally being there.
+     * If we do eventually want more instances of this behavior we can add some
+     * logic here but for now it's just sort of handling it quietly.
+     *
+     **/
+    if (_.isUndefined(highlight.highlight)) {
+      var appendTemplate = " <a href=\"javascript:;\" class=\"help-popover glyphicon glyphicon-question-sign\" aria-hidden=\"true\" {0}></a>";
+      fullHTML = fullHTML + Strings.format(appendTemplate, dataContent);
+    } else {
+      var popoverHTML = Strings.format(highlightTemplate, dataContent, highlight.highlight);
+      fullHTML = fullHTML.replace('{' + i + '}', popoverHTML);
+    }
+  }
+%>
+<%= fullHTML %>

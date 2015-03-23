@@ -1,0 +1,44 @@
+<div class="existing-application-check-container">
+
+  <div class="waiting-for-application-index-container hidden">
+    <img id="loading-check-existing" src="/marketplace/b/app2/img/loading.gif" alt="loading" />
+  </div>
+
+  <div class="submittable-application-container hidden" aria-atomic="true" aria-live="polite">
+    <div class="button-wrapper">
+      <div class="msg-success spacer-bottom10">
+        <%- content.submittableApplicationMessage %>
+      </div>
+
+      <a class="btn btn-lg btn-success btn-submit btn-continue-existing" href="">
+        <%- content.continueYourApplication %>
+      </a>
+    </div>
+  </div>
+
+  <div class="non-submittable-application-container hidden" aria-atomic="true" aria-live="polite">
+    <div class="button-wrapper">
+      <div class="msg-success spacer-bottom10">
+        <%- content.manageYourApplicationsMessage %>
+      </div>
+
+      <a class="btn btn-lg btn-success btn-submit btn-manage" href="" target="_blank">
+        <%- content.manageYourApplications %>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="application-index-error-container hidden" aria-atomic="true" aria-live="polite">
+    <div class="button-wrapper">
+      <div class="msg-error spacer-bottom10">
+        <%- content.loadingError %>
+      </div>
+
+      <button class="btn btn-lg btn-success btn-submit btn-retry-check-existing">
+        <%- content.resubmit %>
+      </button>
+    </div>
+  </div>
+
+</div>

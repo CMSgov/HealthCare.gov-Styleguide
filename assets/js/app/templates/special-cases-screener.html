@@ -1,0 +1,40 @@
+<div class="lite-card-inner" aria-live="polite" aria-atomic="false">
+  <h1 class="sub"><%- content.screenerHeading %></h1>
+  <div class="subtitle">
+    <%= partial('help/_popover-label', {
+        label: content.screenerInstructions,
+        content: content.screenerInstructionsHelp,
+        options: {
+          append: true,
+          escapePopover: false
+        }
+      }) %>
+  </div>
+
+  <form class="form" role="form">
+    <div class="question-container">
+      <% _.each(sectionedQuestions, function(section, i) { %>
+        <div class="question-section <%- section.name %> <%- (i === 0) ? 'visible' : 'fadeable hidden' %>">
+          <% _.each(section.questions, function(question) { %>
+            <%= partial('forms/_filter-question', {
+              label: getScreenerQuestionText(model, content, question),
+              name: question,
+              value: answers[question],
+              content: content,
+              options: {
+                help: getScreenerQuestionHelp(model, content, question)
+              }
+            }) %>
+          <% }) %>
+        </div>
+      <% }) %>
+    </div>
+
+    <div class="success-container col-sm-6 col-sm-offset-3 col-md-offset-3 hidden spacer-top25">
+      <button class="btn btn-lg btn-success btn-submit">
+        <%- content.continueApplication %>
+      </button>
+    </div>
+  </form>
+
+</div>

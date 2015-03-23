@@ -1,0 +1,800 @@
+/*
+  Core CSS
+
+  Core styling for all parts of the site, including headers, links, and core
+  card styling. There are little bits of page-specific stuff here that should
+  slowly be moved out or made more consistent, but this file will supplant
+  replace commonstyles.less.
+*/
+
+/*
+  Overall page theme
+*/
+.main-body-content {
+  background: @white;
+}
+
+.lite-cards-column {
+  min-height: 300px;
+}
+
+.sticky-bar-wrapper {
+  min-height: 55px;
+}
+
+.sticky-bar {
+  width: 100%;
+
+  .container {
+    padding: 10px 0 0 0;
+  }
+
+  /*
+    Bootstrap's .affix only adds position:fixed;
+    so we style the rest of it here
+  */
+  &.affix {
+    // some buttons are z-index: 2 for some reason
+    z-index: 3;
+    top: 0;
+    background-color: @dark-blue;
+    .box-shadow(0 5px 10px rgba(0,0,0,.2));
+  }
+}
+
+/*
+  All header styling goes here, page specific styling should be in layouts/ or
+  components/. Type sizes and default colors are set here, colors are overridden
+  in blue-bg.less
+*/
+.header(@line-height; @font-size; @font-weight) {
+  font-size: @font-size;
+  font-weight: @font-weight;
+  letter-spacing: normal;
+  line-height: @line-height;
+  // all headers to be our display typeface
+  font-family: @display-type;
+}
+
+/*
+  Because for 508 reasons sometimes we need the element to be a legend tag,
+  or because we always need the h1 first, we're defining these .h1-.h4 classes
+  as well as helpers.
+*/
+h1,
+.h1 {
+  .header(44px, 36px, 400);
+  margin: 20px 0 40px 0;
+}
+
+h2,
+.h2 {
+  .header(32px, 24px, 400);
+  margin: 20px 0 15px 0;
+}
+
+h3,
+.h3 {
+  .header(25px, 21px, 400);
+  margin: 20px 0 15px 0;
+}
+
+h4,
+.h4 {
+  .font-md();
+  margin: 20px 0 15px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Headers with subtitles below */
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  &.sub {
+    padding: 0;
+    margin: 20px 0 5px 0;
+  }
+}
+
+/* Headers with a horizontal rule below */
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
+  &.rule {
+    padding-bottom: 5px;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid @border-color;
+
+    & a {
+      .link-decorator(transparent);
+    }
+  }
+}
+
+// slightly decrease header size and margins on mobile
+@media (max-width: @screen-md-min) {
+  h1,
+  .h1 {
+    .header(36px, 32px, 400);
+    margin: 10px 0;
+  }
+
+  h2,
+  .h2 {
+    margin-bottom: 10px;
+
+    &.rule {
+      margin: 10px 0;
+    }
+  }
+
+  // making sure that these h4 sections have enough space
+  h4,
+  .h4 {
+    &.rule {
+      margin-top: 20px;
+    }
+  }
+}
+
+/*
+  All text links on the site should have a border-bottom instead of an underline
+  This is a pretty drastic rule but cleans up our heavy paragraphs with lots of
+  links in them, which we have a lot of on the Learn side.
+*/
+a {
+  .link-decorator(@medium-blue, darken(@medium-blue, 10%));
+  .accessible-outline;
+
+  color: @medium-blue;
+
+  &:hover {
+    color: darken(@medium-blue, 10%);
+  }
+
+  &:hover,
+  &:active {
+    outline: none;
+  }
+}
+
+/*
+  Transitions
+  Use a two-phase show so we have a nice fade-in effect; first
+  display it, then fade it in.
+  We accomplish this by first setting a bootstrap .hidden class,
+  then removing it and deferring the addition of the .visible class
+*/
+.fadeable {
+  opacity: 0; // start invisible
+  .transition(opacity 0.15s ease-in);
+
+  &.invisible {
+    opacity: 0;
+  }
+
+  // this makes .fadeable also work for Bootstrap affix elements
+  &.visible,
+  &.affix {
+    opacity: 1;
+  }
+}
+
+/*
+  Bootstrap structure overrides
+  We're snapping to breakpoints and want to make some changes to how Bootstrap
+  does containers.
+*/
+// Bootstrap 3 no longer supports full-width containers, so we implement our
+// own .container class with similar behavior but with a much larger max-width
+// constraint.
+.container-full {
+  .container-fixed();
+  margin: 0 80px;
+  max-width: 1800px;
+
+  @media (max-width: @screen-sm-max) {
+    margin: 0;
+  }
+  // fixing overflow on tiny sizes
+  @media (max-width: @screen-xs-max) {
+    padding: 0;
+  }
+}
+
+/* TODO(sha) look into if we can remove this and just edit the @gutter variable */
+.row {
+  margin-left: -@row-margin;
+  margin-right: -@row-margin;
+}
+
+/*
+  Card styling
+
+*/
+
+.quiet-text {
+  .font-sm();
+
+  color: @medium-gray;
+  font-weight: normal;
+}
+
+@input-height: 44px;
+
+.lite-card {
+  @form-group-margin-bottom: 8px;
+  @col-horizontal-padding: 4px;
+
+  .row {
+
+    &.applicant {
+      // Add whitespace between individual applicant form field blocks
+      margin-top: 40px;
+    }
+  }
+
+  ul {
+    margin-bottom: 40px;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  .form-section {
+    margin-bottom: 24px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="ein"],
+  .dropdown .dropdown-toggle,
+  select,
+  .ethnicity-race-toggle,
+  .coverage-state-toggle {
+    .font-md();
+    .placeholder(@color: @medium-gray);
+
+    background: @light-gray;
+    height: @input-height;
+    padding-left: 13px;
+    display: block;
+    text-decoration: none;
+  }
+
+  // this is set as a link, and we give links a border on hover
+  .ethnicity-race-toggle,
+  .coverage-state-toggle {
+    border-bottom: none;
+
+    &:hover {
+      color: @dark-gray;
+      border-bottom: none;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="ein"] {
+
+    &.for-checkbox-above {
+      margin-top: -20px;
+    }
+  }
+
+  .sign-button-wrapper {
+    text-align: center;
+  }
+
+  .ethnicity-race-toggle,
+  .coverage-state-toggle {
+    color: @dark-gray;
+    position: relative;
+    box-shadow: none;
+    z-index: 10;
+    line-height: @input-height;
+
+    // TODO(brandon): Make this bigger (see mocks)
+    .caret {
+      position: absolute;
+      top: @input-height / 2 - 4;
+      right: 12px;
+    }
+  }
+
+  // TODO(james): Consolidate ethnicity-* and coverage-state-*.
+  a.ethnicity-race-expanded,
+  a.coverage-state-expanded {
+    background: @white;
+    border: 1px solid @border-color;
+    border-bottom-color: @white;
+    height: 58px;
+
+    .caret {
+      right: 12px;
+    }
+  }
+
+  .ethnicity-race-dropdown,
+  .coverage-state-dropdown {
+    border: 1px solid @border-color;
+    margin: -(@form-group-margin-bottom + 1) 4px 15px 4px;
+    padding: 10px;
+    display: none;
+
+    @media (min-width: @screen-sm-min) {
+      float: left;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .ethnicity-race-dropdown {
+
+    .ethnicity-race-description {
+      margin-bottom: 10px;
+      margin-left: 8px;
+    }
+
+    .checkbox {
+      margin-top: 0;
+      margin-bottom: 0;
+      min-height: 20px;
+
+      & + .checkbox {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      label {
+        .font-md();
+
+        color: @dark-gray;
+
+        .long-ethnicity {
+          .font-md();
+        }
+      }
+    }
+
+    .other-race-text-container {
+
+      input[type="text"] {
+        height: 34px;
+        margin-bottom: 4px;
+      }
+
+      label {
+        .font-sm();
+      }
+    }
+  }
+
+  .screener-confirmation {
+    background: @light-gray;
+    color: @dark-gray;
+    padding: 20px;
+    margin-bottom: 40px;
+    clear: both;
+
+    .edit-btn {
+      float: right;
+      text-decoration: none;
+
+      .glyphicon {
+        .font-sm();
+
+        margin-right: 2px;
+      }
+    }
+
+    .create-new-account-msg {
+      display: none;
+    }
+  }
+}
+
+.lite-screener,
+.basic-info-screener {
+  .state-info-site-container,
+  .fail-territory-container {
+    .font-md();
+  }
+}
+
+.lite-screener,
+.lite-account-creation {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.lite-account-creation {
+  @border-color: darken(@medium-light-blue, 25%);
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  input[type="url"],
+  input[type="password"],
+  input[type="ein"] {
+    .font-xl();
+
+    background-color: @medium-blue;
+    border: 1px solid @border-color;
+    border-radius: 0;
+    color: @white;
+    height: 55px;
+    padding: 0 5px 0 13px;
+
+    .placeholder(@medium-light-blue);
+    .appearance-none;
+
+    @media (max-width: @screen-sm-min) {
+      padding-right: 45px;
+    }
+  }
+
+  .has-error input,
+  .has-error .form-select {
+    border: 1px solid @accent-red;
+  }
+
+  .hideShowPassword-toggle {
+    cursor: pointer;
+    margin: 0 15px;
+  }
+  .hideShowPassword-wrapper {
+    width: 100%;
+    .placeholder(@medium-light-blue);
+
+    + .error-message {
+      // Most of the other inputs in the create account screen has the
+      // error message as a direct sibling of the error-message, so
+      // margin-collapse rules take effect. Wrapping the password in an
+      // additional element eliminates margin-collapse, making the error
+      // message be a little farther away from it compared to the error
+      // messages of other inputs, so we fix this here by eliminating the top.
+      margin-top: 0;
+    }
+  }
+
+  // For account creation, we have side-by-side elements that share a form
+  // group, and having a margin makes them not vertically aligned.
+  .form-group {
+    margin: 4px 0px 12px 0;
+    position: relative;
+
+    &.last-name {
+      @media (max-width: @screen-xs-max) {
+        clear: both;
+      }
+    }
+  }
+
+  .req {
+    display: inline-block;
+    opacity: 0.8;
+    .glyphicon {
+      color: @medium-blue;
+      padding: 0 5px 0 10px;
+    }
+    &.ok {
+      opacity: 1;
+      .glyphicon {
+        color: @bright-green;
+        display: inline-block;
+      }
+    }
+  }
+
+  .form-select {
+    background-color: @medium-blue;
+    border: 1px solid @border-color;
+
+    select {
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      color: @light-blue;
+
+      &.unselected {
+        color: @medium-light-blue;
+        border-color: @medium-light-blue;
+      }
+
+      .appearance-none;
+    }
+  }
+
+  .security-questions-section {
+    input,
+    .form-select,
+    select {
+      .font-md();
+
+      height: @input-height;
+    }
+
+    .question-container {
+      margin-bottom: 15px;
+
+      // Note - the question container also encompasses the .answer-container
+      .answer-container {
+        margin-top: 5px;
+        // Needed so it can become a positioning context for polyfill
+        // placeholders
+        position: relative;
+      }
+
+      .icon-ok,
+      .icon-error {
+        // The check/X icon for a question container is "shared" between the
+        // question and answer field so it needs to be vertically aligned
+        // between the two.
+        top: 30px;
+
+        @media (max-width: @screen-sm-min) {
+          top: 6px;
+          right: 6px;
+        }
+      }
+
+      .error-message {
+        // Since the question container wraps the inputs, the error-message
+        // isn't a direct sibling, like in the other inputs of the create
+        // account form, meaning no margin-collapsing takes place. Compensate
+        // by setting a zero top margin.
+        margin-top: 0;
+      }
+    }
+  }
+
+  // For account creation button, must use position: relative to get error icon
+  // to display to the right of the button.
+  .create-account {
+    position: relative;
+  }
+
+  // glyphicons for showing validation correct / errors
+  .icon-ok,
+  .icon-error {
+    .icon-md();
+
+    top: 11px;
+    right: -42px;
+    position: absolute;
+
+    @media (max-width: @screen-sm-min) {
+      right: 10px;
+    }
+
+    span {
+      .font-lg();
+
+      color: @white;
+    }
+  }
+
+  .icon-ok {
+    background-color: @accent-green;
+  }
+
+  .icon-error {
+    background-color: @accent-red;
+  }
+
+  .help-block {
+    padding-left: 10px;
+  }
+
+  // Vertically center the error icon that shows for the account creation button
+  .account-creation-error-icon {
+    margin-top: 6px;
+  }
+
+  .btn {
+    min-width: 100%;
+    border: none;
+  }
+
+  .input-label {
+    .font-sm();
+
+    padding-left: 10px;
+    color: @light-blue;
+    font-weight: normal;
+
+    &.row .col-xs-1 {
+      // To align bootstrap grid
+      padding-left: 4px;
+    }
+  }
+
+  .privacy-policy .input-label {
+    .font-md();
+
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+
+  .success-container {
+    .instructions {
+      .font-md();
+    }
+
+    .instructions.line2 {
+      margin-top: 4px;
+      margin-bottom: 10px;
+    }
+
+    .email {
+      .font-lg();
+
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .email-text {
+      font-weight: bold;
+    }
+
+    .email-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 4px;
+      margin-top: -2px;
+    }
+  }
+
+  .email-domain-suggestion {
+    font-style: italic;
+  }
+
+  // Windows does weird things where it makes the dropdown all white, but
+  // respects the foreground color of light blue. That makes it completely
+  // illegible, so to be safe, we always make select elements dark-gray in
+  // windows when opened.
+  select.hacky-windows-select {
+    &:focus {
+      background: @light-blue;
+      color: @medium-blue;
+    }
+    .glyphicon {
+      color: @medium-blue;
+    }
+  }
+}
+
+.welcome-container {
+  min-height: 415px;
+  position: relative;
+
+  .welcome-desc {
+    .font-md();
+  }
+
+  // Don't change the Welcome state dropdown to green on selection
+  .form-inline {
+    select {
+      &.selected {
+        background: mix(@lite-bg, white, 70%);
+      }
+    }
+  }
+
+  .other-links {
+    .font-lg();
+
+    background: @lite-ui-bg;
+    padding: 7px 10px 9px 10px;
+    text-align: center;
+    margin-top: 20px;
+
+    @media (min-width: @screen-sm-min) {
+      .font-md();
+    }
+  }
+
+  .animated-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    .transition(opacity 0.3s ease-in);
+
+    &.animated {
+      opacity: 0.1;
+      .transition(opacity 0.3s ease-in);
+    }
+
+    &.zoomed {
+      opacity: 0.05;
+    }
+
+    .states {
+      fill: #aaa;
+
+      .active {
+        fill: white;
+      }
+    }
+
+    .state-borders {
+      fill: none;
+      stroke: @lite-bg;
+      stroke-width: 1.5px;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      pointer-events: none;
+    }
+  }
+
+  .lite-card-inner {
+    // To appear over top the map background overlay
+    position: relative;
+  }
+}
+
+.ridp {
+  .alert .glyphicon {
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+}
+
+.special-cases-screener,
+.ridp-questions {
+  .success-container {
+    .msg-success {
+      // Same height as the btn-lg beside it to vertically align.
+      line-height: 42px;
+      padding-right: 20px;
+      text-align:right;
+    }
+  }
+}
+
+.ridp-redirect {
+  min-height: 420px;
+}
+
+// ridp has options that can be very long so we want to adapt to the width
+.ridp-questions {
+  .filter-question {
+    width: auto;
+  }
+}
+
+// Overlay to trap mouse clicks after submission
+.click-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
