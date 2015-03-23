@@ -12,7 +12,9 @@ categories: components
 
 # Form Elements
 
+<div class="intro">
 There are many forms used throughout Healthcare.gov. Generally, forms are against a white or dark blue background. Below are the man elements that make up the forms
+</div>
 
 <hr class="hr"></hr>
 
