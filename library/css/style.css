@@ -7343,10 +7343,13 @@ a[name="skipnav"] {
   color: #fff;
 }
 #homepage .deep-dive-link .title .glyphicon {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 5px 10px 8px;
+  color: #fff;
+}
+#homepage .deep-dive-link .title .text {
   color: #fff;
 }
 #homepage .deep-dive-link .description {
