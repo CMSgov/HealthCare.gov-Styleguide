@@ -261,8 +261,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../../fonts/glyphicons-halflings-regular.eot');
-  src: url('../../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6979,7 +6979,7 @@ ul {
   padding: 0 0 0 20px;
 }
 p {
-  line-height: 24px;
+  line-height: 28px;
   margin: 0 0 20px 0;
   font-size: 16px;
 }
@@ -7179,6 +7179,9 @@ legend {
 .instructions {
   margin: 0;
 }
+.adjust-margin-top {
+  margin-top: 28px;
+}
 @media (min-width: 768px) {
   .banner {
     margin-bottom: 35px;
@@ -7267,6 +7270,10 @@ legend {
 #homepage {
   padding-bottom: 20px;
 }
+#homepage h2 {
+  line-height: 38px;
+  letter-spacing: normal;
+}
 #homepage h3 {
   margin-top: 0;
   font-family: "Bitter", "Georgia", serif;
@@ -7294,6 +7301,7 @@ legend {
 }
 #homepage .banner img {
   width: 100%;
+  display: none;
 }
 #homepage .deep-dive-link {
   position: relative;
@@ -7337,6 +7345,13 @@ legend {
 #homepage .deep-dive-link .description span {
   color: #e3e1e4;
 }
+#homepage .intro p {
+  line-height: 31px;
+  font-size: 18px;
+}
+#homepage .hr {
+  margin: 36px 0 46px;
+}
 #homepage .deep-dive-link.design {
   color: #fff;
   margin-top: 20px;
@@ -7345,9 +7360,6 @@ legend {
 #homepage .deep-dive-link.assets {
   color: #fff;
   background: #017aad;
-}
-#homepage .banner img {
-  display: none;
 }
 @media (min-width: 768px) {
   #homepage {
@@ -7358,7 +7370,7 @@ legend {
   }
   #homepage h2 {
     margin-top: 0;
-    font-size: 30px;
+    font-size: 34px;
   }
   #homepage h3 {
     margin-top: 20px;
@@ -7405,6 +7417,14 @@ legend {
 }
 #detail-page {
   padding-bottom: 20px;
+}
+#detail-page h3 {
+  font-weight: 600;
+  margin-top: 36px;
+  text-transform: uppercase;
+}
+#detail-page hr {
+  margin: 36px 0;
 }
 #detail-page .full {
   width: 100%;
