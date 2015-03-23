@@ -7268,6 +7268,7 @@ legend {
   text-transform: capitalize;
 }
 #homepage {
+  margin: 63px 0 0 0;
   padding-bottom: 20px;
 }
 #homepage h2 {
