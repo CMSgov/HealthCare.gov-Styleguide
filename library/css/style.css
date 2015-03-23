@@ -6974,6 +6974,9 @@ button.close {
   height: 0;
   clear: both;
 }
+body {
+  -webkit-font-smoothing: antialiased;
+}
 ol,
 ul {
   padding: 0 0 0 20px;
@@ -7261,6 +7264,10 @@ legend {
   margin-top: 36px;
   width: 100%;
 }
+#landing-page .intro {
+  font-size: 18px;
+  line-height: 31px;
+}
 .landing-page-title {
   display: block;
   margin: 15px 0;
@@ -7300,7 +7307,7 @@ legend {
 #homepage .banner .subtitle {
   color: #cef1fc;
   font-size: 16px;
-  line-height: 44px;
+  line-height: 24px;
 }
 #homepage .banner img {
   width: 100%;
@@ -7376,7 +7383,6 @@ legend {
     font-size: 34px;
   }
   #homepage h3 {
-    margin-top: 20px;
     font-size: 24px;
     line-height: 33px;
   }
