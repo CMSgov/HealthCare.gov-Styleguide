@@ -265,6 +265,21 @@ legend{
 
 .adjust-margin-top { margin-top:28px; }
 
+a[name="skipnav"] {padding:0;margin: 0;display:block; border:none;}
+
+.show-on-focus {
+    display:block;
+    position:absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.show-on-focus:focus {
+  z-index:1000;
+  top:0;
+  left:0;
+}
+
 @media (min-width: @screen-sm-min) {
 	.banner { margin-bottom:35px; }
 }
