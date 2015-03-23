@@ -7187,6 +7187,23 @@ legend {
 .adjust-margin-top {
   margin-top: 28px;
 }
+a[name="skipnav"] {
+  padding: 0;
+  margin: 0;
+  display: block;
+  border: none;
+}
+.show-on-focus {
+  display: block;
+  position: absolute;
+  top: -100px;
+  left: -100px;
+}
+.show-on-focus:focus {
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
 .header-wrap {
   border-top: #1295e8 3px solid;
   box-shadow: 0 2px 2px #e6e6e6;
@@ -7328,10 +7345,13 @@ legend {
   color: #fff;
 }
 #homepage .deep-dive-link .title .glyphicon {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 5px 10px 8px;
+  color: #fff;
+}
+#homepage .deep-dive-link .title .text {
   color: #fff;
 }
 #homepage .deep-dive-link .description {
@@ -7455,13 +7475,15 @@ legend {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+@media (max-width: 767px) {
+  #detail-page .iconography .half {
+    width: 100%;
+  }
+}
 @media (min-width: 768px) {
   #detail-page {
     padding-bottom: 70px;
   }
-}
-#detail-page .half {
-  width: 48%;
 }
 #detail-page .intro {
   font-size: 18px;
