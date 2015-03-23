@@ -7447,13 +7447,15 @@ legend {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+@media (max-width: 767px) {
+  #detail-page .iconography .half {
+    width: 100%;
+  }
+}
 @media (min-width: 768px) {
   #detail-page {
     padding-bottom: 70px;
   }
-}
-#detail-page .half {
-  width: 48%;
 }
 #detail-page .intro {
   font-size: 18px;
