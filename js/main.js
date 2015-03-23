@@ -9,15 +9,15 @@ $(document).ready(function() {
   	clip.on("ready", function() {
     	//console.log("Flash movie loaded and ready.");
 
-		this.on("aftercopy", function(event) {
-      		//console.log("Copied text to clipboard: " + event.data["text/plain"]);
+		  this.on("aftercopy", function(event) {
+      	//console.log("Copied text to clipboard: " + event.data["text/plain"]);
     	});
-  	});
+  });
 
 	clip.on("error", function(event) {
-    	$(".demo-area").hide();
-    	console.og('error[name="' + event.name + '"]: ' + event.message);
-    	ZeroClipboard.destroy();
+  	$(".demo-area").hide();
+  	console.log('error[name="' + event.name + '"]: ' + event.message);
+  	ZeroClipboard.destroy();
   });
 
   // Popover Initialization
@@ -47,11 +47,23 @@ $(document).ready(function() {
     $(this).siblings('ul').toggle();
   });
 
-  // Sticky left navigation
-  $('.subnav').affix({
-    offset: {
-      top: $('.subnav').offset() - 84,
-      bottom: ($('.site-footer').outerHeight(true) + $('.sub-footer').outerHeight(true)) + 40
-    }
-  });
+  // Landing page sticky left navigation, separated for different offset
+  if($('#landing-page .subnav').length){
+    $('#landing-page .subnav').affix({
+      offset: {
+        top: $('#landing-page .subnav').offset().top + $('.banner').outerHeight(true),
+        bottom: ($('.site-footer').outerHeight(true) + $('.sub-footer').outerHeight(true)) + 40
+      }
+    });
+  }
+
+  // Detail page sticky left navigation, separated for different offset
+  if($('#detail-page .subnav').length){
+    $('#detail-page .subnav').affix({
+      offset: {
+        top: $('#detail-page .subnav').offset().top,
+        bottom: ($('.site-footer').outerHeight(true) + $('.sub-footer').outerHeight(true)) + 40
+      }
+    });
+  }
 });
