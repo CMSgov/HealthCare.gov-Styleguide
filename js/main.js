@@ -1,8 +1,43 @@
-(function(){
+// Show mobile flyout navigation
+var showMobileNav = function(e) {
+  if (e) {
+    e.preventDefault();
+  }
 
-})();
+  $('.mobile-menu-btn').off('click.show');
+
+  $('#wrapper').addClass('pushed');
+
+  var $nav = $('#sidr');
+  $nav.addClass('visible');
+
+  var $header = $('.header-wrap');
+  $header.addClass('pushed');
+
+  _.defer(function() {
+    $(document.body).on('click.mobilenav', function(e) {
+      if (!$.contains($nav[0], e.target) && !$nav.is($(e.target))) {
+        hideMobileNav();
+        $nav = null;
+      }
+    });
+  });
+};
+
+// Hide mobile flyout navigation
+var hideMobileNav = function() {
+  $('#wrapper').removeClass('pushed');
+  $('#sidr').removeClass('visible');
+  $('.header-wrap').removeClass('pushed');
+
+  $(document.body).off('click.mobilenav');
+  $('.mobile-menu-btn').on('click.show', showMobileNav);
+};
 
 $(document).ready(function() {
+  // Attach mobile flyout click command
+  $('.mobile-menu-btn').on('click.show', showMobileNav);
+
   // Zero Clipboard
   var clip = new ZeroClipboard($(".copy-button"));
 

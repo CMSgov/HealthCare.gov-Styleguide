@@ -6,8 +6,11 @@
 	z-index:100;
 	top:0;
 
+	&.pushed{
+		/*right: 270px;*/
+	}
+
 	.site-header{
-		width:@mainWidth;
 		height:60px;
 		margin:0 auto;
 
@@ -16,7 +19,7 @@
 			float:left;
 
 			img{
-			    margin:14px 0 13px 60px;
+			    margin:14px 0 13px 0;
 			}
 		}
 
@@ -32,7 +35,7 @@
 			.github-link{
 				display:block;
 				float:right;
-				margin:17px 0 0 0;
+				margin:19px 0 0 0;
 
 				img{
 					width:17px;
@@ -60,7 +63,7 @@
 						padding: 10px 15px;
 						font-size:15px;
 
-						&:hover{
+						&:hover, &.current{
 							background-color:#eee;
 							-webkit-transition: background-color 100ms linear;
 						    -moz-transition: background-color 100ms linear;
@@ -70,6 +73,27 @@
 						}
 					}
 				}
+			}
+		}
+
+		.mobile-menu-btn-wrapper{
+			display:none;
+			margin:12px 0 0 0;
+			color:#085372;
+		}
+	}
+}
+
+@media (max-width: @screen-sm){
+	.header-wrap{
+		.site-header{
+			.navbar{
+				display:none;
+			}
+
+			.mobile-menu-btn-wrapper{
+				display:block;
+				float:right;
 			}
 		}
 	}

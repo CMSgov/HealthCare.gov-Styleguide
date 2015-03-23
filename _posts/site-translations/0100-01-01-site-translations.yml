@@ -13,8 +13,9 @@ en:
       assets: "Assets"
       governance: "Governance"
       helpful: "Helpful Links"
-    manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244"
-    contact: Contact
+    manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services."
+    address: "7500 Security Boulevard, Baltimore, MD 21244"
+    contact: Feedback
 
   campaign:
     title: "HealthCare.gov"
@@ -44,8 +45,9 @@ es:
       assets: "Assets"
       governance: "Governance"
       helpful: "Helpful Links"
-    manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244"
-    contact: Contact
+    manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services."
+    address: "7500 Security Boulevard, Baltimore, MD 21244"
+    contact: Feedback
 
   campaign:
     title: "HealthCare.gov"
