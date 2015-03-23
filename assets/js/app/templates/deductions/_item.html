@@ -1,0 +1,17 @@
+<div class="th visible-xs col-sm-12 col-xs-12">
+  <%- content.type %>
+</div>
+<div class="ellipsis col-sm-3 col-xs-6">
+  <% if (deduction.get('type') !== Deduction.TYPE.OTHER) { %>
+    <%-content.deductionTypes[deduction.get('type')] %>
+  <% } else { %>
+    <%- deduction.get('otherType') %>
+  <% } %>
+</div>
+<div class="th visible-xs col-sm-12 col-xs-12">
+  <%- content.howMuch %>
+</div>
+<div class="col-sm-6 col-xs-6">
+  $<%- Grammar.numberFormat(deduction.get('amount'), 2) %>
+  <%- content.frequencies[deductions.at(i).get('frequency')].toLowerCase() %>
+</div>

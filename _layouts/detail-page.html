@@ -53,7 +53,14 @@ layout: base
 				</ul>
 			</div>
 			<div class="col-sm-9">
+				{% if page.section == "assets" %}
+					<div id="hc-gov-assets">
+				{% endif %}
 				{{ content }}
+				{% if page.section == "assets" %}
+					</div>
+				{% endif %}
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,10 @@
+<%= partial('forms/_dropdown', {
+  id: id,
+  name: name,
+  label: content.sex,
+  menuItems: [
+    { value: 'Male', text: content.male },
+    { value: 'Female', text: content.female }
+  ],
+  options: { defaultText: content.sex }
+}) %>

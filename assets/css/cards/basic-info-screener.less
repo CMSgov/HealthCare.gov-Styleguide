@@ -1,0 +1,24 @@
+.basic-info-screener {
+  .show-state-input {
+    cursor: pointer;
+  }
+
+  @media (min-width: @screen-xs-min) {
+    .state-input,
+    .dependent-input,
+    .income-input {
+      width: 215px;
+    }
+
+    // The only question on basic info screener with a dropdown select
+    .dependent-input {
+      margin-bottom: 65px;
+    }
+  }
+
+  // .filter-question span's are floated left, but this
+  // breaks formatting for our FPL Cutoff number
+  .cutoff {
+    float: none;
+  }
+}

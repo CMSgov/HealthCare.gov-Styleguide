@@ -1,0 +1,32 @@
+<div class="blue-bg">
+  <div class="lite-card-inner" aria-live="polite" aria-atomic="false">
+    <% if (model.get('ffmId')) { %>
+      <div class="pull-right"><%- content.applicationId + ': ' + model.get('ffmId') %></div>
+    <% } %>
+    <h1 class="sub"><%- content.incomeHeader %></h1>
+    <div class="subtitle">
+      <div class="spacer-bottom20">
+        <%= content.incomeDescription %>
+      </div>
+      <div class="information-box">
+        <div class="row income-types">
+          <% _.each(IncomeSource.TYPES, function(type) { %>
+            <div class="col-sm-3 col-xs-6"><%- content.incomeTypes[type] %></div>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lite-card-inner" aria-live="polite" aria-atomic="false">
+  <div class="individual-content-section">
+  </div>
+
+  <div class="row">
+    <div class="form-group col-sm-6 col-sm-offset-3 col-md-offset-3 sign-button-wrapper">
+      <button class="btn btn-lg btn-success btn-submit"><%- content.continueApplication %></button>
+    </div>
+  </div>
+</div>
+
