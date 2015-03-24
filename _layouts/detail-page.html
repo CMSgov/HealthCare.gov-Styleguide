@@ -6,63 +6,21 @@ layout: base
 	<div class="banner">
 	</div>
 	<div class="container">
-			<div class="col-sm-3">
-				<ul class="subnav affix-top" data-spy="affix">
-					{% comment %}<!-- Variable Assignment -->{% endcomment %}
-					{% assign subNav = false %}
-					{% assign currentCategory = "" %}
-					{% assign currentURL = page.url %}	
 
-					{% for post in site.posts reversed %}
-						{% comment %}<!-- Iterate Over Pages that match landing page / section -->{% endcomment %}
-						{% if post.section == page.section and post.layout != "landing-page" %}
+		{% include sub-navigation.html %}
+		
+		{% if page.section == "assets" %}
+		<div id="hc-gov-assets">
+		{% endif %}
 
-							{% comment %}<!-- Starting a new subcategory -->{% endcomment %}
-							{% if currentCategory != post.categories[0] and post.categories[0] != nil %}
-								{% if subNav == true%}
-										</li>
-									</ul>
-								{% endif %}
-								{% assign subNav = true %}
-								{% assign currentCategory = post.categories[0] %}
-								<li><span class="glyphicon glyphicon-chevron-right"></span><a class="toggle-interior-nav" href="javascript:;">{{ post.categories[0] }}</a>
-									<ul>
-										<li><a class="{% if currentURL == post.url %}current{% endif %}" href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
-
-							{% comment %}<!-- No subcategory -->{% endcomment %}
-							{% elsif post.categories[0] == nil %}
-								{% if subNav == true %}
-										</ul>
-									</li>
-								{% endif %}
-								<li><a class="{% if currentURL == post.url %}current{% endif %}" href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
-								{% assign subNav = false %}
-
-							{% comment %}<!-- Inside subcategory -->{% endcomment %}
-							{% else %}
-								<li><a class="{% if currentURL == post.url %}current{% endif %}" href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
-							{% endif %}
-					  	{% endif %}
-					{% endfor %}
-
-					{% comment %}<!-- Cleanup if last link was inside subcategory -->{% endcomment %}
-					{% if subNav == true%}
-							</li>
-						</ul>
-					{% endif %}
-				</ul>
-			</div>
-			<div class="col-sm-9">
-				{% if page.section == "assets" %}
-					<div id="hc-gov-assets">
-				{% endif %}
-				{{ content }}
-				{% if page.section == "assets" %}
-					</div>
-				{% endif %}
-				</div>
-			</div>
+		<div class="col-sm-9">
+			{{ content }}
 		</div>
+		
+		{% if page.section == "assets" %}
+		</div>
+		{% endif %}
+
 	</div>
 </div>
 

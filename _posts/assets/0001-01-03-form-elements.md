@@ -16,7 +16,7 @@ categories: components
 There are many forms used throughout Healthcare.gov. Generally, forms are against a white or dark blue background. Below are the man elements that make up the forms
 </div>
 
-<hr class="hr"></hr>
+<div class="hr"></div>
 
 ## Table Forms
 
@@ -221,71 +221,74 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 <div class="code-wrapper">
 <div class="preview has-background">
 	<div class="question blue-bg">
-		<div class="question-label">A blue background screener select question.</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="form-select">
-					<select class="form-control" name="dropdown-name" aria-label="Dropdown label" data-type="">
-						<option value="option-value-1">Option 1</option>
-						<option value="option-value-2">Option 2</option>
-						<option value="option-value-3">Option 3</option>
-					</select>
+		<form class="form-inline">
+			<div class="question-label">A blue background screener select question.</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="form-select ">
+					  <select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
+					    <option value="option-value-1">Option 1</option>
+					    <option value="option-value-2">Option 2</option>
+					    <option value="option-value-3">Option 3</option>
+					  </select>
+					  <span class="caret"></span>
+					</div>
 				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 </div>
 <pre>
-<code id="blue-dropdown-code">&ltdiv class="question blue-bg"&gt
-	&ltdiv class="question-label"&gtA blue background screener select question.&lt/div&gt
-	&ltdiv class="row"&gt
-		&ltdiv class="col-sm-4"&gt
-			&ltdiv class="form-select"&gt
-				&ltselect class="form-control" name="dropdown-name" aria-label="Dropdown label" data-type=""&gt
-					&ltoption value="option-value-1"&gtOption 1&lt/option&gt
-					&ltoption value="option-value-2"&gtOption 2&lt/option&gt
-					&ltoption value="option-value-3"&gtOption 3&lt/option&gt
-				&lt/select&gt
-			&lt/div&gt
-		&lt/div&gt
-	&lt/div&gt
-&lt/div&gt</code>
+<code id="blue-dropdown-code">&lt;div class="question"&gt;
+    &lt;div class="question-label"&gt;A blue background screener select question.&lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-3"&gt;
+        &lt;div class="form-select "&gt;
+          &lt;select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type=""&gt;
+            &lt;option value="option-value-1"&gt;Option 1&lt;/option&gt;
+            &lt;option value="option-value-2"&gt;Option 2&lt;/option&gt;
+            &lt;option value="option-value-3"&gt;Option 3&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;span class="caret"&gt;&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code>
 </pre>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-dropdown-code">Copy</a>
 </div>
 
 * * *
 
-## Dropdowns White Background
+## Dropdowns
 
 <div class="code-wrapper">
 <div class="preview">
 	<div class="row">
 		<div class="col-sm-4">
-			<div class="form-select">
-				<span>Dropdown</span>
-				<select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
-					<option value="option-value-1">Option 1</option>
-					<option value="option-value-2">Option 2</option>
-					<option value="option-value-3">Option 3</option>
-				</select>
+			<div class="lite-card">
+				<div class="header-label">Dropdown</div>
+				<div class="form-select">
+					<select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
+					    <option value="option-value-1">Option 1</option>
+					    <option value="option-value-2">Option 2</option>
+					    <option value="option-value-3">Option 3</option>
+				 	</select>
+				 	<span class="caret"></span>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <pre>
-<code id="white-dropdown-code">&ltdiv class="form-select"&gt
-	&ltdiv class="row"&gt
-		&ltdiv class="col-sm-4"&gt
-			&ltspan&gtDropdown&lt/span&gt
-			&ltselect class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type=""&gt
-				&ltoption value="option-value-1"&gtOption 1&lt/option&gt
-				&ltoption value="option-value-2"&gtOption 2&lt/option&gt
-				&ltoption value="option-value-3"&gtOption 3&lt/option&gt
-			&lt/select&gt
-		&lt/div&gt
-	&lt/div&gt
-&lt/div&gt</code>
+<code id="white-dropdown-code">&lt;div class="form-select "&gt;
+  &lt;select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type=""&gt;
+    &lt;option value="option-value-1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option-value-2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option-value-3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;span class="caret"&gt;&lt;/span&gt;
+&lt;/div&gt;</code>
 </pre>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code">Copy</a>
 </div>
@@ -294,14 +297,19 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 <div class="preview">
 	<div class="row">
 		<div class="col-sm-4">
-			<div class="form-select">
-				<span>Dropdown with default text</span>
-				<select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
-					<option value="" selected="selected">Select Option</option>
-					<option value="option-value-1">Option 1</option>
-					<option value="option-value-2">Option 2</option>
-					<option value="option-value-3">Option 3</option>
-				</select>
+			<div class="lite-card">
+				<div class="header-label">Dropdown with default text</div>
+				<div class="form-select ">
+				  <select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
+				    
+				    <option value="" selected="selected">Select Option</option>
+				    
+				    <option value="option-value-1">Option 1</option>
+				    <option value="option-value-2">Option 2</option>
+				    <option value="option-value-3">Option 3</option>
+				  </select>
+				  <span class="caret"></span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -330,9 +338,11 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 
 <div class="code-wrapper">
 <div class="preview">
-	<div class="question">
-		<div class="question-label">Is this a question?</div>
-		<input class="form-control" type="text" value="Yes!">
+	<div class="lite-card">
+		<div class="question">
+	        <div class="question-label">Is this a question?</div>
+	        <input class="form-control" type="text" value="Yes!">
+	    </div>
 	</div>
 </div>
 <pre>

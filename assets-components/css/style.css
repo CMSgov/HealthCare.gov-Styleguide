@@ -2564,8 +2564,8 @@ fieldset[disabled] #hc-gov-assets .btn-link:focus {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('/marketplace/b/app2/fonts/glyphicons-halflings-regular.eot');
-  src: url('/marketplace/b/app2/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/marketplace/b/app2/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/marketplace/b/app2/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/marketplace/b/app2/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('/assets/fonts/glyphicons-halflings-regular.eot');
+  src: url('/assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 #hc-gov-assets .glyphicon {
   position: relative;
@@ -6412,7 +6412,7 @@ td#hc-gov-assets .visible-print {
 }
 #hc-gov-assets #content {
   position: relative;
-  background: url('/marketplace/b/app2/img/bg-content.png') 0 0 repeat;
+  background: url('/assets/img/bg-content.png') 0 0 repeat;
 }
 #hc-gov-assets .limiter {
   position: relative;
@@ -7908,7 +7908,7 @@ td#hc-gov-assets .visible-print {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #hc-gov-assets .utility-section .icon,
   #hc-gov-assets .utility-section .card .new.active {
-    background: url('/marketplace/b/app2//img/sprite@2x.png') no-repeat 0 0;
+    background: url('/assets//img/sprite@2x.png') no-repeat 0 0;
     background-size: 750px 350px;
   }
 }
@@ -8159,7 +8159,7 @@ td#hc-gov-assets .visible-print {
    however, I think this begs a larger discussion about where images will be
    stored in final product so both MPL & Learn can access from shared location
   background: url(../img/sprite.png) 0 0 repeat; */
-  background: url('/marketplace/b/app2/img/sprite@1x.png');
+  background: url('/assets/img/sprite@1x.png');
   background-repeat: no-repeat;
   text-indent: -999em;
   text-align: left;
@@ -8172,7 +8172,7 @@ td#hc-gov-assets .visible-print {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #hc-gov-assets .icon {
-    background: url('/marketplace/b/app2/img/sprite@2x.png');
+    background: url('/assets/img/sprite@2x.png');
     background-size: 750px 350px;
   }
 }
