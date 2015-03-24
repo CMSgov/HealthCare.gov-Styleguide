@@ -239,7 +239,8 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
 	</div>
 </div>
 <pre>
-<code id="blue-dropdown-code">&lt;div class="question"&gt;
+<code id="blue-dropdown-code">&lt;div class="question  blue-bg"&gt;
+&lt;form class="form-inline"&gt;
     &lt;div class="question-label"&gt;A blue background screener select question.&lt;/div&gt;
     &lt;div class="row"&gt;
       &lt;div class="col-sm-3"&gt;
@@ -253,6 +254,7 @@ There are many forms used throughout Healthcare.gov. Generally, forms are agains
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
+    &lt;/form&gt;
   &lt;/div&gt;</code>
 </pre>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-dropdown-code">Copy</a>
