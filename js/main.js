@@ -92,7 +92,7 @@ $(document).ready(function() {
   if($('#landing-page .subnav').length){
     $('#landing-page .subnav').affix({
       offset: {
-        top: $('#landing-page .subnav').offset().top + $('.banner').outerHeight(true),
+        top: $('#landing-page .subnav').offset().top - 150,
         bottom: ($('.site-footer').outerHeight(true) + $('.sub-footer').outerHeight(true)) + 40
       }
     });
@@ -102,7 +102,7 @@ $(document).ready(function() {
   if($('#detail-page .subnav').length){
     $('#detail-page .subnav').affix({
       offset: {
-        top: $('#detail-page .subnav').offset().top,
+        top: $('#detail-page .subnav').offset().top - 200,
         bottom: ($('.site-footer').outerHeight(true) + $('.sub-footer').outerHeight(true)) + 40
       }
     });
