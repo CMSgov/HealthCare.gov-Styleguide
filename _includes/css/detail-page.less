@@ -2,6 +2,19 @@
 	
 	padding-bottom:20px;
 
+	.container{
+		.col-sm-3{
+			padding-top:20px;
+		}
+
+		.col-sm-9{
+			padding-top:35px;
+		}
+	}
+
+	h3 { font-weight:600;margin-top:36px;text-transform:uppercase;}
+	hr { margin:36px 0;}
+
 	.full { width: 100%; margin-bottom: 10px; }
 	.half { width: 48%; }
 
@@ -12,15 +25,19 @@
 		text-transform: uppercase;
 	}
 
+	@media (max-width: @screen-xs-max) {
+		.iconography .half { width:100%; }
+	}
+
 	@media (min-width: @screen-sm-min) {
 
 		padding-bottom:70px;
 
 	}
 
-	.half { width: 48%; }
-
 	.intro { font-size:18px; line-height:31px; }
+
+	#hc-gov-assets .toggle-buttons { float:none; }
 }
 
 .grid-display{
@@ -39,7 +56,7 @@
 	}
 }
 
-.code-wrapper{
+#hc-gov-assets .code-wrapper {
 	position:relative;
 	margin:0 0 30px 0;
 
@@ -145,4 +162,5 @@
 			color:#fff;
 		}
 	}
+
 }

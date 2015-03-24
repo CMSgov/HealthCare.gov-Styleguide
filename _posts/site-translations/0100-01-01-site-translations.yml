@@ -27,7 +27,7 @@ en:
     description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the general guidelines outlined."
     breakdown:
       title: "Breakdown"
-      text: 'The design and assets sections of the style guide contain design guidance and component-level artifacts with code snippets used across the various properties of Healthcare.gov.'
+      text: 'The design and assets sections of the [style guide](#) contain design guidance and component-level artifacts with code snippets used across the various properties of Healthcare.gov.'
     boxes:
       - { css-class: "design", title: "Design", location: "/design", subtitle: "Design", description: "Provides detailed guidance on various interactive modules and brand elements." }
       - { css-class: "assets", title: "Assets", location: "/assets", subtitle: "Assets", description: "Features individual artifacts paired with code snippets and descriptions." }

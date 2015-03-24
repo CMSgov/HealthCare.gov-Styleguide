@@ -1,0 +1,24 @@
+<ul class="nav nav-list">
+<% _.each(tableOfContents.chapters, function(chapter) { %>
+  <li class="chapter-section <%- getClassForChapterState(chapter.state) %>">
+    <a href="#" class="chapter-title" data-chapter-title="<%- chapter.title %>">
+      <span class="glyphicon chapter-state-icon state-icon" aria-hidden="true"></span>
+      <span class="title-text"><%- chapter.title %></span>
+    </a>
+    <% if (chapter.state === ChapterState.ACTIVE) { %>
+      <ol class="chapters">
+        <% _.each(chapter.cards, function(card, i) { %>
+          <li>
+            <a href="#" data-cid="<%- card.cid %>"
+                class="card-title <%- getClassForCardState(card.state) %>">
+              <span class="state-icon card-number"><%- i + 1 %></span>
+              <span class="state-icon card-state-icon glyphicon" aria-hidden="true"></span>
+              <span class="title-text"><%- card.title %></span>
+            </a>
+          </li>
+        <% }); %>
+      </ol>
+    <% } %>
+  </li>
+<% }); %>
+</ul>

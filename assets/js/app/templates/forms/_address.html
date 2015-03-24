@@ -1,0 +1,142 @@
+<fieldset id="<%- id %>" class="<%- defaultValue(options.className, '') %>">
+  <legend class="has-subtitle"><%- content.heading %></legend>
+  <p class="instructions">
+    <% if (content.highlight) { %>
+      <%= partial('help/_popover-highlight', {
+        label: content.instructions,
+        highlights: [{
+          highlight: content.highlight,
+          content: content.helpContent,
+          externalText: content.externalText,
+          externalLink: content.externalLink,
+          escapePopover: false
+        }]
+      }) %>
+    <% } else { %>
+      <%= content.instructions %>
+    <% } %>
+  </p>
+  <div class="row">
+    <div class="form-group col-sm-9">
+      <input class="form-control" name="<%- fieldNames.street %>"
+            autocorrect="off" autocapitalize="words" autocomplete="off" spellcheck="false"
+          type="text" maxlength="55" placeholder="<%- content.address1 %>" aria-label="<%- content.address1 %>">
+    </div>
+    <div class="form-group col-sm-3">
+      <input class="form-control" name="<%- fieldNames.apartment %>"
+          type="text" maxlength="55" placeholder="<%- content.address2 %>" aria-label="<%- content.address2 %>">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col-sm-4">
+      <input class="form-control" name="<%- fieldNames.city %>"
+            autocorrect="off" autocapitalize="words" autocomplete="on" spellcheck="true"
+          type="text" maxlength="25" placeholder="<%- content.city %>" aria-label="<%- content.city %>">
+    </div>
+    <div class="form-group col-sm-3">
+      <% if (typeof options === 'undefined' || !options.coverageStateName) { %>
+        <%= partial('forms/_dropdown', {
+          id: id + '-state',
+          name: fieldNames.state,
+          label: 'State',
+          // TODO(james): Construct menuItems programmatically using States.
+          menuItems: [
+            { value: 'AL', text: 'Alabama' },
+            { value: 'AK', text: 'Alaska' },
+            { value: 'AZ', text: 'Arizona' },
+            { value: 'AR', text: 'Arkansas' },
+            { value: 'CA', text: 'California' },
+            { value: 'CO', text: 'Colorado' },
+            { value: 'CT', text: 'Connecticut' },
+            { value: 'DE', text: 'Delaware' },
+            { value: 'DC', text: 'District of Columbia' },
+            { value: 'FL', text: 'Florida' },
+            { value: 'GA', text: 'Georgia' },
+            { value: 'HI', text: 'Hawaii' },
+            { value: 'ID', text: 'Idaho' },
+            { value: 'IL', text: 'Illinois' },
+            { value: 'IN', text: 'Indiana' },
+            { value: 'IA', text: 'Iowa' },
+            { value: 'KS', text: 'Kansas' },
+            { value: 'KY', text: 'Kentucky' },
+            { value: 'LA', text: 'Louisiana' },
+            { value: 'ME', text: 'Maine' },
+            { value: 'MD', text: 'Maryland' },
+            { value: 'MA', text: 'Massachusetts' },
+            { value: 'MI', text: 'Michigan' },
+            { value: 'MN', text: 'Minnesota' },
+            { value: 'MS', text: 'Mississippi' },
+            { value: 'MO', text: 'Missouri' },
+            { value: 'MT', text: 'Montana' },
+            { value: 'NE', text: 'Nebraska' },
+            { value: 'NV', text: 'Nevada' },
+            { value: 'NH', text: 'New Hampshire' },
+            { value: 'NJ', text: 'New Jersey' },
+            { value: 'NM', text: 'New Mexico' },
+            { value: 'NY', text: 'New York' },
+            { value: 'NC', text: 'North Carolina' },
+            { value: 'ND', text: 'North Dakota' },
+            { value: 'OH', text: 'Ohio' },
+            { value: 'OK', text: 'Oklahoma' },
+            { value: 'OR', text: 'Oregon' },
+            { value: 'PA', text: 'Pennsylvania' },
+            { value: 'RI', text: 'Rhode Island' },
+            { value: 'SC', text: 'South Carolina' },
+            { value: 'SD', text: 'South Dakota' },
+            { value: 'TN', text: 'Tennessee' },
+            { value: 'TX', text: 'Texas' },
+            { value: 'UT', text: 'Utah' },
+            { value: 'VT', text: 'Vermont' },
+            { value: 'VA', text: 'Virginia' },
+            { value: 'WA', text: 'Washington' },
+            { value: 'WV', text: 'West Virginia' },
+            { value: 'WI', text: 'Wisconsin' },
+            { value: 'WY', text: 'Wyoming' }
+          ],
+          options: { defaultText: content.selectState }
+        }) %>
+      <% } else { %>
+        <a href="javascript:;" class="coverage-state-toggle"
+           data-target=".coverage-state-dropdown">
+          <%- options.coverageStateName %><span class="caret"></span>
+        </a>
+      <% } %>
+    </div>
+    <div class="form-group col-sm-2 zip-field">
+      <input class="form-control" name="<%- fieldNames.zipCode %>"
+        type="tel" maxlength="5" placeholder="<%- content.zipCode %>" aria-label="<%- content.zipCode %>">
+    </div>
+
+    <% if (fieldNames.county) { %>
+      <div class="form-group col-sm-3">
+        <%= partial('forms/_dropdown', {
+          id: id + '-county-dropdown',
+          name: fieldNames.county,
+          label: content.county,
+          menuItems: [],
+          options: { dropdownToggleClassName: 'form-control form-county', defaultText: content.county }
+        }) %>
+      </div>
+    <% } %>
+
+    <% if (typeof options !== 'undefined' && options.coverageStateName) { %>
+      <div class="col-md-12 coverage-state-dropdown">
+        <%= Strings.format(content.changeCoverageState, options.coverageStateName) %>
+      </div>
+    <% } %>
+  </div>
+
+  <div class="address-error row">
+    <div class="invalid-zip-error col-sm-12 form-group has-error hidden">
+      <p class="help-block error-message" aria-live="polite"><%- content.invalidZipCodeMessage %></p>
+    </div>
+    <div class="invalid-address-error col-sm-12 form-group has-error hidden">
+      <p class="help-block error-message" aria-live="polite"><%- content.invalidAddressMessage %></p>
+    </div>
+    <div class="scrubbed-address-message col-sm-12 hidden" aria-live="polite">
+      <%= content.scrubbedAddressMessage %>
+      <a href="javascript:;" class="update-address"><%- content.updateYourAddress %></a>
+    </div>
+  </div>
+</fieldset>

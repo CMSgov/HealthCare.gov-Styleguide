@@ -1,0 +1,114 @@
+.lite-screener { // TODO(lorenyu): cleanup lite-screener CSS
+  .font-md();
+
+  .form-control {
+
+    &.mad-lib {
+      .box-shadow(none);
+
+      &:focus {
+        border-color: initial;
+        .box-shadow(none);
+      }
+    }
+  }
+
+  form {
+    .font-xl();
+
+    .form-group {
+      // Positioning context for placeholder polyfill elements.
+      position: relative;
+
+      //needed to keep selects inline with text
+      //bootstrap only sets for >768.
+      vertical-align: middle;
+
+      // TODO(benkomalo): figure out why we need to explicitly add this.
+      // The base bootstrap forms.less already has this rule for screens
+      // that are at least "sm" size, but IE seems to need this here.
+      display: inline-block;
+    }
+
+    select {
+      .font-xl();
+
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      color: fadeout(@light-blue, 0.5);
+      height: @input-height;
+      padding: 0 28px 0 8px;
+      .placeholder(@light-blue);
+      .appearance-none;
+
+      &.has-default-value,
+      &.selected,
+      &:focus,
+      &:hover {
+        color: @light-blue;
+      }
+    }
+
+    .button-wrapper {
+      margin-top: 24px;
+    }
+
+    .btn-lg {
+      min-width: 100%;
+    }
+
+    .msg-success {
+      .font-md();
+
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+
+  // spacing between lines of lite-screener
+  .info-text-container {
+    margin-bottom: 15px;
+  }
+
+  &.post-enrollment {
+    .subtitle {
+      margin-bottom: 10px;
+    }
+
+    .welcome-sep-container {
+      padding: 10px;
+      margin-bottom: 10px;
+
+      ul, li {
+        margin-bottom: 0;
+      }
+    }
+
+    .form-control.state {
+      width: 600px;
+
+      /* force the state dropdown to not overflow on xs sizes */
+      @media (max-width: @screen-xs-max) {
+        .font-md();
+        width: 100%;
+      }
+    }
+  }
+}
+
+.ie {
+  .lite-screener { // TODO(lorenyu): cleanup lite-screener CSS
+    select {
+      color: fadeout(@light-blue, 0.5);
+      padding-right: 5px;
+    }
+  }
+}
+
+/* align text vertically in firefox */
+@-moz-document url-prefix() {
+  .lite-screener form select {
+    padding-top: 3px;
+  }
+}

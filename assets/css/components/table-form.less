@@ -1,0 +1,61 @@
+/**
+ * Used for income source fields and deduction fields
+ * on /app/income and /app/deductions
+ */
+.table-form {
+
+  &.editing {
+
+    .table-form-header,
+    .table-form-item {
+      opacity: 0.5;
+    }
+  }
+
+  .th {
+    .font-md();
+    color: @medium-gray;
+  }
+
+  .action-link {
+    cursor: pointer;
+    border-bottom-width: 0px;
+  }
+
+  .table-form-header {
+    margin-bottom: 8px;
+  }
+
+  .table-form-item {
+    line-height: 35px;
+
+    @media (max-width: @screen-sm-max) {
+      border-top: solid 1px @medium-gray;
+
+      &.first {
+        border-top: none;
+      }
+    }
+  }
+
+  .table-form-item-fields {
+    margin-top: 20px;
+  }
+
+  .table-form-item-field-actions {
+    margin-bottom: 20px;
+  }
+
+  .add {
+    margin-top: 10px;
+  }
+
+  .cancel {
+    line-height: 41px;
+  }
+
+  .cancel,
+  .remove {
+    margin-left: 10px;
+  }
+}

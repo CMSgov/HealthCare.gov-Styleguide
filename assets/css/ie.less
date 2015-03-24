@@ -1,0 +1,88 @@
+// ie.less - styles particular to all versions of internet
+// explorer
+
+
+// IE in general
+// Fix for ie hidden issue
+.ie {
+  .hidden-ie {
+    display: none;
+  }
+}
+
+// IE 8 specific styles
+.ie8 {
+  .blue-bg {
+    // IE8 Specific styles to remove the dropdown button
+    // on the select input
+    .lite-screener.post-enrollment,
+    .lite-card,
+    .lite-card-inner,
+    .security-questions-section {
+      .form-select {
+        width: 100%;
+        overflow: hidden;
+        SELECT {
+          width: 110%;
+          border: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none;
+        }
+      }
+    }
+    // IE8 Specific styles to keep the create account
+    // button consistent with other inputs.
+    .lite-screener FORM .btn-lg {
+      min-width: 80%;
+      width: 100%;
+    }
+  }
+
+  //
+  // IE8 Specific styles for vertical align issues
+  //
+  .lite-card {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="url"],
+    .dropdown .dropdown-toggle,
+    select,
+    .ethnicity-race-toggle,
+    .coverage-state-toggle {
+      line-height: @input-height - 10px;
+    }
+    .ethnicity-race-dropdown {
+      .other-race-text-container {
+        input[type="text"] {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .lite-account-creation {
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    input[type="url"],
+    input[type="password"] {
+      line-height: 50px;
+    }
+
+    .security-questions-section {
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="number"],
+      input[type="url"],
+      input[type="password"] {
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+  }
+}

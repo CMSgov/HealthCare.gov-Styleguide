@@ -15,6 +15,8 @@ nav-title: "Photography"
 Photography is used predominantly on the unauthenticated side of Healthcare.gov, the homepage and audience landing pages. Photos are used to support the message on the page, engage the user with identifiable images, and build trust.
 </div>
 
+<div class="hr"></div>
+
 ## Photo Style
 
 The photo on the home page incorporates a soft, out-of-focus background with a sharp foreground image that focuses on the face or subject in-action. This styling connects the user with the person photographed on a more personal level. The photography used in this site design is key to making an emotional connection with the user. On the home page, the person in the photograph conveys confidence and ease, promoting a sense of comfort and trust. This is precisely how we want the visitors to healthcare.gov to feel.

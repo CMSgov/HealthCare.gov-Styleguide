@@ -4,7 +4,9 @@
 			<h2>{{ t.[page.lang].home-secondary.title }}</h2>
 		</div>
 		<div class="col-sm-8">
-			<p>{{ t.[page.lang].home-secondary.description }}</p>
+			<div class="intro">
+				<p>{{ t.[page.lang].home-secondary.description }}</p>
+			</div>
 			<div class="hr"></div>
 		</div>
 	</div>
@@ -16,7 +18,7 @@
 		{% for box in t.[page.lang].home-secondary.boxes %}
 			<div class="col-sm-4">
 				<a href="{{ site.baseurl }}{{ box.location }}" class="deep-dive-link {{ box.css-class }}">
-					<span class="title"><span class="glyphicon glyphicon-plus"></span>{{ box.title }}</span>
+					<span class="title"><span class="glyphicon glyphicon-plus"></span><span class="text">{{ box.title }}</span></span>
 					<span class="description">
 						<h4>{{ box.subtitle }}</h4>
 						<span>{{ box.description}}</span>

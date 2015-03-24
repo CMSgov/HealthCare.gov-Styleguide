@@ -1,0 +1,16 @@
+<div class="toggle-buttons <%- defaultValue(options.className, 'form-group') %>" data-toggle="buttons">
+  <% _.each(items, function(item, i) { %>
+    <%
+      var isActive = options.selectedValue === item.value ||
+        (options.type === 'checkbox' && _.contains(options.selectedValue, item.value));
+    %>
+    <a href="javascript:;" class="btn btn-primary radio-label prefill-<%- item.value %> <%- (isActive) ? 'active' : '' %>">
+      <input type="<%- defaultValue(options.type, 'radio') %>"
+             name="<%- name %>"
+             value="<%- item.value %>"
+             <%= (isActive) ? 'checked="checked"' : '' %>
+             aria-label="<%- item.label %>">
+      <%= item.label %>
+    </a>
+  <% }) %>
+</div>

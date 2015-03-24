@@ -1,0 +1,51 @@
+<div class="lite-card-inner" aria-live="polite" aria-atomic="false">
+  <h1 class="help-heading"></h1>
+  <div class="row">
+    <%- /* Hidden tabs use Bootstraps switching logic */ %>
+    <div class="col-sm-3 hidden-xs">
+      <nav>
+        <ul class="nav nav-tabs nav-stacked">
+          <% _.each(content.helpCollection, function(help, i) { %>
+            <li><a href="#<%- help.id %>" data-toggle="tab">
+              <%- Strings.format(help.title, {
+                coverageYear: coverageYear,
+                coverageYearPlusOne: coverageYear + 1
+              }) %>
+            </a></li>
+          <% }) %>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-md-8 col-sm-9 tab-content">
+      <% _.each(content.helpCollection, function(help, i) { %>
+        <div class="tab-pane" id="<%- help.id %>">
+          <h2 class="tab-title hidden">
+            <%= Strings.format(help.title, {
+              coverageYear: coverageYear
+            }) %>
+          </h2>
+          <%= Strings.format(help.content, {
+            coverageYear: coverageYear,
+            coverageYearPlusOne: coverageYear + 1
+          }) %>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 visible-xs">
+      <h2><%- content.dropdownTitle %></h2>
+      <div class="form-select">
+        <select title="Select article section" class="tabbed-article-select">
+          <option value=""><%- content.dropdownDefault %></option>
+          <% _.each(content.helpCollection, function(help, i) { %>
+            <option value="<%- help.id %>"><%- Strings.format(help.title, {
+              coverageYear: coverageYear
+            }) %></a></option>
+          <% }) %>
+        </select>
+        <span class="caret"></span>
+      </div>
+    </div>
+  </div>
+</div>

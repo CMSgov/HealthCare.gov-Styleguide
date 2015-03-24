@@ -1,0 +1,324 @@
+<%
+  // TODO(lorenyu): use moment.js library for all datetime stuff
+  var sixtyDaysAgo = new Date(new Date().getTime() - 1000*60*60*24*60);
+  var sixtyDaysAgoStr = (sixtyDaysAgo.getMonth()+1) + '/' + sixtyDaysAgo.getDate() + '/' + sixtyDaysAgo.getFullYear();
+  var sixtyDaysFromNow = new Date(new Date().getTime() + 1000*60*60*24*60);
+  var sixtyDaysFromNowStr = (sixtyDaysFromNow.getMonth()+1) + '/' + sixtyDaysFromNow.getDate() + '/' + sixtyDaysFromNow.getFullYear();
+%>
+<div class="lite-card-inner container" aria-live="polite" aria-atomic="false">
+
+  <% _.each(model.getIndexedPeopleApplyingForInsurance(), function(indexedPerson) { %>
+    <%
+      var i = indexedPerson[1];
+      var person = indexedPerson[0];
+    %>
+    <fieldset class="person-coverage-section" data-person-index="<%- i %>">
+      <legend><%- Strings.format(content.personCoverage, person.getFullName()) %></legend>
+
+      <div class="question clearfix currently-covered-question">
+        <div class="question-label">
+          <%= partial('help/_popover-label', {
+              label: Strings.format(content.personEnrolled, person.getFullName()),
+              content: content.personEnrolledHelp,
+              options: { append: true }
+            }) %>
+        </div>
+        <%= partial('forms/_toggle-buttons', {
+          name: '',
+          items: [
+            {value: true, label: content.yes},
+            {value: false, label: content.no}
+          ],
+          options: {selectedValue: _.isNull(person.get('currentCoverage')) ? null : person.get('currentCoverage').length > 0}
+        }) %>
+      </div>
+
+      <div class="form-group existing-coverage-types hidden spacer-top20">
+        <div class=""><%- Strings.format(content.whatType, person.getFullName()) %></div>
+
+        <% _.each(content.COVERAGE_TYPES, function(type, key) { %>
+          <div class="form-group checkbox">
+            <label>
+              <input type="checkbox" name="tendon:people[<%- i %>].currentCoverage" value="<%- key %>">
+              <% if (!_.isUndefined(content.COVERAGE_TYPES_HELP[key])) { %>
+                <%= partial('help/_popover-label', {
+                  label: type,
+                  content: content.COVERAGE_TYPES_HELP[key],
+                  options: { append: true }
+                }) %>
+              <% } else { %>
+                <%= type %>
+              <% } %>
+            </label>
+          </div>
+        <% }) %>
+        <div class="other-coverage question checkbox hidden">
+          <div class="form-group row">
+            <div class="form-group col-sm-3 col-xs-3">
+              <input class="form-control" name="tendon:people[<%- i %>].otherCoverageName"
+                type="text" placeholder="<%- content.otherCoverageName %>" aria-label="<%- content.otherCoverageName %>">
+            </div>
+            <div class="form-group col-sm-3 col-xs-3">
+              <input class="form-control" name="tendon:people[<%- i %>].otherCoveragePolicyNumber"
+                type="text" maxlength="255" placeholder="<%- content.otherCoveragePolicy %>" aria-label="<%- content.otherCoveragePolicy %>">
+            </div>
+            <div class="checkbox">
+              <div class="form-group col-sm-12">
+                <label>
+                  <input type="checkbox" name="tendon:people[<%- i %>].isOtherCoverageLimited">
+                    <%- content.otherCoverageLimited %>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <% if (person.getAge() < 19 && chipWaitingPeriod > 0) { %>
+        <div class="question clearfix spacer-top20">
+          <div class="question-label">
+            <% if (chipWaitingPeriod > 1) { %>
+              <%- Strings.format(content.personLostMedicaidCoverage, person.getFullName(), chipWaitingPeriod) %>
+            <% } else { %>
+              <%- Strings.format(content.personLostMedicaidCoverageOneMonth, person.getFullName()) %>
+            <% } %>
+          </div>
+          <%= partial('forms/_toggle-buttons', {
+            name: 'tendon:people[' + i + '].lostMedicaidCoverage',
+            items: [
+              {value: true, label: content.yes},
+              {value: false, label: content.no}
+            ]
+          }) %>
+        </div>
+      <% } %>
+
+    </fieldset>
+  <% }) %>
+
+  <fieldset>
+    <legend><%- content.additionalCoverageQuestions %></legend>
+
+    <% if (isTaxPenaltySepPeriod()) { %>
+      <div class="tax-penalty-sep-question form-group filter-question">
+        <div class="question-label"><%- Strings.format(content.taxPenaltySEP, model.get('coverageYear'), content.endOfOe2015) %></div>
+        <div data-toggle="buttons" class="toggle-buttons">
+          <a href="javascript:;" class="btn radio-label">
+            <input type="radio" name="tendon:isEligibleForTaxPenaltySep" value="true" aria-label="<%- content.yes %>"> <%- content.yes %>
+          </a>
+          <a href="javascript:;" class="btn radio-label">
+            <input type="radio" name="tendon:isEligibleForTaxPenaltySep" value="false" aria-label="<%- content.no %>"> <%- content.no %>
+          </a>
+        </div>
+      </div>
+      <div class="prior-year-tax-penalty-question form-group filter-question">
+        <div class="question-label">
+          <%= partial('help/_popover-highlight', {
+            label: Strings.format(content.priorYearTaxPenalty, {year: model.get('coverageYear') - 1}),
+            highlights: content.priorYearTaxPenaltyHighlights
+          }) %>
+        </div>
+        <div data-toggle="buttons" class="toggle-buttons">
+          <a href="javascript:;" class="btn radio-label">
+            <input type="radio" name="tendon:owePriorYearTaxPenalty" value="true" aria-label="<%- content.yes %>"> <%- content.yes %>
+          </a>
+          <a href="javascript:;" class="btn radio-label">
+            <input type="radio" name="tendon:owePriorYearTaxPenalty" value="false" aria-label="<%- content.no %>"> <%- content.no %>
+          </a>
+        </div>
+      </div>
+    <% } %>
+
+    <% if (model.hasDependents()) { %>
+      <div class="form-group filter-question">
+        <div class="question-label"><%- content.childOutsideHome %></div>
+        <div data-toggle="buttons" class="toggle-buttons">
+          <a href="javascript:;" class="btn radio-label">
+            <input type="radio" name="tendon:parentOutsideHousehold" value="true" aria-label="<%- content.yes %>"> <%- content.yes %>
+          </a>
+          <a href="javascript:;" class="btn radio-label">
+            <input type="radio" name="tendon:parentOutsideHousehold" value="false" aria-label="<%- content.no %>"> <%- content.no %>
+          </a>
+        </div>
+      </div>
+    <% } %>
+    <div id="not-medicaid-chip-eligible" class="spacer-top20">
+      <%= partial('forms/_applicant-checklist', {
+        model: model,
+        label: content.notMedicaidCHIPEligible.replace('{date}',
+          content[notMedicaidCHIPEligibleDateKey]),
+        question: 'notMedicaidCHIPEligible',
+        options: {
+          highlights: content.notMedicaidCHIPEligibleHelpHighlights
+        }
+      }) %>
+    </div>
+    <div id="applied-at-state-during-open-enrollment-question" class="spacer-top20 hidden">
+      <%= partial('forms/_applicant-checklist', {
+        model: model,
+        label: content.appliedAtStateDuringOEP.replace('{dateRange}',
+          content[appliedAtStateDuringOEPDateKey]),
+        question: 'appliedAtStateDuringOEP'
+      }) %>
+    </div>
+  </fieldset>
+
+  <fieldset class="special-enrollment-questions">
+    <legend class="has-subtitle"><%- content.specialEnrollmentHeader %></legend>
+    <p class="instructions">
+      <%= content.specialEnrollmentInstructions %>
+    </p>
+    <div class="form-group">
+      <div>
+         <%= partial('forms/_applicant-checklist', {
+            model: model,
+            label: Strings.format(content.specialEnrollmentQuestions.lostCoverage, sixtyDaysAgoStr),
+            question: 'lostCoverage',
+            options: {
+              askForDate: {
+                label: content.specialEnrollmentQuestions.whenLostCoverage,
+                question: 'lostCoverageDate'
+              },
+              help: content.specialEnrollmentQuestions.lostCoverageHelp
+            }
+          }) %>
+      </div>
+      <div>
+         <%= partial('forms/_applicant-checklist', {
+            model: model,
+            label: Strings.format(content.specialEnrollmentQuestions.willLoseCoverage, sixtyDaysFromNowStr),
+            question: 'willLoseCoverage',
+            options: {
+              askForDate: {
+                label: content.specialEnrollmentQuestions.whenWillLoseCoverage,
+                question: 'willLoseCoverageDate',
+                help: content.specialEnrollmentQuestions.whenWillLoseCoverageHelp
+              }
+            }
+          }) %>
+      </div>
+      <div>
+         <%= partial('forms/_applicant-checklist', {
+            model: model,
+            label: Strings.format(content.specialEnrollmentQuestions.gotMarried, sixtyDaysAgoStr),
+            question: 'gotMarried',
+            options: {
+              askForDate: {
+                label: content.specialEnrollmentQuestions.whenGotMarried,
+                question: 'gotMarriedDate'
+              }
+            }
+          }) %>
+      </div>
+      <div>
+         <%= partial('forms/_applicant-checklist', {
+            model: model,
+            label: Strings.format(content.specialEnrollmentQuestions.released, sixtyDaysAgoStr),
+            question: 'released',
+            options: {
+              askForDate: {
+                label: content.specialEnrollmentQuestions.whenReleased,
+                question: 'releasedDate'
+              }
+            }
+          }) %>
+      </div>
+      <div>
+         <%= partial('forms/_applicant-checklist', {
+            model: model,
+            label: Strings.format(content.specialEnrollmentQuestions.gainedImmigrationStatus, sixtyDaysAgoStr),
+            question: 'gainedImmigrationStatus',
+            options: {
+              askForDate: {
+                label: content.specialEnrollmentQuestions.whenGainedImmigrationStatus,
+                question: 'gainedImmigrationStatusDate'
+              }
+            }
+          }) %>
+      </div>
+      <div>
+         <%= partial('forms/_applicant-checklist', {
+            model: model,
+            label: Strings.format(content.specialEnrollmentQuestions.adopted, sixtyDaysAgoStr),
+            question: 'adopted',
+            options: {
+              askForDate: {
+                label: content.specialEnrollmentQuestions.whenAdopted,
+                question: 'adoptedDate'
+              }
+            }
+          }) %>
+      </div>
+      <div>
+         <%= partial('forms/_applicant-checklist', {
+            model: model,
+            label: Strings.format(content.specialEnrollmentQuestions.moved, sixtyDaysAgoStr),
+            question: 'moved',
+            options: {
+              askForDate: {
+                label: content.specialEnrollmentQuestions.whenMoved,
+                question: 'movedDate'
+              },
+              askForZip: {
+                label: content.specialEnrollmentQuestions.whereMoved,
+                question: 'previousZipCode'
+              }
+            }
+          }) %>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="eligibility-renewal-questions">
+    <legend class="has-subtitle"><%- content.eligibilityRenewal %></legend>
+    <p class="instructions">
+      <%= partial('help/_popover-label', {
+        label: content.eligibilityRenewalMessage,
+        content: content.eligibilityRenewalMessageHelp.content,
+        options: {
+          append: true,
+          externalLink: content.eligibilityRenewalMessageHelp.externalLink,
+          externalText: content.eligibilityRenewalMessageHelp.externalText
+        }
+      }) %>
+    </p>
+    <div data-toggle="buttons" class="clearfix prefill-renew-eligibility">
+      <%= partial('forms/_toggle-buttons', {
+        name: 'tendon:agreedToRenewEligibility',
+        items: [
+          {value: 'true', label: content.agree},
+          {value: 'false', label: content.disagree}
+        ]
+      }) %>
+    </div>
+    <div class="hidden spacer-top20 eligibility-renewal-years">
+      <div class="question-label">
+        <%- content.eligibilityRenewalClarification %>
+      </div>
+      <p class="instructions">
+        <%- content.noRenewalWarning %>
+      </p>
+      <%= partial('forms/_toggle-buttons', {
+        name: 'tendon:numYearsForEligibilityRenewal',
+        items: [
+          { value: '5', label: '5 ' + Grammar.pluralize(content.year, 5) },
+          { value: '4', label: '4 ' + Grammar.pluralize(content.year, 4) },
+          { value: '3', label: '3 ' + Grammar.pluralize(content.year, 3) },
+          { value: '2', label: '2 ' + Grammar.pluralize(content.year, 2) },
+          { value: '1', label: '1 ' + Grammar.pluralize(content.year, 1) },
+          { value: '0', label: content.dontRenew }
+        ],
+        options: {
+          className: 'btn-group-vertical form-group'
+        }
+      }) %>
+    </div>
+  </fieldset>
+
+  <div class="row">
+    <div class="form-group col-sm-6 col-sm-offset-3 col-md-offset-3 sign-button-wrapper">
+      <button class="btn btn-lg btn-success btn-submit"><%- content.reviewApplication %></button>
+    </div>
+  </div>
+
+</div>
