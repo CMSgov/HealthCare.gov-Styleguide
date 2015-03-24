@@ -63,19 +63,19 @@ Here are examples of correct and incorrect photo styling for Healthcare.gov.
 
 <div class="row usage">
 	<div class="col-sm-6">
-		<img class="full" src="{{site.baseurl}}/images/design/photography/4_GetCoverage.jpg" />
+		<img class="full" src="{{site.baseurl}}/images/design/photography/8_Natural.jpg" />
 		<span class="glyphicon glyphicon-remove green"></span> Happy and natural
 	</div>
 	<div class="col-sm-6">
-		<img class="full" src="{{site.baseurl}}/images/design/photography/5_ChangeUpdate.jpg" />
+		<img class="full" src="{{site.baseurl}}/images/design/photography/9_Posed.jpg" />
 		<span class="glyphicon glyphicon-remove red"></span> Overly posed
 	</div>
 	<div class="col-sm-6">
-		<img class="full" src="{{site.baseurl}}/images/design/photography/6_Employers.jpg" />
+		<img class="full" src="{{site.baseurl}}/images/design/photography/10_WarmTones.jpg" />
 		<span class="glyphicon glyphicon-remove green"></span> Warm tones
 	</div>
 	<div class="col-sm-6">
-		<img class="full" src="{{site.baseurl}}/images/design/photography/7_Employees.jpg" />
+		<img class="full" src="{{site.baseurl}}/images/design/photography/11_CoolTones.jpg" />
 		<span class="glyphicon glyphicon-remove red"></span> Cool tones
 	</div>
 </div>
