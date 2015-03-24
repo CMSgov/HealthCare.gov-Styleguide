@@ -7371,7 +7371,7 @@ a[name="skipnav"] {
     background-size: cover;
   }
   #homepage .deep-dive-link.assets:hover .description {
-    background: url("../../images/AssetsRollover.png") center;
+    background: url("../images/AssetsRollover.png") center;
     background-size: cover;
   }
 }
