@@ -46,15 +46,17 @@
 		</ul>
 	</div>
 
-	<div class="mobile-subnav-wrapper">
-		<select class="form-control" name="dropdown-name" aria-label="Dropdown label" data-type="">
-			<option value="">Enter Menu</option>
-			{% for post in site.posts reversed %}
-				{% comment %}<!-- Iterate Over Pages that match landing page / section -->{% endcomment %}
-				{% if post.section == page.section and post.layout != "landing-page" %}
-					<option value="{{ post.nav-title }}"><a href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></option>
-				{% endif %}
-			{% endfor %}
-		</select>
-	</div>
+	{% if page.section != 'governance' %}
+		<div class="mobile-subnav-wrapper">
+			<select class="form-control" name="dropdown-name" aria-label="Dropdown label" data-type="">
+				<option value="">Enter Menu</option>
+				{% for post in site.posts reversed %}
+					{% comment %}<!-- Iterate Over Pages that match landing page / section -->{% endcomment %}
+					{% if post.section == page.section and post.layout != "landing-page" %}
+						<option value="{{ post.nav-title }}"><a href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></option>
+					{% endif %}
+				{% endfor %}
+			</select>
+		</div>
+	{% endif %}
 </div>
