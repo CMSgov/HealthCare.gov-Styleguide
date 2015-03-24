@@ -77,6 +77,15 @@ $(document).ready(function() {
   $('.toggle-interior-nav').click(function(){
     $(this).toggleClass('closed');
     $(this).siblings('ul').toggle();
+    var chevron = $(this).siblings('.glyphicon');
+
+    if(chevron.hasClass('glyphicon-chevron-right')){
+      chevron.removeClass('glyphicon-chevron-right');
+      chevron.addClass('glyphicon-chevron-down');
+    } else{
+      chevron.removeClass('glyphicon-chevron-down');
+      chevron.addClass('glyphicon-chevron-right');
+    }
   });
 
   // Landing page sticky left navigation, separated for different offset

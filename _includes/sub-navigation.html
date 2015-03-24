@@ -18,7 +18,7 @@
 						{% endif %}
 						{% assign subNav = true %}
 						{% assign currentCategory = post.categories[0] %}
-						<li><span class="glyphicon glyphicon-chevron-right"></span><a class="toggle-interior-nav" href="javascript:;">{{ post.categories[0] }}</a>
+						<li><span class="glyphicon glyphicon-chevron-down"></span><a class="toggle-interior-nav" href="javascript:;">{{ post.categories[0] }}</a>
 							<ul>
 								<li><a class="{% if currentURL == post.url %}current{% endif %}" href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
 
