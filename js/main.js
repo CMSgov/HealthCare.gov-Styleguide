@@ -67,7 +67,8 @@ $(document).ready(function() {
   // Bootstrap based select component modifcation
   $('.form-control').selectpicker({
     style: 'btn-info',
-    size: 4
+    size: 4,
+    mobile: true
   });
 
   // Go to Top button
