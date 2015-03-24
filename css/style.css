@@ -6792,6 +6792,9 @@ h3 {
 .subnav li ul li {
   list-style-type: none;
 }
+.subnav .glyphicon {
+  margin: 0 0 0 -13px;
+}
 .subnav .glyphicon a {
   display: inline-block;
   margin: 10px;
@@ -6928,6 +6931,13 @@ a[name="skipnav"] {
   }
   .glyphicon-menu-hamburger:before {
     color: #036091;
+  }
+}
+@media (max-width: 480px) {
+  .header-wrap .site-header .logo img {
+    margin: 17px 0 13px 0;
+    width: 301px;
+    height: 30px;
   }
 }
 #landing-page {
