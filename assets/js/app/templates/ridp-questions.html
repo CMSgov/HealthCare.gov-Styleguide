@@ -1,0 +1,22 @@
+<div class="lite-card-inner container" aria-live="polite" aria-atomic="false">
+  <h2><%- content.verifyMyIdentity %></h2>
+  <div class="subtitle"><%= content.ridpDescription %></div>
+  <% _.each(model.get('ridpQuestions'), function(questionInfo, qIndex) { %>
+    <div class="question">
+      <div class="question-label"><%- questionInfo.question %><span class="error-message glyphicon icon-error" aria-hidden="true"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></span></div>
+      <div class="btn-group btn-group-vertical filter-question" data-toggle="buttons">
+        <% _.each(questionInfo.answer, function(choice, i) { %>
+          <a href="javascript:;" class="btn radio-label">
+            <input type="radio" name="question-<%- qIndex %>" value="<%- i %>">
+            <%- choice %>
+          </a>
+        <% }) %>
+      </div>
+    </div>
+  <% }) %>
+
+  <div class="form-group col-md-6 col-md-offset-3 sign-button-wrapper">
+    <button class="btn btn-lg btn-success btn-submit"
+        data-action="submit"><%- content.submit %></button>
+  </div>
+</div>

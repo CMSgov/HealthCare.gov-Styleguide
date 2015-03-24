@@ -1,0 +1,324 @@
+/* color taken from aquilent landing page, not used elsewhere */
+@footer-border-color: #e1e2e2;
+
+footer.lite-card {
+  .font-md();
+
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+
+  background: @lightest-gray;
+  color: @medium-gray;
+
+  ul {
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+
+  a {
+    .font-md();
+    /* remove default border-bottom for footer */
+    .link-decorator(transparent, @dark-gray);
+    color: @medium-gray;
+
+    &:hover {
+      color: @dark-gray;
+    }
+
+    &.glyphicon {
+      .link-decorator(transparent, transparent);
+      font-size: 20px;
+      top: 2px;
+    }
+  }
+
+  h3,
+  h3 a {
+    font-size: 18px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    color: @dark-gray;
+  }
+
+  hr {
+    border: 0;
+    width: 100%;
+    border-top: 1px solid @footer-border-color;
+    margin: 0 0 40px;
+  }
+
+  ul {
+    &.default li {
+      .font-sm();
+      margin-bottom: 20px;
+    }
+
+    &.smaller li {
+      .font-xs();
+      margin-bottom: 10px;
+    }
+  }
+
+  .row-links {
+    padding: 10px 0 15px;
+    border: 1px solid @footer-border-color;
+    border-width: 1px 0;
+    margin-bottom: 30px;
+  }
+
+  small,
+  small.up-case a {
+    .font-xs();
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  /* css taken from Aquilent footer */
+  .enrollment-clock {
+    color: @dark-gray;
+    padding-top: 10px;
+
+    span:first-child {
+      font-size: 35px;
+      line-height: 32px;
+      font-weight: 700;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    span:nth-child(2) {
+      width: 130px;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 12px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+  }
+
+  .footer-links {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 2px 0 5px 0;
+    border-top: 1px solid @border-color;
+    border-bottom: 1px solid @border-color;
+  }
+
+  /* css taken from Aquilent footer */
+  .col-sm-5.col-connect-with-us {
+    padding-left: 6%;
+    border-left: 1px solid @footer-border-color;
+  }
+
+  /* css taken from Aquilent footer */
+  .icon.marketplace.es {
+    background-position: -16px -297px;
+    width: 284px;
+    height: 33px;
+  }
+
+  /*
+    These panels in the footer are only .visible-xs, and have lots of default
+    Bootstrap styling removed from them.
+  */
+  .panel-group {
+
+    .panel {
+      background-color: transparent;
+      border-bottom: 1px solid @border-color;
+
+      .box-shadow(none);
+    }
+
+    .panel-heading {
+      padding: 0;
+
+      .panel-title {
+        margin-top: 14px;
+        margin-bottom: 14px;
+      }
+
+      h3 {
+        .font-xs();
+        text-transform: uppercase;
+      }
+
+      /* overriding a bootstrap css rule, so have to be extra verbose */
+      + .panel-collapse .panel-body {
+        border-top-color: transparent;
+        padding: 0;
+      }
+    }
+  }
+
+}
+
+/* this css is just for footer-small.html and footer-small-es.html */
+footer.footer-small {
+  .footer-links {
+    margin-top: 0;
+  }
+}
+
+.icon {
+  display: block;
+    /* I believe the img location should be changed to something more like below,
+   however, I think this begs a larger discussion about where images will be
+   stored in final product so both MPL & Learn can access from shared location
+  background: url(../img/sprite.png) 0 0 repeat; */
+  background: url('@{static-base-path}img/sprite@1x.png');
+  background-repeat: no-repeat;
+  text-indent: -999em;
+  text-align: left;
+
+  .link-decorator(transparent);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and
+(min-device-pixel-ratio: 2) {
+  .icon {
+    background: url('@{static-base-path}img/sprite@2x.png');
+    background-size: 750px 350px;
+  }
+}
+
+.marketplace {
+  margin-bottom: 20px;
+  width: 375px;
+  height: 47px;
+  background-position: -13px -239px;
+}
+
+.marketplace-mobile {
+  width: 223px;
+  height: 29px;
+  background-position: -431px -251px;
+  margin-bottom: 20px;
+}
+
+.share {
+  width: 26px;
+  height: 32px;
+  background-position: -90px -62px;
+}
+
+.flag {
+  width: 26px;
+  height: 32px;
+  background-position: -133px -60px;
+}
+
+.twitter {
+  width: 38px;
+  height: 36px;
+  background-position: -52px -87px;
+}
+
+.facebook {
+  width: 38px;
+  height: 36px;
+  background-position: -14px -87px;
+}
+
+.youtube {
+  width: 38px;
+  height: 36px;
+  background-position: -127px -87px;
+}
+
+.eagle {
+  width: 50px;
+  height: 70px;
+  background-position: -400px -81px;
+  margin-right: 10px;
+  float: left;
+}
+
+.whitehouse {
+  margin-right: 20px;
+  width: 61px;
+  height: 43px;
+  background-position: -654px -87px;
+}
+
+.usagov {
+  width: 100px;
+  height: 40px;
+  background-position: -501px -86px;
+}
+
+.social-icon a {
+  float: left;
+}
+
+
+@media (max-width: @screen-sm-max) {
+  /* give the footer some padding on small screens */
+  footer.lite-card {
+    padding: 20px 10px;
+
+    hr {
+      margin: 0 0 20px 0;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  footer {
+    .footer-links {
+      text-align: center;
+
+      /* override our .text-right on mobile */
+      .text-right {
+        text-align: center;
+      }
+    }
+
+    h3,
+    h3 a {
+      .font-sm();
+    }
+
+    li a {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+
+  .tiny-text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  /* css taken from Aquilent footer */
+  .icons-center {
+    float: none!important;
+    margin: 30px auto 0;
+
+    &.eagle {
+      margin-top: 0;
+    }
+  }
+
+  .marketplace-mobile.es {
+    background-position: -341px -304px;
+    width: 185px;
+  }
+}
+
+/* css taken from Aquilent footer */
+html[lang='es'] .icon.usagov {
+  width: 138px;
+  background-position: -545px -148px;
+}
+/* css taken from Aquilent footer, need to make this enrollment cta bigger on spanish to fit the copy */
+html[lang='es'] footer .enrollment-clock span:nth-child(2) {
+  width: 170px;
+}

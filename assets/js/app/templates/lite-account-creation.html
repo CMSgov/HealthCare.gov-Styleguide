@@ -1,0 +1,199 @@
+<div>
+
+  <div class="clearfix spacer-bottom-25">
+    <div id="header-sr" class="col-sm-12">
+      <h1 class="sub"><%- content.createAccountHeading %></h1>
+      <%= content.createAccountSubHeading %>
+    </div>
+  </div>
+
+  <% /* Do NOT use the form tag AND do not use role="form" or JAWS 13-15 will
+        go crazy and re-read the entire form in every input. */ %>
+  <div class="account-form fadeable visible">
+  <!-- Contact Information -->
+    <div class="account-contact-fields">
+      <div class="clearfix row">
+        <div class="col-sm-6 clearfix">
+          <div class="form-group">
+            <input class="form-control" name="tendon:firstName" type="text"
+                maxlength="20"
+                autocorrect="off" autocapitalize="on" autocomplete="off" spellcheck="false"
+                aria-label="<%- content.firstName %>"
+                placeholder="<%- content.firstName %>"
+                aria-required="true"
+                aria-describedby="header-sr"
+                autofocus>
+            <p class="help-block error-message"></p>
+            <div class="visible-xs glyphicon icon-ok hidden" aria-hidden="true">
+              <span class="glyphicon-ok" aria-hidden="true"></span>
+            </div>
+            <div class="visible-xs glyphicon icon-error hidden" aria-hidden="true">
+              <span class="glyphicon-remove" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 clearfix">
+          <div class="form-group last-name">
+            <input class="form-control" name="tendon:lastName" type="text"
+                maxlength="25"
+                autocorrect="off" autocapitalize="on" autocomplete="off" spellcheck="false"
+                aria-label="<%- content.lastName %>"
+                placeholder="<%- content.lastName %>"
+                aria-required="true">
+            <p class="help-block error-message"></p>
+            <div class="glyphicon icon-ok hidden" aria-hidden="true">
+              <span class="glyphicon-ok" aria-hidden="true"></span>
+            </div>
+            <div class="glyphicon icon-error hidden" aria-hidden="true">
+              <span class="glyphicon-remove" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="email-label-sr" class="input-label"><%- content.emailLabel %></div>
+      <div class="form-group">
+        <input class="form-control" name="tendon:email" type="email"
+            maxlength="74"
+            aria-label="<%- content.email %>"
+            placeholder="<%- content.email %>"
+            aria-required="true"
+            aria-describedby="email-label-sr">
+        <p class="help-block error-message"></p>
+        <div class="glyphicon icon-ok hidden" aria-hidden="true">
+          <span class="glyphicon-ok" aria-hidden="true"></span>
+        </div>
+        <div class="glyphicon icon-error hidden" aria-hidden="true">
+          <span class="glyphicon-remove" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="input-label checkbox-label">
+          <input type="checkbox" name="tendon:newsAndUpdates" value="true" checked>
+          <%- content.newsAndUpdatesLabel %>
+        </label>
+      </div>
+
+      <div id="password-label-sr" class="input-label row spacer-top25">
+        <% if (showPasswordCheckboxes) { %>
+          <div class="col-xs-1">
+            <%- content.passwordLabel %>
+          </div>
+          <div class="col-xs-11">
+            <span id="req_length" class="req"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><%- content.passwordLabelLength %></span>
+            <span id="req_case" class="req"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><%- content.passwordLabelCase %></span>
+            <span id="req_number" class="req"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><%- content.passwordLabelNumber %></span>
+          </div>
+        <% } else { %>
+          <%- content.altPasswordLabel %>
+        <% } %>
+
+      </div>
+      <div class="form-group">
+        <input class="form-control" name="tendon:password" type="password"
+            maxlength="20"
+            autocorrect="off" autocapitalize="on" autocomplete="off" spellcheck="false"
+            aria-label="<%- content.password %>"
+            placeholder="<%- content.password %>"
+            aria-required="true"
+            aria-describedby="password-label-sr">
+        <p class="help-block error-message"></p>
+        <div class="glyphicon icon-ok hidden" aria-hidden="true">
+          <span class="glyphicon-ok" aria-hidden="true"></span>
+        </div>
+        <div class="glyphicon icon-error hidden" aria-hidden="true">
+          <span class="glyphicon-remove" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <% if (showRetypePassword) { %>
+      <div class="form-group">
+        <input class="form-control" name="confirmPassword" type="password"
+            maxlength="50"
+            autocorrect="off" autocapitalize="on" autocomplete="off" spellcheck="false"
+            aria-label="<%- content.repeatPassword %>"
+            placeholder="<%- content.repeatPassword %>"
+            aria-required="true">
+        <p class="help-block error-message"></p>
+        <div class="glyphicon icon-ok hidden" aria-hidden="true">
+          <span class="glyphicon-ok" aria-hidden="true"></span>
+        </div>
+        <div class="glyphicon icon-error hidden" aria-hidden="true">
+          <span class="glyphicon-remove" aria-hidden="true"></span>
+        </div>
+      </div>
+      <% } %>
+    </div>
+
+    <div class="create-account-final-controls">
+      <div class="spacer-bottom40 form-group privacy-policy">
+        <label class="input-label checkbox-label">
+          <input type="checkbox" name="tendon:privacyPolicy" value="true" aria-required="true">
+          <%- content.privacySentence %>
+          <a target="_blank" href="/privacy/"><%- content.privacyPolicy %></a>
+          <p class="help-block error-message"></p>
+          <% if (showPrivacyErrorIcon) { %>
+          <div class="glyphicon icon-ok hidden" aria-hidden="true">
+            <span class="glyphicon-ok" aria-hidden="true"></span>
+          </div>
+          <div class="glyphicon icon-error hidden" aria-hidden="true">
+            <span class="glyphicon-remove" aria-hidden="true"></span>
+          </div>
+          <% } %>
+        </label>
+      </div>
+      <div class="create-account spacer-bottom20 button-wrapper">
+        <button type="submit" aria-label="<%- content.createAccountButton %>"
+           class="btn btn-success btn-lg btn-create-account">
+          <%- content.createAccountButton %>
+        </button>
+        <div class="glyphicon account-creation-error-icon icon-error hidden" aria-hidden="true">
+          <span class="glyphicon-remove" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="creating-account spacer-bottom20 hidden button-wrapper">
+        <a class="btn btn-success btn-lg btn-creating-account">
+          <%- content.creatingAccountButton %>
+          <img src="/marketplace/b/app2/img/loading.gif">
+        </a>
+      </div>
+      <div class="account-validation-error-message hidden spacer-bottom20 error-message">
+        <%- content.accountCreationValidationError %>
+        <ul class="invalid-fields">
+        </ul>
+        <%- content.accountCreationValidationErrorPleaseFix %>
+      </div>
+      <div class="account-exists-error-message hidden spacer-bottom20 error-message">
+          <%- content.accountCreationExistsError %>
+      </div>
+      <div class="account-generic-error-message hidden spacer-bottom20 error-message">
+        <%- content.accountCreationGenericError %> <%= content.contactSupport %>
+      </div>
+      <div class="account-server-error-message hidden spacer-bottom20">
+        <%- content.accountCreationServerError %> <%= content.contactSupport %>
+      </div>
+      <div class="button-wrapper">
+        <a href="<%- loginLink %>" class="btn-login btn btn-blue btn-lg btn-wrap">
+          <%- content.alreadyHaveAnAccountButton %>
+        </a>
+      </div>
+      <div id="account-error-message" class="hidden">
+        <%- content.accountCreationError %>
+      </div>
+    </div>
+
+    <div class="click-cover hidden"><% /* overlay to trap mouse clicks after submission */ %>
+    </div>
+  </div>
+
+  <div class="success-container fadeable col-sm-12">
+    <h1><%- content.successHeader %></h1>
+    <div class="instructions line1"></div>
+    <div class="instructions line2"></div>
+    <div class="button-wrapper">
+      <a class="btn btn-success btn-blue btn-lg email-link hidden" role="button">
+        <img class="email-icon hidden">
+      </a>
+    </div>
+  </div>
+</div>

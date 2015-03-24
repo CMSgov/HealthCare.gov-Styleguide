@@ -1,0 +1,43 @@
+<div class="lite-card-inner container" aria-live="polite" aria-atomic="false">
+  <% if (model.get('ffmId')) { %>
+    <div class="pull-right"><%- content.applicationId + ': ' + model.get('ffmId') %></div>
+  <% } %>
+  <h1 class="sub"><%- content.additionalQuestionsTitle %></h1>
+  <div class="subtitle"><%- content.additionalQuestionsSubtitle %></div>
+
+  <%= partial('forms/_applicant-checklist', {
+    model: model,
+    label: content.disabilityQuestion,
+    question: 'hasDisability',
+    options: {
+      questionClass: 'optional',
+      autofocus: true,
+      help: content.disabilityQuestionHelp
+    }
+  }) %>
+
+  <%= partial('forms/_applicant-checklist', {
+    model: model,
+    label: content.dailyActivitiesQuestion,
+    question: 'needsPhysicalAssistance',
+    options: {
+      questionClass: 'optional',
+      highlights: content.dailyActivitiesQuestionHelpHighlights
+    }
+  }) %>
+
+  <%= partial('forms/_applicant-checklist', {
+    model: model,
+    label: content.helpPayingQuestion,
+    question: 'wantRecentBillAssistance',
+    options: {
+      questionClass: 'optional',
+      help: content.helpPayingQuestionHelp
+    }
+  }) %>
+  <div class="row">
+    <div class="form-group col-sm-6 col-sm-offset-3 col-md-offset-3 sign-button-wrapper">
+      <button class="btn btn-lg btn-success btn-submit"><%- content.continueApplication %></button>
+    </div>
+  </div>
+</div>

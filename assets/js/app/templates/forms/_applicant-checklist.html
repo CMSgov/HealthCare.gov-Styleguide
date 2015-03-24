@@ -1,0 +1,70 @@
+<div class="question form-group <% if (options.questionClass) { %><%- options.questionClass %><% } %>" data-question="<%- question %>">
+  <div class="question-label">
+    <% if (options.highlights) { %>
+      <%= partial('help/_popover-highlight', {
+        label: label,
+        highlights: options.highlights
+      }) %>
+    <% } else if (options.help) { %>
+      <%= partial('help/_popover-label', {
+        label: label,
+        content: options.help,
+        options: { append: true, escapePopover: false }
+      }) %>
+    <% } else { %>
+      <%- label %>
+    <% } %>
+  </div>
+  <div>
+    <% _.each(model.getIndexedPeopleApplyingForInsurance(), function(indexedPerson) { %>
+      <%
+        var i = indexedPerson[1];
+        var person = indexedPerson[0];
+      %>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"
+            name="tendon:people[<%- i %>].<%= question %>"
+            value="true"
+            <%= (i === 0 && options.autofocus) ? 'autofocus' : '' %>
+            data-person-index="<%- i %>">
+          <%- person.getFullName() %>
+        </label>
+        <%
+        /* The "extra" input(s) below is only displayed when extra info is required
+            for every applicant.
+
+            This is currently only used for special enrollment period questions.
+            If you want to use this elsewhere, it should be extracted into its
+            own view since it has associated code (to make it appear and
+            disappear when its checkbox is checked). Look at TableFormView for
+            an example of a view that is applied to multiple partials.
+        */
+        if (options.askForDate) { %>
+          <div class="question form-group row hidden">
+            <div class="question-label col-sm-12">
+              <% if (options.askForDate.help) { %>
+                <%= partial('help/_popover-label', {
+                  label: Strings.format(options.askForDate.label, person.get('firstName')),
+                  content: Strings.format(options.askForDate.help, person.get('firstName')),
+                  options: { append: true, escapePopover: false }
+                }) %>
+              <% } %>
+            </div>
+            <div class="form-group col-sm-3 col-xs-8">
+              <input class="form-control" name="tendon:people[<%- i %>].<%= options.askForDate.question %>" type="tel" maxlength="25" placeholder="MM/DD/YYYY" aria-label="MM/DD/YYYY" data-mask="99/99/9999">
+            </div>
+          </div>
+        <% }
+        if (options.askForZip) { %>
+          <div class="question form-group row hidden">
+            <div class="question-label col-sm-12"><%- Strings.format(options.askForZip.label, person.get('firstName')) %></div>
+            <div class="form-group col-sm-3 col-xs-8">
+               <input class="form-control" name="tendon:people[<%- i %>].<%= options.askForZip.question %>" type="tel" maxlength="5" placeholder="<%- content.zipCode %>" aria-label="<%- content.zipCode %>">
+            </div>
+          </div>
+        <% } %>
+      </div>
+    <% }) %>
+  </div>
+</div>
