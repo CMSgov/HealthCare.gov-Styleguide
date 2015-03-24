@@ -6917,6 +6917,7 @@ a[name="skipnav"] {
   display: none;
   margin: 12px 0 0 0;
   color: #085372;
+  float: right;
 }
 @media (max-width: 780px) {
   .header-wrap .site-header .navbar {
@@ -6924,13 +6925,10 @@ a[name="skipnav"] {
   }
   .header-wrap .site-header .mobile-menu-btn-wrapper {
     display: block;
-    float: right;
   }
-  .header-wrap .site-header .mobile-menu-btn-wrapper span {
-    font-size: 36px;
-  }
-  .glyphicon-menu-hamburger:before {
-    color: #036091;
+  .header-wrap .site-header .mobile-menu-btn-wrapper .mobile-menu-btn {
+    display: block;
+    margin: 7px 0 0 0;
   }
 }
 @media (max-width: 480px) {
