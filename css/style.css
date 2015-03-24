@@ -7199,6 +7199,13 @@ a[name="skipnav"] {
     color: #036091;
   }
 }
+@media (max-width: 480px) {
+  .header-wrap .site-header .logo img {
+    margin: 17px 0 13px 0;
+    width: 301px;
+    height: 30px;
+  }
+}
 #landing-page {
   padding-bottom: 90px;
 }
