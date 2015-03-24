@@ -7168,22 +7168,8 @@ a[name="skipnav"] {
 #detail-page #hc-gov-assets .toggle-buttons {
   float: none;
 }
-#detail-page #hc-gov-assets .blue-bg .subtitle,
-#detail-page #hc-gov-assets .blue-bg .visible-radio-label,
-#detail-page #hc-gov-assets .blue-bg .question-label {
-  color: #cfeffc;
-}
 #detail-page #hc-gov-assets .question-section {
   margin-bottom: 0;
-}
-#detail-page #hc-gov-assets .blue-bg .form-inline select option {
-  color: #fff;
-}
-#detail-page #hc-gov-assets .popover-content {
-  color: #cfeffc;
-}
-#detail-page #hc-gov-assets .glossary-term {
-  border-bottom-style: dashed;
 }
 #detail-page #hc-gov-assets .code-wrapper .preview h3.sub {
   text-transform: none;
