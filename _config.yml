@@ -1,5 +1,5 @@
 title: HealthCare.gov Styleguide
-baseurl: /pages/CMSGov/cmsgov.github.io
+#baseurl: /styleguide
 permalink: /:categories/:title
 markdown: rdiscount
 highlighter: null
