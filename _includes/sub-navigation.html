@@ -53,7 +53,7 @@
 				{% for post in site.posts reversed %}
 					{% comment %}<!-- Iterate Over Pages that match landing page / section -->{% endcomment %}
 					{% if post.section == page.section and post.layout != "landing-page" %}
-						<option value="{{ post.url }}">{{ post.nav-title }}</option>
+						<option value="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</option>
 					{% endif %}
 				{% endfor %}
 			</select>
