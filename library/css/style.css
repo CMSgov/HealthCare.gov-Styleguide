@@ -7218,9 +7218,6 @@ legend {
   z-index: 100;
   top: 0;
 }
-.header-wrap.pushed {
-  /*right: 270px;*/
-}
 .header-wrap .site-header {
   height: 60px;
   margin: 0 auto;
@@ -7289,6 +7286,12 @@ legend {
   .header-wrap .site-header .mobile-menu-btn-wrapper {
     display: block;
     float: right;
+  }
+  .header-wrap .site-header .mobile-menu-btn-wrapper span {
+    font-size: 36px;
+  }
+  .glyphicon-menu-hamburger:before {
+    color: #036091;
   }
 }
 #landing-page {
