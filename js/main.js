@@ -51,19 +51,9 @@ $(document).ready(function() {
   	ZeroClipboard.destroy();
   });
 
-  // Popover Initialization
-  $('body').popover({
-    selector: 'a[data-toggle=popover]',
-    container: 'body'
-  }).tooltip({
-    selector: "a[data-toggle=tooltip]",
-    container: 'body'
-  });
+});
 
-  // Go to Top button
-  $('#back-to-top a').click(function(){
-    window.scrollTo(0, 0);
-  });
+$(document).ready(function() {
 
   // Toggle submenu in interior navigation
   $('.toggle-interior-nav').click(function(){
