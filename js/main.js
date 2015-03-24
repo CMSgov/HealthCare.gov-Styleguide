@@ -60,18 +60,10 @@ $(document).ready(function() {
     container: 'body'
   });
 
-  // Bootstrap based select component modifcation
-  $('.form-control').selectpicker({
-    style: 'btn-info',
-    size: 4,
-    mobile: true
-  });
-
   // Go to Top button
   $('#back-to-top a').click(function(){
     window.scrollTo(0, 0);
   });
-
 
   // Toggle submenu in interior navigation
   $('.toggle-interior-nav').click(function(){
