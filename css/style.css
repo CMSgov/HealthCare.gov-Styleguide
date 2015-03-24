@@ -6917,6 +6917,7 @@ a[name="skipnav"] {
   display: none;
   margin: 12px 0 0 0;
   color: #085372;
+  float: right;
 }
 @media (max-width: 780px) {
   .header-wrap .site-header .navbar {
@@ -6924,20 +6925,17 @@ a[name="skipnav"] {
   }
   .header-wrap .site-header .mobile-menu-btn-wrapper {
     display: block;
-    float: right;
   }
-  .header-wrap .site-header .mobile-menu-btn-wrapper span {
-    font-size: 36px;
-  }
-  .glyphicon-menu-hamburger:before {
-    color: #036091;
+  .header-wrap .site-header .mobile-menu-btn-wrapper .mobile-menu-btn {
+    display: block;
+    margin: 7px 0 0 0;
   }
 }
 @media (max-width: 480px) {
   .header-wrap .site-header .logo img {
-    margin: 17px 0 13px 0;
-    width: 301px;
-    height: 30px;
+    margin: 18px 0 17px 0;
+    width: 251px;
+    height: 25px;
   }
 }
 #landing-page {
@@ -7178,6 +7176,12 @@ a[name="skipnav"] {
 }
 #detail-page #hc-gov-assets .blue-bg .form-inline select option {
   color: #fff;
+}
+#detail-page #hc-gov-assets .popover-content {
+  color: #cfeffc;
+}
+#detail-page #hc-gov-assets .glossary-term {
+  border-bottom-style: dashed;
 }
 #detail-page #hc-gov-assets .code-wrapper .preview h3.sub {
   text-transform: none;
