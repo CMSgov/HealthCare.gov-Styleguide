@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 		    	},
 		    	files: {
 		      		"css/style.css": "_includes/css/all.less", // destination file and source file
-		      		"assets/css/style.css": "assets/css/all.less", // destination file and source file
+		      		"assets-components/css/style.css": "assets-components/css/all.less", // destination file and source file
 		    	}
 	    	}
 	    }
