@@ -6933,7 +6933,7 @@ a[name="skipnav"] {
 }
 @media (max-width: 480px) {
   .header-wrap .site-header .logo img {
-    margin: 18px 0 17px 0;
+    margin: 20px 0 15px 0;
     width: 251px;
     height: 25px;
   }
