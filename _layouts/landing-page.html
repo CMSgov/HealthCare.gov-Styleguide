@@ -14,8 +14,18 @@ layout: base
 	</div>
 	<div class="container">
 		{% include sub-navigation.html %}
+
+		{% if page.section == "assets" %}
+		<div id="hc-gov-assets">
+		{% endif %}
+
 		<div class="col-sm-9">
 			{{ content }}
 		</div>
+
+		{% if page.section == "assets" %}
+		</div>
+		{% endif %}
+		
 	</div>
 </div>
