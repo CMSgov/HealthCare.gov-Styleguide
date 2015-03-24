@@ -7159,6 +7159,10 @@ a[name="skipnav"] {
   font-size: 18px;
   line-height: 31px;
 }
+#detail-page #hc-gov-assets {
+  /* Assets- text styles*/
+  /* Assets- text styles*/
+}
 #detail-page #hc-gov-assets .toggle-buttons {
   float: none;
 }
@@ -7172,6 +7176,12 @@ a[name="skipnav"] {
 }
 #detail-page #hc-gov-assets .blue-bg .form-inline select option {
   color: #fff;
+}
+#detail-page #hc-gov-assets .code-wrapper .preview h3.sub {
+  text-transform: none;
+}
+#detail-page #hc-gov-assets .code-wrapper .preview h3.rule {
+  text-transform: none;
 }
 .grid-display div[class*="col-md-"] {
   padding: 0;
