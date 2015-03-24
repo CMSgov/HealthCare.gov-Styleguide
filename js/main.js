@@ -11,9 +11,6 @@ var showMobileNav = function(e) {
   var $nav = $('#sidr');
   $nav.addClass('visible');
 
-  var $header = $('.header-wrap');
-  $header.addClass('pushed');
-
   _.defer(function() {
     $(document.body).on('click.mobilenav', function(e) {
       if (!$.contains($nav[0], e.target) && !$nav.is($(e.target))) {
@@ -28,7 +25,6 @@ var showMobileNav = function(e) {
 var hideMobileNav = function() {
   $('#wrapper').removeClass('pushed');
   $('#sidr').removeClass('visible');
-  $('.header-wrap').removeClass('pushed');
 
   $(document.body).off('click.mobilenav');
   $('.mobile-menu-btn').on('click.show', showMobileNav);
