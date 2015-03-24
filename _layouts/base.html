@@ -1,0 +1,44 @@
+{% assign t = site.tags.translations[0] %}
+<!DOCTYPE html>
+
+<html lang='{{page.lang}}'>
+
+<head>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name='viewport' content='initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'/>
+
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/style.css">
+
+  <script src="//assets.healthcare.gov/resources/libs/jquery/1.11/js/jquery.min.js"></script>
+  <script src="//assets.healthcare.gov/resources/libs/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="//assets.healthcare.gov/resources/libs/lodash/2.4.1/lodash.compat.js"></script>
+
+  <script src="{{site.baseurl}}/js/ZeroClipboard.js"></script>
+  <script src="{{site.baseurl}}/js/main.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets-components/css/style.css">
+
+  <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
+
+  <!--[if lt IE 9]>
+
+  <![endif]-->
+  <!--[if IE]>
+      <style>
+      </style>
+  <![endif]-->
+
+</head>
+<body>
+  {% include flyout.html %}
+
+	<div id="wrapper">
+    {% include header.html %}
+
+  	{{ content }}
+
+  	{% include footer.html %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,892 @@
+/*---------------------------------------
+HEADER and FOOTER styles-
+-----------------------------------------*/
+
+@header-nav-height: 62px;
+@header-utility-height: 64px;
+
+/*
+  Lock the Header to our page content's breakpoints,
+  instead of using the fluid container
+*/
+.container {
+  padding: 0;
+}
+
+/*
+  The header and footer don't have this special border-bottom underline,
+  catching all cases here
+*/
+#header a,
+.utility-section a {
+  .link-decorator(transparent, transparent);
+}
+
+/* TODO(kalvin) refactor to use LESS more, lots of old css here */
+
+#header {
+  position: relative;
+  background-color: @white;
+}
+
+.navbar {
+  border: none;
+  height: @header-nav-height;
+  margin: 0 auto;
+
+  .logo {
+    margin-top: 16px;
+    margin-right: 45px;
+    color: #1295E8;
+  }
+
+  ul {
+    height: @header-nav-height;
+    list-style: none;
+    margin: 0;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+}
+
+.header-link {
+  .font-lg();
+  line-height: 21px; // override
+
+  color: @dark-blue;
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  padding: 20px 30px;
+
+  // Line up the outline-offset so that it doesn't slip off the page
+  &:focus,
+  &:hover {
+    outline-offset: -2px;
+  }
+
+  // Note - these classnames are inherited from the main hc.gov templates.
+  // One day we'll merge the two codebases...somehow.
+  .liteac-login & {
+    .font-md();
+
+    color: @medium-blue;
+    margin: 10px 8px;
+    padding: 3px 11px;
+
+    &:hover {
+      background-color: @light-gray;
+    }
+  }
+}
+
+.business-link.active .header-link,
+.business-link .header-link:hover {
+  color: @white;
+  background-color: @dark-blue;
+}
+
+.individual-link.active .header-link,
+.individual-link .header-link:hover {
+  color: @white;
+  background-color: @learn-bg;
+}
+
+.header-actions {
+  display: block;
+  padding: 0;
+}
+
+.user-action-list {
+  color: @medium-blue;
+  list-style: none;
+
+  li {
+    margin-top: 15px;
+    vertical-align: middle;
+    padding-right: 0;
+
+    .user-item {
+      display: inline-block;
+      margin: 0;
+      padding: 6px 10px;
+
+      &:hover {
+        color: @dark-blue;
+      }
+    }
+
+    &.left-sep {
+        border-left: 1px solid @medium-gray;
+        margin-left: 5px;
+    }
+
+    .btn-sm {
+      font-weight: bold;
+    }
+  }
+}
+
+/*
+  Language specific css tweaks. We need to show/hide different content, and make
+  sure we don't wrap or break our layouts at various sizes.
+*/
+html[lang='es'] {
+  /* CuidadoDeSalud logo is larger, so decrease the margin */
+  .logo {
+    margin-right: 16px;
+  }
+
+  .hide-es {
+    .hidden();
+  }
+}
+
+html[lang='en'] {
+  .hide-en {
+    .hidden();
+  }
+}
+
+/*
+  Responsive stylings for header bar
+*/
+@media (max-width: @screen-md-max) {
+  .header-link {
+    padding: 20px;
+  }
+
+  .user-action-list {
+    width: 110px;
+
+    li {
+      margin-top: 3px;
+      width: 100%;
+
+      a {
+        .font-xs();
+
+        text-transform: uppercase;
+        width: 100%;
+        padding: 5px 8px;
+      }
+    }
+  }
+}
+@media (max-width: @screen-sm-max) {
+  .navbar .logo {
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 200px;
+  }
+
+  .header-link {
+    .font-md();
+    padding: 20px;
+  }
+}
+
+.mobile-main-top {
+  height: 49px;
+
+  .mobile-menu-btn {
+    margin: 5px;
+    padding: 8px;
+  }
+
+  .logo {
+    width: 150px;
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+
+  .mobile-user-actions {
+
+    a {
+      background: @light-gray;
+      display: block;
+      font-size: 12px;
+      font-weight: bold;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      padding: 2px 6px;
+      text-transform: uppercase;
+      width: auto;
+
+      &:hover {
+        color: @white;
+        background: @dark-blue;
+      }
+    }
+
+    a.toggle-language {
+      margin-bottom: 0;
+    }
+
+    a:last-child {
+      margin-top: 5px;
+    }
+  }
+}
+
+/*
+  Utility section of header, shows breadcrumbs and state logo
+*/
+.utility-section {
+  background-color: @learn-bg;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  height: @header-utility-height;
+  padding: 10px 0;
+
+  // Note - these classnames are inherited from the main hc.gov templates.
+  // One day we'll merge the two codebases...somehow.
+  .nav-btn {
+    display: inline-block;
+    border-radius: 3px;
+    color: @white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 5px;
+    text-decoration: none;
+
+    &.active2 {
+      background: @dark-blue;
+    }
+
+    &:focus,
+    &:hover {
+      color: @dark-blue;
+      background: @white;
+      text-decoration: none;
+    }
+
+    .caret {
+      position: static;
+      margin-left: 10px;
+    }
+  }
+
+  /*
+    Override styling of the get answers dropdown menu in the header bar
+  */
+  .dropdown {
+    display: inline;
+    /* fixes bootstrap's position: relative; rule */
+    position: inherit;
+
+    /*
+      absolutely position a the wrapper div with .container inside
+      this means we don't need to set lots of static widths like on the main
+      landing pages
+    */
+    .dropdown-container {
+      position: absolute;
+    }
+  }
+
+  .dropdown-megamenu .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-megamenu.active .dropdown-menu {
+    display: block;
+  }
+
+  /* make the buttom touch the top of the dropdown-menu */
+  .dropdown-megamenu.active .dropdown-toggle {
+    color: @dark-blue;
+    background-color: @white;
+    border: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    padding-bottom: 16px;
+    margin-bottom: 0;
+  }
+
+  .dropdown-menu {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+
+    // Darken the shadow to set it off from the page content a bit more
+    .box-shadow(0 10px 10px rgba(0,0,0,.3));
+
+    .table-row {
+      display: table;
+      padding: 40px 0 20px 0;
+    }
+
+    .table-cell {
+      display: table-cell;
+      border-right: 1px solid @border-color;
+      vertical-align: top;
+
+      &.last {
+        border-right: none;
+      }
+    }
+
+    a:hover {
+      color: @dark-blue;
+      border-bottom: 1px solid @dark-blue;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0 40px;
+
+      li {
+        .font-sm();
+        padding: 7px 0;
+
+        &.topic {
+          .h4;
+
+          margin: 0;
+          margin-top: 18px;
+          padding-bottom: 5px;
+          color: @medium-gray;
+        }
+
+        /* align the tops of the columns */
+        &:first-child {
+          margin-top: 0;
+          padding-top: 0;
+        }
+      }
+    }
+
+    .bottom {
+      padding: 20px 50px;
+      background-color: @lightest-gray;
+
+      a {
+        .font-sm();
+        .link-decorator(transparent, transparent);
+
+        padding-right: 20px;
+        border-right: 1px solid @border-color;
+        margin-right: 20px;
+
+        &.last {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+/*
+  Add this class to the bottommost bar of the Header to separate between main
+  page content and the header.
+*/
+.header-bottom {
+  border-bottom: 4px solid darken(@learn-bg, 10%);
+}
+
+/*
+  .pointybit mixin makes the edge of the breadcrumb
+  old code has come css override of the width so keeping that
+*/
+.pointybit(@height, @width, @offset: 0px) {
+  top: 50%;
+  position: absolute;
+  margin-top: @height * -1;
+  border-top: @height solid transparent;
+  border-bottom: @height solid transparent;
+  border-left: @width solid;
+  right: (@width + @offset) * -1;
+}
+
+/*
+  Breadcrumbs that show us progress through the site. Some of this is a little
+  redundant CSS because it's pulled from FFM, and we don't actually have many
+  different states, but we want to at least match FFM first.
+*/
+.nav-breadcrumb {
+  overflow: hidden;
+  width: 100%;
+  margin: 6px 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    float: left;
+    font-weight: 700;
+    margin: 0;
+    padding: 2px 22px 4px 20px;
+    padding: 4px 10px 6px 24px;
+    position: relative;
+
+    &.current-step .glyphicon,
+    &.future-step .glyphicon {
+      visibility: hidden;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      .pointybit(24px, 16px);
+    }
+
+    &:after {
+      z-index: 2;
+    }
+
+    &:before {
+      right: -20px;
+      z-index: 1;
+      color: @medium-blue;
+    }
+
+    &.completed-step {
+      background: @dark-blue;
+      color: @white;
+
+      &:after,
+      .after {
+        color: @dark-blue;
+      }
+    }
+
+    &.current-step {
+      background: lighten(@medium-blue, 10%);
+      color: @white;
+
+      // the colors of the right side
+      &:after,
+      .after {
+        color: lighten(@medium-blue, 10%);
+      }
+    }
+
+    &.future-step {
+      color: @medium-blue;
+      background: @dark-blue;
+
+      &:after,
+      .after, {
+        color: @dark-blue;
+      }
+    }
+
+    &:first-child {
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+      padding-left: 2px;
+    }
+
+    &.last:after,
+    &.last:before,
+    &.last .after,
+    &.last .before,
+    &:last-child {
+      border-left: none;
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      padding-right: 20px;
+    }
+  }
+
+  /*
+    IE7 styling not required for us but copied over from FFM
+  */
+  .IE7 & {
+    li .after,
+    li .before {
+      content: "";
+      .pointybit(18px, 18px);
+    }
+
+    li[class*="Step"]:after,
+    li[class*="Step"]:before,
+    li[class*="Step"] .after,
+    li[class*="Step"] .before {
+      height: 0px;
+    }
+  }
+}
+
+.main-nav-search {
+  width: 432px;
+  margin-top: 2px;
+
+  .input-group .btn {
+    .h4;
+    margin: 0;
+    padding: 6px 20px;
+    color: @white;
+    background: @dark-blue;
+    border: 1px solid @dark-blue;
+
+    &:hover {
+      background: @bright-blue;
+      border-color: @bright-blue;
+    }
+  }
+}
+
+/*
+  Responsive stylings for utility bar section
+*/
+@media (max-width: @screen-md-max) {
+  .utility-section {
+    .nav-btn {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 15px; /* nonstandard font size to match healthcare.gov */
+    }
+
+    .dropdown-menu {
+      ul {
+        padding: 0 30px;
+
+        li,
+        li.topic {
+          .font-sm();
+        }
+      }
+
+      .bottom {
+        padding: 20px 40px;
+      }
+    }
+  }
+
+  .main-nav-search {
+    width: 282px;
+  }
+}
+@media (max-width: @screen-sm-max) {
+  .utility-section .nav-btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    .font-sm();
+  }
+
+  .main-nav-search {
+    width: 232px;
+  }
+}
+
+/*
+  help menu on the right side has a dropdown of options
+  and a search input for the help section
+*/
+.help-menu {
+  // HACK - vertically align in the utility-section container.
+  margin-top: 3px;
+
+  .help-cta {
+    font-size: @sidebar-icon-size;
+    text-transform: uppercase;
+    color: @white;
+    background: @dark-blue;
+    padding-right: 6px;
+
+    &:focus,
+    &:hover {
+      background: @medium-blue;
+    }
+  }
+
+  .help-dropdown {
+    display: none;
+    position: absolute;
+    top: 36px;
+    right: 0;
+    left: auto;  // override bootstrap's left alignment.
+    z-index: 2;
+
+    background: @white;
+    border-radius: 5px;
+    padding: 5px;
+
+    // arrow on help dropdown
+    &:before {
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid @white;
+      border-left: 10px solid transparent;
+      border-top: 10px solid transparent;
+      content: "";
+      height: 0;
+      padding: 0;
+      position: absolute;
+      width: 0;
+
+      right: 45px;
+      top: -20px;
+    }
+
+    // TODO: links use a sprite for their icons right now,
+    // and no equivalents in halflings
+    .help-links {
+      list-style: none;
+      margin: 0;
+      padding: 5px;
+
+      .help-link {
+        border-radius: 3px;
+        margin: 0;
+        padding: 5px 7px;
+        display: block;
+        font-weight: bold;
+
+        &:hover {
+          background: @dark-blue;
+          color: @white;
+        }
+      }
+    }
+
+    .help-search {
+      .font-sm();
+
+      text-transform: uppercase;
+      font-weight: bold;
+      color: @medium-gray;
+      margin: 8px 8px 14px 8px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid @border-color;
+    }
+
+    // help search form
+    form {
+      width: 270px;
+      margin-bottom: 10px;
+    }
+
+    .nav-search {
+      .font-sm();
+
+      width: 170px;
+      height: 36px;
+      margin: 0 0 0 8px;
+      padding-left: 8px;
+      vertical-align: bottom;
+    }
+
+    .btn-search {
+      color: @white;
+      background-color: @lite-bg;
+      text-transform: uppercase;
+      width: 85px;
+      padding: 6px 10px;
+
+      // negative margin to touch the search text input field
+      margin-left: -5px;
+
+      &:hover,
+      &:focus {
+        background-color: @dark-blue;
+      }
+    }
+  }
+
+  &.open .help-dropdown {
+    display: block;
+  }
+}
+
+/*-------------------------------------------------
+Header End*/
+
+.utility-section {
+
+  .help-menu span.icon,
+  .help span.icon {
+    display: inline-block;
+    float: left;
+    width: 28px;
+    height: 23px;
+    margin-right: 4px;
+  }
+
+  [class^="icon-"], [class*=" icon-"] { .glyphicon; }
+  .icon-chevron-down { .glyphicon-chevron-down; }
+
+  /*
+    TODO(sha): these icons are deprecated as of the new header updates,
+    so we should check later if we can remove this whole .icon css section.
+  */
+  .icon {
+    background:transparent url('../img/sprite@1x.png') no-repeat 0 0;
+    display:block;
+    text-indent:-999em;
+    text-align:left;
+    width:10px;
+    height:10px;
+    border:1px solid rgba(255, 255, 255, 0);
+    box-sizing: content-box;
+  }
+  .nav.help-menu {
+    float:right;
+    height: 25px;
+    padding-top: 10px;
+    color: #2BC7FC;
+  }
+   /* Help Center */
+  .dropdown-menu a:hover .icon.raft,
+  .dropdown-menu a:focus .icon.raft {
+    background-position:-372px -118px;
+  }
+  .icon.raft{
+    background-position:-372px -94px;
+  }
+  /* Find Local Help */
+  .icon.local{
+    background-position:-224px -94px;
+  }
+  .dropdown-menu  a:hover .icon.local,
+  .dropdown-menu  a:focus .icon.local {
+    background-position:-224px -118px;
+  }
+  /* Glossary */
+  .icon.glossary{
+    background-position:-284px -94px;
+  }
+  .dropdown-menu  a:hover .icon.glossary,
+  .dropdown-menu  a:focus .icon.glossary {
+    background-position:-284px -118px;
+  }
+  /* Contact Us */
+  .icon.phone{
+    background-position:-251px -94px;
+  }
+  .dropdown-menu  a:hover .icon.phone,
+  .dropdown-menu  a:focus .icon.phone {
+    background-position:-251px -118px;
+  }
+  /*sprite@2x*/
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+    .icon,
+    .card .new.active
+    /*input[type="checkbox"] + label span */{
+      background: url('@{static-base-path}/img/sprite@2x.png') no-repeat 0 0;
+      background-size: 750px 350px;
+    }
+  }
+}
+
+/*
+  Side rail menu that slides out on small screen sizes
+*/
+#sidr {
+  @padding: 17px;
+  @container-width: 270px;
+
+  position: fixed;
+  width: @container-width;
+  top: 0;
+  left: -@container-width;
+  bottom: 0;
+
+  .transition(left 0.15s ease-in);
+  background: @dark-blue;
+  z-index: 1;
+
+  &.visible {
+    left: 0;
+  }
+
+  .header-actions {
+    height: @header-utility-height + 5;
+    margin-bottom: 0;
+
+    li {
+      text-align: center;
+      display: inline-block;
+    }
+
+    a {
+      .font-sm();
+      .link-decorator(transparent, transparent);
+
+      color: @white;
+      padding: 15px 10px;
+    }
+
+    .individual-link {
+      background: @medium-blue;
+      width: 110px;
+    }
+
+    .business-link {
+      background: @dark-blue;
+      width: 150px;
+      height: auto;
+    }
+  }
+
+  .gsearch {
+    @button-size: 65px;
+    padding: @padding;
+
+    .mobile-search {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 28px;
+      width: @container-width - (2 * @padding) - @button-size;
+    }
+
+    .btn-search {
+      .font-sm();
+
+      float: right;
+      padding: 9px;
+      width: @button-size;
+    }
+  }
+
+  .sidr-links {
+    padding: 0 @padding;
+    list-style-type: none;
+
+    li {
+      border-top: 1px solid @medium-blue;
+      padding: @padding 0;
+
+      a {
+        .link-decorator(transparent, transparent);
+
+        color: @white;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &.individual {
+    #sidr-submenu {
+      background: @medium-blue;
+    }
+
+    .sidr-links li {
+      border-top-color: @dark-blue;
+    }
+
+    .btn-search {
+      color: @white;
+      background: @dark-blue;
+    }
+  }
+  &.business {
+    #sidr-submenu {
+      background: @dark-blue;
+    }
+
+    .btn-search {
+      color: @white;
+      background: @medium-blue;
+    }
+  }
+}

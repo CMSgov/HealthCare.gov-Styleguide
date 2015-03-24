@@ -1,0 +1,8 @@
+_site/
+.DS_Store
+todo
+Gemfile.lock
+_config.yml
+robots.txt
+node_modules
+coverage

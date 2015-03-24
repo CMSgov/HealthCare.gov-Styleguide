@@ -1,0 +1,166 @@
+#homepage {
+	padding-bottom:20px;
+
+	h2 {
+
+		line-height: 38px;
+		letter-spacing: normal;
+	}
+
+	h3 {
+
+		margin-top:0;
+		font-family:"Bitter","Georgia",serif;
+	}
+
+	.banner {
+
+		color:#fff;
+
+		padding:60px 0;
+
+		.gradient(#006093, #0070ab, #005a8a);
+
+		h1 { color:#fff; margin-bottom:20px; font-size: 38px; line-height:44px; }
+
+		.subtitle { color:#cef1fc; font-size:16px; line-height:24px; }
+
+		img { width: 100%; display:none; }
+	
+	}
+
+	.deep-dive-link {
+
+		position:relative;
+		display:block;
+		width:100%;
+		margin-bottom:20px;
+		color:#fff;
+
+		.rounded(4px);
+
+		.title {
+
+			display:block;
+			color:#fff;
+			
+			.glyphicon {
+				font-size: 25px;
+				font-weight:bold;
+				vertical-align: middle;
+				margin: 5px 10px 8px;
+				color:#fff;
+			}
+
+			.text {
+				color: #fff;
+			}
+		}
+
+		.description {
+		
+			display:none;
+			position:absolute;
+			width:100%;
+			height:270px;
+			padding:0 20px;
+			top:0;
+			left:0;
+			text-align: center;
+
+			.rounded(4px);
+
+			h4 {
+				margin-top: 94px;
+				font-size: 25px;
+				color:#fff;
+			}
+
+			span { color:#e3e1e4; }
+		
+		}
+
+	}
+
+	.intro p {
+	
+		line-height: 31px;
+		font-size: 18px;
+	}
+
+	.hr { margin: 36px 0 46px; }
+
+	.deep-dive-link.design { color:#fff; margin-top:20px; background:#1d94c8; }
+	.deep-dive-link.assets { color:#fff; background:#017aad; }
+
+	@media (min-width: @screen-sm-min) {
+
+		padding-bottom:70px;
+
+		h1 {margin-top:30px; }
+		h2 { margin-top:0; font-size:34px; }
+		h3 { font-size:24px; line-height: 33px; }
+
+		.banner {
+		 
+		 	margin-bottom:24px;
+		 	img { display:inline; }
+		 
+		 }
+		
+		.deep-dive-link {
+			
+			margin-bottom:0;
+			height:270px;
+
+			.title {
+			
+				margin-left:0;
+				padding:10px;
+			
+			}
+
+			&:hover {
+
+				.title { display:none; }
+
+				.description { display: block; }
+			}
+			
+		}
+
+		.deep-dive-link.design {
+			
+			margin-top:0;
+
+			background:url("../images/DesignDefault.png") center;
+			background-size:cover;
+
+			&:hover {
+
+				.description {
+					background:url("../images/DesignRollover.png") center;
+					background-size:cover;
+				}
+
+			}
+		}
+
+		.deep-dive-link.assets {
+			
+			background:url("../images/AssetsDefault.png") center;
+			background-size:cover;
+
+			&:hover {
+
+				.description {
+					background:url("../images/AssetsRollover.png") center;
+					background-size:cover;
+				}
+
+			}
+		}
+	
+	}
+
+}

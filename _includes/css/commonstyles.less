@@ -1,0 +1,183 @@
+* {
+    color:#333;
+    font-family:"Open Sans",sans-serif;
+    margin:0;
+	padding:0;
+}
+
+.clearfix:after { 
+   content: " "; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+#wrapper {
+  overflow: hidden;
+
+  // transtion for when the sidr is opened
+  .transition(margin-left 0.15s ease-in);
+
+  &.pushed {
+    width: 100%;
+    margin-right: 270px;
+  }
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+ol, ul{
+	padding: 0 0 0 20px;
+}
+
+p{
+	line-height: 28px;
+	margin: 0 0 20px 0;
+	font-size:16px;
+
+	a{
+		border-bottom:1px solid transparent;
+
+		&:hover{
+			text-decoration:none;
+			border-bottom:1px solid #0c648c;
+		}
+	}
+}
+
+h1 {
+	color:#333;
+	font-family:"Bitter","Georgia",serif;
+	font-size:34px;
+	font-weight:400;
+	margin-top:0;
+
+}
+
+h2 {
+	color:#333;
+	font-family:"Bitter","Georgia",serif;
+	font-size:22px;
+
+}
+
+h3 {
+	color:#333;
+	font-family:"Open Sans",sans-serif;
+	font-size:16px;
+}
+
+.main-content{
+	margin:63px 0 0 0;
+}
+
+.banner {
+	background:#006093;
+}
+
+.mobile-subnav-wrapper{
+	display:none;
+	margin:25px 0;
+}
+
+@media (max-width: @screen-sm){
+	.subnav-wrapper{
+		display:none;
+	}
+
+	.mobile-subnav-wrapper{
+		display:block;
+	}
+}
+
+.subnav {
+	padding:0;
+	list-style-type:none;
+
+	a{
+		display:inline-block;
+		margin:10px;
+		font-weight:bold;
+		text-transform:capitalize;
+
+		&.current{
+			color:#333;
+		}
+	}
+
+	.active{
+		a{
+			color:#333;
+		}
+	}
+
+	li ul li{
+		list-style-type:none;
+	}
+
+	.glyphicon{
+		margin:0 0 0 -13px;
+
+		a{
+			display:inline-block;
+			margin:10px;
+			font-weight:bold;
+			text-transform:capitalize;
+		}
+
+		.active a{
+			color:#333;
+		}
+
+		.glyphicon{
+			color: #999;
+			display:inline-block;
+			margin-left:-14px;
+		}
+
+		ul{
+			margin:0;
+			padding:0 0 0 16px;
+			list-style-type:none;
+		}
+	}	
+
+	&.affix-bottom{
+		position:absolute;
+	}
+
+	&.affix{
+		top:80px;
+	}
+}
+
+
+hr { border-top:1px solid #d9d9d9; }
+
+.hr {
+	margin:36px 0 28px;
+	background-image:url("../images/hr-pattern.png");
+	width:100%;
+	height:8px;
+}
+
+.adjust-margin-top { margin-top:28px; }
+
+a[name="skipnav"] {padding:0;margin: 0;display:block; border:none;}
+
+.show-on-focus {
+    display:block;
+    position:absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.show-on-focus:focus {
+  z-index:1000;
+  top:0;
+  left:0;
+}
+
