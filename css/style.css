@@ -7061,6 +7061,9 @@ h3 {
 .subnav li ul li {
   list-style-type: none;
 }
+.subnav .glyphicon {
+  margin: 0 0 0 -13px;
+}
 .subnav .glyphicon a {
   display: inline-block;
   margin: 10px;
