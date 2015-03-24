@@ -2,8 +2,17 @@
   <footer class="sub-footer">
   	<ul class="clearfix">
   		<li><a href="https://www.healthcare.gov/"><img src="{{site.baseurl}}/images/HealthcareGovFooterLogo.png" /></a></li>
-  		<li>{{ t.[page.lang].footer.manage }}</li>
+  		<li>{{ t.[page.lang].footer.manage }} {{ t.[page.lang].footer.address }}</li>
   		<li><a href="{{site.baseurl}}/contact">{{ t.[page.lang].footer.contact }}</a></li>
   	</ul>
+  </footer>
+  <footer class="mobile-sub-footer">
+  	<div><a href="https://www.healthcare.gov/"><img src="{{site.baseurl}}/images/HealthcareGovFooterLogo.png" /></a></div>
+  	<p>
+  		{{ t.[page.lang].footer.manage }}
+  	</p>
+  	<p>
+  		{{ t.[page.lang].footer.address }}<a href="{{site.baseurl}}/contact">{{ t.[page.lang].footer.contact }}</a>
+  	<p>
   </footer>
 </section>

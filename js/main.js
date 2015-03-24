@@ -1,8 +1,39 @@
-(function(){
+// Show mobile flyout navigation
+var showMobileNav = function(e) {
+  if (e) {
+    e.preventDefault();
+  }
 
-})();
+  $('.mobile-menu-btn').off('click.show');
+
+  $('#wrapper').addClass('pushed');
+
+  var $nav = $('#sidr');
+  $nav.addClass('visible');
+
+  _.defer(function() {
+    $(document.body).on('click.mobilenav', function(e) {
+      if (!$.contains($nav[0], e.target) && !$nav.is($(e.target))) {
+        hideMobileNav();
+        $nav = null;
+      }
+    });
+  });
+};
+
+// Hide mobile flyout navigation
+var hideMobileNav = function() {
+  $('#wrapper').removeClass('pushed');
+  $('#sidr').removeClass('visible');
+
+  $(document.body).off('click.mobilenav');
+  $('.mobile-menu-btn').on('click.show', showMobileNav);
+};
 
 $(document).ready(function() {
+  // Attach mobile flyout click command
+  $('.mobile-menu-btn').on('click.show', showMobileNav);
+
   // Zero Clipboard
   var clip = new ZeroClipboard($(".copy-button"));
 
@@ -32,7 +63,8 @@ $(document).ready(function() {
   // Bootstrap based select component modifcation
   $('.form-control').selectpicker({
     style: 'btn-info',
-    size: 4
+    size: 4,
+    mobile: true
   });
 
   // Go to Top button
@@ -45,6 +77,15 @@ $(document).ready(function() {
   $('.toggle-interior-nav').click(function(){
     $(this).toggleClass('closed');
     $(this).siblings('ul').toggle();
+    var chevron = $(this).siblings('.glyphicon');
+
+    if(chevron.hasClass('glyphicon-chevron-right')){
+      chevron.removeClass('glyphicon-chevron-right');
+      chevron.addClass('glyphicon-chevron-down');
+    } else{
+      chevron.removeClass('glyphicon-chevron-down');
+      chevron.addClass('glyphicon-chevron-right');
+    }
   });
 
   // Landing page sticky left navigation, separated for different offset

@@ -1,5 +1,3 @@
-@mainWidth:1162px;
-
 * {
     color:#333;
     font-family:"Open Sans",sans-serif;
@@ -13,6 +11,18 @@
    display: block; 
    height: 0; 
    clear: both;
+}
+
+#wrapper {
+  overflow: hidden;
+
+  // transtion for when the sidr is opened
+  .transition(margin-left 0.15s ease-in);
+
+  &.pushed {
+    width: 100%;
+    margin-right: 270px;
+  }
 }
 
 body {
@@ -66,6 +76,21 @@ h3 {
 
 .banner {
 	background:#006093;
+}
+
+.mobile-subnav-wrapper{
+	display:none;
+	margin:25px 0;
+}
+
+@media (max-width: @screen-sm){
+	.subnav-wrapper{
+		display:none;
+	}
+
+	.mobile-subnav-wrapper{
+		display:block;
+	}
 }
 
 .subnav {

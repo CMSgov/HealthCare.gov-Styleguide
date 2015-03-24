@@ -1,0 +1,48 @@
+@media (max-width: @screen-sm-max) {
+  #sidr {
+    @padding: 17px;
+    @container-width: 270px;
+
+    position: fixed;
+    width: @container-width;
+    top: 0;
+    right: -@container-width;
+    bottom: 0;
+
+    &.visible {
+      right: 0;
+    }
+
+    .transition(right 0.15s ease-in);
+    background: #036091;
+    z-index: 200;
+
+    .utility-section {
+      padding: 0;
+      height:auto;
+      border-bottom:none;
+
+      li {
+        border-top: 1px solid #085372;
+        padding: @padding;
+        list-style:none;
+
+        a {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .github-link{
+        display:block;
+        margin:0 0 0 @padding;
+
+        img{
+          width:17px;
+          height:14px;
+        }
+      }
+  }
+}

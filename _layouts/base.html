@@ -12,6 +12,7 @@
 
   <script src="//assets.healthcare.gov/resources/libs/jquery/1.11/js/jquery.min.js"></script>
   <script src="//assets.healthcare.gov/resources/libs/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="//assets.healthcare.gov/resources/libs/lodash/2.4.1/lodash.compat.js"></script>
 
   <script src="{{site.baseurl}}/js/ZeroClipboard.js"></script>
   <script src="{{site.baseurl}}/js/bootstrap-select.js"></script>
@@ -31,10 +32,14 @@
 
 </head>
 <body>
-	{% include header.html %}
+  {% include flyout.html %}
 
-	{{ content }}
+	<div id="wrapper">
+    {% include header.html %}
 
-	{% include footer.html %}
+  	{{ content }}
+
+  	{% include footer.html %}
+  </div>
 </body>
 </html>
