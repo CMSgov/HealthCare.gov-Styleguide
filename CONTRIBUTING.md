@@ -1,4 +1,4 @@
-# WIP - Contributing to the HealthCare.gov Styleguide
+# Contributing to the HealthCare.gov Styleguide - WIP
 
 Before contributing, make sure you've read the [community ground rules](https://github.com/government/best-practices#basic-ground-rules). You should use [the GitHub Workflow](http://guides.github.com/overviews/flow/) (either on your computer, or [in the browser](https://github.com/blog/1557-github-flow-in-the-browser)) to make any changes to the repository. In other words:
 
