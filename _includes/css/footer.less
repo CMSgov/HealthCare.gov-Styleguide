@@ -1,6 +1,5 @@
 // Used to break up the footer for mid range widths
 @screen-footer-tablet: 1080px;
-@screen-footer-tablet-small: 822px;
 
 .footer-wrap{
 	background:#070707;
@@ -70,18 +69,6 @@
 				line-height:10px;
 			}
 		}
-
-		&.tablet{
-			ul{
-				li{
-					&:first-child, &:last-child{
-						a{
-							line-height:32px;
-						}
-					}
-				}
-			}
-		}
 	}
 }
 
@@ -94,49 +81,7 @@
 		}
 
 		.mobile-sub-footer{
-			display:none;
-
-			&.tablet{
-				display:block;
-			}
-		}
-	}
-}
-
-@media (max-width: @screen-footer-tablet-small){
-	.footer-wrap{
-		.mobile-sub-footer{
-			ul{
-				li{
-					p{
-						max-width: 400px;
-					}
-				}
-			}
-
-			&.tablet{
-				ul{
-					li{
-						&:first-child, &:last-child{
-							a{
-								line-height:48px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-@media (max-width: @screen-sm){
-	.footer-wrap{
-		.mobile-sub-footer{
 			display:block;
-
-			&.tablet{
-				display:none;
-			}
 		}
 	}
 }
