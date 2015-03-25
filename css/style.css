@@ -7442,13 +7442,21 @@ a[name="skipnav"] {
   font-size: 12px;
   line-height: 16px;
 }
-.footer-wrap .mobile-sub-footer p a {
-  color: #fff;
+.footer-wrap .mobile-sub-footer p span {
   display: inline-block;
   border-left: #fff 1px solid;
   padding: 0 0 0 8px;
   margin: 0 0 0 8px;
+}
+.footer-wrap .mobile-sub-footer p span a {
+  color: #fff;
   line-height: 10px;
+  text-decoration: none;
+}
+.footer-wrap .mobile-sub-footer p span a:hover {
+  color: #fff;
+  text-decoration: underline;
+  border-bottom: none;
 }
 @media (max-width: 1080px) {
   .footer-wrap {
