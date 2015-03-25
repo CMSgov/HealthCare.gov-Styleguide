@@ -29,11 +29,15 @@
 
   <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
 
-  <!--[if lt IE 9]>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
+  <!--[if lt IE 9]>
+      <script src="//assets.healthcare.gov/resources/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//assets.healthcare.gov/resources/libs/respond/1.4.2/js/respond.js"></script>
   <![endif]-->
   <!--[if IE]>
       <style>
+      .hidden-ie {display: none;}
       </style>
   <![endif]-->
 

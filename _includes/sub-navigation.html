@@ -11,19 +11,19 @@
 				{% if post.section == page.section and post.layout != "landing-page" %}
 
 					{% comment %}<!-- Starting a new subcategory -->{% endcomment %}
-					{% if currentCategory != post.categories[0] and post.categories[0] != nil %}
+					{% if currentCategory != post.nav-category and post.nav-category != nil %}
 						{% if subNav == true%}
 								</li>
 							</ul>
 						{% endif %}
 						{% assign subNav = true %}
-						{% assign currentCategory = post.categories[0] %}
-						<li><span class="glyphicon glyphicon-chevron-down"></span><a class="toggle-interior-nav" href="javascript:;">{{ post.categories[0] }}</a>
+						{% assign currentCategory = post.nav-category %}
+						<li><span class="glyphicon glyphicon-chevron-down"></span><a class="toggle-interior-nav" href="javascript:;">{{ post.nav-category }}</a>
 							<ul>
 								<li><a class="{% if currentURL == post.url %}current{% endif %}" href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
 
 					{% comment %}<!-- No subcategory -->{% endcomment %}
-					{% elsif post.categories[0] == nil %}
+					{% elsif post.nav-category == nil %}
 						{% if subNav == true %}
 								</ul>
 							</li>

@@ -7,6 +7,8 @@ title: "Iconography"
 nav-title: "Iconography"
 "meta-title": "Healthcare.gov's Design Style Guide Page"
 "meta-description": "Healthcare.gov's Design Style Guide Page"
+categories:
+  - design
 ---
 
 # Iconography
