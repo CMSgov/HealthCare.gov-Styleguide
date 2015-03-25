@@ -6941,6 +6941,11 @@ a[name="skipnav"] {
 #landing-page {
   padding-bottom: 90px;
 }
+#landing-page #hc-gov-assets h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 34px;
+}
 #landing-page .container .col-sm-3 {
   padding-top: 20px;
 }
