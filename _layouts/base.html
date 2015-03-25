@@ -27,7 +27,12 @@
   <script type="text/javascript" src="{{site.baseurl}}/assets-components/js/libs/bootstrap/affix.js"></script>
   {% endif %}
 
-  <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
+  {% if page.url == "/index.html" %}
+    <title>Healthcare.gov's Style Guide</title>
+  {% else %}
+    <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
+  {% endif %}
+  
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
