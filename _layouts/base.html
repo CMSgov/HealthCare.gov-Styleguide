@@ -7,6 +7,7 @@
   <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name='viewport' content='initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'/>
+  <meta name='description' content="{% if page.meta-description %}{{page.meta-description  | remove: '“' | re}}{% endif %}" />
 
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/style.css">
 
@@ -32,7 +33,6 @@
   {% else %}
     <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
   {% endif %}
-  
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -48,6 +48,7 @@
 
 </head>
 <body>
+  <a href="#skipnav" class="show-on-focus"> Skip navigation </a>
   {% include flyout.html %}
 
 	<div id="wrapper">

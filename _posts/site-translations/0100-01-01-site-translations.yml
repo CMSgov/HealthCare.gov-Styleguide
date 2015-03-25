@@ -15,7 +15,7 @@ en:
       assets: "Assets"
       governance: "Governance"
       helpful: "Helpful Links"
-    manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services."
+    manage: "A federal government website managed by the U.S. Centers for Medicare & Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244"
     address: "7500 Security Boulevard, Baltimore, MD 21244"
     feedback: Feedback
     feedback-url: "https://github.com/CMSgov/cmsgov.github.io/issues"
@@ -26,11 +26,11 @@ en:
     description: "Version 1.0 design and development guidelines"
 
   home-secondary:
-    title: "A Unified Experience"
-    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the general guidelines outlined."
+    title: "Journey to a unified experience"
+    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the same guideline."
     breakdown:
       title: "Breakdown"
-      text: 'The design and assets sections of the [style guide](#) contain design guidance and component-level artifacts with code snippets used across the various properties of Healthcare.gov.'
+      text: "The Design and Assets sections of the Styleguide contain design guidance and component-level artifacts with code snippets used across the various properties of HealthCare.gov."
     boxes:
       - { css-class: "design", title: "Design", location: "/design", subtitle: "Design", description: "Provides detailed guidance on various interactive modules and brand elements." }
       - { css-class: "assets", title: "Assets", location: "/assets", subtitle: "Assets", description: "Features individual artifacts paired with code snippets and descriptions." }
