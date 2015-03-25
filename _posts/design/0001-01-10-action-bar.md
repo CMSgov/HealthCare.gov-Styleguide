@@ -7,7 +7,9 @@ title: "Action Bar"
 nav-title: "Action Bar"
 "meta-title": "Healthcare.gov's Design Style Guide Page"
 "meta-description": "Healthcare.gov's Design Style Guide Page"
-categories: modules
+nav-category: modules
+categories:
+  - design
 ---
 
 # Action Bar
