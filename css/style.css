@@ -7163,6 +7163,68 @@ a[name="skipnav"] {
   /* Assets- text styles*/
   /* Assets- text styles*/
 }
+#detail-page #hc-gov-assets h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 34px;
+}
+#detail-page #hc-gov-assets h2 {
+  font-size: 22px;
+}
+#detail-page #hc-gov-assets .code-wrapper .preview.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#detail-page #hc-gov-assets .alert > p {
+  color: #FFF;
+}
+#detail-page #hc-gov-assets #secondary-alert .hero-message {
+  padding: 25px;
+  padding-bottom: 30px;
+  background-color: #0c567b;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+}
+#detail-page #hc-gov-assets #secondary-alert .hero-message .message-icon {
+  float: right;
+  margin-right: -10px;
+  margin-top: -25px;
+  width: 0;
+  height: 40px;
+  border-right: 20px solid #0a3347;
+  border-left: 20px solid #0a3347;
+  border-bottom: 13.33333333px solid transparent;
+  color: #FFF;
+}
+#detail-page #hc-gov-assets #secondary-alert .hero-message .message-icon .glyphicon {
+  font-size: 20px;
+  margin-left: -8px;
+  margin-top: 3px;
+  color: #FFF;
+}
+#detail-page #hc-gov-assets #secondary-alert .hero-message h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+#detail-page #hc-gov-assets #secondary-alert .hero-message p {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFF;
+}
+#detail-page #hc-gov-assets #secondary-alert .hero-message a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+#detail-page #hc-gov-assets #secondary-alert .hero-message a:hover {
+  text-decoration: none;
+}
 #detail-page #hc-gov-assets .toggle-buttons {
   float: none;
 }
@@ -7216,6 +7278,24 @@ a[name="skipnav"] {
 }
 #hc-gov-assets .code-wrapper div.line {
   margin: 0 0 15px 0;
+}
+#hc-gov-assets .code-wrapper .preview .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+#hc-gov-assets .code-wrapper .preview .container .top-content {
+  width: 100%;
+  position: relative;
+}
+#hc-gov-assets .code-wrapper .preview .container .top-content .alert {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  border-radius: 0;
+  padding: 8px 15px;
 }
 .preview {
   border: #ccc 1px solid;
