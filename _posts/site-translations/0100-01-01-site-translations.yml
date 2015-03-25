@@ -15,7 +15,8 @@ en:
       helpful: "Helpful Links"
     manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services."
     address: "7500 Security Boulevard, Baltimore, MD 21244"
-    contact: Feedback
+    feedback: Feedback
+    feedback-url: "https://github.com/CMSgov/cmsgov.github.io/issues"
 
   campaign:
     title: "HealthCare.gov"
@@ -47,7 +48,8 @@ es:
       helpful: "Helpful Links"
     manage: "HHS a federal government website managed by the U.S. Centers for Medicare & Medicaid Services."
     address: "7500 Security Boulevard, Baltimore, MD 21244"
-    contact: Feedback
+    feedback: Feedback
+    feedback-url: "https://github.com/CMSgov/cmsgov.github.io/issues"
 
   campaign:
     title: "HealthCare.gov"

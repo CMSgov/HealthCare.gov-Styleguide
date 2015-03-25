@@ -12,7 +12,7 @@
 	  	<a class="github-link" href="https://github.com/CMSgov/cmsgov.github.io"><img src="{{site.baseurl}}/images/RepoIcon.png" /></a>
 	  	<ul class="clearfix">
 		  	{% for navItem in t.[page.lang].header.nav %}
-		  		<li><a class="{% if navItem.location == page.url %}current{% endif %}" href="{{site.baseurl}}{{ navItem.location }}">{{ navItem.link }}</a></lI>
+		  		<li><a class="{% if navItem.title == page.section %}current{% endif %}" href="{{site.baseurl}}{{ navItem.location }}">{{ navItem.link }}</a></lI>
 		  	{% endfor %}
 	  	</ul>
 	</nav>
@@ -20,8 +20,8 @@
 	{% comment %}<!-- Responsive Hamburger Menu-->{% endcomment %}
 	<div class="mobile-menu-btn-wrapper">
 	    <a href="#" class="mobile-menu-btn">
-	    	<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-		</a>
+	    	<img src="{{site.baseurl}}/images/HamburgerMenu.png" />
+	    </a>
 	</div>
   </header>
 </section>

@@ -6295,6 +6295,10 @@ td#hc-gov-assets .visible-print {
     margin-right: -15px;
   }
 }
+#hc-gov-assets * {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
 #hc-gov-assets body,
 #hc-gov-assets input,
 #hc-gov-assets button,
@@ -8482,6 +8486,10 @@ td#hc-gov-assets .visible-print {
   border: none;
   width: 100%;
 }
+#hc-gov-assets .blue-bg .form-inline input[type="text"] option,
+#hc-gov-assets .blue-bg .form-inline select option {
+  color: #fff;
+}
 #hc-gov-assets .blue-bg .form-inline input[type="text"].selected,
 #hc-gov-assets .blue-bg .form-inline select.selected {
   background: #12890e;
@@ -8525,6 +8533,11 @@ td#hc-gov-assets .visible-print {
 #hc-gov-assets .blue-bg .radio-label:hover {
   color: #ffffff;
   background: #04222f;
+}
+#hc-gov-assets .blue-bg .subtitle,
+#hc-gov-assets .blue-bg .visible-radio-label,
+#hc-gov-assets .blue-bg .question-label {
+  color: #cfeffc;
 }
 #hc-gov-assets .blue-bg .btn:focus,
 #hc-gov-assets .blue-bg .form-control:focus {
@@ -9194,6 +9207,9 @@ ul#hc-gov-assets .nav-tabs {
   border: none;
   background: none;
   font-family: Bitter, serif;
+}
+#hc-gov-assets .popover .popover-content {
+  color: #cfeffc;
 }
 #hc-gov-assets .popover .popover-content p:last-child {
   margin-bottom: 0;
