@@ -3,10 +3,10 @@ published: true
 layout: detail-page
 lang: en
 section: assets
-title: "Assets Style Guide - Form Elements Page"
+title: "Form element assets"
 nav-title: "Form Elements"
-"meta-title": "Healthcare.gov's Assets Style Guide Page - Form Elements Page"
-"meta-description": "Healthcare.gov's Assets Style Guide Page - Form Elements Page"
+"meta-title": "Get an overview of form element assets used on HealthCare.gov"
+"meta-description": "Get an overview the  form element assets used on HealthCare.gov. Generally, forms are against a white or dark blue background."
 nav-category: components
 categories:
   - assets
@@ -15,7 +15,7 @@ categories:
 # Form Elements
 
 <div class="intro">
-There are many forms used throughout Healthcare.gov. Generally, forms are against a white or dark blue background. Below are the man elements that make up the forms
+There are many forms used throughout HealthCare.gov. Generally, forms are against a white or dark blue background. Below are the main elements that make up the forms.
 </div>
 
 <div class="hr"></div>
