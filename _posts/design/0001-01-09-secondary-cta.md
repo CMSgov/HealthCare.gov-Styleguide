@@ -7,7 +7,9 @@ title: "Secondary CTA"
 nav-title: "Secondary CTA"
 "meta-title": "Healthcare.gov's Design Style Guide Page"
 "meta-description": "Healthcare.gov's Design Style Guide Page"
-categories: modules
+nav-category: modules
+categories:
+  - design
 ---
 
 # Secondary CTA
