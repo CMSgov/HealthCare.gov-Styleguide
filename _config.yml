@@ -3,9 +3,6 @@ baseurl: /pages/CMSGov/cmsgov.github.io
 permalink: /:categories/:title
 markdown: rdiscount
 highlighter: null
-syntax-highlighting:
-  enabled : true
-  css: syntax.css
 encoding: utf-8
 #exclude : ['sass', 'config.rb', 'README.md']
 exclude:

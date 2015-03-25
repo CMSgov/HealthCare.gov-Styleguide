@@ -7175,6 +7175,9 @@ a[name="skipnav"] {
   margin-left: 0px;
   margin-right: 0px;
 }
+#detail-page #hc-gov-assets .alert > p {
+  color: #FFF;
+}
 #detail-page #hc-gov-assets #secondary-alert .hero-message {
   padding: 25px;
   padding-bottom: 30px;
