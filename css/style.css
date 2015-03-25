@@ -7396,12 +7396,12 @@ a[name="skipnav"] {
   text-align: center;
   padding: 18px 0;
 }
-.footer-wrap .sub-footer ul {
+.footer-wrap footer ul {
   display: inline-block;
   margin: 0;
   vertical-align: middle;
 }
-.footer-wrap .sub-footer ul li {
+.footer-wrap footer ul li {
   list-style: none;
   float: left;
   font-size: 12px;
@@ -7411,31 +7411,34 @@ a[name="skipnav"] {
   margin: 0 0 0 15px;
   color: #dedede;
 }
-.footer-wrap .sub-footer ul li:first-child {
+.footer-wrap footer ul li:first-child {
   padding: 0;
   border: none;
   margin: 0;
 }
-.footer-wrap .sub-footer ul li img {
+.footer-wrap footer ul li img {
   width: 116px;
   height: 14px;
 }
-.footer-wrap .sub-footer ul li a {
+.footer-wrap footer ul li a {
   color: #dedede;
   text-decoration: none;
 }
-.footer-wrap .sub-footer ul li a:hover {
+.footer-wrap footer ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
 .footer-wrap .mobile-sub-footer {
   display: none;
 }
+.footer-wrap .mobile-sub-footer > div {
+  margin: 0 0 5px 0;
+}
 .footer-wrap .mobile-sub-footer p {
-  margin: 5px 0 0 0;
-  padding: 0 10px;
+  margin: 0;
   color: #fff;
   font-size: 12px;
+  line-height: 16px;
 }
 .footer-wrap .mobile-sub-footer p a {
   color: #fff;
@@ -7445,12 +7448,39 @@ a[name="skipnav"] {
   margin: 0 0 0 8px;
   line-height: 10px;
 }
-@media (max-width: 780px) {
+.footer-wrap .mobile-sub-footer.tablet ul li:first-child a,
+.footer-wrap .mobile-sub-footer.tablet ul li:last-child a {
+  line-height: 32px;
+}
+@media (max-width: 1080px) {
+  .footer-wrap {
+    padding: 12px 0;
+  }
   .footer-wrap .sub-footer {
     display: none;
   }
   .footer-wrap .mobile-sub-footer {
+    display: none;
+  }
+  .footer-wrap .mobile-sub-footer.tablet {
     display: block;
+  }
+}
+@media (max-width: 822px) {
+  .footer-wrap .mobile-sub-footer ul li p {
+    max-width: 400px;
+  }
+  .footer-wrap .mobile-sub-footer.tablet ul li:first-child a,
+  .footer-wrap .mobile-sub-footer.tablet ul li:last-child a {
+    line-height: 48px;
+  }
+}
+@media (max-width: 780px) {
+  .footer-wrap .mobile-sub-footer {
+    display: block;
+  }
+  .footer-wrap .mobile-sub-footer.tablet {
+    display: none;
   }
 }
 @media (max-width: 991px) {
