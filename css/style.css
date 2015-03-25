@@ -6779,7 +6779,7 @@ h3 {
 }
 .subnav a {
   display: inline-block;
-  margin: 10px;
+  margin: 7px 10px;
   font-weight: bold;
   text-transform: capitalize;
 }
