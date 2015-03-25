@@ -60,14 +60,25 @@
 			font-size: 12px;
 			line-height: 16px;
 
-			a{
-				color:#fff;
+			span{
 				display:inline-block;
 				border-left:#fff 1px solid;
 				padding:0 0 0 8px;
 				margin:0 0 0 8px;
-				line-height:10px;
+
+				a{
+					color:#fff;	
+					line-height:10px;
+					text-decoration:none;
+
+					&:hover{
+						color:#fff;
+						text-decoration:underline;
+						border-bottom:none;
+					}
+				}
 			}
+			
 		}
 	}
 }
