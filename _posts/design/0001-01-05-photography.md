@@ -5,8 +5,8 @@ lang: en
 section: design
 title: "Photography"
 nav-title: "Photography"
-"meta-title": "Healthcare.gov's Design Style Guide Page"
-"meta-description": "Healthcare.gov's Design Style Guide Page"
+"meta-title": "Get an overview of the photography used on HealthCare.gov"
+"meta-description": "Photography on  is used to support the message on the page, engage the consumer with identifiable images, and build trust."
 categories:
   - design
 ---
@@ -14,16 +14,18 @@ categories:
 # Photography
 
 <div class="intro">
-Photography is used predominantly on the unauthenticated side of Healthcare.gov, the homepage and audience landing pages. Photos are used to support the message on the page, engage the user with identifiable images, and build trust.
+Photography is used predominantly on the unauthenticated side of HealthCare.gov, namely on the home and main landing pages. Photos are used to support the message on the page, engage the consumer with identifiable images, and build trust.
 </div>
 
 <div class="hr"></div>
 
 ## Photo Style
 
-The photo on the home page incorporates a soft, out-of-focus background with a sharp foreground image that focuses on the face or subject in-action. This styling connects the user with the person photographed on a more personal level. The photography used in this site design is key to making an emotional connection with the user. On the home page, the person in the photograph conveys confidence and ease, promoting a sense of comfort and trust. This is precisely how we want the visitors to healthcare.gov to feel.
+The photo on the homepage incorporates a soft, out-of-focus background with a sharp foreground image that focuses on the face or subject in-action. This styling connects the site visitor with the person photographed on a more personal level. 
 
-<div class="caption">Pre open enrollment home</div>
+The photography used on the site design is key to making an emotional connection with the user. On the homepage, the person in the photograph conveys confidence and ease, promoting a sense of comfort and trust. This is precisely how we want the visitors to HealthCare.gov to feel.
+
+<div class="caption">Pre-open enrollment home</div>
 <img class="full" src="{{site.baseurl}}/images/design/photography/1_Hero.jpg" />
 
 <div class="caption">During open enrollment home</div>
@@ -36,7 +38,7 @@ The photo on the home page incorporates a soft, out-of-focus background with a s
 
 ## Major Landing Pages
 
-The subjects shown on major landing pages such as “Get Coverage” are portrayed as positive and in the act of performing actions relevant to that section of Healthcare.gov.
+The subjects shown on major landing pages such as "Get Coverage" are portrayed as positive and in the act of performing actions relevant to that section of HealthCare.gov.
 
 <div class="row">
 	<div class="col-sm-6">
@@ -61,7 +63,7 @@ The subjects shown on major landing pages such as “Get Coverage” are portray
 
 ## Usage
 
-Here are examples of correct and incorrect photo styling for Healthcare.gov.
+Here are examples of correct and incorrect photo styling for HealthCare.gov.
 
 <div class="row usage">
 	<div class="col-sm-6">

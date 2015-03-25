@@ -5,8 +5,8 @@ lang: en
 section: design
 title: "Iconography"
 nav-title: "Iconography"
-"meta-title": "Healthcare.gov's Design Style Guide Page"
-"meta-description": "Healthcare.gov's Design Style Guide Page"
+"meta-title": "Get an overview of the iconography used on HealthCare.gov"
+"meta-description": "The iconography used on HealthCare.gov is meant to provide a simple, easy-to-distinguish visual indicator of key actions or tasks and to provide visual interest or emphasis."
 categories:
   - design
 ---
@@ -14,14 +14,14 @@ categories:
 # Iconography
 
 <div class="intro">
-The Iconography used on HealthCare.gov is meant to provide a simple, easy-to-distinguish visual indicator of key actions or tasks and to provide visual interest or emphasis.
+The iconography used on HealthCare.gov is meant to provide a simple, easy-to-distinguish visual indicator of key actions or tasks and to provide visual interest or emphasis.
 </div>
 
 <div class="hr"></div>
 
 ## Bootstrap Glyphicons
 
-The Bootstrap Glyphicon family is the primary icon set utilized throughout Healthcare.gov. These are used in various locations throughout the site including the Secondary CTA, the Action Bar, and the footer.
+The Bootstrap Glyphicon family is the primary icon set used throughout HealthCare.gov. Glyphicons are used in various locations throughout the site including the Secondary CTA, the Action Bar, and the Footer.
 
 <br />
 <div class="iconography">
