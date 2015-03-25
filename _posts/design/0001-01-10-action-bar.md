@@ -5,7 +5,7 @@ lang: en
 section: design
 title: "Action bar design"
 nav-title: "Action Bar"
-"meta-title": "Get an overview of the design of the "action bar" area used on HealthCare.gov landing pages"
+"meta-title": 'Get an overview of the design of the "action bar" area used on HealthCare.gov landing pages'
 "meta-description": "Healthcare.gov's Design Style Guide Page"
 nav-category: modules
 categories:
