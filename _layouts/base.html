@@ -28,7 +28,7 @@
   {% endif %}
 
   {% if page.url == "/index.html" %}
-    <title>Healthcare.gov's Style Guide</title>
+    <title>{{ t.[page.lang].header.meta-title }}</title>
   {% else %}
     <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
   {% endif %}
