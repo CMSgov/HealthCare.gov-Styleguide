@@ -3,15 +3,15 @@ published: true
 layout: landing-page
 lang: en
 section: governance
-title: "Governance Style Guide"
-"meta-title": "Healthcare.gov's Governance Style Guide Page"
-"meta-description": "Healthcare.gov's Governance Style Guide Page"
+title: "Governance"
+"meta-title": "Purpose and governance of the HealthCare.gov Styleguide"
+"meta-description": "The purpose of the HealthCare.gov Styleguide is to centralize design, development, and editorial features used for HealthCare.gov.  It also serves to make assets publicly available in keeping with digital government strategy objectives as defined by the Federal Government."
 ---
 
 # Governance
 
 <div class="intro">
-The purpose of the HealthCare.gov Styleguide is to centralize design, development, and editorial features used for HealthCare.gov.  It also serves to make assets publicly available in keeping with digital government strategy objectives as defined by the Federal Government. As a repository for key design elements, development assets, and editorial guidelines that are used across Healthcare.gov, the Styleguide aims to improve efficiency and ensure a consistent look and feel. 
+The purpose of the HealthCare.gov Styleguide is to centralize design, development, and editorial features used for HealthCare.gov.  It also serves to make assets publicly available in keeping with digital government strategy objectives as defined by the Federal Government. As a repository for key design elements, development assets, and editorial guidelines that are used across Healthcare.gov, the Styleguide aims to improve efficiency and ensure a consistent look and feel.
 </div>
 
 <div class="hr"></div>
@@ -20,7 +20,7 @@ A governance structure for the Styleguide will be developed to outline roles, po
 
 ## Feedback
 
-We encourage your feedback and suggestions. Content and feature suggestions and discussions are welcome via [GitHub Issues](https://github.com/CMSgov/cmsgov.github.io/issues). You may also propose changes to the content directly by submitting a pull request.
+We encourage your feedback and suggestions. Content and feature suggestions and discussions are welcome via G[GitHub Issues](https://github.com/CMSgov/cmsgov.github.io/issues). You may also propose changes to the content directly by submitting a pull request.
 
 <hr>
 
