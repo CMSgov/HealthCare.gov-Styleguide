@@ -1,9 +1,12 @@
+// Used to break up the footer for mid range widths
+@screen-footer-tablet: 1080px;
+
 .footer-wrap{
 	background:#070707;
 	text-align:center;
 	padding: 18px 0;
 
-	.sub-footer{
+	footer{
 
 		ul{
 			display:inline-block;
@@ -47,11 +50,15 @@
 	.mobile-sub-footer{
 		display:none;
 
+		>div{
+			margin: 0 0 5px 0;
+		}
+
 		p{
-			margin:5px 0 0 0;
-			padding:0 10px;
+			margin:0;
 			color:#fff;
 			font-size: 12px;
+			line-height: 16px;
 
 			a{
 				color:#fff;
@@ -65,8 +72,10 @@
 	}
 }
 
-@media (max-width: @screen-sm){
+@media (max-width: @screen-footer-tablet){
 	.footer-wrap{
+		padding: 12px 0;
+
 		.sub-footer{
 			display:none;
 		}
