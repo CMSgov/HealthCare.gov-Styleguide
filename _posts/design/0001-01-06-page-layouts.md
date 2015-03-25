@@ -5,23 +5,23 @@ lang: en
 section: design
 title: "Page Layouts"
 nav-title: "Page Layouts"
-"meta-title": "Healthcare.gov's Design Style Guide Page"
-"meta-description": "Healthcare.gov's Design Style Guide Page"
+"meta-title": "Get an overview of page layouts used on HealthCare.gov"
+"meta-description": "HealthCare.gov utilizes the Bootstrap responsive, mobile-first fluid grid system for its page layout templates."
 categories:
   - design
 ---
 
-# Page Layouts
+# Page layouts
 
 <div class="intro">
-A series of new templates have been introduced as a part of an updated Header/Footer. There are two home pages (Individuals & Families and Small Businesses), 4 interior landing pages (Get Coverage, Keep or Change Your Plan, For Employers, For Employees) and 2 Get Answers templates.
+A series of templates are used for major landing pages. There are , 2 audience landing pages (Individuals & Families/Homepage and Small Businesses), 4 interior landing pages (Get Coverage, Change or Update Your Plan, For Employers, For Employees), and 2 Get Answers templates.
 </div>
 
 <div class="hr"></div>
 
 ## Grid Systems
 
-Healthcare.gov utilizes the Bootstrap responsive, mobile first fluid grid system. The grid scales up to 12 columns as the device or viewport size increases, for more information on Bootstrap CSS please visit getbootstrap.com/css
+HealthCare.gov utilizes the Bootstrap responsive, mobile-first fluid grid system. The grid scales up to 12 columns as the device or viewport size increases, for more information on Bootstrap CSS please visit getbootstrap.com/css.
 
 <br />
 <img class="full" src="{{site.baseurl}}/images/design/page-layouts/1_Grid.png" alt="" />
@@ -30,7 +30,7 @@ Healthcare.gov utilizes the Bootstrap responsive, mobile first fluid grid system
 
 Landing
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
+The first-tier landing pages throughout HealthCare.gov are designed to engage users with bold, engaging imagery and simplified, clutter-free content to direct consumers to the most pertinent action to take. See the major modules contained within each landing page here.
 
 <div class="row">
 	<div class="col-sm-6">
@@ -77,7 +77,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 ## Explainer / Article
 
-Explainer and Article pages contain sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto be. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam re.
+Explainer and Article pages contain detailed information for consumers on specific topics. Explainer pages include multiple subsections of content under a particular topic and require the use of subnavigation. Article pages are typically used for content outside or ancillary to the topics covered in the Explainers.
 
 <div class="row">
 	<div class="col-sm-6">
@@ -100,7 +100,7 @@ Explainer and Article pages contain sed ut perspiciatis unde omnis iste natus er
 		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/12_BlogLanding.png" />
 	</div>
 	<div class="col-sm-6">
-		<div class="caption">Individual Post</div>
+		<div class="caption">Individual post</div>
 		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/13_BlogPost.png" />
 	</div>
 </div>
