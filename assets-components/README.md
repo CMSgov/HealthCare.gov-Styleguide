@@ -45,7 +45,7 @@ We provide compiled CSS (`style.css`), as well as the CSS Less source. Fonts fro
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/CMSgov/cmsgov.github.io/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/CMSgov/cmsgov.github.io/issues/new).
 
 
 ## Documentation
