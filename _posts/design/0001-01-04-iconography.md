@@ -25,8 +25,8 @@ The Bootstrap Glyphicon family is the primary icon set used throughout HealthCar
 
 <br />
 <div class="iconography">
-	<img class="half" src="{{site.baseurl}}/images/design/iconography/1_Glyphicons.png" alt="" />
-	<img class="half" src="{{site.baseurl}}/images/design/iconography/2_Glyphicons.png" alt="" />
-	<img class="half" src="{{site.baseurl}}/images/design/iconography/3_Glyphicons.png" alt="" />
-	<img class="half" src="{{site.baseurl}}/images/design/iconography/4_Glyphicons.png" alt="" />
+	<img class="half" src="{{site.baseurl}}/images/design/iconography/1_Glyphicons.png" alt="Glyphicons Set 1" />
+	<img class="half" src="{{site.baseurl}}/images/design/iconography/2_Glyphicons.png" alt="Glyphicons Set 2" />
+	<img class="half" src="{{site.baseurl}}/images/design/iconography/3_Glyphicons.png" alt="Glyphicons Set 3" />
+	<img class="half" src="{{site.baseurl}}/images/design/iconography/4_Glyphicons.png" alt="Glyphicons Set 4" />
 </div>

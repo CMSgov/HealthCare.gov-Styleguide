@@ -25,13 +25,13 @@ There are two variations of the Secondary CTA. The Individuals &amp; Families an
 All elements within the Secondary CTA are shown here specifying usage of the green CTA button, icons, and text.
 
 <div class="caption">I&amp;F Default</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/1_Default.png" alt=""/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/1_Default.png" alt="Default I&F Secondary CTA"/>
 
 <div class="caption">SB Default</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/2_SBDefault.png" alt=""/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/2_SBDefault.png" alt="Default Small Business Secondary CTA"/>
 
 <div class="caption">Specifications</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/3_Specs.png" alt=""/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/3_Specs.png" alt="Secondary CTA Specifications"/>
 
 <div class="caption">Styles</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/4_Styles.png" alt=""/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/4_Styles.png" alt="Secondary CTA Styles"/>
