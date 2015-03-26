@@ -11,7 +11,7 @@ A couple of quick start options are available:
 - [Download the latest release](https://github.com/CMSgov/cmsgov.github.io/archive/master.zip).
 - Clone the repo: `git clone https://github.com/CMSgov/cmsgov.github.io.git`.
 
-Read the [Assets landing page](https://[styleguide.healthcare.gov/assets/) for information on the framework contents, templates and examples, and more.
+Read the [Assets landing page](https://styleguide.healthcare.gov/assets/) for information on the framework contents, templates and examples, and more.
 
 ### What's included
 
