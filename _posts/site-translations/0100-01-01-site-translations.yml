@@ -3,7 +3,7 @@ published: true
 en:
   header:
     meta-title: "Get an overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov"
-    meta-description: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers and copywriters."
+    meta-description: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers, and copywriters."
     nav:
       - { link: 'Design', location: '/design', title: 'design' }  
       - { link: 'Assets', location: '/assets', title: 'assets' }      
@@ -27,7 +27,7 @@ en:
 
   home-secondary:
     title: "Journey to a unified experience"
-    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the same guideline."
+    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers, and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the same guideline."
     breakdown:
       title: "Breakdown"
       text: "The Design and Assets sections of the Styleguide contain design guidance and component-level artifacts with code snippets used across the various properties of HealthCare.gov."
@@ -38,7 +38,7 @@ en:
 es:
   header:
     meta-title: "Get an overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov"
-    meta-description: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers and copywriters."
+    meta-description: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers, and copywriters."
     nav:
       - { link: 'Design', location: '/design', title: 'design' }
       - { link: 'Assets', location: '/assets', title: 'assets' }
@@ -62,7 +62,7 @@ es:
 
   home-secondary:
     title: "A Unified Experience"
-    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the general guidelines outlined."
+    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers, and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the general guidelines outlined."
     breakdown:
       title: "Breakdown"
       text: '[Visual styles](/# "styles") lipsum dollir sit amet inventore veritatis laudantium et quasi [assets](/# "assets") beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati.'

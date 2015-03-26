@@ -12,7 +12,7 @@ categories:
   - assets
 ---
 
-# Form Elements
+# Form elements
 
 <div class="intro">
 There are many forms used throughout HealthCare.gov. Generally, forms are against a white or dark blue background. Below are the main elements that make up the forms.
@@ -20,7 +20,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 
 <div class="hr"></div>
 
-## Table Forms
+## Table forms
 
 <div class="code-wrapper">
 <pre>
@@ -101,7 +101,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 
 * * *
 
-## Blue Background with subtitle
+## Blue background with subtitle
 
 <div class="code-wrapper">
 <div class="preview has-background">
@@ -126,7 +126,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 
 * * *
 
-## Screener Statements Blue Background
+## Screener statements blue background
 
 <div class="code-wrapper">
 <div class="preview has-background">
@@ -172,7 +172,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 
 * * *
 
-## Multiple Choice Questions Blue Background
+## Multiple choice questions blue background
 
 <div class="code-wrapper">
 <div class="preview has-background">
@@ -218,7 +218,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 
 * * *
 
-## Dropdown Questions Blue Background
+## Dropdown questions blue background
 
 <div class="code-wrapper">
 <div class="preview has-background">
@@ -360,7 +360,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 
 * * *
 
-## Radio Selects
+## Radio selects
 
 <div class="code-wrapper">
 <div class="preview">
