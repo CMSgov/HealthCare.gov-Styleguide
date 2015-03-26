@@ -30,27 +30,35 @@ var hideMobileNav = function() {
   $('.mobile-menu-btn').on('click.show', showMobileNav);
 };
 
+function isIE () {
+  var myNav = navigator.userAgent.toLowerCase();
+  return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+}
+
 $(document).ready(function() {
   // Attach mobile flyout click command
   $('.mobile-menu-btn').on('click.show', showMobileNav);
 
-  // Zero Clipboard
-  var clip = new ZeroClipboard($(".copy-button"));
+  if (isIE() < 9) {
 
-  	clip.on("ready", function() {
-    	//console.log("Flash movie loaded and ready.");
+  } else{
+    // Zero Clipboard
+    var clip = new ZeroClipboard($(".copy-button"));
 
-		  this.on("aftercopy", function(event) {
-      	//console.log("Copied text to clipboard: " + event.data["text/plain"]);
-    	});
-  });
+      clip.on("ready", function() {
+        //console.log("Flash movie loaded and ready.");
 
-	clip.on("error", function(event) {
-  	$(".demo-area").hide();
-  	console.log('error[name="' + event.name + '"]: ' + event.message);
-  	ZeroClipboard.destroy();
-  });
+        this.on("aftercopy", function(event) {
+          //console.log("Copied text to clipboard: " + event.data["text/plain"]);
+        });
+    });
 
+    clip.on("error", function(event) {
+      $(".demo-area").hide();
+      console.log('error[name="' + event.name + '"]: ' + event.message);
+      ZeroClipboard.destroy();
+    });
+  }
 });
 
 $(document).ready(function() {
