@@ -7256,6 +7256,9 @@ a[name="skipnav"] {
   font-size: 12px;
   text-align: center;
 }
+.ie8 #hc-gov-assets .code-wrapper .copy-button {
+  display: none;
+}
 #hc-gov-assets .code-wrapper {
   position: relative;
   margin: 0 0 30px 0;

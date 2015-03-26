@@ -35,7 +35,7 @@ abcdefghijklmnopqrstuvwxyz<br />
 
 ## Open Sans (sans-serif) 
 
-Open Sans serves as the base font for the site. The full Open Sans type family consists of a variety of weights including light, regular, semibold, bold, and extrabold which allows for a wide range of type treatments and hierarchies within a page while still maintaining a unified look and feel.
+Open Sans serves as the base font for the site. The full Open Sans type family consists of a variety of weights including light, regular, semibold, bold, and extrabold, which allows for a wide range of type treatments and hierarchies within a page while still maintaining a unified look and feel.
 
 Whereas Bitter is used to introduce sections of content on the site, Open Sans is used to present the content details.  When the consumer is focused on the details, they are highly engaged. This means the text must be as legible as possible. Sans-serifs have been proven to be easier to read on-screen and are incredibly adaptable when resized and displayed across different platforms and browsers. Accordingly, Open Sans is used for body type, secondary and tertiary headlines, and instructional text.
 

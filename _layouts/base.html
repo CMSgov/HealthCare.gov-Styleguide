@@ -1,7 +1,8 @@
 {% assign t = site.tags.translations[0] %}
 <!DOCTYPE html>
 
-<html lang='{{page.lang}}'>
+<!--[if IE 8]> <html class="ie8" lang="{{page.lang}}"><![endif]-->
+<html lang="{{page.lang}}">
 
 <head>
   <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
@@ -15,17 +16,13 @@
   <script src="//assets.healthcare.gov/resources/libs/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   <script src="//assets.healthcare.gov/resources/libs/lodash/2.4.1/lodash.compat.js"></script>
 
+  <!--[if gt IE 8]><!-->
   <script src="{{site.baseurl}}/js/ZeroClipboard.js"></script>
+  <!--<![endif]-->
   <script src="{{site.baseurl}}/js/main.js"></script>
 
   {% if page.section == "assets" %}
   <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets-components/css/style.css">
-  <script type="text/javascript" src="{{site.baseurl}}/assets-components/js/libs/bootstrap/transition.js"></script>
-  <script type="text/javascript" src="{{site.baseurl}}/assets-components/js/libs/bootstrap/tooltip.js"></script>
-  <script type="text/javascript" src="{{site.baseurl}}/assets-components/js/libs/bootstrap/popover.js"></script>
-  <script type="text/javascript" src="{{site.baseurl}}/assets-components/js/libs/bootstrap/modal.js"></script>
-  <script type="text/javascript" src="{{site.baseurl}}/assets-components/js/libs/bootstrap/tab.js"></script>
-  <script type="text/javascript" src="{{site.baseurl}}/assets-components/js/libs/bootstrap/affix.js"></script>
   {% endif %}
 
   {% if page.url == "/index.html" %}
