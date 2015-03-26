@@ -19,11 +19,11 @@ Photography is used predominantly on the unauthenticated side of HealthCare.gov,
 
 <div class="hr"></div>
 
-## Photo Style
+## Photo style
 
-The photo on the homepage incorporates a soft, out-of-focus background with a sharp foreground image that focuses on the face or subject in-action. This styling connects the site visitor with the person photographed on a more personal level. 
+The photo on the homepage incorporates a soft, out-of-focus background with a sharp foreground image that focuses on the face or subject-in-action. This styling connects the site visitor with the person photographed on a more personal level. 
 
-The photography used on the site design is key to making an emotional connection with the user. On the homepage, the person in the photograph conveys confidence and ease, promoting a sense of comfort and trust. This is precisely how we want the visitors to HealthCare.gov to feel.
+The photography used in the site design is key to making an emotional connection with the user. On the homepage, the person in the photograph conveys confidence and ease, promoting a sense of comfort and trust. This is precisely how we want visitors to HealthCare.gov to feel.
 
 <div class="caption">Pre-open enrollment home</div>
 <img class="full" src="{{site.baseurl}}/images/design/photography/1_Hero.jpg" />
@@ -36,7 +36,7 @@ The photography used on the site design is key to making an emotional connection
 
 <hr>
 
-## Major Landing Pages
+## Major landing pages
 
 The subjects shown on major landing pages such as "Get Coverage" are portrayed as positive and in the act of performing actions relevant to that section of HealthCare.gov.
 

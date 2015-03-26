@@ -14,21 +14,20 @@ categories:
 # Page layouts
 
 <div class="intro">
-A series of templates are used for major landing pages. There are , 2 audience landing pages (Individuals & Families/Homepage and Small Businesses), 4 interior landing pages (Get Coverage, Change or Update Your Plan, For Employers, For Employees), and 2 Get Answers templates.
+A series of templates are used for major landing pages. There are: 2 audience landing pages (Individuals & Families/homepage and Small Businesses); 4 interior landing pages (Get Coverage, Change or Update Your Plan, For Employers, For Employees); and 2 Get Answers templates.
 </div>
 
 <div class="hr"></div>
 
-## Grid Systems
+## Grid systems
 
-HealthCare.gov utilizes the Bootstrap responsive, mobile-first fluid grid system. The grid scales up to 12 columns as the device or viewport size increases, for more information on Bootstrap CSS please visit getbootstrap.com/css.
+HealthCare.gov utilizes the Bootstrap responsive, mobile-first fluid grid system. The grid scales up to 12 columns as the device or viewport size increases, for more information on Bootstrap CSS please visit [getbootstrap.com/css](http://getbootstrap.com/css/).
 
-<br />
 <img class="full" src="{{site.baseurl}}/images/design/page-layouts/1_Grid.png" alt="" />
 
 <hr>
 
-Landing
+## Landing
 
 The first-tier landing pages throughout HealthCare.gov are designed to engage users with bold, engaging imagery and simplified, clutter-free content to direct consumers to the most pertinent action to take. See the major modules contained within each landing page here.
 

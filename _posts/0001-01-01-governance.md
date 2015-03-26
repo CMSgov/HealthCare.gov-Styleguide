@@ -20,7 +20,7 @@ A governance structure for the Styleguide will be developed to outline roles, po
 
 ## Feedback
 
-We encourage your feedback and suggestions. Content and feature suggestions and discussions are welcome via G[GitHub Issues](https://github.com/CMSgov/cmsgov.github.io/issues). You may also propose changes to the content directly by submitting a pull request.
+We encourage your feedback and suggestions. Content and feature suggestions and discussions are welcome via [GitHub Issues](https://github.com/CMSgov/cmsgov.github.io/issues). You may also propose changes to the content directly by submitting a pull request.
 
 <hr>
 
