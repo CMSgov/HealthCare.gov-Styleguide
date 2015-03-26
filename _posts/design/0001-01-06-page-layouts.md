@@ -23,7 +23,9 @@ A series of templates are used for major landing pages. There are: 2 audience la
 
 HealthCare.gov utilizes the Bootstrap responsive, mobile-first fluid grid system. The grid scales up to 12 columns as the device or viewport size increases, for more information on Bootstrap CSS please visit [getbootstrap.com/css](http://getbootstrap.com/css/).
 
-<img class="full" src="{{site.baseurl}}/images/design/page-layouts/1_Grid.png" alt="" />
+<br />
+<img class="full" src="{{site.baseurl}}/images/design/page-layouts/1_Grid.png" alt="Grid" />
+
 
 <hr>
 
@@ -34,41 +36,41 @@ The first-tier landing pages throughout HealthCare.gov are designed to engage us
 <div class="row">
 	<div class="col-sm-6">
 		<div class="caption">I&amp;F Home</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/2_IFHome.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/2_IFHome.png" alt="Home Page Layout Example"/>
 	</div>
 	<div class="col-sm-6">
 		<div class="caption">SB Landing</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/3_SBLanding.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/3_SBLanding.png" alt="Landing Page Layout Example"/>
 	</div>
 </div>
 <div class="row">
 	<div class="col-sm-6">
 		<div class="caption">I&amp;F Get Coverage</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/4_IFGetCoverage.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/4_IFGetCoverage.png" alt="Get Coverage Page Layout Example"/>
 	</div>
 	<div class="col-sm-6">
 		<div class="caption">I&amp;F Keep or Change Plan</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/5_IF_KeepChange.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/5_IF_KeepChange.png" alt="Keep/Change Page Layout Example"/>
 	</div>
 </div>
 <div class="row">
 	<div class="col-sm-6">
 		<div class="caption">SB For Employers</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/6_SBEmployers.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/6_SBEmployers.png" alt="Employers Page Layout Example"/>
 	</div>
 	<div class="col-sm-6">
 		<div class="caption">SB For Employees</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/7_SBEmployees.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/7_SBEmployees.png" alt="Employees Page Layout Example"/>
 	</div>
 </div>
 <div class="row">
 	<div class="col-sm-6">
 		<div class="caption">I&amp;F Get Answers</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/8_IFGetAnswers.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/8_IFGetAnswers.png" alt="I&F Get Answers Page Layout Example"/>
 	</div>
 	<div class="col-sm-6">
 		<div class="caption">SB Get Answers</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/9_SBGetAnswers.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/9_SBGetAnswers.png" alt="SB Get Answers Page Layout Example"/>
 	</div>
 </div>
 
@@ -81,11 +83,11 @@ Explainer and Article pages contain detailed information for consumers on specif
 <div class="row">
 	<div class="col-sm-6">
 		<div class="caption">Explainer</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/10_Explainer.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/10_Explainer.png" alt="Explainer Page Layout Example"/>
 	</div>
 	<div class="col-sm-6">
 		<div class="caption">Article</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/11_Article.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/11_Article.png" alt="Article Page Layout Example"/>
 	</div>
 </div>
 
@@ -96,10 +98,10 @@ Explainer and Article pages contain detailed information for consumers on specif
 <div class="row">
 	<div class="col-sm-6">
 		<div class="caption">Landing</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/12_BlogLanding.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/12_BlogLanding.png" alt="Blog Landing Page Layout Example"/>
 	</div>
 	<div class="col-sm-6">
 		<div class="caption">Individual post</div>
-		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/13_BlogPost.png" />
+		<img class="full" src="{{site.baseurl}}/images/design/page-layouts/13_BlogPost.png" alt="Blog Post Layout Example"/>
 	</div>
 </div>
