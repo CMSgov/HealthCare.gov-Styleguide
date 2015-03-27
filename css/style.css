@@ -6754,9 +6754,10 @@ h3 {
   color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  margin-bottom: 30px;
 }
-.main-content {
-  margin: 63px 0 0 0;
+h4 {
+  font-size: 15px;
 }
 .banner {
   background: #006093;
@@ -6879,7 +6880,7 @@ a[name="skipnav"] {
 .header-wrap .site-header .navbar .github-link {
   display: block;
   float: right;
-  margin: 19px 0 0 0;
+  margin: 11px 0 0 0;
 }
 .header-wrap .site-header .navbar .github-link img {
   width: 17px;
@@ -6940,6 +6941,9 @@ a[name="skipnav"] {
 }
 #landing-page {
   padding-bottom: 90px;
+}
+#landing-page .banner {
+  height: 84px;
 }
 #landing-page #hc-gov-assets h1 {
   margin-top: 0px;
@@ -7133,6 +7137,11 @@ a[name="skipnav"] {
   margin-top: 36px;
   text-transform: uppercase;
 }
+#detail-page h4 {
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
 #detail-page hr {
   margin: 36px 0;
 }
@@ -7175,6 +7184,9 @@ a[name="skipnav"] {
 }
 #detail-page #hc-gov-assets h2 {
   font-size: 22px;
+}
+#detail-page #hc-gov-assets hr {
+  border-top: 1px solid #d9d9d9;
 }
 #detail-page #hc-gov-assets .code-wrapper .preview.row {
   margin-left: 0px;
