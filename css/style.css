@@ -6755,9 +6755,6 @@ h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
-.main-content {
-  margin: 63px 0 0 0;
-}
 .banner {
   background: #006093;
 }
@@ -7175,6 +7172,9 @@ a[name="skipnav"] {
 }
 #detail-page #hc-gov-assets h2 {
   font-size: 22px;
+}
+#detail-page #hc-gov-assets hr {
+  border-top: 1px solid #d9d9d9;
 }
 #detail-page #hc-gov-assets .code-wrapper .preview.row {
   margin-left: 0px;
