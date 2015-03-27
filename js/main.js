@@ -95,4 +95,9 @@ $(document).ready(function() {
       }
     });
   }
+
+  // Affixes header navigation
+  if($('.header-wrap').length){
+    $('.header-wrap').affix();
+  }
 });
