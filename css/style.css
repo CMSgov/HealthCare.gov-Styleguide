@@ -6754,6 +6754,10 @@ h3 {
   color: #333;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 15px;
 }
 .banner {
   background: #006093;
@@ -6937,6 +6941,9 @@ a[name="skipnav"] {
 }
 #landing-page {
   padding-bottom: 90px;
+}
+#landing-page .banner {
+  height: 84px;
 }
 #landing-page #hc-gov-assets h1 {
   margin-top: 0px;
@@ -7128,6 +7135,11 @@ a[name="skipnav"] {
 #detail-page h3 {
   font-weight: 600;
   margin-top: 36px;
+  text-transform: uppercase;
+}
+#detail-page h4 {
+  font-weight: 600;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 #detail-page hr {
