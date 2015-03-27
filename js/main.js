@@ -39,9 +39,7 @@ $(document).ready(function() {
   // Attach mobile flyout click command
   $('.mobile-menu-btn').on('click.show', showMobileNav);
 
-  if (isIE() < 9) {
-
-  } else{
+  if(!isIE() || (isIE() > 8)){
     // Zero Clipboard
     var clip = new ZeroClipboard($(".copy-button"));
 
