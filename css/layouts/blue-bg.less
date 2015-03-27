@@ -1,0 +1,165 @@
+.blue-bg {
+  background-color: @lite-bg;
+  color: @light-blue;
+
+  h1,
+  h2,
+  h3 {
+    color: @white;
+  }
+
+  .info-text {
+    .font-md();
+
+    color: @light-blue;
+  }
+
+  a {
+    color: @light-blue;
+
+    // border reads a little brighter than the text if we don't darken
+    .link-decorator(darken(@light-blue, 10%), @white);
+
+    &:hover,
+    &:focus {
+      color: @white;
+    }
+
+    // when it's a button we want white text for better contrast
+    &.btn {
+      color: @white;
+      border: none;
+    }
+  }
+
+  label {
+    color: @light-blue;
+  }
+
+  // Error messages are shown in white bolded text, rather than red, f
+  // with dark backgrounds. Overrides p.error-message from
+  .error-message {
+    .font-md();
+
+    font-weight: bold;
+    color: @white;
+  }
+
+  .form-select {
+    .caret {
+      border-top: 6px solid @light-blue;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+    }
+  }
+
+  .form-inline {
+    input[type="text"],
+    select {
+      background: mix(@lite-bg, white, 80%);
+      color: @white;
+      border: none;
+      width: 100%;
+
+      option { color:#fff; }
+
+      &.selected {
+        background: @accent-green;
+        color: @white;
+      }
+    }
+  }
+
+  .question {
+    .font-lg();
+
+    color: @white;
+    margin-bottom: 40px;
+
+    &.has-error .error-message {
+      display: inline-block;
+      margin-left: 15px;
+
+      &.icon-error {
+        @icon-size: 32px;
+        background-color: @accent-red;
+        width: @icon-size;
+        height: @icon-size;
+        line-height: @icon-size;
+        text-align: center;
+        border-radius: @icon-size / 2;
+      }
+
+      span {
+        .font-lg();
+
+        color: @white;
+      }
+    }
+
+    &.optional {
+
+      .question-label {
+        color: @light-blue;
+      }
+    }
+
+    .error-message {
+      display: none;
+    }
+  }
+
+  .filter-question {
+    margin-top: 10px;
+  }
+
+  .radio-label {
+    background: @dark-blue;
+
+    &:hover {
+      color: @white;
+      background: darken(@dark-blue, 5%);
+    }
+  }
+
+  .subtitle,
+  .visible-radio-label,
+  .question-label { color:@light-blue; }
+
+  /* make the tab focus inside .blue-bg legible */
+  .btn,
+  .form-control {
+    .accessible-outline;
+  }
+
+  .nav-tabs {
+    li.active a,
+    li.active a:hover {
+      color: @white;
+    }
+  }
+
+  .link-list {
+    a {
+      .link-decorator(transparent, @white);
+    }
+  }
+
+  .information-box {
+    background: darken(@medium-blue, 10%);
+    color: @light-blue;
+  }
+
+  /* sometimes the help popovers have a glyphicon nested,
+     sometimes it is just the glyphicon that is the target */
+  .help-popover.glyphicon,
+  .help-popover .glyphicon {
+    color: lighten(@medium-blue, 20%);
+  }
+
+  /* for our help-popover glyphicon */
+  .question-label .glyphicon,
+  .question-text .glyphicon {
+    .font-sm();
+  }
+}

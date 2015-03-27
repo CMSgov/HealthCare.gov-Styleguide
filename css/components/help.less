@@ -1,0 +1,92 @@
+/*
+  General styling for our popover help content goes here
+*/
+.help-popover {
+  /* default case is we style the popover with a dotted underline */
+  &.glossary-term,
+  &.glossary-term:hover {
+    border-bottom-style: dashed;
+  }
+
+  /* input labels that have a popover help text */
+  &.help-popover-label {
+    .link-decorator(transparent, transparent);
+
+    .glyphicon {
+      .font-xs();
+      // lighten the color a bit to visually match the link color of the label
+      color: lighten(@medium-blue, 10%);
+    }
+  }
+
+  /* if the hover is just a glyphicon, remove the bottom border */
+  &.glyphicon {
+    .link-decorator(transparent, transparent);
+    color: lighten(@dark-gray, 20%);
+  }
+}
+
+/*
+  Popovers
+
+  These are mostly just used to display help content (see CardView),
+  but might be used elsewhere as well.
+*/
+.popover {
+  .font-sm();
+
+  border: none;
+  border-radius: 0;
+  background: @dark-blue;
+  color: @light-blue;
+  padding: 10px;
+  max-width: 400px;
+  .box-shadow(0 5px 10px rgba(0,0,0,.3));
+
+  &.bottom .arrow,
+  &.bottom .arrow:after {
+    border-bottom-color: @dark-blue;
+  }
+
+  &.top .arrow,
+  &.top .arrow:after {
+    border-top-color: @dark-blue;
+  }
+
+  .popover-title {
+    .font-lg();
+
+    color: @white;
+    border: none;
+    background: none;
+    font-family: Bitter, serif;
+  }
+
+  .popover-content {
+    color:@light-blue;
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+
+      /*
+        aligning bullets so lines that wrap multiple lines indent properly. using em's to not be font size dependent.
+      */
+      text-indent: -1em;
+      padding-left: 1em;
+    }
+  }
+
+  /* display links in the popover set off from main content */
+  .popover-footer {
+    display: block;
+    margin-top: 20px;
+  }
+
+  a {
+    color: @white;
+    border-bottom-color: @white;
+  }
+}
