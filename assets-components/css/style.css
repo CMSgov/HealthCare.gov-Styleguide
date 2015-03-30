@@ -8645,6 +8645,9 @@ td#hc-gov-assets .visible-print {
   outline-style: solid;
   outline-width: 2px;
 }
+#hc-gov-assets .btn .glyphicon {
+  color: #0e70b4;
+}
 #hc-gov-assets .btn:hover,
 #hc-gov-assets .btn:active,
 #hc-gov-assets .btn.active,
@@ -8652,6 +8655,12 @@ td#hc-gov-assets .visible-print {
   background-color: #0e70b4;
   color: #ffffff;
   border: none;
+}
+#hc-gov-assets .btn:hover .glyphicon,
+#hc-gov-assets .btn:active .glyphicon,
+#hc-gov-assets .btn.active .glyphicon,
+#hc-gov-assets .btn:focus .glyphicon {
+  color: #ffffff;
 }
 a#hc-gov-assets .btn {
   border: none;
