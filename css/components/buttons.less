@@ -15,6 +15,8 @@
   .accessible-outline;
   .transition(all 0.1s ease-out);
 
+  .glyphicon { color: @btn-alternate-bg; }
+
   &:hover,
   &:active,
   &.active,
@@ -22,6 +24,8 @@
     background-color: @btn-alternate-bg;
     color: @white;
     border: none;
+
+    .glyphicon { color: @white; }
   }
 
   a& {
