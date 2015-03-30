@@ -8,8 +8,8 @@ More detail info can be found at [styleguide.healthcare.gov](https://styleguide.
 
 A couple of quick start options are available:
 
-- [Download the latest release](https://github.com/CMSgov/cmsgov.github.io/archive/master.zip).
-- Clone the repo: `git clone https://github.com/CMSgov/cmsgov.github.io.git`.
+- [Download the latest release](https://github.com/CMSgov/HealthCare.gov-Styleguide/archive/master.zip).
+- Clone the repo: `git clone https://github.com/CMSgov/HealthCare.gov-Styleguide.git`.
 
 Read the [Assets landing page](https://styleguide.healthcare.gov/assets/) for information on the framework contents, templates and examples, and more.
 
@@ -45,7 +45,7 @@ We provide compiled CSS (`style.css`), as well as the CSS Less source. Fonts fro
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/CMSgov/cmsgov.github.io/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/CMSgov/cmsgov.github.io/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/CMSgov/HealthCare.gov-Styleguide/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/CMSgov/HealthCare.gov-Styleguide/issues/new).
 
 
 ## Documentation
@@ -62,10 +62,10 @@ Healthcare.gov's Style Guide documentation, included in this repo in the gh-page
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://github.com/CMSgov/cmsgov.github.io/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+Please read through our [contributing guidelines](https://github.com/CMSgov/HealthCare.gov-Styleguide/blob/master/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
 ## Copyright and license
 
 As a work of the United States Government, this project is in the public domain within the United States.
 
-[Full license can be found here](https://github.com/CMSgov/cmsgov.github.io/blob/master/LICENSE.md).
+[Full license can be found here](https://github.com/CMSgov/HealthCare.gov-Styleguide/blob/master/LICENSE.md).
