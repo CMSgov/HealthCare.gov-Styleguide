@@ -19,7 +19,7 @@
 						{% assign subNav = true %}
 						{% assign currentCategory = post.nav-category %}
 						<li><span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span><a class="toggle-interior-nav" href="javascript:;">{{ post.nav-category }}</a>
-							<ul>
+							<ul class="tertiary-nav">
 								<li><a class="{% if currentURL == post.url %}current{% endif %}" href="{{site.baseurl}}{{ post.url }}">{{ post.nav-title }}</a></li>
 
 					{% comment %}<!-- No subcategory -->{% endcomment %}
