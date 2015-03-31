@@ -27,7 +27,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 <code id="form-code">&ltdiv id="table-form-container"&gt&lt/div&gt
 </code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="form-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="form-code" role="button">Copy</a>
 </div>
 
 <div class="code-wrapper">
@@ -56,7 +56,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 }),
 </code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="view-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="view-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -75,7 +75,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 &lt/fieldset&gt
 </code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -96,7 +96,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 &lt/fieldset&gt
 </code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-instructions-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-instructions-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -121,7 +121,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 &lt/div&gt
 </code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -167,7 +167,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 	&lt/div&gt
 &lt/div&gt</code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-screener-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-screener-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -213,7 +213,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 	&lt/div&gt
 &lt/div&gt</code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-multiple-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-multiple-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -259,7 +259,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
     &lt;/form&gt;
   &lt;/div&gt;</code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-dropdown-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-dropdown-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -294,7 +294,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
   &lt;span class="caret"&gt;&lt;/span&gt;
 &lt;/div&gt;</code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code" role="button">Copy</a>
 </div>
 
 <div class="code-wrapper">
@@ -333,7 +333,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 	&lt/div&gt
 &lt/div&gt</code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -355,7 +355,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 	&ltinput class="form-control" type="text" value="Yes!"&gt
 &lt/div&gt</code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="questions-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="questions-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -375,5 +375,5 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 	&ltlabel class="btn radio-label"&gtDefault radio select&lt/label&gt
 &lt/div&gt</code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="radio-code">Copy</a>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="radio-code" role="button">Copy</a>
 </div>
