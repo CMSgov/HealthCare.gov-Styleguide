@@ -64,16 +64,23 @@ $(document).ready(function() {
   // Toggle submenu in interior navigation
   $('.toggle-interior-nav').click(function(){
     $(this).toggleClass('closed');
-    $(this).siblings('ul').toggle();
+    var ul = $(this).siblings('ul');
+    ul.toggle();
+    var ariaHiddenBoolean = true;
     var chevron = $(this).siblings('.glyphicon');
 
     if(chevron.hasClass('glyphicon-chevron-right')){
       chevron.removeClass('glyphicon-chevron-right');
       chevron.addClass('glyphicon-chevron-down');
+      ariaHiddenBoolean = false;
+    
     } else{
       chevron.removeClass('glyphicon-chevron-down');
       chevron.addClass('glyphicon-chevron-right');
+      
     }
+    
+    ul.attr("aria-hidden", ariaHiddenBoolean);
   });
 
   // Landing page sticky left navigation, separated for different offset
