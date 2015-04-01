@@ -3,10 +3,10 @@ published: true
 en:
   header:
     meta-title: "Get an overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov"
-    meta-description: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers, and copywriters."
+    meta-description: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers and copywriters."
     nav:
-      - { link: 'Design', location: '/design', title: 'design' }  
-      - { link: 'Assets', location: '/assets', title: 'assets' }      
+      - { link: 'Design', location: '/design', title: 'design' }
+      - { link: 'Assets', location: '/assets', title: 'assets' }
       - { link: 'Governance', location: '/governance', title: 'governance' }
 
   footer: 
@@ -26,8 +26,8 @@ en:
     description: "Version 1.0 design and development guidelines"
 
   home-secondary:
-    title: "Journey to a unified experience"
-    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers, and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the same guideline."
+    title: "Creating a unified user experience – in open collaboration with the public"
+    description: "With a second successful Open Enrollment period under our belts, we’re now focusing on the next wave of improvements to HealthCare.gov. One of our most important challenges is to create a more unified user experience, allowing citizens to move smoothly from one part of the site to the next. So we’re developing this Styleguide — and opening our work to the public. <a href='/about/'>What we’re doing and why</a>."
     breakdown:
       title: "Breakdown"
       text: "The Design and Assets sections of the Styleguide contain design guidance and component-level artifacts with code snippets used across the various properties of HealthCare.gov."
@@ -38,7 +38,7 @@ en:
 es:
   header:
     meta-title: "Get an overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov"
-    meta-description: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers, and copywriters."
+    meta-description: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers and copywriters."
     nav:
       - { link: 'Design', location: '/design', title: 'design' }
       - { link: 'Assets', location: '/assets', title: 'assets' }
@@ -61,8 +61,8 @@ es:
     description: "Version 1.0 design and development guidelines"
 
   home-secondary:
-    title: "A Unified Experience"
-    description: "The HealthCare.gov Styleguide provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov. This site is primarily geared to HealthCare.gov team designers, developers, and copywriters to ensure that the design of all future styles, interfaces, and page layouts adhere to the general guidelines outlined."
+    title: "Creating a unified user experience – in open collaboration with the public"
+    description: "With a second successful Open Enrollment period under our belts, we’re now focusing on the next wave of improvements to HealthCare.gov. One of our most important challenges is to create a more unified user experience, allowing citizens to move smoothly from one part of the site to the next. So we’re developing this Styleguide — and opening our work to the public. <a href='/about/'>What we’re doing and why</a>."
     breakdown:
       title: "Breakdown"
       text: '[Visual styles](/# "styles") lipsum dollir sit amet inventore veritatis laudantium et quasi [assets](/# "assets") beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati.'
