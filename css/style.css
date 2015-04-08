@@ -7163,6 +7163,9 @@ a[name="skipnav"] {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+#detail-page .light-blue-bg {
+  background-color: #006693;
+}
 @media (max-width: 779px) {
   #detail-page .iconography .half {
     width: 100%;
@@ -7259,6 +7262,11 @@ a[name="skipnav"] {
 }
 #detail-page #hc-gov-assets .code-wrapper .preview h3.rule {
   text-transform: none;
+}
+#detail-page #hc-gov-assets .h3-style {
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
 }
 .grid-display div[class*="col-md-"] {
   padding: 0;
