@@ -15,14 +15,14 @@ categories:
 # Completed Steps
 
 <div class="intro">
-intro paragraph here
+Many interactive tools used throughout Healthcare.gov include visual feedback of user-entered data. This feedback builds upon itself as the user completes the pertinent steps along the process. In many cases this content can be edited after it has been entered.
 </div>
 
 <div class="hr"></div>
 
-## Subtitle here
+## Completed Steps: Tools 
 
-content here
+Demographic information entered by a user stacks as the user completes steps. A glyphicon checkmark is displayed to indicate that a step has been successfully completed.
 
 <div class="code-wrapper">
 <div class="preview has-background">
