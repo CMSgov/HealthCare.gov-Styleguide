@@ -4,8 +4,123 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	  	<script src="https://assets.healthcare.gov/resources/libs/jquery/1.11/js/jquery.min.js"></script>
   		<script src="https://assets.healthcare.gov/resources/libs/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  		<script src="https://assets.healthcare.gov/resources/libs/lodash/2.4.1/lodash.compat.js"></script>
+  		<script src="js/main.js" type="text/javascript"></script>
 	</head>
+
 	<body id="hc-gov-assets">
 
+		<div id="sidr" class="visible-xs learn-menu">
+			<ul class="header-actions">
+				<li class="active"  > 
+					<a href="https://healthcare.gov/" class="learn header-link" data-tab-name="learn">Individuals &amp; Families</a> 
+				</li><li> 
+					<a href="https://healthcare.gov/marketplace/individual" class="marketplace header-link" data-tab-name="marketplace">Small Businesses</a> 
+				</li>
+			</ul>
+			<div id="sidr-submenu">
+				<form role="search" class="gsearch" name="gsearch" method="get" action="https://healthcare.gov/search">
+					<button class="btn btn-search" value="search">
+					Search
+					</button>
+					<div class="question">
+						<input id="mobile-search" name="q" class="mobile-search form-control" placeholder="Search" title="" type="search" autocomplete="off">
+					</div>					  
+					<input type='hidden' name='output' value='xml_no_dtd'>
+					<input type='hidden' name='site' value='healthcare'>
+					<input type='hidden' name='proxystylesheet' value='json'>
+					<input type='hidden' name='client' value='json'>
+					<input type='hidden' name='lr' value='lang_en'>
+					<input type='hidden' name='ie' value='UTF-8'>
+					<input type='hidden' name='oe' value='UTF-8'>
+					<input type='hidden' name='access' value='p'>
+					<input type='hidden' name='sort' value='date:D:L:d1'>
+					<input type='hidden' name='start' value='0'>
+					<input type='hidden' name='num' value='6'>
+					<input type='hidden' name='getfields' value='search-title.content-type.topics.bite.yturl.thumbnail'>
+					<input type='hidden' name='rc' value='1'>
+					<input type='hidden' name='filter' value='0'>
+				</form>
+				<ul class="utility-section learn-links">
+					<li>
+						<a href='https://healthcare.gov/get-coverage'>Get Coverage</a>
+					</li>
+					<li>
+						<a href='https://healthcare.gov/have-coverage'>Change or Update Your Plan</a>
+					</li>
+					<li>
+						<a href='https://healthcare.gov/get-answers'>Get Answers</a>
+					</li>
+				</ul>
+				<ul class="utility-section marketplace-links">
+					<li>
+						<a href='https://healthcare.gov/small-businesses/employers'>For Employers</a>
+					</li>
+					<li>
+						<a href='https://healthcare.gov/small-businesses/employees'>For Employees</a>
+					</li>
+					<li>
+						<a href='https://healthcare.gov/small-businesses/get-answers'>Get Answers</a>
+					</li>
+				</ul>
+			</div>
+	 	</div>
+	 	<div id="wrapper" data-role="page">
+			<div id="header" role="banner" class="tophat">    
+		    	<div class="container">
+					<div class="visible-xs mobile-main-top" id="mobile-nav">              
+						<div class="pull-left">   
+							<a href="#" class="btn-primary mobile-menu-btn pull-left">
+							    <span class="hidden">Menu</span>
+								<i class="glyphicon glyphicon-th-list"></i>
+							</a>
+							<a href="https://healthcare.gov/"><img class="logo" src="images/logo.png" alt="HealthCare.gov"></a>
+						</div>              
+						<div class="pull-right mobile-user-actions">
+							<a class="mobile-right-top" href="/marketplace/global/en_US/registration">Log in</a>
+							<a class="mobile-user-actions lang mobile-right-bottom toggle-language hide-es" data-lang="es" href="http://localhost/es/screener/">Espa&ntilde;ol</a>
+						</div>
+					</div>
+					<div class="navbar hidden-xs" id="desktop-nav">
+						<div class="pull-left">
+							<a href="https://healthcare.gov/"><img class="logo" src="images/logo.png" alt="HealthCare.gov"></a>
+						</div>
+						<div class="pull-left">
+							<ul class="header-actions">
+								<li class="learn-link "> 
+									<a href="https://healthcare.gov/" class="header-link">Individuals &amp; Families</a> 
+								</li>
+								<li class="marketplace-link"> 
+									<a href="https://healthcare.gov/small-businesses/" class="header-link">Small Businesses</a> 
+								</li>
+							</ul>
+						</div>
+						<div class="pull-right">
+						 	<ul class="header-actions user-action-list">
+						    	<li class="liteac-login topnav"> 
+						      		<a href="/marketplace/global/en_US/registration" class="header-link">Log in</a>
+						    	</li>
+						    	<li lang="es" class="hide-es">
+						      		<a data-lang="es" href="http://localhost/es/screener/" class="btn btn-info btn-sm toggle-language">Espa&ntilde;ol</a>
+						    	</li>
+						 	</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="lite-card">
+							
+							<h1>Hello World</h1>
+
+							<button class="btn btn-green btn-sm">This is a button.</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
