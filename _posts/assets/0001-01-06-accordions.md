@@ -111,5 +111,5 @@ Accordion content can be placed at any location within the body of an Explainer 
 </div>
 		{% endhighlight %}
 	</div>
-	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="secondary-alert-code" role="button">Copy</a>
+	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="accordion-code" role="button">Copy</a>
 </div>
