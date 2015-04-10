@@ -7913,7 +7913,7 @@ td#hc-gov-assets .visible-print {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #hc-gov-assets .utility-section .icon,
   #hc-gov-assets .utility-section .card .new.active {
-    background: url('..//img/sprite@2x.png') no-repeat 0 0;
+    background: url('../img/sprite@2x.png') no-repeat 0 0;
     background-size: 750px 350px;
   }
 }
