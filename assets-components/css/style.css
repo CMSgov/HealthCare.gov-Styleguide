@@ -9835,6 +9835,9 @@ ul#hc-gov-assets .nav-tabs {
 #hc-gov-assets .summary-smoker {
   padding-right: 2em;
 }
+#hc-gov-assets .has-dark-background {
+  background: #063346;
+}
 #hc-gov-assets .question_view {
   background: none repeat scroll 0 0 #063346;
 }
@@ -9959,7 +9962,7 @@ ul#hc-gov-assets .nav-tabs {
   display: inline-block;
   height: 3em;
   list-style: outside none none;
-  margin: 0 1% 1% 0;
+  margin: 0 0.5% 0.5% -30px;
   overflow: hidden;
   width: 24%;
 }
@@ -9989,7 +9992,7 @@ ul#hc-gov-assets .nav-tabs {
 }
 @media (max-width: 768px) {
   #hc-gov-assets .question_view {
-    padding: 20px;
+    padding: 20px 20px 20px 50px;
   }
   #hc-gov-assets .question_view .block-list li {
     width: 49%;
@@ -10005,7 +10008,7 @@ ul#hc-gov-assets .nav-tabs {
 }
 @media (min-width: 768px) {
   #hc-gov-assets .question_view {
-    padding: 20px;
+    padding: 20px 20px 20px 50px;
   }
   #hc-gov-assets .question_view .block-list li {
     width: 49%;
@@ -10013,7 +10016,7 @@ ul#hc-gov-assets .nav-tabs {
 }
 @media (min-width: 992px) {
   #hc-gov-assets .question_view {
-    padding: 20px;
+    padding: 20px 20px 20px 50px;
   }
   #hc-gov-assets .question_view .block-list li {
     width: 32%;
@@ -10021,7 +10024,7 @@ ul#hc-gov-assets .nav-tabs {
 }
 @media (min-width: 1200px) {
   #hc-gov-assets .question_view {
-    padding: 20px;
+    padding: 20px 20px 20px 50px;
   }
   #hc-gov-assets .question_view .block-list li {
     width: 24%;
