@@ -24,91 +24,30 @@ The accordion patterns used on Healthcare.gov are expandable sets of content int
 
 Accordion content can be placed at any location within the body of an Explainer or Article page. Typically, the accordion is placed at the end of a block of text, allowing the user to get more detailed information if needed.
 
+> %faq%
+> [If you took too much or too little advance payment of your premium tax credit](id:APTCadjustment)
+>
+> : If you took too much or too little advance payment of your premium tax credit and you had to pay back the difference on your tax return, or you got a big credit:
+>
+>    * Update your 2015 Marketplace coverage application to make sure it includes your best estimate of your income for the year and see if your tax credit has changed. Also update any household information you haven’t already reported to the Marketplace. See [how to update your account and your 2015 application now](/reporting-changes/).
+>    * You can change how much of your premium tax credit you take in advance for 2015 to make sure it’s not too high or too low. 
+
+
 <div class="code-wrapper">
-	<div class="preview row">
-		<div id="faq-container">
-		  	<ul class="faq">
-		        <li class="faq-question">
-		          <a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-1" data-toggle="collapse" class="question serif collapsed" id="question-1" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>What if I’m uncovered for just part of the year?</a>
-		          <div aria-describedby="question-1" id="answer-1" class="answer collapse">
-		            <div class="qcontent"><p>If you’re uninsured for just part of the year, 1/12 of the yearly penalty applies to each month you’re uninsured.</p>
-						<p>If you’re uninsured for no more than 2 months of the year, you don’t have to make a payment.</p>
-					</div>
-		          </div>
-		        </li>
-		        <li class="faq-question">
-		          <a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-2" data-toggle="collapse" class="question serif collapsed" id="question-2" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>If I'm unemployed, do I have to pay the fee?</a>
-		          <div aria-describedby="question-2" id="answer-2" class="answer collapse">
-		            <div class="qcontent"><p>It depends on your household income. If insurance is unaffordable to you based on your income, you may qualify for an exemption from the fee. Other exemptions are based on low income too. Learn more about exemptions and how to claim them.</p>
-					</div>
-		          </div>
-		        </li>
-		        <li class="faq-question">
-		          <a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-3" data-toggle="collapse" class="question serif collapsed" id="question-3" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>How is the penalty collected?</a>
-		          <div aria-describedby="question-3" id="answer-3" class="answer collapse">
-		            <div class="qcontent"><p>You’ll pay the penalty when you file the federal income tax return for the year for which you’re seeking coverage. Most people fill out their 2014 tax returns early in 2015 and their 2015 tax returns early in 2016.</p>
-					</div>
-		          </div>
-		        </li>
-		        <li class="faq-question">
-		          <a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-4" data-toggle="collapse" class="question serif collapsed" id="question-4" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>What happens if I don't pay the fee?</a>
-		          <div aria-describedby="question-4" id="answer-4" class="answer collapse">
-		            <div class="qcontent"><p>The IRS will hold back the amount of the fee from any future tax refunds. There are no liens, levies, or criminal penalties for failing to pay the fee.</p>
-					</div>
-		          </div>
-		        </li>
-		        <li class="faq-question">
-		          <a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-5" data-toggle="collapse" class="question serif collapsed" id="question-5" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>Are the rules the same in each state?</a>
-		          <div aria-describedby="question-5" id="answer-5" class="answer collapse">
-		            <div class="qcontent"><p>Yes. The rules about paying penalties are the same whether the Marketplace is run by your state or the federal government.</p>
-					</div>
-		          </div>
-		        </li>
-			</ul>
-		</div>	
-	</div>
+	<div class="preview row"></div>
 	<div id="accordion-code">
 		{% highlight text %}
-<div id="faq-container">
-	<ul class="faq">
-		<li class="faq-question">
-			<a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-1" data-toggle="collapse" class="question serif collapsed" id="question-1" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>What if I’m uncovered for just part of the year?</a>
-			<div aria-describedby="question-1" id="answer-1" class="answer collapse">
-				<div class="qcontent"><p>If you’re uninsured for just part of the year, 1/12 of the yearly penalty applies to each month you’re uninsured.</p>
-					<p>If you’re uninsured for no more than 2 months of the year, you don’t have to make a payment.</p>
-				</div>
-			</div>
-		</li>
-		<li class="faq-question">
-			<a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-2" data-toggle="collapse" class="question serif collapsed" id="question-2" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>If I'm unemployed, do I have to pay the fee?</a>
-			<div aria-describedby="question-2" id="answer-2" class="answer collapse">
-				<div class="qcontent"><p>It depends on your household income. If insurance is unaffordable to you based on your income, you may qualify for an exemption from the fee. Other exemptions are based on low income too. Learn more about exemptions and how to claim them.</p>
-				</div>
-			</div>
-		</li>
-		<li class="faq-question">
-			<a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-3" data-toggle="collapse" class="question serif collapsed" id="question-3" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>How is the penalty collected?</a>
-			<div aria-describedby="question-3" id="answer-3" class="answer collapse">
-				<div class="qcontent"><p>You’ll pay the penalty when you file the federal income tax return for the year for which you’re seeking coverage. Most people fill out their 2014 tax returns early in 2015 and their 2015 tax returns early in 2016.</p>
-				</div>
-			</div>
-		</li>
-		<li class="faq-question">
-			<a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-4" data-toggle="collapse" class="question serif collapsed" id="question-4" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>What happens if I don't pay the fee?</a>
-			<div aria-describedby="question-4" id="answer-4" class="answer collapse">
-				<div class="qcontent"><p>The IRS will hold back the amount of the fee from any future tax refunds. There are no liens, levies, or criminal penalties for failing to pay the fee.</p>
-				</div>
-			</div>
-		</li>
-		<li class="faq-question">
-			<a role="tab" tabindex="0" aria-expanded="false" data-target="#answer-5" data-toggle="collapse" class="question serif collapsed" id="question-5" aria-selected="false"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>Are the rules the same in each state?</a>
-			<div aria-describedby="question-5" id="answer-5" class="answer collapse">
-				<div class="qcontent"><p>Yes. The rules about paying penalties are the same whether the Marketplace is run by your state or the federal government.</p>
-				</div>
-			</div>
-		</li>
-	</ul>
-</div>
+		<div id="faq-container">
+			<dl class="faq-question">
+				<dt id="faq-1-q-1-1" class="question collapsed"><a class="title" tabindex="0" aria-controls="faq-1-a-1-1" aria-expanded="false"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span id="APTCadjustment">If you took too much or too little advance payment of your premium tax credit</span></a></dt>
+				<dd id="faq-1-a-1-1" class="answer" role="definition" style="display: none;"><p>If you took too much or too little advance payment of your premium tax credit and you had to pay back the difference on your tax return, or you got a big credit:</p>
+					<ul>
+						<li>Update your 2015 Marketplace coverage application to make sure it includes your best estimate of your income for the year and see if your tax credit has changed. Also update any household information you haven’t already reported to the Marketplace. See <a href="/reporting-changes/">how to update your account and your 2015 application now</a>.</li>
+						<li>You can change how much of your premium tax credit you take in advance for 2015 to make sure it’s not too high or too low.</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
 		{% endhighlight %}
 	</div>
 	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="accordion-code" role="button">Copy</a>
