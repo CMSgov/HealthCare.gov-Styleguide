@@ -15,15 +15,14 @@ categories:
 # Secondary CTA design
 
 <div class="intro">
-There are two variations of the Secondary CTA. The Individuals &amp; Families and Small Businesses are slight variations of one another. This module is "dynamic" in the sense that it can be turned "on" or "off" by a content team depending on whether there is messaging to display. The container height should be fixed at 100px. Character limitations exist to prevent copy from wrapping in the English version of the site. Glyphicons are used for the icons and the green CTA button uses the standard green button treatment.
+There are two variations of the secondary CTA. The Individuals &amp; Families and Small Businesses are slight variations of one another. This module is "dynamic" in the sense that it can be turned "off" or "on" by the content team when there is no messaging to display to the user. The container height should be fixed at 100px. Character limitations exist to prevent copy from wrapping in the English version of the site. Glyphicons are used for the icons and the green CTA uses the standard green button treatment.
 </div>
 
 <div class="hr"></div>
 
 ## Secondary CTA design
 
-All elements within the Secondary CTA are shown here specifying usage of the green CTA button, icons, and text.
-
+The Secondary CTA uses the OpenSans font in white, #FFF at 28px for the title and 18px for the description. The title has a character limitation of 50 characters including spaces. A Glyphicon appears on the left side of the Secondary CTA at 70px by 70px. A single button also appears right aligned and vertically centered and has a character limitation of 18 characters including space.
 <div class="caption">I&amp;F Default</div>
 <img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/1_Default.png" alt="Default I&F Secondary CTA"/>
 
