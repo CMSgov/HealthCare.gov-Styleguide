@@ -9709,8 +9709,11 @@ ul#hc-gov-assets .nav-tabs {
     content: none;
   }
 }
-#hc-gov-assets #faq-container {
+#hc-gov-assets .faq-question {
   padding-left: 30px;
+}
+#hc-gov-assets .faq-question .question {
+  font-weight: normal;
 }
 #hc-gov-assets .summary * {
   color: #fff;
