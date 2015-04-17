@@ -6926,7 +6926,7 @@ a[name="skipnav"] {
 }
 .fixed-nav {
   position: fixed;
-  top: 80px;
+  top: 84px;
 }
 @media (max-width: 780px) {
   .header-wrap .site-header .navbar {
