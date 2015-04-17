@@ -1,4 +1,5 @@
 #hc-gov-assets {
+  margin: 0;
   /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
   /*
  * Slight modifications for use in Marketplace Lite to not have hard coded
@@ -2564,8 +2565,8 @@ fieldset[disabled] #hc-gov-assets .btn-link:focus {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('/assets/fonts/glyphicons-halflings-regular.eot');
-  src: url('/assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 #hc-gov-assets .glyphicon {
   position: relative;
@@ -6416,7 +6417,7 @@ td#hc-gov-assets .visible-print {
 }
 #hc-gov-assets #content {
   position: relative;
-  background: url('/assets/img/bg-content.png') 0 0 repeat;
+  background: url('../img/bg-content.png') 0 0 repeat;
 }
 #hc-gov-assets .limiter {
   position: relative;
@@ -7912,7 +7913,7 @@ td#hc-gov-assets .visible-print {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #hc-gov-assets .utility-section .icon,
   #hc-gov-assets .utility-section .card .new.active {
-    background: url('/assets//img/sprite@2x.png') no-repeat 0 0;
+    background: url('../img/sprite@2x.png') no-repeat 0 0;
     background-size: 750px 350px;
   }
 }
@@ -8163,7 +8164,7 @@ td#hc-gov-assets .visible-print {
    however, I think this begs a larger discussion about where images will be
    stored in final product so both MPL & Learn can access from shared location
   background: url(../img/sprite.png) 0 0 repeat; */
-  background: url('/assets/img/sprite@1x.png');
+  background: url('../img/sprite@1x.png');
   background-repeat: no-repeat;
   text-indent: -999em;
   text-align: left;
@@ -8176,7 +8177,7 @@ td#hc-gov-assets .visible-print {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #hc-gov-assets .icon {
-    background: url('/assets/img/sprite@2x.png');
+    background: url('../img/sprite@2x.png');
     background-size: 750px 350px;
   }
 }
@@ -8871,16 +8872,75 @@ fieldset[disabled] #hc-gov-assets .progress-button .progress-bar.active {
   right: 18px;
   top: 14px;
 }
-#hc-gov-assets .table > thead > tr > th,
-#hc-gov-assets .table > tbody > tr > th,
-#hc-gov-assets .table > tfoot > tr > th,
-#hc-gov-assets .table > thead > tr > td,
-#hc-gov-assets .table > tbody > tr > td,
-#hc-gov-assets .table > tfoot > tr > td {
-  border-top: none;
+#hc-gov-assets .table-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0 0 20px 0;
 }
-#hc-gov-assets .table > thead > tr > th {
-  border-bottom: none;
+#hc-gov-assets table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0 0 60px 0;
+}
+#hc-gov-assets table th,
+#hc-gov-assets table td {
+  padding: 18px;
+  font-size: 14px;
+  border: none;
+  line-height: 24px;
+  vertical-align: top;
+}
+#hc-gov-assets table .content-table > tbody > tr > td {
+  height: 60px;
+}
+#hc-gov-assets table th {
+  font-weight: 700;
+  background: #cfeffc;
+}
+@media (max-width: 480px) {
+  #hc-gov-assets table th {
+    display: none;
+  }
+}
+#hc-gov-assets table tr:nth-child(even) {
+  background: #f0f0f0;
+}
+#hc-gov-assets table td {
+  display: table-cell;
+  position: relative;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+#hc-gov-assets table td:before {
+  content: attr(data-th) "\A";
+  white-space: pre;
+  font-weight: bold;
+}
+@media (min-width: 480px) {
+  #hc-gov-assets table td:before {
+    display: none;
+  }
+}
+#hc-gov-assets table td p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+#hc-gov-assets table td:hover span {
+  display: block;
+}
+@media (max-width: 480px) {
+  #hc-gov-assets table td {
+    padding: 0 18px;
+    display: block;
+  }
+  #hc-gov-assets table td:first-child {
+    padding-top: 18px;
+  }
+  #hc-gov-assets table td:last-child {
+    padding-bottom: 18px;
+  }
 }
 #hc-gov-assets .table-form.editing .table-form-header,
 #hc-gov-assets .table-form.editing .table-form-item {
@@ -9708,8 +9768,11 @@ ul#hc-gov-assets .nav-tabs {
     content: none;
   }
 }
-#hc-gov-assets #faq-container {
+#hc-gov-assets .faq-question {
   padding-left: 30px;
+}
+#hc-gov-assets .faq-question .question {
+  font-weight: normal;
 }
 #hc-gov-assets .summary * {
   color: #fff;
@@ -9835,199 +9898,243 @@ ul#hc-gov-assets .nav-tabs {
 #hc-gov-assets .summary-smoker {
   padding-right: 2em;
 }
-#hc-gov-assets .has-dark-background {
-  background: #063346;
+#hc-gov-assets .tophat {
+  border-bottom: 4px solid #aaa;
 }
-#hc-gov-assets .question_view {
-  background: none repeat scroll 0 0 #063346;
+#hc-gov-assets .user-action-list {
+  color: #0c648c;
+  list-style: none;
 }
-#hc-gov-assets .question_view label {
-  color: #fff;
-  width: 100%;
+#hc-gov-assets .user-action-list li {
+  margin-top: 15px;
+  padding-left: 8px;
+  vertical-align: middle;
+  padding-right: 0;
 }
-#hc-gov-assets .question_view .twitter-typeahead {
-  border: 2px solid #aaa;
-  height: 44px;
-  width: 100%;
-}
-#hc-gov-assets .question_view .twitter-typeahead input {
-  border: 0 none;
-  color: #555;
-  font-size: 18px;
-  height: 40px;
-  width: 100%;
-}
-#hc-gov-assets .question_view button {
-  font-size: 16px;
-  width: 100%;
-}
-#hc-gov-assets .question_view .tt-dropdown-menu {
-  background: none repeat scroll 0 0 #fff;
-  color: #000;
-  width: 100%;
-}
-#hc-gov-assets .question_view .tt-dataset-bloodhound {
-  cursor: pointer;
-}
-#hc-gov-assets .question_view .tt-suggestion {
-  display: block;
-  line-height: 1em;
-  margin: 0;
-  padding: 0.6em 0 0.1em;
-}
-#hc-gov-assets .question_view .tt-suggestion:active,
-#hc-gov-assets .question_view .tt-suggestion:focus,
-#hc-gov-assets .question_view .tt-suggestion:hover {
-  background: none repeat scroll 0 0 #006595;
-  color: #fff;
-  cursor: pointer;
-}
-#hc-gov-assets .question_view .tt-cursor {
-  background: none repeat scroll 0 0 #006595;
-  color: #fff;
-}
-#hc-gov-assets .question_view .help-block {
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 26px;
-}
-#hc-gov-assets .question_view .help-block a {
-  color: #fff;
-}
-#hc-gov-assets .question_view .radio label {
-  background: none repeat scroll 0 0 #0c4b66;
-  box-sizing: border-box;
-  display: block;
-  height: 100%;
-  line-height: 25px;
-  margin-left: -20px;
-  padding: 0.5em 2.5em;
-  width: inherit;
-}
-#hc-gov-assets .question_view .radio label:hover {
-  background: none repeat scroll 0 0 #33687e;
-}
-#hc-gov-assets .question_view .radio label a {
-  border-bottom: 1px solid #fff;
-  color: #fff;
-}
-#hc-gov-assets .question_view .radio label a:hover {
-  border: 0 none;
-}
-#hc-gov-assets .question_view .radio input[type="radio"] {
-  margin-left: -2px;
-  margin-right: 10px;
-  margin-top: 13px;
-}
-#hc-gov-assets .question_view .radio input[type="radio"]:checked + label {
-  background: none repeat scroll 0 0 #006595;
-}
-#hc-gov-assets .question_view .checkbox label {
-  background: none repeat scroll 0 0 #0c4b66;
-  box-sizing: border-box;
-  display: block;
-  height: 100%;
-  line-height: 25px;
-  margin-left: -30px;
-  padding: 0.5em 2.5em;
-  width: inherit;
-}
-#hc-gov-assets .question_view .checkbox label:hover {
-  background: none repeat scroll 0 0 #33687e;
-}
-#hc-gov-assets .question_view .checkbox input[type="checkbox"] {
-  margin-left: -13px;
-  margin-right: 10px;
-  margin-top: 13px;
-}
-#hc-gov-assets .question_view .checkbox input[type="checkbox"]:checked + label {
-  background: none repeat scroll 0 0 #006595;
-}
-#hc-gov-assets .question_view .label-title,
-#hc-gov-assets .question_view .zip-code-label label,
-#hc-gov-assets .question_view legend {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 32px;
-  margin-bottom: 26px;
-}
-#hc-gov-assets .question_view .block-list {
-  margin: 0 0.15em 1em;
-  padding: 0;
-  z-index: 600;
-}
-#hc-gov-assets .question_view .block-list li {
-  box-sizing: border-box;
+#hc-gov-assets .user-action-list li .user-item {
   display: inline-block;
-  height: 3em;
-  list-style: outside none none;
-  margin: 0 0.5% 0.5% -30px;
-  overflow: hidden;
-  width: 24%;
+  margin: 0;
+  padding: 6px 10px;
 }
-#hc-gov-assets .question_view .block-list li label {
-  background: none repeat scroll 0 0 #0c4b66;
-  box-sizing: border-box;
+#hc-gov-assets .user-action-list li .user-item:hover {
+  color: #063346;
+}
+#hc-gov-assets .user-action-list li.left-sep {
+  border-left: 1px solid #666666;
+  margin-left: 5px;
+}
+#hc-gov-assets .user-action-list li .btn-sm {
+  font-weight: bold;
+}
+#hc-gov-assets .user-action-list li.liteac-login {
+  padding-left: 0px;
+}
+#hc-gov-assets .liteac-login.topnav a.header-link {
+  color: #0e70b4;
+}
+#hc-gov-assets .marketplace-link.active .header-link,
+#hc-gov-assets .marketplace-link .header-link:hover {
+  color: #ffffff;
+  background-color: #063346;
+}
+#hc-gov-assets .learn-link.active .header-link,
+#hc-gov-assets .learn-link .header-link:hover {
+  color: #ffffff;
+  background-color: #046791;
+}
+#hc-gov-assets .header-actions {
   display: block;
-  height: 100%;
-  line-height: 25px;
-  margin-left: -30px;
-  padding: 0.5em 2.5em;
-  width: inherit;
+  padding: 0;
 }
-#hc-gov-assets .question_view .block-list li label:hover {
-  background: none repeat scroll 0 0 #33687e;
+#hc-gov-assets .header-actions a {
+  border-bottom: 0;
 }
-#hc-gov-assets .question_view .block-list li input[type="checkbox"] {
-  margin-left: -14px;
-  margin-right: 10px;
-  margin-top: 13px;
+#hc-gov-assets .liteac-login.topnav a.header-link {
+  color: #0e70b4;
 }
-#hc-gov-assets .question_view .block-list li input[type="checkbox"]:checked + label {
-  background: none repeat scroll 0 0 #006595;
-}
-#hc-gov-assets .question_view .form-group {
-  margin-bottom: 42px;
-}
-@media (max-width: 768px) {
-  #hc-gov-assets .question_view {
-    padding: 20px 20px 20px 50px;
+@media (max-width: 991px) {
+  #hc-gov-assets .btn-primary .glyphicon {
+    color: #fff;
   }
-  #hc-gov-assets .question_view .block-list li {
-    width: 49%;
+  #hc-gov-assets #sidr {
+    position: fixed;
+    width: 270px;
+    top: 0;
+    left: -270px;
+    bottom: 0;
+    -webkit-transition: left 0.15s ease-in;
+    transition: left 0.15s ease-in;
+    background: #063346;
+    z-index: 1100;
   }
-  #hc-gov-assets .month-picker .block-list li.checkbox {
-    padding-left: 23px;
+  #hc-gov-assets #sidr .active .header-link {
+    background: #046791;
+    width: 110px;
   }
-  #hc-gov-assets .month-picker .block-list li.checkbox label {
+  #hc-gov-assets #sidr.visible {
+    left: 0;
+  }
+  #hc-gov-assets #sidr .header-actions {
+    display: block;
+    margin: 0;
+  }
+  #hc-gov-assets #sidr .header-actions li {
+    text-align: center;
+    display: inline-block;
+  }
+  #hc-gov-assets #sidr .header-actions a {
+    color: #ffffff;
+    float: none;
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+  #hc-gov-assets #sidr .header-actions .learn {
+    background: #0c648c;
+    width: 110px;
+  }
+  #hc-gov-assets #sidr .header-actions .marketplace {
+    width: 160px;
+    height: auto;
+    background: #063346;
+    margin: 0;
+  }
+  #hc-gov-assets #sidr .gsearch {
+    padding: 17px;
+  }
+  #hc-gov-assets #sidr .gsearch .mobile-search {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 28px;
+    width: 171px;
+    background-color: #fff !important;
+  }
+  #hc-gov-assets #sidr .gsearch .btn-search {
+    float: right;
+    font-size: 14px;
+    padding: 6px;
+    width: 65px;
+    line-height: 185%;
+  }
+  #hc-gov-assets #sidr .utility-section {
+    display: none;
+    padding: 0 17px;
+    height: auto;
+    border-bottom: none;
+    margin-bottom: 20px;
+  }
+  #hc-gov-assets #sidr .utility-section li {
+    border-top: 1px solid #0c648c;
+    padding: 17px 0;
+    list-style: none;
+  }
+  #hc-gov-assets #sidr .utility-section li a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  #hc-gov-assets #sidr .btn-search {
+    color: #fff;
+    line-height: 185%;
+  }
+  #hc-gov-assets #sidr.learn-menu .btn-search,
+  #hc-gov-assets #sidr.tophat-menu .btn-search {
+    background: #063346;
+  }
+  #hc-gov-assets #sidr.learn-menu #sidr-submenu,
+  #hc-gov-assets #sidr.tophat-menu #sidr-submenu {
+    background: #0c648c;
+  }
+  #hc-gov-assets #sidr.learn-menu #sidr-submenu .learn-links,
+  #hc-gov-assets #sidr.tophat-menu #sidr-submenu .learn-links {
+    display: block;
+    background: #0c648c !important;
+  }
+  #hc-gov-assets #sidr.learn-menu #sidr-submenu .learn-links li,
+  #hc-gov-assets #sidr.tophat-menu #sidr-submenu .learn-links li {
+    border-top-color: #063346;
+  }
+  #hc-gov-assets #sidr.learn-menu #sidr-submenu .learn-links li.first,
+  #hc-gov-assets #sidr.tophat-menu #sidr-submenu .learn-links li.first {
+    border: none;
+  }
+  #hc-gov-assets #sidr.marketplace-menu .btn-search {
+    background: #0c648c;
+  }
+  #hc-gov-assets #sidr.marketplace-menu #sidr-submenu {
+    background: #063346;
+  }
+  #hc-gov-assets #sidr.marketplace-menu .marketplace-links {
+    display: block;
+    background: #063346 !important;
+  }
+  #hc-gov-assets #sidr.marketplace-menu .marketplace-links li {
+    border-top-color: #0c648c;
+  }
+  #hc-gov-assets #sidr.marketplace-menu .marketplace-links li.first {
+    border: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #hc-gov-assets .navbar .logo {
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 200px;
+  }
+  .liteac-login #hc-gov-assets .header-link {
+    font-size: 14px;
+    line-height: 19px;
+    margin: 13px 10px;
+    padding: 5px 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  #hc-gov-assets .user-action-list li {
+    display: block;
+    height: 25px;
+    margin-top: 3px !important;
+    padding-left: 0px;
+  }
+  #hc-gov-assets .user-action-list li a {
+    background: #eee;
+    display: block;
     font-size: 12px;
-    line-height: 27px;
-    padding: 0.5em;
+    font-weight: 700;
+    padding: 0px 6px;
+    text-transform: uppercase;
+    width: 106px;
+    margin-top: 0px !important;
+    text-align: center;
+    line-height: 24px;
   }
-}
-@media (min-width: 768px) {
-  #hc-gov-assets .question_view {
-    padding: 20px 20px 20px 50px;
+  #hc-gov-assets .user-action-list li a:hover {
+    color: #fff;
+    background: #0e70b4;
   }
-  #hc-gov-assets .question_view .block-list li {
-    width: 49%;
+  #hc-gov-assets .liteac-login .header-link {
+    margin: 0px;
   }
-}
-@media (min-width: 992px) {
-  #hc-gov-assets .question_view {
-    padding: 20px 20px 20px 50px;
+  #hc-gov-assets .liteac-login.topnav .header-link:hover {
+    color: #fff;
   }
-  #hc-gov-assets .question_view .block-list li {
-    width: 32%;
+  #hc-gov-assets .navbar .pull-right {
+    height: 62px;
   }
 }
 @media (min-width: 1200px) {
-  #hc-gov-assets .question_view {
-    padding: 20px 20px 20px 50px;
+  #hc-gov-assets .liteac-login .header-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #0c648c;
+    margin: 15px 0;
+    padding: 3px 8px;
+    margin-top: 0;
+    margin-right: 80px;
   }
-  #hc-gov-assets .question_view .block-list li {
-    width: 24%;
+  #hc-gov-assets .liteac-login .header-link:hover {
+    background: #eaeaea;
+  }
+  #hc-gov-assets .user-action-list .hide-es {
+    margin-top: 0;
   }
 }
 #hc-gov-assets .ie .hidden-ie {

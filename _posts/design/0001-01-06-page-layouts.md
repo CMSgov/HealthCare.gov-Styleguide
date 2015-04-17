@@ -14,7 +14,7 @@ categories:
 # Page layouts
 
 <div class="intro">
-A series of templates are used for major landing pages. There are: 2 audience landing pages (Individuals & Families/homepage and Small Businesses); 4 interior landing pages (Get Coverage, Change or Update Your Plan, For Employers, For Employees); and 2 Get Answers templates.
+A series of templates are used for major landing pages. There are: 2 audience landing pages (Individuals & Families/homepage and Small Businesses), 4 interior landing pages (Get Coverage, Change or Update Your Plan, For Employers, For Employees); and 2 Get Answers templates.
 </div>
 
 <div class="hr"></div>
@@ -31,7 +31,7 @@ HealthCare.gov utilizes the Bootstrap responsive, mobile-first fluid grid system
 
 ## Landing
 
-The first-tier landing pages throughout HealthCare.gov are designed to engage users with bold, engaging imagery and simplified, clutter-free content to direct consumers to the most pertinent action to take. See the major modules contained within each landing page here.
+The first-tier landing pages throughout HealthCare.gov are designed to engage users with bold, engaging imagery and simplified, clutter-free content to direct consumers to the most pertinent action to take. All of the landing pages use the Global Header, Hero and Footer modules and any combination of the following major modules: Secondary CTA, Action Bar, Email Signup, Blog and Listings. The Hero module has a variable height with a minimum height of 380px and as with the Secondary CTA and Action Bar should span 100% width.
 
 <div class="row">
 	<div class="col-sm-6">
@@ -78,7 +78,7 @@ The first-tier landing pages throughout HealthCare.gov are designed to engage us
 
 ## Explainer / Article
 
-Explainer and Article pages contain detailed information for consumers on specific topics. Explainer pages include multiple subsections of content under a particular topic and require the use of subnavigation. Article pages are typically used for content outside or ancillary to the topics covered in the Explainers.
+Explainer and Article pages contain detailed information for consumers on specific topics. Explainer pages include multiple subsections of content under a particular topic and require the use of subnavigation. Article pages are typically used for content outside or ancillary to the topics covered in the Explainers. Both types of templates also include a Page Feedback component below the main content area.
 
 <div class="row">
 	<div class="col-sm-6">
@@ -94,6 +94,7 @@ Explainer and Article pages contain detailed information for consumers on specif
 <hr>
 
 ## Blog
+The Healthcare.gov Blog is comprised of four major sections including the Page Title, Posts, Filters and on individual post pages, a Comments section. Blog posts and Comments take up the first eight columns on the left, with Filters taking up the remaining four to the right.
 
 <div class="row">
 	<div class="col-sm-6">
