@@ -9898,6 +9898,23 @@ ul#hc-gov-assets .nav-tabs {
 #hc-gov-assets .summary-smoker {
   padding-right: 2em;
 }
+#hc-gov-assets .light-blue-bg .table > tbody > tr > th {
+  padding-top: 0;
+  border-top: none;
+  font-weight: bold;
+}
+#hc-gov-assets .light-blue-bg .summary table td[class*=col-] {
+  border-top: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#hc-gov-assets .light-blue-bg .summary .row strong,
+#hc-gov-assets .light-blue-bg .summary .row span {
+  color: #cfeffc;
+}
+#hc-gov-assets .light-blue-bg .summary .row .btn-edit span {
+  color: #ffffff;
+}
 #hc-gov-assets .has-dark-background {
   background: #063346;
 }
