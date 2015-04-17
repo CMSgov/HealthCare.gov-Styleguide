@@ -86,7 +86,7 @@ $(document).ready(function() {
   if($("#landing-page").length > 0) {
     
     $(window).scroll(function() {
-      var subnav = $(".subnav");
+      var subnav = $(".subnav-wrapper");
       var y = Math.floor(subnav[0].getBoundingClientRect().top) - $(window).scrollTop();
 
       if (y < 0)
@@ -96,6 +96,6 @@ $(document).ready(function() {
     });
 
   } else if($("#detail-page").length > 0)
-    $("#detail-page .subnav").addClass("fixed-nav");
+    $("#detail-page .subnav-wrapper").addClass("fixed-nav");
 
 });
