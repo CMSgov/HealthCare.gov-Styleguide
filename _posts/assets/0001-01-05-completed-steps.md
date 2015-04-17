@@ -3,10 +3,10 @@ published: true
 layout: detail-page
 lang: en
 section: assets
-title: "Alert assets"
+title: "Completed Steps"
 nav-title: "Completed Steps"
-"meta-title": "Get an overview of alert assets used on HealthCare.gov"
-"meta-description": "Get an overview the alert assets used on HealthCare.gov. Alerts are typically used to provide site visitors with timely information about issues that will impact their HealthCare.gov experience"
+"meta-title": "Get an overview of the Completed Steps pattern used on HealthCare.gov"
+"meta-description": "Get an overview of the Completed Steps pattern used in interactive tools on HealthCare.gov to present data as it is entered by the user. "
 nav-category: patterns
 categories:
   - assets
@@ -15,7 +15,7 @@ categories:
 # Completed Steps
 
 <div class="intro">
-Many interactive tools used throughout Healthcare.gov include visual feedback of user-entered data. This feedback builds upon itself as the user completes the pertinent steps along the process. In many cases this content can be edited after it has been entered.
+Many interactive tools used on HealthCare.gov present data as it is entered by the user. The data builds upon itself as the user completes steps along a process. In many cases this content can be edited after it has been entered. 
 </div>
 
 <div class="hr"></div>
@@ -23,6 +23,7 @@ Many interactive tools used throughout Healthcare.gov include visual feedback of
 ## Completed Steps: Tools 
 
 Demographic information entered by a user stacks as the user completes steps. A glyphicon checkmark is displayed to indicate that a step has been successfully completed.
+
 
 <div class="code-wrapper">
 <div class="preview has-background">
