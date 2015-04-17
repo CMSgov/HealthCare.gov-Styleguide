@@ -112,3 +112,27 @@ table.summary.table-responsive, .summary table.table-responsive {
 .summary-age, .summary-parent, .summary-pregnant, .summary-smoker  {
 	padding-right: 2em;
 }
+
+.light-blue-bg {
+
+	.table > tbody > tr > th {
+		padding-top: 0;
+		border-top:none;
+		font-weight: bold;
+	}
+
+	.summary table td[class*=col-] {
+		border-top:none;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.summary .row strong,
+	.summary .row span {
+		color:@light-blue;
+	}
+
+	.summary .row .btn-edit span {
+		color: @white;
+	}
+}
