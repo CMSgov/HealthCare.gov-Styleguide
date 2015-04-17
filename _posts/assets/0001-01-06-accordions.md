@@ -3,10 +3,10 @@ published: true
 layout: detail-page
 lang: en
 section: assets
-title: "Accordion assets"
+title: "Accordion patterns"
 nav-title: "Accordions"
-"meta-title": "Get an overview of accordion assets used on HealthCare.gov"
-"meta-description": "Get an overview the accordion assets used on HealthCare.gov."
+"meta-title": "Get an overview of accordion patterns used on HealthCare.gov"
+"meta-description": "Get an overview of accordion pattern used on HealthCare.gov to reduce the amount of text initially delivered on a single page."
 nav-category: patterns
 categories:
   - assets
@@ -15,12 +15,12 @@ categories:
 # Accordions
 
 <div class="intro">
-The accordion patterns used on Healthcare.gov are expandable sets of content intended to consolidate the amount of text displayed on a single page. Accordions are typically found on Explainer and Article pages and are also applied to sets of in-page navigation at various responsive breakpoints.
+The accordion patterns used on HealthCare.gov are expandable sets of content intended to reduce the amount of text initially delivered on a page. They also allow site visitors to request more text without having to leave a page Accordions are typically found on Explainer and Article pages and are also applied to sets of in-page navigation at various responsive breakpoints.
 </div>
 
 <div class="hr"></div>
 
-## Content Page Accordion
+## Content page accordions
 
 Accordion content can be placed at any location within the body of an Explainer or Article page. Typically, the accordion is placed at the end of a block of text, allowing the user to get more detailed information if needed.
 
