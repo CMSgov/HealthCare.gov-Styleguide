@@ -12,10 +12,10 @@ categories:
   - design
 ---
 
-# Action Bar design
+# Action Bar
 
 <div class="intro">
-The Action Bar varies from page to page and contains items of tertiary importance (after the Hero and Secondary CTA messaging). The content within this module is flexible and can be updated by a content team.  The use of Glyphicons provides additional emphasis on each action item.
+The Action Bar varies from page to page and can contain items of tertiary importance (after the Hero and Secondary CTA messaging). The content within this module is flexible and can be updated by a content team.  The use of Glyphicons provides additional emphasis on each action item.
 </div>
 
 <div class="hr"></div>

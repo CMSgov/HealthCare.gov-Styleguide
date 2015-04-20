@@ -31,7 +31,7 @@ HealthCare.gov utilizes the Bootstrap responsive, mobile-first fluid grid system
 
 ## Landing
 
-The first-tier landing pages throughout HealthCare.gov are designed to engage users with bold, engaging imagery and simplified, clutter-free content to direct consumers to the most pertinent action to take. All of the landing pages use the Global Header, Hero and Footer modules and any combination of the following major modules: Secondary CTA, Action Bar, Email Signup, Blog and Listings. The Hero module has a variable height with a minimum height of 380px and as with the Secondary CTA and Action Bar should span 100% width.
+The first-tier landing pages throughout HealthCare.gov are designed to engage users with bold, engaging imagery and simplified, clutter-free content to direct consumers to the most pertinent action(s) to take. All of the landing pages use the Global Header, Hero and Footer modules and any combination of the following major modules: Secondary CTA, Action Bar, Email Signup, Blog and Listings. The Hero module has a variable height with a minimum height of 380px and as with the Secondary CTA and Action Bar should span 100% width.
 
 <div class="row">
 	<div class="col-sm-6">
