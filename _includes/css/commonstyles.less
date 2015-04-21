@@ -98,7 +98,8 @@ h4{
 	padding:0;
 	list-style-type:none;
 
-	a{
+	a,
+	.toggle-interior-nav{
 		display:inline-block;
 		margin:7px 10px;
 		font-weight:bold;
@@ -152,6 +153,27 @@ h4{
 
 	&.affix{
 		top:80px;
+	}
+}
+
+.tertiary-nav {
+	list-style-type:none;
+
+	a {
+		display:inline-block;
+		margin:7px 10px;
+		font-weight:bold;
+		text-transform:capitalize;
+
+		&.current{
+			color:#333;
+		}
+	}
+
+	.active{
+		a{
+			color:#333;
+		}
 	}
 }
 
