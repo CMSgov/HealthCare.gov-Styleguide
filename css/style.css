@@ -7128,10 +7128,12 @@ a[name="skipnav"] {
     margin-left: 0;
     padding: 10px;
   }
-  #homepage .deep-dive-link:hover .title {
+  #homepage .deep-dive-link:hover .title,
+  #homepage .deep-dive-link:focus .title {
     display: none;
   }
-  #homepage .deep-dive-link:hover .description {
+  #homepage .deep-dive-link:hover .description,
+  #homepage .deep-dive-link:focus .description {
     display: block;
   }
   #homepage .deep-dive-link.design {
@@ -7139,7 +7141,8 @@ a[name="skipnav"] {
     background: url("../images/DesignDefault.png") center;
     background-size: cover;
   }
-  #homepage .deep-dive-link.design:hover .description {
+  #homepage .deep-dive-link.design:hover .description,
+  #homepage .deep-dive-link.design:focus .description {
     background: url("../images/DesignRollover.png") center;
     background-size: cover;
   }
@@ -7147,7 +7150,8 @@ a[name="skipnav"] {
     background: url("../images/AssetsDefault.png") center;
     background-size: cover;
   }
-  #homepage .deep-dive-link.assets:hover .description {
+  #homepage .deep-dive-link.assets:hover .description,
+  #homepage .deep-dive-link.assets:focus .description {
     background: url("../images/AssetsRollover.png") center;
     background-size: cover;
   }
