@@ -85,17 +85,18 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 <div class="code-wrapper">
 <div class="preview">
 	<fieldset>
-		<legend>Fieldset with Instructions</legend>
-		<p class="instructions">Instructions</p>
+		<legend aria-describedby="fieldset01">Fieldset with Instructions</legend>
+		<p id="fieldset01" class="instructions">Instructions</p>
 	</fieldset>
 </div>
-<pre>
-<code id="fieldset-instructions-code">&ltfieldset&gt
-	&ltlegend&gtFieldset with Instructions&lt/legend&gt
-	&ltp class="instructions"&gtInstructions&lt/p&gt
-&lt/fieldset&gt
-</code>
-</pre>
+<div id="fieldset-instructions-code">
+{% highlight text %}
+<fieldset>
+	<legend aria-describedby="fieldset01">Fieldset with Instructions</legend>
+	<p id="fieldset01" class="instructions">Instructions</p>
+</fieldset>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-instructions-code" role="button">Copy</a>
 </div>
 
