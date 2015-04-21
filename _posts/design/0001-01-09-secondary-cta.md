@@ -24,13 +24,13 @@ There are two variations of the secondary CTA. The Individuals &amp; Families an
 
 The Secondary CTA uses the OpenSans font in white, #FFF at 28px for the title and 18px for the description. The title has a character limitation of 50 characters including spaces. A Glyphicon appears on the left side of the Secondary CTA at 70px by 70px. A single button also appears right aligned and vertically centered and has a character limitation of 18 characters including space.
 <div class="caption">I&amp;F Default</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/1_Default.png" alt="Default I&F Secondary CTA"/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/1_Default.png" alt="Individuals & Families Secondary CTA module default state example"/>
 
 <div class="caption">SB Default</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/2_SBDefault.png" alt="Default Small Business Secondary CTA"/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/2_SBDefault.png" alt="Small Businesses Secondary CTA module default state example"/>
 
 <div class="caption">Specifications</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/3_Specs.png" alt="Secondary CTA Specifications"/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/3_Specs.png" alt="Secondary CTA specifications"/>
 
 <div class="caption">Styles</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/4_Styles.png" alt="Secondary CTA Styles"/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/secondary-cta/4_Styles.png" alt="Secondary CTA styles"/>

@@ -25,7 +25,7 @@ The Action Bar varies from page to page and contains items of tertiary importanc
 All elements within the Action Bar are shown here specifying layout of the buttons and icons.
 
 <div class="caption">Specifications</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/action-bar/1_ABSpecs.png" alt="Action Bar Specifications"/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/action-bar/1_ABSpecs.png" alt="Action Bar module specifications"/>
 
 <div class="caption">Styles</div>
-<img class="full" src="{{site.baseurl}}/images/design/modules/action-bar/2_ABStyles.png" alt="Action Bar Styles"/>
+<img class="full" src="{{site.baseurl}}/images/design/modules/action-bar/2_ABStyles.png" alt="Action Bar module styles"/>
