@@ -6984,6 +6984,12 @@ a[name="skipnav"] {
 #landing-page .container .col-sm-9 {
   padding-top: 35px;
 }
+#landing-page .container .governance {
+  width: 75%;
+  margin: 0 auto;
+  float: none;
+  padding-top: 35px;
+}
 #landing-page img {
   margin-top: 36px;
   width: 100%;
