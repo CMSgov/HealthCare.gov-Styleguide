@@ -9911,6 +9911,7 @@ ul#hc-gov-assets .nav-tabs {
 #hc-gov-assets .light-blue-bg .summary .row strong,
 #hc-gov-assets .light-blue-bg .summary .row span {
   color: #cfeffc;
+  word-wrap: initial;
 }
 #hc-gov-assets .light-blue-bg .summary .row .btn-edit span {
   color: #ffffff;
