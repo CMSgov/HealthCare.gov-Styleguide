@@ -12,16 +12,25 @@ layout: base
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		{% include sub-navigation.html %}
+	<div class="container">        
+        {% if page.section != "governance" %}
+        		{% include sub-navigation.html %}                   
+        {% endif %}
 
 		{% if page.section == "assets" %}
 		<div id="hc-gov-assets">
 		{% endif %}
 
-		<div class="col-sm-9">
-			{{ content }}
-		</div>
+            {% if page.section == "governance" %}
+		        <div class="col-sm-12">            
+                    <div class="governance">
+			            {{ content }}
+                    </div>
+            {% else %}
+               <div class="col-sm-9">
+                    {{ content }}
+            {% endif %}
+		        </div>
 
 		{% if page.section == "assets" %}
 		</div>
