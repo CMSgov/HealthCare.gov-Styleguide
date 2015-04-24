@@ -31,7 +31,7 @@ gov.hc.content.faq = {
             questionList.addClass(gov.hc.content.faq.questionListClass);
             gov.hc.content.faq.setup(questionList, setupOptions);
 
-            $(questionList).appendTo(".preview");
+            $(questionList).appendTo(".preview.row");
         }
     },
 
