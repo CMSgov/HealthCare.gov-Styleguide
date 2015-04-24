@@ -172,6 +172,28 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 </div>
 
 * * *
+## Screener statements white background
+
+These buttons are used throughout the site for yes/no and true/false type questions.
+
+<div class="code-wrapper">
+<div class="preview clearfix">
+	<div class="toggle-buttons">
+		<a href="javascript:;" class="btn radio-label active">Yes</a>
+		<a href="javascript:;" class="btn radio-label">No</a>
+	</div>
+</div>
+<pre>
+<code id="toggle-code">&ltdiv class="toggle-buttons"&gt
+	&lta href="javascript:;" class="btn radio-label active"&gtYes&lt/a&gt
+	&lta href="javascript:;" class="btn radio-label"&gtNo&lt/a&gt
+&lt/div&gt
+</code>
+</pre>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="toggle-code" role="button">Copy</a>
+</div>
+
+* * *
 
 ## Multiple choice questions blue background
 
