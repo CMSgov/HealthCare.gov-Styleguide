@@ -6732,7 +6732,7 @@ p {
   font-size: 16px;
 }
 p a {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #0c648c;
 }
 p a:hover {
   text-decoration: none;
