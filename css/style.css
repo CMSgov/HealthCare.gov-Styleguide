@@ -6778,13 +6778,15 @@ h4 {
   padding: 0;
   list-style-type: none;
 }
-.subnav a {
+.subnav a,
+.subnav .toggle-interior-nav {
   display: inline-block;
   margin: 7px 10px;
   font-weight: bold;
   text-transform: capitalize;
 }
-.subnav a.current {
+.subnav a.current,
+.subnav .toggle-interior-nav.current {
   color: #333;
 }
 .subnav .active a {
@@ -6821,6 +6823,21 @@ h4 {
 .subnav.affix {
   top: 80px;
 }
+.tertiary-nav {
+  list-style-type: none;
+}
+.tertiary-nav a {
+  display: inline-block;
+  margin: 7px 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.tertiary-nav a.current {
+  color: #333;
+}
+.tertiary-nav .active a {
+  color: #333;
+}
 hr {
   border-top: 1px solid #d9d9d9;
 }
@@ -6855,6 +6872,7 @@ a[name="skipnav"] {
   box-shadow: 0 2px 2px #e6e6e6;
   background: #fff;
   width: 100%;
+  position: fixed;
   z-index: 100;
   top: 0;
 }
@@ -6920,6 +6938,13 @@ a[name="skipnav"] {
   color: #085372;
   float: right;
 }
+.header-space {
+  height: 64px;
+}
+.fixed-nav {
+  position: fixed;
+  top: 84px;
+}
 @media (max-width: 780px) {
   .header-wrap .site-header .navbar {
     display: none;
@@ -6957,6 +6982,12 @@ a[name="skipnav"] {
   padding-top: 20px;
 }
 #landing-page .container .col-sm-9 {
+  padding-top: 35px;
+}
+#landing-page .container .governance {
+  width: 75%;
+  margin: 0 auto;
+  float: none;
   padding-top: 35px;
 }
 #landing-page img {
@@ -7103,10 +7134,12 @@ a[name="skipnav"] {
     margin-left: 0;
     padding: 10px;
   }
-  #homepage .deep-dive-link:hover .title {
+  #homepage .deep-dive-link:hover .title,
+  #homepage .deep-dive-link:focus .title {
     display: none;
   }
-  #homepage .deep-dive-link:hover .description {
+  #homepage .deep-dive-link:hover .description,
+  #homepage .deep-dive-link:focus .description {
     display: block;
   }
   #homepage .deep-dive-link.design {
@@ -7114,7 +7147,8 @@ a[name="skipnav"] {
     background: url("../images/DesignDefault.png") center;
     background-size: cover;
   }
-  #homepage .deep-dive-link.design:hover .description {
+  #homepage .deep-dive-link.design:hover .description,
+  #homepage .deep-dive-link.design:focus .description {
     background: url("../images/DesignRollover.png") center;
     background-size: cover;
   }
@@ -7122,7 +7156,8 @@ a[name="skipnav"] {
     background: url("../images/AssetsDefault.png") center;
     background-size: cover;
   }
-  #homepage .deep-dive-link.assets:hover .description {
+  #homepage .deep-dive-link.assets:hover .description,
+  #homepage .deep-dive-link.assets:focus .description {
     background: url("../images/AssetsRollover.png") center;
     background-size: cover;
   }

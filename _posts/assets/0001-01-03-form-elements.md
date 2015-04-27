@@ -85,17 +85,18 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 <div class="code-wrapper">
 <div class="preview">
 	<fieldset>
-		<legend>Fieldset with Instructions</legend>
-		<p class="instructions">Instructions</p>
+		<legend aria-describedby="fieldset01">Fieldset with Instructions</legend>
+		<p id="fieldset01" class="instructions">Instructions</p>
 	</fieldset>
 </div>
-<pre>
-<code id="fieldset-instructions-code">&ltfieldset&gt
-	&ltlegend&gtFieldset with Instructions&lt/legend&gt
-	&ltp class="instructions"&gtInstructions&lt/p&gt
-&lt/fieldset&gt
-</code>
-</pre>
+<div id="fieldset-instructions-code">
+{% highlight text %}
+<fieldset>
+	<legend aria-describedby="fieldset01">Fieldset with Instructions</legend>
+	<p id="fieldset01" class="instructions">Instructions</p>
+</fieldset>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-instructions-code" role="button">Copy</a>
 </div>
 
@@ -168,6 +169,28 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 &lt/div&gt</code>
 </pre>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-screener-code" role="button">Copy</a>
+</div>
+
+* * *
+## Screener statements white background
+
+These buttons are used throughout the site for yes/no and true/false type questions.
+
+<div class="code-wrapper">
+<div class="preview clearfix">
+	<div class="toggle-buttons">
+		<a href="javascript:;" class="btn radio-label active">Yes</a>
+		<a href="javascript:;" class="btn radio-label">No</a>
+	</div>
+</div>
+<pre>
+<code id="toggle-code">&ltdiv class="toggle-buttons"&gt
+	&lta href="javascript:;" class="btn radio-label active"&gtYes&lt/a&gt
+	&lta href="javascript:;" class="btn radio-label"&gtNo&lt/a&gt
+&lt/div&gt
+</code>
+</pre>
+<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="toggle-code" role="button">Copy</a>
 </div>
 
 * * *
