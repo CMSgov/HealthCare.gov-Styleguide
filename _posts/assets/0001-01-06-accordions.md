@@ -69,13 +69,6 @@ description text here
 		      <li class="topic"><h3 class="rule">Get Coverage</h3></li>
 		      <li><a href="/quick-guide">A quick guide to the Health Insurance Marketplace</a></li>
 		      <li><a href="/apply-and-enroll">Apply &amp; enroll</a></li>
-		      <li><a href="/lower-costs">Getting lower costs</a></li>
-		      <li><a href="/fees-exemptions">Fees &amp; exemptions</a></li>
-		      <li><a href="/coverage">What plans cover</a></li>
-		      <li><a href="/choose-a-plan">How to choose a Marketplace plan</a></li>
-		      <li><a href="/income-and-household-information">Reporting income and household size</a></li>
-		      <li><a href="/coverage-outside-open-enrollment">Coverage outside Open Enrollment</a></li>
-		      <li><a href="/marketplace-deadlines">Important Marketplace deadlines</a></li>
 		    </ul>
 		    <ul class="col-sm-4 link-list left">
 		      <li class="topic"><h3 class="rule">Medicaid, CHIP &amp; Medicare</h3></li>
@@ -84,29 +77,11 @@ description text here
 		      <li class="topic"><h3 class="rule">Information About Health Coverage</h3></li>
 		      <li><a href="/using-marketplace-coverage">Using your Marketplace coverage</a></li>
 		      <li><a href="/why-coverage-is-important">Why health coverage is important</a></li>
-		      <li><a href="/taxes">Marketplace coverage &amp; taxes</a></li>
-		      <li><a href="/preventive-care-benefits">Preventive care benefits</a></li>
-		      <li><a href="/health-care-law-protections">Rights and protections</a></li>
-		      <li><a href="/marketplace-appeals">Appeal a Marketplace decision</a></li>
-		      <li><a href="/current-plan-changed-or-cancelled">If your grandfathered health plan is changed or cancelled</a></li>
 		    </ul>
-		    <ul class="col-sm-4 link-list left">
+		    <ul class="col-sm-4 link-list">
 		      <li class="topic"><h3 class="rule">Coverage For. . .</h3></li>
 		      <li><a href="/immigrants">Immigrants</a></li>
 		      <li><a href="/young-adults">Young adults</a></li>
-		      <li><a href="/self-employed">Self-employed people</a></li>
-		      <li><a href="/unemployed">Unemployed people</a></li>
-		      <li><a href="/people-with-disabilities">People with disabilities</a></li>
-		      <li><a href="/have-job-based-coverage">People with job-based coverage</a></li>
-		      <li><a href="/veterans">Military veterans</a></li>
-		      <li><a href="/american-indians-alaska-natives">American Indians &amp; Alaska Natives</a></li>
-		      <li><a href="/what-if-im-pregnant-or-plan-to-get-pregnant">Pregnant women</a></li>
-		      <li><a href="/married-same-sex-couples-and-the-marketplace">Same-sex married couples</a></li>
-		      <li><a href="/retirees">Retirees</a></li>
-		      <li><a href="/incarcerated-people">Incarcerated people</a></li>  
-		      <li class="topic"><h3 class="rule">Small Businesses</h3></li>
-		      <li><a href="/small-businesses/employers">For Employers</a></li>
-		      <li><a href="/small-businesses/employees">For Employees</a></li>
 		    </ul>
 		</div>
 		<div id="more-info" class="hidden-lg">
@@ -126,13 +101,6 @@ description text here
 		        <ul class="link-list"> 
 		          <li><a href="/quick-guide">A quick guide to the Health Insurance Marketplace</a></li>
 		          <li><a href="/apply-and-enroll">Apply &amp; enroll</a></li>
-		          <li><a href="/lower-costs">Getting lower costs</a></li>
-		          <li><a href="/fees-exemptions">Fees &amp; exemptions</a></li>
-		          <li><a href="/coverage">What plans cover</a></li>
-		          <li><a href="/choose-a-plan">How to choose a Marketplace plan</a></li>
-		          <li><a href="/income-and-household-information">Reporting income and household size</a></li>
-		          <li><a href="/coverage-outside-open-enrollment">Coverage outside Open Enrollment</a></li>
-		          <li><a href="/marketplace-deadlines">Important Marketplace deadlines</a></li>
 		        </ul>
 		      </div>
 		    </li>
@@ -153,11 +121,6 @@ description text here
 		        <ul class="link-list">
 		          <li><a href="/using-marketplace-coverage">Using your Marketplace coverage</a></li>
 		          <li><a href="/why-coverage-is-important">Why health coverage is important</a></li>
-		          <li><a href="/taxes">Marketplace coverage &amp; taxes</a></li>
-		          <li><a href="/preventive-care-benefits">Preventive care benefits</a></li>
-		          <li><a href="/health-care-law-protections">Rights and protections</a></li>
-		          <li><a href="/marketplace-appeals">Appeal a Marketplace decision</a></li>
-		          <li><a href="/current-plan-changed-or-cancelled">If your grandfathered health plan is changed or cancelled</a></li>
 		        </ul>
 		      </div>
 		    </li>
@@ -167,16 +130,6 @@ description text here
 		        <ul class="link-list">
 		          <li><a href="/immigrants">Immigrants</a></li>
 		          <li><a href="/young-adults">Young adults</a></li>
-		          <li><a href="/self-employed">Self-employed people</a></li>
-		          <li><a href="/unemployed">Unemployed people</a></li>
-		          <li><a href="/people-with-disabilities">People with disabilities</a></li>
-		          <li><a href="/have-job-based-coverage">People with job-based coverage</a></li>
-		          <li><a href="/veterans">Military veterans</a></li>
-		          <li><a href="/american-indians-alaska-natives">American Indians &amp; Alaska Natives</a></li>
-		          <li><a href="/what-if-im-pregnant-or-plan-to-get-pregnant">Pregnant women</a></li>
-		          <li><a href="/married-same-sex-couples-and-the-marketplace">Same-sex married couples</a></li>
-		          <li><a href="/retirees">Retirees</a></li>
-		          <li><a href="/incarcerated-people">Incarcerated people</a></li>
 		        </ul>
 		      </div>
 		    </li>
@@ -203,13 +156,6 @@ description text here
 		      <li class="topic"><h3 class="rule">Get Coverage</h3></li>
 		      <li><a href="/quick-guide">A quick guide to the Health Insurance Marketplace</a></li>
 		      <li><a href="/apply-and-enroll">Apply &amp; enroll</a></li>
-		      <li><a href="/lower-costs">Getting lower costs</a></li>
-		      <li><a href="/fees-exemptions">Fees &amp; exemptions</a></li>
-		      <li><a href="/coverage">What plans cover</a></li>
-		      <li><a href="/choose-a-plan">How to choose a Marketplace plan</a></li>
-		      <li><a href="/income-and-household-information">Reporting income and household size</a></li>
-		      <li><a href="/coverage-outside-open-enrollment">Coverage outside Open Enrollment</a></li>
-		      <li><a href="/marketplace-deadlines">Important Marketplace deadlines</a></li>
 		    </ul>
 		    <ul class="col-sm-4 link-list left">
 		      <li class="topic"><h3 class="rule">Medicaid, CHIP &amp; Medicare</h3></li>
@@ -218,29 +164,11 @@ description text here
 		      <li class="topic"><h3 class="rule">Information About Health Coverage</h3></li>
 		      <li><a href="/using-marketplace-coverage">Using your Marketplace coverage</a></li>
 		      <li><a href="/why-coverage-is-important">Why health coverage is important</a></li>
-		      <li><a href="/taxes">Marketplace coverage &amp; taxes</a></li>
-		      <li><a href="/preventive-care-benefits">Preventive care benefits</a></li>
-		      <li><a href="/health-care-law-protections">Rights and protections</a></li>
-		      <li><a href="/marketplace-appeals">Appeal a Marketplace decision</a></li>
-		      <li><a href="/current-plan-changed-or-cancelled">If your grandfathered health plan is changed or cancelled</a></li>
 		    </ul>
-		    <ul class="col-sm-4 link-list left">
+		    <ul class="col-sm-4 link-list">
 		      <li class="topic"><h3 class="rule">Coverage For. . .</h3></li>
 		      <li><a href="/immigrants">Immigrants</a></li>
 		      <li><a href="/young-adults">Young adults</a></li>
-		      <li><a href="/self-employed">Self-employed people</a></li>
-		      <li><a href="/unemployed">Unemployed people</a></li>
-		      <li><a href="/people-with-disabilities">People with disabilities</a></li>
-		      <li><a href="/have-job-based-coverage">People with job-based coverage</a></li>
-		      <li><a href="/veterans">Military veterans</a></li>
-		      <li><a href="/american-indians-alaska-natives">American Indians &amp; Alaska Natives</a></li>
-		      <li><a href="/what-if-im-pregnant-or-plan-to-get-pregnant">Pregnant women</a></li>
-		      <li><a href="/married-same-sex-couples-and-the-marketplace">Same-sex married couples</a></li>
-		      <li><a href="/retirees">Retirees</a></li>
-		      <li><a href="/incarcerated-people">Incarcerated people</a></li>  
-		      <li class="topic"><h3 class="rule">Small Businesses</h3></li>
-		      <li><a href="/small-businesses/employers">For Employers</a></li>
-		      <li><a href="/small-businesses/employees">For Employees</a></li>
 		    </ul>
 		</div>
 		<div id="more-info" class="hidden-lg">
@@ -260,13 +188,6 @@ description text here
 		        <ul class="link-list"> 
 		          <li><a href="/quick-guide">A quick guide to the Health Insurance Marketplace</a></li>
 		          <li><a href="/apply-and-enroll">Apply &amp; enroll</a></li>
-		          <li><a href="/lower-costs">Getting lower costs</a></li>
-		          <li><a href="/fees-exemptions">Fees &amp; exemptions</a></li>
-		          <li><a href="/coverage">What plans cover</a></li>
-		          <li><a href="/choose-a-plan">How to choose a Marketplace plan</a></li>
-		          <li><a href="/income-and-household-information">Reporting income and household size</a></li>
-		          <li><a href="/coverage-outside-open-enrollment">Coverage outside Open Enrollment</a></li>
-		          <li><a href="/marketplace-deadlines">Important Marketplace deadlines</a></li>
 		        </ul>
 		      </div>
 		    </li>
@@ -287,11 +208,6 @@ description text here
 		        <ul class="link-list">
 		          <li><a href="/using-marketplace-coverage">Using your Marketplace coverage</a></li>
 		          <li><a href="/why-coverage-is-important">Why health coverage is important</a></li>
-		          <li><a href="/taxes">Marketplace coverage &amp; taxes</a></li>
-		          <li><a href="/preventive-care-benefits">Preventive care benefits</a></li>
-		          <li><a href="/health-care-law-protections">Rights and protections</a></li>
-		          <li><a href="/marketplace-appeals">Appeal a Marketplace decision</a></li>
-		          <li><a href="/current-plan-changed-or-cancelled">If your grandfathered health plan is changed or cancelled</a></li>
 		        </ul>
 		      </div>
 		    </li>
@@ -301,16 +217,6 @@ description text here
 		        <ul class="link-list">
 		          <li><a href="/immigrants">Immigrants</a></li>
 		          <li><a href="/young-adults">Young adults</a></li>
-		          <li><a href="/self-employed">Self-employed people</a></li>
-		          <li><a href="/unemployed">Unemployed people</a></li>
-		          <li><a href="/people-with-disabilities">People with disabilities</a></li>
-		          <li><a href="/have-job-based-coverage">People with job-based coverage</a></li>
-		          <li><a href="/veterans">Military veterans</a></li>
-		          <li><a href="/american-indians-alaska-natives">American Indians &amp; Alaska Natives</a></li>
-		          <li><a href="/what-if-im-pregnant-or-plan-to-get-pregnant">Pregnant women</a></li>
-		          <li><a href="/married-same-sex-couples-and-the-marketplace">Same-sex married couples</a></li>
-		          <li><a href="/retirees">Retirees</a></li>
-		          <li><a href="/incarcerated-people">Incarcerated people</a></li>
 		        </ul>
 		      </div>
 		    </li>
@@ -329,598 +235,4 @@ description text here
 		{% endhighlight %}
 	</div>
 	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="navigation-accordion-code" role="button">Copy</a>
-</div>
-
-<hr />
-
-## Footer Accordion
-
-description text here
-
-<div class="code-wrapper">
-	<div class="preview grey-bg">
-		<footer class="footer-small" role="complementary">
-			<div class="hidden-xs">
-		      <div class="row">
-		        <div class="col-sm-7">
-		          <a href="/" class="icon marketplace">Health Insurance Marketplace</a>
-		        </div>
-		      </div>
-		      <hr>
-		      <div class="row spacer-bottom20" style="overflow: hidden;">
-		        <div class="col-resources col-sm-6">
-		          <div>
-		            <h3>Resources</h3>
-		              <div class="col-sm-5">
-		                <ul class="list-unstyled default">
-		                  <li>
-		                    <a href="http://www.hhs.gov/healthcare/">About the Affordable Care Act</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/cciio/index.html">Regulatory and Policy Information</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://marketplace.cms.gov/">For Partners</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/Newsroom/Newsroom-Center.html">For the Media</a>
-		                  </li>
-		                </ul>      
-		              </div>
-		              <div class="col-sm-5 col-sm-offset-2">
-		                <ul class="list-unstyled default">
-		                    <li>
-		                      <a href="https://www.healthcare.gov/health-and-dental-plan-datasets-for-researchers-and-issuers/">For Researchers</a>
-		                    </li>
-		                    <li>
-		                      <a href="http://www.cms.gov/CCIIO/Programs-and-Initiatives/Health-Insurance-Marketplaces/State-Marketplace-Resources.html">For States</a>
-		                    </li>
-		                    <li>
-		                      <a href="/language-resource/">Information in other languages</a>
-		                    </li>
-		                  </ul>
-		                </div>
-		              </div>
-		            </div>
-		            <div class="col-connect-with-us col-sm-5 col-sm-offset-1">
-		              <div>
-		                <h3>
-		                  <a href="/connect/">Connect With Us</a>
-		                </h3>
-		                <ul class="list-unstyled default bottom20">
-		                  <li>
-		                    <a href="/contact-us/" class="row-link" data-remote="false">
-		                    <div class="row">
-		                      <div class="col-sm-1">
-		                      <span class="glyphicons phone_alt"></span>
-		                      </div>
-		                      <div class="col-sm-10 nudge-right">
-		                      <span class="text">Questions? Give us a call</span>
-		                      </div>
-		                    </div>
-		                    </a>
-		                  </li>       
-		                  <li>
-		                    <a href="/subscribe" class="row-link" data-toggle="modal" data-target="#subscribe-modal" data-remote="false">
-		                    <div class="row">
-		                      <div class="col-sm-1">
-		                      <span class="glyphicons envelope"></span>
-		                      </div>
-		                      <div class="col-sm-10 nudge-right">
-		                      <span class="text">Get text or email updates</span>
-		                      </div>
-		                    </div>
-		                    </a>
-		                  </li>
-		                  <li>
-		                    <a href="/blog" class="row-link" data-remote="false">
-		                    <div class="row">
-		                      <div class="col-sm-1">
-		                      <span class="glyphicons comments"></span>
-		                      </div>
-		                      <div class="col-sm-10 nudge-right">
-		                      <span class="text">Visit the HealthCare.gov blog</span>
-		                      </div>
-		                    </div>
-		                    </a>   
-		                  </li>
-		                </ul>
-		                <ul class="list-unstyled default bottom20">
-		                  <li class="social-icon">          
-		                      <a class="icon facebook" href="//www.facebook.com/Healthcare.gov" target="_blank">Facebook</a>
-		                      <a class="icon twitter" href="//twitter.com/HealthCareGov" target="_blank">Twitter</a>
-		                      <a class="icon youtube" href="//www.youtube.com/HealthCareGov" target="_blank">YouTube</a>
-		                      <a class="icon google-plus" href="//plus.google.com/+healthcaregov" target="_blank">Google+</a>
-		                  </li>
-		              </ul>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="row row-links">
-		          <div class="col-sm-5">
-		            <small class="up-case">
-		                  <a href="/sitemap">Sitemap</a>
-		                 |
-		                  <a href="/glossary">Glossary</a>
-		                 |
-		                  <a href="/contact-us">Contact Us</a>  
-		                 |
-		                  <a href="/archive">Archive</a>
-		            </small>
-		          </div>
-		          <div class="col-sm-7 text-right">
-		            <small class="up-case">    
-		                  <a target="_blank" href="http://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/CMSNondiscriminationNotice.html">Nondiscrimination / Accessibility</a>
-		                 |
-		                  <a href="/privacy">Privacy</a>
-		                 |
-		                  <a href="/privacy//#thirdparty">Linking Policy</a>
-		                 |
-		                  <a href="/using-this-site">Using This Site</a>
-		                 |
-		                  <a target="_blank" href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a>
-		            </small>
-		          </div>
-		        </div>
-		        <div class="row">
-		          <div class="col-sm-5 col-lg-3" style="font-size: 10px; line-height: 14px;">
-		            <a title="HHS.gov" class="icon eagle" href="http://www.hhs.gov/">
-		              HHS.gov
-		            </a>
-		            <span>A federal government website managed by the U.S. Centers for Medicare &amp; Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244</span>
-		          </div> 
-		          <div class="col-sm-5 pull-right">
-		            <ul class="list-inline pull-right">
-		              <li><a title="Whitehouse.gov" class="icon whitehouse" href="http://www.whitehouse.gov/">
-		                Whitehouse.gov
-		              </a></li>
-		              <li><a title="USA.gov" class="icon usagov" href="http://www.usa.gov/">
-		                USA.gov
-		              </a></li>
-		            </ul>
-		          </div>
-		        </div>
-			</div>
-			<div class="visible-xs">
-		      <a href="/" class="icon marketplace-mobile">Health Insurance Marketplace</a>
-		      <hr>
-		      <div class="panel-group spacer-bottom20" id="accordion">
-		        <div class="panel">
-		          <div class="panel-heading">
-		            <h3 class="panel-title">
-		              <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" role="tab" aria-selected="false" aria-expanded="false" id="ui-collapse-193">
-		                Resources
-		                <span class="glyphicon glyphicon-chevron-down pull-right"></span>
-		              </a>
-		            </h3>
-		          </div>    
-		          <div id="collapseOne" class="panel-collapse collapse in">
-		            <div class="panel-body">
-		              <ul class="list-unstyled default">     
-		                  <li>
-		                    <a href="http://www.hhs.gov/healthcare/">About the Affordable Care Act</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/cciio/index.html">Regulatory and Policy Information</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://marketplace.cms.gov/">For Partners</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/Newsroom/Newsroom-Center.html">For the Media</a>
-		                  </li>
-		                  <li>
-		                    <a href="https://www.healthcare.gov/health-and-dental-plan-datasets-for-researchers-and-issuers/">For Researchers</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/CCIIO/Programs-and-Initiatives/Health-Insurance-Marketplaces/State-Marketplace-Resources.html">For States</a>
-		                  </li>
-		                  <li>
-		                    <a href="/language-resource/">Information in other languages</a>
-		                  </li>
-		              </ul>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="panel no-border">
-		          <div class="panel-heading">
-		            <h3 class="panel-title">
-		              <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" role="tab" aria-selected="false" aria-expanded="false" id="ui-collapse-544">
-		                Connect With Us
-		                <span class="glyphicon glyphicon-chevron-down pull-right"></span>
-		              </a>
-		            </h3>
-		          </div>
-		          <div id="collapseTwo" class="panel-collapse collapse">
-		            <div class="panel-body">
-		              <ul class="list-unstyled default">
-		                  <li>
-		                  <div class="row">
-		                    <div class="col-sm-1 pull-left">              
-		                      <a class="glyphicons phone_alt" href="/contact-us/" aria-hidden="true"></a>
-		                    </div>
-		                    <div class="col-sm-11 nudge-right">
-		                      <a href="/contact-us/">Questions? Give us a call</a>
-		                    </div>
-		                  </div>
-		                </li>
-		                <li>
-		                  <div class="row">
-		                    <div class="col-sm-1 pull-left">              
-		                      <a class="glyphicons envelope" href="/subscribe" data-toggle="modal" data-target="#subscribe-modal" aria-hidden="true"></a>
-		                    </div>         
-		                    <div class="col-sm-11 nudge-right">
-		                      <a href="/subscribe">Get text or email updates</a>
-		                    </div>
-		                  </div>
-		                </li>
-		                <li>
-		                  <div class="row">
-		                    <div class="col-sm-1 pull-left">              
-		                      <a class="glyphicons comments" href="/blog" aria-hidden="true"></a>
-		                    </div>
-		                    <div class="col-sm-11 nudge-right">
-		                      <a href="/blog">Visit the HealthCare.gov blog</a>
-		                    </div>
-		                  </div>
-		                  </li>
-		                </ul>
-		            </div>
-		          </div>
-		        	<ul class="list-unstyled default bottom20">
-		        		<li class="social-icon clearfix">    		  
-		        			<a class="icon facebook" href="//www.facebook.com/Healthcare.gov" target="_blank">Facebook</a>
-		        			<a class="icon twitter" href="//twitter.com/HealthCareGov" target="_blank">Twitter</a>
-		        			<a class="icon youtube" href="//www.youtube.com/HealthCareGov" target="_blank">YouTube</a>
-		        			<a class="icon google-plus" href="//plus.google.com/+healthcaregov" target="_blank">Google+</a>        		  
-		        		</li>
-		        	</ul>  
-		        </div>
-		        <hr class="last-row">
-		      </div>
-		      <div class="row spacer-bottom20">
-		        <div class="col-xs-12 text-center">
-		          <small class="up-case">
-		            <a href="/sitemap">Sitemap</a>
-		               |
-		            <a href="/glossary">Glossary</a>
-		               |
-		            <a href="/contact-us">Contact Us</a>
-		               |
-		            <a href="/archive">Archive</a>
-		          </small>
-		        </div>
-		      </div>
-		      <div class="row spacer-bottom20">
-		        <div class="col-xs-12 text-center">
-		          <small class="up-case">
-		            <a target="_blank" href="http://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/CMSNondiscriminationNotice.html">Nondiscrimination / Accessibility</a>
-		               |
-		            <a href="/privacy">Privacy</a>
-		               |             
-		            <a href="/privacy//#thirdparty">Linking Policy</a>
-		               |              
-		            <a href="/using-this-site">Using This Site</a>
-		               |              
-		            <a target="_blank" href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a>
-		          </small>
-		        </div>  
-		      </div>
-		      <div class="row tiny-text">
-		        <div class="col-xs-12 text-center">
-		          <a title="HHS.gov" class="icon eagle gov-icons-center" href="http://www.hhs.gov/">
-		            HHS.gov
-		          </a>
-		          A federal government website managed by the U.S. Centers for Medicare &amp; Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244
-		        </div>
-		      </div>
-		      <div class="row">
-		        <div class="col-xs-12">
-		          <ul class="list-inline gov-icons-center">
-		            <li><a title="Whitehouse.gov" class="icon whitehouse" href="http://www.whitehouse.gov/">
-		              Whitehouse.gov
-		            </a></li>
-		            <li><a title="USA.gov" class="icon usagov" href="http://www.usa.gov/">
-		              USA.gov
-		            </a></li>
-		          </ul>
-		        </div>
-		      </div>
-			</div>
-		</footer>
-	</div>
-	<div id="footer-accordion-code">
-		{% highlight text %}
-		<footer class="footer-small" role="complementary">
-			<div class="hidden-xs">
-		      <div class="row">
-		        <div class="col-sm-7">
-		          <a href="/" class="icon marketplace">Health Insurance Marketplace</a>
-		        </div>
-		      </div>
-		      <hr>
-		      <div class="row spacer-bottom20" style="overflow: hidden;">
-		        <div class="col-resources col-sm-6">
-		          <div>
-		            <h3>Resources</h3>
-		              <div class="col-sm-5">
-		                <ul class="list-unstyled default">
-		                  <li>
-		                    <a href="http://www.hhs.gov/healthcare/">About the Affordable Care Act</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/cciio/index.html">Regulatory and Policy Information</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://marketplace.cms.gov/">For Partners</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/Newsroom/Newsroom-Center.html">For the Media</a>
-		                  </li>
-		                </ul>      
-		              </div>
-		              <div class="col-sm-5 col-sm-offset-2">
-		                <ul class="list-unstyled default">
-		                    <li>
-		                      <a href="https://www.healthcare.gov/health-and-dental-plan-datasets-for-researchers-and-issuers/">For Researchers</a>
-		                    </li>
-		                    <li>
-		                      <a href="http://www.cms.gov/CCIIO/Programs-and-Initiatives/Health-Insurance-Marketplaces/State-Marketplace-Resources.html">For States</a>
-		                    </li>
-		                    <li>
-		                      <a href="/language-resource/">Information in other languages</a>
-		                    </li>
-		                  </ul>
-		                </div>
-		              </div>
-		            </div>
-		            <div class="col-connect-with-us col-sm-5 col-sm-offset-1">
-		              <div>
-		                <h3>
-		                  <a href="/connect/">Connect With Us</a>
-		                </h3>
-		                <ul class="list-unstyled default bottom20">
-		                  <li>
-		                    <a href="/contact-us/" class="row-link" data-remote="false">
-		                    <div class="row">
-		                      <div class="col-sm-1">
-		                      <span class="glyphicons phone_alt"></span>
-		                      </div>
-		                      <div class="col-sm-10 nudge-right">
-		                      <span class="text">Questions? Give us a call</span>
-		                      </div>
-		                    </div>
-		                    </a>
-		                  </li>       
-		                  <li>
-		                    <a href="/subscribe" class="row-link" data-toggle="modal" data-target="#subscribe-modal" data-remote="false">
-		                    <div class="row">
-		                      <div class="col-sm-1">
-		                      <span class="glyphicons envelope"></span>
-		                      </div>
-		                      <div class="col-sm-10 nudge-right">
-		                      <span class="text">Get text or email updates</span>
-		                      </div>
-		                    </div>
-		                    </a>
-		                  </li>
-		                  <li>
-		                    <a href="/blog" class="row-link" data-remote="false">
-		                    <div class="row">
-		                      <div class="col-sm-1">
-		                      <span class="glyphicons comments"></span>
-		                      </div>
-		                      <div class="col-sm-10 nudge-right">
-		                      <span class="text">Visit the HealthCare.gov blog</span>
-		                      </div>
-		                    </div>
-		                    </a>   
-		                  </li>
-		                </ul>
-		                <ul class="list-unstyled default bottom20">
-		                  <li class="social-icon">          
-		                      <a class="icon facebook" href="//www.facebook.com/Healthcare.gov" target="_blank">Facebook</a>
-		                      <a class="icon twitter" href="//twitter.com/HealthCareGov" target="_blank">Twitter</a>
-		                      <a class="icon youtube" href="//www.youtube.com/HealthCareGov" target="_blank">YouTube</a>
-		                      <a class="icon google-plus" href="//plus.google.com/+healthcaregov" target="_blank">Google+</a>
-		                  </li>
-		              </ul>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="row row-links">
-		          <div class="col-sm-5">
-		            <small class="up-case">
-		                  <a href="/sitemap">Sitemap</a>
-		                 |
-		                  <a href="/glossary">Glossary</a>
-		                 |
-		                  <a href="/contact-us">Contact Us</a>  
-		                 |
-		                  <a href="/archive">Archive</a>
-		            </small>
-		          </div>
-		          <div class="col-sm-7 text-right">
-		            <small class="up-case">    
-		                  <a target="_blank" href="http://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/CMSNondiscriminationNotice.html">Nondiscrimination / Accessibility</a>
-		                 |
-		                  <a href="/privacy">Privacy</a>
-		                 |
-		                  <a href="/privacy//#thirdparty">Linking Policy</a>
-		                 |
-		                  <a href="/using-this-site">Using This Site</a>
-		                 |
-		                  <a target="_blank" href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a>
-		            </small>
-		          </div>
-		        </div>
-		        <div class="row">
-		          <div class="col-sm-5 col-lg-3" style="font-size: 10px; line-height: 14px;">
-		            <a title="HHS.gov" class="icon eagle" href="http://www.hhs.gov/">
-		              HHS.gov
-		            </a>
-		            <span>A federal government website managed by the U.S. Centers for Medicare &amp; Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244</span>
-		          </div> 
-		          <div class="col-sm-5 pull-right">
-		            <ul class="list-inline pull-right">
-		              <li><a title="Whitehouse.gov" class="icon whitehouse" href="http://www.whitehouse.gov/">
-		                Whitehouse.gov
-		              </a></li>
-		              <li><a title="USA.gov" class="icon usagov" href="http://www.usa.gov/">
-		                USA.gov
-		              </a></li>
-		            </ul>
-		          </div>
-		        </div>
-			</div>
-			<div class="visible-xs">
-		      <a href="/" class="icon marketplace-mobile">Health Insurance Marketplace</a>
-		      <hr>
-		      <div class="panel-group spacer-bottom20" id="accordion">
-		        <div class="panel">
-		          <div class="panel-heading">
-		            <h3 class="panel-title">
-		              <a data-toggle="collapse" data-target="#collapseOne" href="#collapseOne" role="tab" aria-selected="false" aria-expanded="false" id="ui-collapse-193">
-		                Resources
-		                <span class="glyphicon glyphicon-chevron-down pull-right"></span>
-		              </a>
-		            </h3>
-		          </div>    
-		          <div id="collapseOne" class="panel-collapse collapse in">
-		            <div class="panel-body">
-		              <ul class="list-unstyled default">     
-		                  <li>
-		                    <a href="http://www.hhs.gov/healthcare/">About the Affordable Care Act</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/cciio/index.html">Regulatory and Policy Information</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://marketplace.cms.gov/">For Partners</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/Newsroom/Newsroom-Center.html">For the Media</a>
-		                  </li>
-		                  <li>
-		                    <a href="https://www.healthcare.gov/health-and-dental-plan-datasets-for-researchers-and-issuers/">For Researchers</a>
-		                  </li>
-		                  <li>
-		                    <a href="http://www.cms.gov/CCIIO/Programs-and-Initiatives/Health-Insurance-Marketplaces/State-Marketplace-Resources.html">For States</a>
-		                  </li>
-		                  <li>
-		                    <a href="/language-resource/">Information in other languages</a>
-		                  </li>
-		              </ul>
-		            </div>
-		          </div>
-		        </div>
-		        <div class="panel no-border">
-		          <div class="panel-heading">
-		            <h3 class="panel-title">
-		              <a data-toggle="collapse" data-target="#collapseTwo" href="#collapseTwo" role="tab" aria-selected="false" aria-expanded="false" id="ui-collapse-544">
-		                Connect With Us
-		                <span class="glyphicon glyphicon-chevron-down pull-right"></span>
-		              </a>
-		            </h3>
-		          </div>
-		          <div id="collapseTwo" class="panel-collapse collapse">
-		            <div class="panel-body">
-		              <ul class="list-unstyled default">
-		                  <li>
-		                  <div class="row">
-		                    <div class="col-sm-1 pull-left">              
-		                      <a class="glyphicons phone_alt" href="/contact-us/" aria-hidden="true"></a>
-		                    </div>
-		                    <div class="col-sm-11 nudge-right">
-		                      <a href="/contact-us/">Questions? Give us a call</a>
-		                    </div>
-		                  </div>
-		                </li>
-		                <li>
-		                  <div class="row">
-		                    <div class="col-sm-1 pull-left">              
-		                      <a class="glyphicons envelope" href="/subscribe" data-toggle="modal" data-target="#subscribe-modal" aria-hidden="true"></a>
-		                    </div>         
-		                    <div class="col-sm-11 nudge-right">
-		                      <a href="/subscribe">Get text or email updates</a>
-		                    </div>
-		                  </div>
-		                </li>
-		                <li>
-		                  <div class="row">
-		                    <div class="col-sm-1 pull-left">              
-		                      <a class="glyphicons comments" href="/blog" aria-hidden="true"></a>
-		                    </div>
-		                    <div class="col-sm-11 nudge-right">
-		                      <a href="/blog">Visit the HealthCare.gov blog</a>
-		                    </div>
-		                  </div>
-		                  </li>
-		                </ul>
-		            </div>
-		          </div>
-		        	<ul class="list-unstyled default bottom20">
-		        		<li class="social-icon clearfix">    		  
-		        			<a class="icon facebook" href="//www.facebook.com/Healthcare.gov" target="_blank">Facebook</a>
-		        			<a class="icon twitter" href="//twitter.com/HealthCareGov" target="_blank">Twitter</a>
-		        			<a class="icon youtube" href="//www.youtube.com/HealthCareGov" target="_blank">YouTube</a>
-		        			<a class="icon google-plus" href="//plus.google.com/+healthcaregov" target="_blank">Google+</a>        		  
-		        		</li>
-		        	</ul>  
-		        </div>
-		        <hr class="last-row">
-		      </div>
-		      <div class="row spacer-bottom20">
-		        <div class="col-xs-12 text-center">
-		          <small class="up-case">
-		            <a href="/sitemap">Sitemap</a>
-		               |
-		            <a href="/glossary">Glossary</a>
-		               |
-		            <a href="/contact-us">Contact Us</a>
-		               |
-		            <a href="/archive">Archive</a>
-		          </small>
-		        </div>
-		      </div>
-		      <div class="row spacer-bottom20">
-		        <div class="col-xs-12 text-center">
-		          <small class="up-case">
-		            <a target="_blank" href="http://www.cms.gov/About-CMS/Agency-Information/Aboutwebsite/CMSNondiscriminationNotice.html">Nondiscrimination / Accessibility</a>
-		               |
-		            <a href="/privacy">Privacy</a>
-		               |             
-		            <a href="/privacy//#thirdparty">Linking Policy</a>
-		               |              
-		            <a href="/using-this-site">Using This Site</a>
-		               |              
-		            <a target="_blank" href="http://www.hhs.gov/open/plain-writing/index.html">Plain Writing</a>
-		          </small>
-		        </div>  
-		      </div>
-		      <div class="row tiny-text">
-		        <div class="col-xs-12 text-center">
-		          <a title="HHS.gov" class="icon eagle gov-icons-center" href="http://www.hhs.gov/">
-		            HHS.gov
-		          </a>
-		          A federal government website managed by the U.S. Centers for Medicare &amp; Medicaid Services. 7500 Security Boulevard, Baltimore, MD 21244
-		        </div>
-		      </div>
-		      <div class="row">
-		        <div class="col-xs-12">
-		          <ul class="list-inline gov-icons-center">
-		            <li><a title="Whitehouse.gov" class="icon whitehouse" href="http://www.whitehouse.gov/">
-		              Whitehouse.gov
-		            </a></li>
-		            <li><a title="USA.gov" class="icon usagov" href="http://www.usa.gov/">
-		              USA.gov
-		            </a></li>
-		          </ul>
-		        </div>
-		      </div>
-			</div>
-		</footer>
-		{% endhighlight %}
-	</div>
-	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="footer-accordion-code" role="button">Copy</a>
 </div>
