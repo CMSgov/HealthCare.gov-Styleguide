@@ -10240,6 +10240,30 @@ ul#hc-gov-assets .nav-tabs {
     width: 24%;
   }
 }
+#hc-gov-assets .notification-box {
+  display: inline-block;
+  background-color: #004d6d;
+  padding: 10px 15px 20px;
+}
+#hc-gov-assets .notification-box p {
+  font-size: 13px;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 20px;
+  width: 225px;
+  font-family: 'Open Sans', sans-serif;
+}
+#hc-gov-assets .notification-box button {
+  color: #0e70b4;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0px;
+  padding: 6px;
+  width: 225px;
+}
 #hc-gov-assets .tophat {
   border-bottom: 4px solid #aaa;
 }
