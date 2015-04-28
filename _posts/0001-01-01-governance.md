@@ -3,12 +3,12 @@ published: true
 layout: landing-page
 lang: en
 section: governance
-title: "Governance"
+title: "Governance of the HealthCare.gov Styleguide"
 "meta-title": "Purpose and governance of the HealthCare.gov Styleguide"
 "meta-description": "The purpose of the HealthCare.gov Styleguide is to centralize design, development, and editorial features used for HealthCare.gov.  It also serves to make assets publicly available in keeping with digital government strategy objectives as defined by the Federal Government."
 ---
 
-# Governance
+# Styleguide governance
 
 <div class="intro">
  Styleguide.HealthCare.gov provides a general overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov.</div>
