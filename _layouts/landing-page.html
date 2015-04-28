@@ -12,25 +12,31 @@ layout: base
 			</div>
 		</div>
 	</div>
-	<div class="container">        
-        {% if page.section != "governance" %}
-        		{% include sub-navigation.html %}                   
+	<div class="container">
+        {% if page.section == "governance" %}
+            {% assign pageCenter = true %}
         {% endif %}
+
+        {% if page.section == "about" %}
+            {% assign pageCenter = true %}
+        {% endif %}
+
+        {% include sub-navigation.html %}                   
 
 		{% if page.section == "assets" %}
 		<div id="hc-gov-assets">
 		{% endif %}
-
-            {% if page.section == "governance" %}
-		        <div class="col-sm-12">            
-                    <div class="governance">
-			            {{ content }}
-                    </div>
-            {% else %}
-               <div class="col-sm-9">
-                    {{ content }}
-            {% endif %}
-		        </div>
+            
+        {% if pageCenter %}
+		    <div class="col-sm-12">            
+                <div class="governance">
+			        {{ content }}
+                </div>
+        {% else %}
+            <div class="col-sm-9">
+                {{ content }}
+        {% endif %}
+		    </div>
 
 		{% if page.section == "assets" %}
 		</div>
