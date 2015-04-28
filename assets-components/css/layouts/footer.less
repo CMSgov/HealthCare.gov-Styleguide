@@ -73,6 +73,10 @@ footer {
 
   }
 
+  .glyphicons:before {
+    line-height:inherit;
+  }
+
   a {
     .font-md();
     /* remove default border-bottom for footer */
@@ -90,7 +94,11 @@ footer {
     }
   }
 
-  .glyphicons { padding-left:0; }
+  .glyphicons {
+    
+    padding-left:0;
+    font-size: 18px;
+  }
 
   h3,
   h3 a {
@@ -215,7 +223,6 @@ footer {
       }
     }
   }
-
 }
 
 /* this css is just for footer-small.html and footer-small-es.html */
@@ -378,6 +385,10 @@ footer hr.last-row {margin-bottom:20px;}
       font-size: 13px;
       line-height: 18px;
     }
+
+    .col-sm-1 {
+      padding-left:5px;
+    }
   }
 
   .tiny-text {
@@ -411,4 +422,18 @@ html[lang='es'] .icon.usagov {
 /* css taken from Aquilent footer, need to make this enrollment cta bigger on spanish to fit the copy */
 html[lang='es'] footer .enrollment-clock span:nth-child(2) {
   width: 170px;
+}
+
+@media (min-width: @screen-sm-min) {
+  
+  footer .col-sm-1 {
+    padding-left:0;
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  /* give the footer some padding on small screens */
+  footer {
+    padding: 20px 15px;
+  }
 }
