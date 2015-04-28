@@ -57,7 +57,7 @@ Accordion content can be placed at any location within the body of an [Explainer
 
 ## Navigation Accordions
 
-description text here
+At the tablet breakpoints, the Get Answers navigation deep links stacks and provide an expandable accordion for users to show or hide these links as needed.
 
 <div class="code-wrapper">
 	<div class="preview">
