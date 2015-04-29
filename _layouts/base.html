@@ -5,12 +5,12 @@
 <html lang="{{page.lang}}">
 
 <head>
-  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name='viewport' content='initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'/>
+  <meta name='viewport' content='initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no' />
   
 
-  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/style.css" />
 
   <script src="//assets.healthcare.gov/resources/libs/jquery/1.11/js/jquery.min.js"></script>
   <script src="//assets.healthcare.gov/resources/libs/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -23,15 +23,15 @@
   <script src="{{site.baseurl}}/js/faqs.js"></script>
   <script src="{{site.baseurl}}/assets-components/js/bootstrap-accessibility.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets-components/css/style.css">
-  <link rel="stylesheet" href="{{site.baseurl}}/assets-components/css/bootstrap-accessibility.css">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets-components/css/style.css" />
+  <link rel="stylesheet" href="{{site.baseurl}}/assets-components/css/bootstrap-accessibility.css" />
 
   {% if page.url == "/index.html" %}
-    <link rel="canonical" href="{{site.canonical-url}}/">
+    <link rel="canonical" href="{{site.canonical-url}} /">
     <meta name='description' content="{{ t.[page.lang].header.meta-description }}" />
     <title>{{ t.[page.lang].header.meta-title }}</title>
   {% else %}
-    <link rel="canonical" href="{{site.canonical-url}}{{page.url}}/">
+    <link rel="canonical" href="{{site.canonical-url}}{{page.url}} /">
     <meta name='description' content="{% if page.meta-description %}{{page.meta-description}}{% endif %}" />
     <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
   {% endif %}
