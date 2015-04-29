@@ -3,10 +3,10 @@ published: true
 layout: detail-page
 lang: en
 section: assets
-title: "Skip to Results Module"
-nav-title: "Skip to Results Module"
-"meta-title": "Get an overview of the Skip to Results Module pattern used on HealthCare.gov"
-"meta-description": "Get an overview of Skip to Results Module pattern used on HealthCare.gov"
+title: "Skip to Results"
+nav-title: "Skip to Results"
+"meta-title": "Get an overview of the Skip to Results pattern used on HealthCare.gov"
+"meta-description": "Get an overview of Skip to Results pattern used on HealthCare.gov to allow site visitors to select specific time frames."
 nav-category: patterns
 categories:
   - assets
@@ -15,14 +15,14 @@ categories:
 # Skip to Results
 
 <div class="intro">
-Content goes here
+Many of the HealthCare.gov tools that require user-entered information, such as the See Plans and Prices tool and the Special Enrollment Period Screener, display a module that allows site visitors to skip directly to results without completing every step.
 </div>
 
 <div class="hr"></div>
 
-## Skip to Results Module
+## Skip to Results module 
 
-Content goes here
+The Skip to Results module featured in various tools throughout HealthCare.gov is affixed to the right side of the browser window and appears after the user has entered their first set of background information. It allows them to skip directly to their results without completing every step along the path. 
 
 <div class="code-wrapper">
 	<div class="preview">
