@@ -12,7 +12,7 @@ categories:
   - assets
 ---
 
-# Skip to Results Module
+# Skip to Results
 
 <div class="intro">
 Content goes here
