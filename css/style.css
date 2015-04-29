@@ -7303,6 +7303,12 @@ a[name="skipnav"] {
   font-size: 16px;
   font-weight: normal;
 }
+#detail-page #hc-gov-assets .code-wrapper code,
+#detail-page #hc-gov-assets .code-wrapper kbd,
+#detail-page #hc-gov-assets .code-wrapper pre,
+#detail-page #hc-gov-assets .code-wrapper samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
 .grid-display div[class*="col-md-"] {
   padding: 0;
 }
