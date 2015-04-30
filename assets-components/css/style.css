@@ -8829,6 +8829,10 @@ fieldset[disabled] #hc-gov-assets .progress-button .progress-bar.active {
   right: 18px;
   top: 14px;
 }
+#hc-gov-assets .hero-btn {
+  font-size: 20px;
+  padding: 15px 35px;
+}
 #hc-gov-assets .table-title {
   font-size: 16px;
   font-weight: 700;
