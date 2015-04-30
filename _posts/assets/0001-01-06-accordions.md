@@ -22,14 +22,14 @@ The Accordion patterns used on HealthCare.gov are expandable sets of content int
 
 ## Content page Accordions
 
-Accordion content can be placed at any location within the body of an [Explainer or Article page](/design/page-layouts/). Typically, the accordion is placed at the end of a block of text, allowing the user to get more detailed information if needed.
+Accordion content can be placed at any location within the body of an [Explainer or Article page]({{site.baseurl}}/design/page-layouts/). Typically, the accordion is placed at the end of a block of text, allowing the user to get more detailed information if needed.
 
 > %faq%
 > [If you took too much or too little advance payment of your premium tax credit](id:APTCadjustment)
 >
 > : If you took too much or too little advance payment of your premium tax credit and you had to pay back the difference on your tax return, or you got a big credit:
 >
->    * Update your 2015 Marketplace coverage application to make sure it includes your best estimate of your income for the year and see if your tax credit has changed. Also update any household information you haven’t already reported to the Marketplace. See [how to update your account and your 2015 application now](/reporting-changes/).
+>    * Update your 2015 Marketplace coverage application to make sure it includes your best estimate of your income for the year and see if your tax credit has changed. Also update any household information you haven’t already reported to the Marketplace. See [how to update your account and your 2015 application now]({{site.baseurl}}/reporting-changes/).
 >    * You can change how much of your premium tax credit you take in advance for 2015 to make sure it’s not too high or too low. 
 
 
