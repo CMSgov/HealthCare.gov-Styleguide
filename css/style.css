@@ -6970,6 +6970,14 @@ a[name="skipnav"] {
 #landing-page .banner {
   height: 84px;
 }
+#landing-page h1,
+#landing-page .h1,
+#landing-page h2,
+#landing-page .h2,
+#landing-page h3,
+#landing-page .h3 {
+  font-family: "Bitter", "Georgia", serif;
+}
 #landing-page #hc-gov-assets h1 {
   margin-top: 0px;
   margin-bottom: 10px;
@@ -7302,12 +7310,6 @@ a[name="skipnav"] {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
-}
-#detail-page #hc-gov-assets .code-wrapper code,
-#detail-page #hc-gov-assets .code-wrapper kbd,
-#detail-page #hc-gov-assets .code-wrapper pre,
-#detail-page #hc-gov-assets .code-wrapper samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .grid-display div[class*="col-md-"] {
   padding: 0;
