@@ -202,15 +202,15 @@ These buttons are used throughout the site for yes/no and true/false type questi
 	<div class="question blue-bg">
 		<div class="question-label">When we have a multiple choice question here, display the choices vertically.</div>
 		<div class="btn-group btn-group-vertical" data-toggle="buttons">
-			<label class="btn radio-label">
+			<label tabindex="0" class="btn radio-label">
 				<input type="radio" name="multipleChoice" values="one" aria-label="Multiple Choice" />
 				First Option
 			</label>
-			<label class="btn radio-label">
+			<label tabindex="0" class="btn radio-label">
 				<input type="radio" name="multipleChoice" values="two" aria-label="Multiple Choice" />
 				Second Option
 			</label>
-			<label class="btn radio-label active">
+			<label tabindex="0" class="btn radio-label active">
 				<input type="radio" name="multipleChoice" values="three" aria-label="Multiple Choice" />
 				Third Option
 			</label>
@@ -221,15 +221,15 @@ These buttons are used throughout the site for yes/no and true/false type questi
 <code id="blue-multiple-code">&ltdiv class="question blue-bg"&gt
 	&ltdiv class="question-label"&gtWhen we have a multiple choice question here, display the choices vertically.&lt/div&gt
 	&ltdiv class="btn-group btn-group-vertical" data-toggle="buttons"&gt
-		&ltlabel class="btn radio-label"&gt
+		&ltlabel tabindex="0" class="btn radio-label"&gt
 			&ltinput type="radio" name="multipleChoice" values="one" aria-label="Multiple Choice" /&gt
 			First Option
 		&lt/label&gt
-		&ltlabel class="btn radio-label"&gt
+		&ltlabel tabindex="0" class="btn radio-label"&gt
 			&ltinput type="radio" name="multipleChoice" values="two" aria-label="Multiple Choice" /&gt
 			Second Option
 		&lt/label&gt
-		&ltlabel class="btn radio-label active"&gt
+		&ltlabel tabindex="0" class="btn radio-label active"&gt
 			&ltinput type="radio" name="multipleChoice" values="three" aria-label="Multiple Choice" /&gt
 			Third Option
 		&lt/label&gt
@@ -388,14 +388,14 @@ These buttons are used throughout the site for yes/no and true/false type questi
 <div class="code-wrapper">
 <div class="preview">
 	<div class="btn-group-vertical filter-question">
-		<label class="btn radio-label active">Active radio select</label>
-		<label class="btn radio-label">Default radio select</label>
+		<label tabindex="0" class="btn radio-label active">Active radio select</label>
+		<label tabindex="0" class="btn radio-label">Default radio select</label>
 	</div>
 </div>
 <pre>
-<code id="radio-code">&ltdiv class="btn-group-vertical filter-question"&gt
-	&ltlabel class="btn radio-label active"&gtActive radio select&lt/label&gt
-	&ltlabel class="btn radio-label"&gtDefault radio select&lt/label&gt
+<code id="radio-code">&ltdiv tabindex="0" class="btn-group-vertical filter-question"&gt
+	&ltlabel tabindex="0" class="btn radio-label active"&gtActive radio select&lt/label&gt
+	&ltlabel tabindex="0" class="btn radio-label"&gtDefault radio select&lt/label&gt
 &lt/div&gt</code>
 </pre>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="radio-code" role="button">Copy</a>
