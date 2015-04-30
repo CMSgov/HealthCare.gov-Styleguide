@@ -35,7 +35,7 @@ Demographic information entered by a user stacks as the user completes steps. A 
                 <h2 class="h3-style"><abbr>ZIP</abbr> Code </h2><span class="zip done">60001</span> <span class="county done">(McHenry County, IL)</span>
               </div>
               <div class="col-xs-3 col-sm-2">
-                <a class="btn btn-xs btn-edit pull-right zip-edit" role="button" target="_self">
+                <a href="#" class="btn btn-xs btn-edit pull-right zip-edit" role="button" target="_self">
                   <span>Edit <span class="sr-only">your <abbr>ZIP</abbr> Code</span></span>
                 </a>
               </div>
@@ -93,7 +93,7 @@ Demographic information entered by a user stacks as the user completes steps. A 
                 <h2 class="h3-style"><abbr>ZIP</abbr> Code </h2><span class="zip done">60001</span> <span class="county done">(McHenry County, IL)</span>
               </div>
               <div class="col-xs-3 col-sm-2">
-                <a class="btn btn-xs btn-edit pull-right zip-edit" role="button" target="_self">
+                <a href="#" class="btn btn-xs btn-edit pull-right zip-edit" role="button" target="_self">
                   <span>Edit <span class="sr-only">your <abbr>ZIP</abbr> Code</span></span>
                 </a>
               </div>
