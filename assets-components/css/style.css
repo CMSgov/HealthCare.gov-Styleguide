@@ -10117,6 +10117,14 @@ ul#hc-gov-assets .nav-tabs {
   width: 225px;
   font-family: 'Open Sans', sans-serif;
 }
+#hc-gov-assets .notification-box a,
+#hc-gov-assets .notification-box .glyphicon,
+#hc-gov-assets .notification-box span {
+  color: white;
+}
+#hc-gov-assets .notification-box a {
+  border-bottom: none;
+}
 #hc-gov-assets .notification-box button {
   color: #0e70b4;
   cursor: pointer;
