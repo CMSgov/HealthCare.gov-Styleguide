@@ -1,17 +1,52 @@
 @media (min-width: 768px) {
-	div.record-table .remove-label {
+	table.record-table .remove-label {
 		display:block;
 	}
-	div.record-table .remove-x {
+	table.record-table .remove-x {
 		display:none;
 	}
 }
 
 @media (max-width: 768px) {
-	div.record-table .remove-label {
+	table.record-table .remove-label {
 		display:none;
 	}
-	div.record-table .remove-x {
+	table.record-table .remove-x {
 		display:block;
 	}
+	table.record-table th,
+	table.record-table td {
+		font-size:10px;
+	}
 }
+
+table.record-table * {
+  color: #fff;
+}
+
+table.record-table {
+  background: #063346;
+  margin-bottom: 0;
+  table-layout: fixed;
+}
+
+table.record-table td,
+table.record-table th {
+  padding: 0.5em;
+  text-align:center;
+}
+
+table.record-table th {
+  background: #063346;
+  line-height:1em;
+}
+
+table.record-table tr:nth-child(even) td {
+  background: #052635;
+}
+
+table.record-table .btn .glyphicon {
+    color: #fff;
+}
+
+
