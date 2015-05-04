@@ -24,6 +24,8 @@ The Accordion patterns used on HealthCare.gov are expandable sets of content int
 
 Accordion content can be placed at any location within the body of an [Explainer or Article page]({{site.baseurl}}/design/page-layouts/). Typically, the accordion is placed at the end of a block of text, allowing the user to get more detailed information if needed.
 
+<h3 class="label-opensans">Example &amp; Code</h3>
+
 > %faq%
 > [If you took too much or too little advance payment of your premium tax credit](id:APTCadjustment)
 >
@@ -58,6 +60,8 @@ Accordion content can be placed at any location within the body of an [Explainer
 ## Navigation Accordions
 
 At the tablet breakpoints, the Get Answers navigation deep links stacks and provide an expandable accordion for users to show or hide these links as needed.
+
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 	<div class="preview">

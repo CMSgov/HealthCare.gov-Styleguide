@@ -6887,6 +6887,12 @@ a[name="skipnav"] {
 #detail-page .h3 {
   font-family: "Bitter", "Georgia", serif;
 }
+#homepage .label-opensans,
+#landing-page .label-opensans,
+#detail-page .label-opensans {
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 18px;
+}
 #landing-page h1,
 #detail-page h1 {
   margin-top: 0;
@@ -7271,6 +7277,7 @@ a[name="skipnav"] {
 }
 #detail-page #hc-gov-assets .alert > p {
   color: #FFF;
+  margin-bottom: 0;
 }
 #detail-page #hc-gov-assets #secondary-alert .hero-message {
   padding: 25px;
