@@ -26,47 +26,74 @@ Information specific to household members that is entered by a user stacks as th
 
 <div class="code-wrapper">
 	<div class="preview">
-		<div class="record-table">
-			<table class="table table-family-summary" id="household-list" summary="Your household members">
-				<thead>
-					<tr>
-						<th scope="col" class="household-number"><span class="sr-only">Person Number</span></th>
-						<th scope="col">Age</th>
-						<th scope="col">Tobacco user</th>
-						<th scope="col">Parent</th>
-						<th scope="col">Pregnant</th>
-						<th scope="col">Coverage</th>
-						<th scope="col"><span class="sr-only">Remove person</span></th>
-					</tr>
-				</thead>
-				<tbody aria-live="assertive" aria-atomic="false" aria-relevant="additions removals">
-					<tr data-ng-repeat="member in household.enrollees">
-						<td class="household-number">
-							<span class="sr-only">Person Number: </span><span id="household-member-number">1</span>
-						</td>
-						<td>
-							<span>23</span>
-							<input type="hidden" name="age" value="23">
-						</td>
-						<td class="yesno" aria label="not a smoker">
-							<input type="hidden" name="smoker" value="false">
-						</td>
-						<td class="yesno yes" aria-label="is a parent">
-							<input type="hidden" name="parent" value="true">
-						</td>
-						<td class="yesno" aria-label="not pregnant">
-							<input type="hidden" name="pregnant" value="false">
-						</td>
-						<td class="yesno" aria-label="does not have health coverage from an employer, Medicaid, CHIP, or Medicare">
-							<input type="hidden" name="mec" value="false">
-						</td>
-						<td aria-flowto="household-list" class="remove-item">
-							<a class="btn btn-remove" href="#" title="Remove person" aria-describedby="household-member-number" target="_self"><span class="glyphicon glyphicon-remove" aria-label="remove" aria-controls="household-list" aria-flowto="household-list"></span><span class="small"> <span class="btn-text" role="button">Remove <span class="sr-only"> this person from your household</span></span></span></a>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+
+		<div id="currenthousehold" class="record-table form-group no-margin">
+		  <table summary="Your household members" id="household-list" class="table table-family-summary">
+		    <thead>
+		      <tr>
+		        <th class="household-number" scope="col"><span class="sr-only">Person Number</span></th>
+		        <th scope="col">Age</th>
+		        <th scope="col">Tobacco user</th>
+		        <th scope="col">Parent</th>
+		        <th scope="col">Pregnant</th>
+		        <th scope="col">Coverage</th>
+		        <th scope="col"><span class="sr-only">Remove person</span></th>
+		      </tr>
+		    </thead>
+		    <tbody aria-relevant="additions removals" aria-atomic="false" aria-live="assertive">
+		      <tr>
+		        <td class="household-number">
+		          <span class="sr-only">Person Number: </span><span id="household-member-number">1</span>
+		        </td>
+		        <td>
+		          <span>23</span>
+		          <input type="hidden" name="age" value="23">
+		        </td>
+		        <td class="yesno" aria-label="not a smoker"></td>
+		        <td class="yesno yes" aria-label="is a parent">Yes</td>
+		        <td class="yesno yes" aria-label="pregnant">Yes</td>
+		        <td class="yesno" aria-label="does not have health coverage from an employer, Medicaid, CHIP, or Medicare">
+		          <input type="hidden" name="mec" value="false">
+		        </td>
+		        <td class="remove-item" aria-flowto="household-list"><a aria-describedby="household-member-number" title="Remove person" href="#" class="btn btn-remove" target="_self"><span aria-flowto="household-list" aria-controls="household-list" aria-label="remove" class="glyphicon glyphicon-remove remove-x"></span><span class="remove-label small"> <span role="button" class="btn-text">Remove <span class="sr-only"> this person from your household</span></span></span></a></td>
+		      </tr>
+		      <tr>
+		        <td class="household-number">
+		          <span class="sr-only">Person Number: </span><span id="household-member-number">2</span>
+		        </td>
+		        <td>
+		          <span>24</span>
+		          <input type="hidden" name="age" value="24">
+		        </td>
+		        <td class="yesno" aria-label="not a smoker"></td>
+		        <td class="yesno yes" aria-label="is a parent">Yes</td>
+		        <td class="yesno" aria-label="not pregnant"></td>
+		        <td class="yesno" aria-label="does not have health coverage from an employer, Medicaid, CHIP, or Medicare">
+		          <input type="hidden" name="mec" value="false">
+		        </td>
+		        <td class="remove-item" aria-flowto="household-list"><a aria-describedby="household-member-number" title="Remove person" href="#" class="btn btn-remove" target="_self"><span aria-flowto="household-list" aria-controls="household-list" aria-label="remove" class="glyphicon glyphicon-remove remove-x"></span><span class="remove-label small"> <span role="button" class="btn-text">Remove <span class="sr-only"> this person from your household</span></span></span></a></td>
+		      </tr>
+		      <tr>
+		        <td class="household-number">
+		          <span class="sr-only">Person Number: </span><span id="household-member-number">3</span>
+		        </td>
+		        <td>
+		          <span>2</span>
+		          <input type="hidden" name="age" value="2">
+		        </td>
+		        <td class="yesno" aria-label="not a smoker"></td>
+		        <td class="yesno" aria-label="not a parent"></td>
+		        <td class="yesno" aria-label="not pregnant"></td>
+		        <td class="yesno" aria-label="does not have health coverage from an employer, Medicaid, CHIP, or Medicare">
+		          <input type="hidden" name="mec" value="false">
+		        </td>
+		        <td class="remove-item" aria-flowto="household-list"><a aria-describedby="household-member-number" title="Remove person" href="#" class="btn btn-remove" target="_self"><span aria-flowto="household-list" aria-controls="household-list" aria-label="remove" class="glyphicon glyphicon-remove remove-x"></span><span class="remove-label small"> <span role="button" class="btn-text">Remove <span class="sr-only"> this person from your household</span></span></span></a></td>
+		      </tr>
+		    </tbody>
+		  </table>
 		</div>
+
+
 	</div>
 	<div id="record-table-code">
 		{% highlight text %}
@@ -84,7 +111,7 @@ Information specific to household members that is entered by a user stacks as th
 		</tr>
 	</thead>
 	<tbody aria-live="assertive" aria-atomic="false" aria-relevant="additions removals">
-		<tr data-ng-repeat="member in household.enrollees">
+		<tr>
 			<td class="household-number">
 				<span class="sr-only">Person Number: </span><span id="household-member-number">1</span>
 			</td>
