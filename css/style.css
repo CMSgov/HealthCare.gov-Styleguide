@@ -6867,6 +6867,41 @@ a[name="skipnav"] {
   top: 0;
   left: 0;
 }
+#homepage h1,
+#landing-page h1,
+#detail-page h1,
+#homepage .h1,
+#landing-page .h1,
+#detail-page .h1,
+#homepage h2,
+#landing-page h2,
+#detail-page h2,
+#homepage .h2,
+#landing-page .h2,
+#detail-page .h2,
+#homepage h3,
+#landing-page h3,
+#detail-page h3,
+#homepage .h3,
+#landing-page .h3,
+#detail-page .h3 {
+  font-family: "Bitter", "Georgia", serif;
+}
+#landing-page h1,
+#detail-page h1 {
+  margin-top: 0;
+  font-size: 34px;
+}
+#landing-page h2,
+#detail-page h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#landing-page .code-wrapper pre,
+#detail-page .code-wrapper pre {
+  font-size: 15px;
+}
 .header-wrap {
   border-top: #1295e8 3px solid;
   box-shadow: 0 2px 2px #e6e6e6;
@@ -6988,7 +7023,7 @@ a[name="skipnav"] {
   width: 75%;
   margin: 0 auto;
   float: none;
-  padding-top: 35px;
+  padding-top: 0;
 }
 #landing-page img {
   margin-top: 36px;
@@ -7172,7 +7207,7 @@ a[name="skipnav"] {
   padding-top: 35px;
 }
 #detail-page h3 {
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 36px;
   text-transform: uppercase;
 }
@@ -7302,12 +7337,6 @@ a[name="skipnav"] {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
-}
-#detail-page #hc-gov-assets .code-wrapper code,
-#detail-page #hc-gov-assets .code-wrapper kbd,
-#detail-page #hc-gov-assets .code-wrapper pre,
-#detail-page #hc-gov-assets .code-wrapper samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .grid-display div[class*="col-md-"] {
   padding: 0;

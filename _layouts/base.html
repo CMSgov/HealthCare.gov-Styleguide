@@ -27,11 +27,11 @@
   <link rel="stylesheet" href="{{site.baseurl}}/assets-components/css/bootstrap-accessibility.css" />
 
   {% if page.url == "/index.html" %}
-    <link rel="canonical" href="{{site.canonical-url}} /">
+    <link rel="canonical" href="{{site.canonical-url}}/">
     <meta name='description' content="{{ t.[page.lang].header.meta-description }}" />
     <title>{{ t.[page.lang].header.meta-title }}</title>
   {% else %}
-    <link rel="canonical" href="{{site.canonical-url}}{{page.url}} /">
+    <link rel="canonical" href="{{site.canonical-url}}{{page.url}}/">
     <meta name='description' content="{% if page.meta-description %}{{page.meta-description}}{% endif %}" />
     <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
   {% endif %}
