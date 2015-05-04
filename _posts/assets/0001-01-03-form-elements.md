@@ -22,6 +22,8 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 
 ## Table forms
 
+<h3 class="label-opensans">Example &amp; Code</h3>
+
 <div class="code-wrapper">
 <pre>
 <code id="form-code">&ltdiv id="table-form-container"&gt&lt/div&gt
@@ -63,6 +65,8 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 
 ## Fieldset
 
+<h3 class="label-opensans">Example &amp; Code</h3>
+
 <div class="code-wrapper">
 <div class="preview">
 	<fieldset>
@@ -81,6 +85,8 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 * * *
 
 ## Fieldset with Instructions
+
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 <div class="preview">
@@ -103,6 +109,8 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 * * *
 
 ## Blue background with subtitle
+
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 <div class="preview has-background">
@@ -128,6 +136,8 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 * * *
 
 ## Screener statements blue background
+
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 <div class="preview has-background">
@@ -172,9 +182,12 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 </div>
 
 * * *
+
 ## Screener statements white background
 
 These buttons are used throughout the site for yes/no and true/false type questions.
+
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 <div class="preview clearfix">
@@ -196,6 +209,8 @@ These buttons are used throughout the site for yes/no and true/false type questi
 * * *
 
 ## Multiple choice questions blue background
+
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 <div class="preview has-background">
@@ -243,6 +258,8 @@ These buttons are used throughout the site for yes/no and true/false type questi
 
 ## Dropdown questions blue background
 
+<h3 class="label-opensans">Example &amp; Code</h3>
+
 <div class="code-wrapper">
 <div class="preview has-background">
 	<div class="question blue-bg">
@@ -288,6 +305,8 @@ These buttons are used throughout the site for yes/no and true/false type questi
 * * *
 
 ## Dropdowns
+
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 <div class="preview">
@@ -363,6 +382,8 @@ These buttons are used throughout the site for yes/no and true/false type questi
 
 ## Questions
 
+<h3 class="label-opensans">Example &amp; Code</h3>
+
 <div class="code-wrapper">
 <div class="preview">
 	<div class="lite-card">
@@ -384,6 +405,8 @@ These buttons are used throughout the site for yes/no and true/false type questi
 * * *
 
 ## Radio selects
+
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 <div class="preview">

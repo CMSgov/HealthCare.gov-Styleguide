@@ -24,6 +24,8 @@ Many of the HealthCare.gov tools that require user-entered information, such as 
 
 The Skip to Results module featured in various tools throughout HealthCare.gov is affixed to the right side of the browser window and appears after the user has entered their first set of background information. It allows them to skip directly to their results without completing every step along the path. 
 
+<h3 class="label-opensans">Example &amp; Code</h3>
+
 <div class="code-wrapper">
 	<div class="preview">
 		<div class="control-group">
@@ -52,6 +54,8 @@ The Skip to Results module featured in various tools throughout HealthCare.gov i
 ## Skip to Results Module (with progress indicator)
 
 The Skip to Results module featured in various tools throughout Healthcare.gov is affixed to the right side of the browser window and appears after the user has entered their first set of background information. It allows users to skip directly to their results without completing every step along the path. This version of the Skip to Results Module also has a progress indicator to show the user how far along the process they are before opting to skip to results.
+
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 	<div class="preview">

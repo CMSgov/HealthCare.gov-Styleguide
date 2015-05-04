@@ -24,6 +24,7 @@ Many interactive tools used on HealthCare.gov present data as it is entered by t
 
 Demographic information entered by a user stacks as the user completes steps. A glyphicon checkmark is displayed to indicate that a step has been successfully completed.
 
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 <div class="preview has-background">
