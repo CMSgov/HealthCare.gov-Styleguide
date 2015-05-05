@@ -10136,6 +10136,55 @@ ul#hc-gov-assets .nav-tabs {
   padding: 6px;
   width: 225px;
 }
+#hc-gov-assets table.record-table {
+  background: #063346;
+  margin-bottom: 0;
+}
+#hc-gov-assets table.record-table * {
+  color: #fff;
+}
+#hc-gov-assets table.record-table td,
+#hc-gov-assets table.record-table th {
+  padding: 0.5em;
+  text-align: center;
+}
+#hc-gov-assets table.record-table th {
+  background: #063346;
+  line-height: 1em;
+}
+#hc-gov-assets table.record-table tr:nth-child(even) td {
+  background: #052635;
+}
+#hc-gov-assets table.record-table .btn .glyphicon {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  #hc-gov-assets table.record-table .remove-label {
+    display: block;
+  }
+  #hc-gov-assets table.record-table .remove-x {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #hc-gov-assets table.record-table .remove-label {
+    display: none;
+  }
+  #hc-gov-assets table.record-table .remove-x {
+    display: block;
+  }
+  #hc-gov-assets table.record-table th,
+  #hc-gov-assets table.record-table td {
+    font-size: 10px;
+    display: table-cell;
+  }
+}
+@media (max-width: 450px) {
+  #hc-gov-assets table.record-table th,
+  #hc-gov-assets table.record-table td {
+    font-size: 8px;
+  }
+}
 #hc-gov-assets .tophat {
   border-bottom: 4px solid #aaa;
 }
