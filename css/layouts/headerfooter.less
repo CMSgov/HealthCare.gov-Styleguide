@@ -54,12 +54,18 @@ HEADER and FOOTER styles-
 .header-link {
   .font-lg();
   line-height: 21px; // override
+  font-family: "Open Sans", sans-serif;
 
   color: @dark-blue;
   display: inline-block;
   float: left;
   font-weight: 700;
   padding: 20px 30px;
+
+  .btn {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+  }
 
   // Line up the outline-offset so that it doesn't slip off the page
   &:focus,
@@ -125,6 +131,7 @@ HEADER and FOOTER styles-
 
     .btn-sm {
       font-weight: bold;
+      font-family: "Open Sans", sans-serif;
     }
   }
 }
@@ -771,7 +778,7 @@ Header End*/
     .icon,
     .card .new.active
     /*input[type="checkbox"] + label span */{
-      background: url('@{static-base-path}/img/sprite@2x.png') no-repeat 0 0;
+      background: url('../images/sprite_matrix_v2@2x.png') no-repeat 0 0;
       background-size: 750px 350px;
     }
   }

@@ -1,0 +1,43 @@
+.faq-question {
+	padding-left:30px;
+
+	.question {
+		font-weight: normal;
+	}
+}
+
+
+#more-info {
+
+	h3 { 
+		display: block;
+	}
+
+	.faq-question { padding-left:0; }
+	
+	.left {
+		padding-right: 20px;
+		padding-left: 0;
+	}
+
+	.right {
+		padding-right: 0;
+		padding-left: 20px;
+	}
+
+	.faq-question .question {
+		font-size: 21px;
+		color: #666;
+		border-bottom: none;
+	}
+
+}
+
+@media (max-width: @screen-xs-max) {
+	#more-info {
+		.left,
+		.right {
+			padding: 0;
+		}
+	}
+}

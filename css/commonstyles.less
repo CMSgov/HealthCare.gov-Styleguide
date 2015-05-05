@@ -4,11 +4,6 @@
 Global Styles
 ---------------------------------------------------*/
 
-* {
-    color:#333;
-    font-family:"Open Sans",sans-serif;
-}
-
 body,
 input,
 button,
@@ -20,6 +15,7 @@ textarea {
 
 p {
   margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
 
@@ -61,12 +57,15 @@ label {
   }
 }
 
+.glyphicon { font-family: "Glyphicons Halflings"; }
+
 /************************ FORM RADIO BUTTONS & CHECKBOXES ************************/
 
 //TODO(kalvin): once LESS supports extending parametric mixins (on roadmap)
   //change all "._XXX-*" to "._XXX-*()"
   //so it doesn't show up uselessly in css output
-._select-input-textarea {
+._select-input-textarea,
+select {
   //TODO(kalvin): replace all border-radius with mixin;
   .font-md();
 
@@ -93,7 +92,6 @@ label {
 }
 
 select {
-  &:extend(._select-input-textarea all);
 
   &.small {
     &:extend(._select-input-small);
@@ -203,7 +201,7 @@ hr {
 
 #content {
   position: relative;
-  background: url('@{static-base-path}img/bg-content.png') 0 0 repeat;
+  background: url('../images/bg-content.png') 0 0 repeat;
 }
 
 .limiter {
@@ -215,4 +213,8 @@ hr {
 .basic-container {
   position: relative;
   padding: 30px 0 80px 0;
+}
+
+.bottom20 {
+  margin-bottom: 20px !important;
 }

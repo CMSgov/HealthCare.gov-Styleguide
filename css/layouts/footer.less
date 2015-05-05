@@ -1,6 +1,8 @@
 /* color taken from aquilent landing page, not used elsewhere */
 @footer-border-color: #e1e2e2;
 
+.grey-bg { background: #f7f7f7; }
+
 footer.lite-card {
   .font-md();
 
@@ -18,6 +20,63 @@ footer.lite-card {
 
 footer {
 
+  .font-md();
+
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
+
+  /* I believe the img location should be changed to something more like below,
+   however, I think this begs a larger discussion about where images will be
+   stored in final product so both MPL & Learn can access from shared location
+  background: url(../img/bg-footer.png) 0 0 repeat; */
+  background: #f7f7f7;
+  color: @dark-gray;
+
+  .row .col-sm-5 {
+    padding:0;
+  }
+
+  .row .col-sm-7,
+  .col-resources {
+    padding:0;
+
+    .list-unstyled {
+      margin-bottom:0;
+    }
+  }
+
+  .col-connect-with-us {
+    border-left: #e1e2e2 1px solid;
+  }
+
+  .row .col-sm-5.col-connect-with-us {
+    padding-left: 6%;
+  }
+
+  .col-resources li a,
+  .col-connect-with-us li a {
+  
+    .glyphicons,
+    .text {
+      color:#666;
+    }
+
+    &:hover {
+      .glyphicons,
+      .text {
+        color:#333;
+      }
+
+      .text { border-bottom:1px solid #333; }
+    }
+
+  }
+
+  .glyphicons:before {
+    line-height:inherit;
+  }
+
   a {
     .font-md();
     /* remove default border-bottom for footer */
@@ -33,6 +92,12 @@ footer {
       font-size: 20px;
       top: 2px;
     }
+  }
+
+  .glyphicons {
+    
+    padding-left:0;
+    font-size: 18px;
   }
 
   h3,
@@ -131,10 +196,12 @@ footer {
 
     .panel {
       background-color: transparent;
-      border-bottom: 1px solid @border-color;
+      border-bottom: 1px solid #e1e2e2;
 
       .box-shadow(none);
     }
+
+    .panel.no-border { border-bottom:none; margin-bottom:0;}
 
     .panel-heading {
       padding: 0;
@@ -156,7 +223,6 @@ footer {
       }
     }
   }
-
 }
 
 /* this css is just for footer-small.html and footer-small-es.html */
@@ -166,13 +232,15 @@ footer.footer-small {
   }
 }
 
+footer hr.last-row {margin-bottom:20px;}
+
 .icon {
   display: block;
     /* I believe the img location should be changed to something more like below,
    however, I think this begs a larger discussion about where images will be
    stored in final product so both MPL & Learn can access from shared location
   background: url(../img/sprite.png) 0 0 repeat; */
-  background: url('@{static-base-path}img/sprite@1x.png');
+  background: url('../images/sprite_matrix_v2.png');
   background-repeat: no-repeat;
   text-indent: -999em;
   text-align: left;
@@ -183,7 +251,7 @@ footer.footer-small {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and
 (min-device-pixel-ratio: 2) {
   .icon {
-    background: url('@{static-base-path}img/sprite@2x.png');
+    background: url('../images/sprite_matrix_v2@2x.png');
     background-size: 750px 350px;
   }
 }
@@ -218,18 +286,44 @@ footer.footer-small {
   width: 38px;
   height: 36px;
   background-position: -52px -87px;
+
+}
+
+.twitter:hover {
+  background-position:-244px -87px;
 }
 
 .facebook {
   width: 38px;
   height: 36px;
   background-position: -14px -87px;
+
+}
+
+.facebook:hover {
+  background-position:-206px -87px;
+}
+
+.google-plus {
+  width: 37px;
+  height: 36px;
+  background-position: -90px -87px;
+
+}
+
+.google-plus:hover {
+  background-position:-282px -87px;
 }
 
 .youtube {
   width: 38px;
   height: 36px;
   background-position: -127px -87px;
+
+}
+
+.youtube:hover {
+  background-position:-319px -87px;
 }
 
 .eagle {
@@ -237,6 +331,7 @@ footer.footer-small {
   height: 70px;
   background-position: -400px -81px;
   margin-right: 10px;
+  margin-bottom: 10px;
   float: left;
 }
 
@@ -290,6 +385,10 @@ footer.footer-small {
       font-size: 13px;
       line-height: 18px;
     }
+
+    .col-sm-1 {
+      padding-left:5px;
+    }
   }
 
   .tiny-text {
@@ -298,12 +397,14 @@ footer.footer-small {
   }
 
   /* css taken from Aquilent footer */
-  .icons-center {
+  .gov-icons-center {
     float: none!important;
     margin: 30px auto 0;
+    width:210px;
 
     &.eagle {
       margin-top: 0;
+      width:50px;
     }
   }
 
@@ -321,4 +422,18 @@ html[lang='es'] .icon.usagov {
 /* css taken from Aquilent footer, need to make this enrollment cta bigger on spanish to fit the copy */
 html[lang='es'] footer .enrollment-clock span:nth-child(2) {
   width: 170px;
+}
+
+@media (min-width: @screen-sm-min) {
+  
+  footer .col-sm-1 {
+    padding-left:0;
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  /* give the footer some padding on small screens */
+  footer {
+    padding: 20px 15px;
+  }
 }

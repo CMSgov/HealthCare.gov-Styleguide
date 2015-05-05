@@ -1,0 +1,59 @@
+table.record-table {
+
+	* {
+	  color: #fff;
+	}
+
+	background: #063346;
+	margin-bottom: 0;
+
+	td,
+	th {
+	  padding: 0.5em;
+	  text-align: center;
+	}
+
+	th {
+	  background: #063346;
+	  line-height: 1em;
+	}
+
+	tr:nth-child(even) td {
+	  background: #052635;
+	}
+
+	.btn .glyphicon {
+	    color: #fff;
+	}
+
+	@media (min-width: 768px) {
+		.remove-label {
+			display: block;
+		}
+		.remove-x {
+			display: none;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.remove-label {
+			display: none;
+		}
+		.remove-x {
+			display: block;
+		}
+		th,
+		td {
+			font-size: 10px;
+			display: table-cell;
+		}
+	}
+
+	@media (max-width: 450px) {
+		th,
+		td {
+			font-size: 8px;
+		}
+	}
+
+}
