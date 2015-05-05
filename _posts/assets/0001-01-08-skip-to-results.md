@@ -32,7 +32,7 @@ The Skip to Results module featured in various tools throughout HealthCare.gov i
 
 			<div class="notification-box">
 				<div><p>Based on the information you've given us so far, it looks like an exemption may apply to you</p></div>
-				<button id="seeResult" class="btn btn-primary" label="SEE RESULTS NOW">SEE RESULTS NOW</button>
+				<button id="seeResult" class="btn btn-primary" value="SEE RESULTS NOW">SEE RESULTS NOW</button>
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@ The Skip to Results module featured in various tools throughout HealthCare.gov i
 	<div>
 		<p>Based on the information you've given us so far, it looks like an exemption may apply to you</p>
 	</div>
-	<button id="seeResult" class="btn btn-primary" label="SEE RESULTS NOW">SEE RESULTS NOW</button>
+	<button id="seeResult" class="btn btn-primary" value="SEE RESULTS NOW">SEE RESULTS NOW</button>
 </div>
 		{% endhighlight %}
 	</div>
@@ -69,7 +69,7 @@ The Skip to Results module featured in various tools throughout Healthcare.gov i
 					<p>Select See plans now to view plans in your area.</p>
 
 				</div>
-				<button id="seeResult" class="btn btn-primary" label="SEE PLANS NOW">SEE PLANS NOW</button>
+				<button id="seeResult" class="btn btn-primary" value="SEE PLANS NOW">SEE PLANS NOW</button>
 			</div>
 		</div>
 	</div>
@@ -86,7 +86,7 @@ The Skip to Results module featured in various tools throughout Healthcare.gov i
 				<p>Select See plans now to view plans in your area.</p>
 
 			</div>
-			<button id="seeResult" class="btn btn-primary" label="SEE PLANS NOW">SEE PLANS NOW</button>
+			<button id="seeResult" class="btn btn-primary" value="SEE PLANS NOW">SEE PLANS NOW</button>
 		</div>
 		{% endhighlight %}
 	</div>
