@@ -23,6 +23,7 @@ Many interactive tools used throughout Healthcare.gov include visual feedback of
 ## Household Members Record Table 
 
 Information specific to household members that is entered by a user stacks as the user adds members. These records are numbered and presented in stacking rows with alternating background color. 
+<h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
 	<div class="preview has-dark-background">
