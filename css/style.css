@@ -6891,7 +6891,8 @@ a[name="skipnav"] {
 #landing-page .label-opensans,
 #detail-page .label-opensans {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
+  color: #333;
 }
 #landing-page h1,
 #detail-page h1 {
