@@ -1,57 +1,59 @@
-@media (min-width: 768px) {
-	table.record-table .remove-label {
-		display: block;
-	}
-	table.record-table .remove-x {
-		display: none;
-	}
-}
-
-@media (max-width: 768px) {
-	table.record-table .remove-label {
-		display: none;
-	}
-	table.record-table .remove-x {
-		display: block;
-	}
-	table.record-table th,
-	table.record-table td {
-		font-size: 10px;
-		display: table-cell;
-	}
-}
-
-@media (max-width: 450px) {
-	table.record-table th,
-	table.record-table td {
-		font-size: 8px;
-	}
-}
-
-table.record-table * {
-  color: #fff;
-}
-
 table.record-table {
-  background: #063346;
-  margin-bottom: 0;
-}
 
-table.record-table td,
-table.record-table th {
-  padding: 0.5em;
-  text-align: center;
-}
+	* {
+	  color: #fff;
+	}
 
-table.record-table th {
-  background: #063346;
-  line-height: 1em;
-}
+	background: #063346;
+	margin-bottom: 0;
 
-table.record-table tr:nth-child(even) td {
-  background: #052635;
-}
+	td,
+	th {
+	  padding: 0.5em;
+	  text-align: center;
+	}
 
-table.record-table .btn .glyphicon {
-    color: #fff;
+	th {
+	  background: #063346;
+	  line-height: 1em;
+	}
+
+	tr:nth-child(even) td {
+	  background: #052635;
+	}
+
+	.btn .glyphicon {
+	    color: #fff;
+	}
+
+	@media (min-width: 768px) {
+		.remove-label {
+			display: block;
+		}
+		.remove-x {
+			display: none;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.remove-label {
+			display: none;
+		}
+		.remove-x {
+			display: block;
+		}
+		th,
+		td {
+			font-size: 10px;
+			display: table-cell;
+		}
+	}
+
+	@media (max-width: 450px) {
+		th,
+		td {
+			font-size: 8px;
+		}
+	}
+
 }
