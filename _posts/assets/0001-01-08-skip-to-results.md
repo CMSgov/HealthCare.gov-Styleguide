@@ -53,7 +53,7 @@ The skip to results module featured in various tools throughout HealthCare.gov i
 
 ## Skip to results module (with progress indicator)
 
-This version of the Skip to results module includes a progress indicator to show how far along a user is in a process before they opt to skip to results.
+This version of the skip to results module includes a progress indicator to show how far along a user is in a process before they opt to skip to results.
 
 <h3 class="label-opensans">Example &amp; Code</h3>
 
