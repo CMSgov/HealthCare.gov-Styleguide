@@ -6893,6 +6893,7 @@ a[name="skipnav"] {
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 14px;
   color: #333;
+  text-transform: uppercase;
 }
 #landing-page h1,
 #detail-page h1 {
@@ -7216,7 +7217,7 @@ a[name="skipnav"] {
 #detail-page h3 {
   font-weight: 500;
   margin-top: 36px;
-  text-transform: uppercase;
+  font-size: 22px;
 }
 #detail-page h4 {
   font-weight: 600;
