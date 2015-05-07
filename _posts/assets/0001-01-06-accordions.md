@@ -22,7 +22,7 @@ The accordion patterns used on HealthCare.gov are expandable sets of content int
 
 ## Content page accordions
 
-Accordion content can be placed at any location within the body of an [Explainer or Article page]({{site.baseurl}}/design/page-layouts/). Typically, the accordion is placed at the end of a block of text, allowing the user to get more detailed information if needed.
+Accordion content can be placed at any location within the body of an [explainer or article page]({{site.baseurl}}/design/page-layouts/). Typically, the accordion is placed at the end of a block of text, allowing the user to get more detailed information if needed.
 
 <h3 class="label-opensans">Example &amp; Code</h3>
 
