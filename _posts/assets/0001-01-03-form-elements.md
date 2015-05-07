@@ -15,7 +15,7 @@ categories:
 # Form elements
 
 <div class="intro">
-There are many forms used throughout HealthCare.gov. Generally, forms are against a white or dark blue background. Below are the main elements that make up the forms.
+We use several forms throughout HealthCare.gov. Generally forms are presented against a white or dark blue background. Below are the main elements that make up the forms.
 </div>
 
 <div class="hr"></div>
@@ -84,7 +84,7 @@ There are many forms used throughout HealthCare.gov. Generally, forms are agains
 
 * * *
 
-## Fieldset with Instructions
+## Fieldset with instructions
 
 <h3 class="label-opensans">Example &amp; Code</h3>
 

@@ -14,7 +14,7 @@ categories:
 # Photography
 
 <div class="intro">
-Photography is used predominantly on the unauthenticated side of HealthCare.gov, namely on the home and main landing pages. Photos are used to support the message on the page, engage the consumer with identifiable images, and build trust.
+Photography is used predominantly on the unauthenticated side of HealthCare.gov, namely on the home and main landing pages. We use photos to support the message on the page, engage the consumer with identifiable images, and build trust.
 </div>
 
 <div class="hr"></div>
@@ -23,7 +23,7 @@ Photography is used predominantly on the unauthenticated side of HealthCare.gov,
 
 The photo on the homepage incorporates a soft, out-of-focus background with a sharp foreground image that focuses on the face or subject-in-action. This styling connects the site visitor with the person photographed on a more personal level. 
 
-The photography used in the site design is key to making an emotional connection with the user. On the homepage, the person in the photograph conveys confidence and ease, promoting a sense of comfort and trust. This is precisely how we want visitors to HealthCare.gov to feel.
+The photography used in the site design is key to making an emotional connection with the user. On the homepage, the person in the photograph conveys confidence and ease, promoting a sense of comfort and trust. This is precisely how we want HealthCare.gov visitors to feel.
 
 <div class="caption">Pre-open enrollment home</div>
 <img class="full" src="{{site.baseurl}}/images/design/photography/1_Hero.jpg" alt="Homepage Hero area photograph used during pre-Open Enrollment"/>
@@ -42,19 +42,19 @@ The subjects shown on major landing pages such as "Get Coverage" are portrayed a
 
 <div class="row">
 	<div class="col-sm-6">
-		<div class="caption">Individuals &amp; Families get coverage</div>
+		<div class="caption">Individuals &amp; Families Get Coverage</div>
 		<img class="full" src="{{site.baseurl}}/images/design/photography/4_GetCoverage.jpg" alt="Example of photography used on the Get Coverage landing page"/>
 	</div>
 	<div class="col-sm-6">
-		<div class="caption">Individuals &amp; Families change update plan</div>
+		<div class="caption">Individuals &amp; Families Change or Update Plan</div>
 		<img class="full" src="{{site.baseurl}}/images/design/photography/5_ChangeUpdate.jpg" alt="Example of photography used on the Individuals and Family section landing page"/>
 	</div>
 	<div class="col-sm-6">
-		<div class="caption">Small business for employers</div>
+		<div class="caption">Small business For Employers</div>
 		<img class="full" src="{{site.baseurl}}/images/design/photography/6_Employers.jpg" alt="Example of photography used on the Small Business for Employers landing page"/>
 	</div>
 	<div class="col-sm-6">
-		<div class="caption">Small business for employees</div>
+		<div class="caption">Small business For Employees</div>
 		<img class="full" src="{{site.baseurl}}/images/design/photography/7_Employees.jpg" alt="Example of photography used on the small business for employees landing page"/>
 	</div>
 </div>
