@@ -14,7 +14,7 @@ categories:
 # Typography
 
 <div class="intro">
-Designs have been stripped of all the unnecessary bells and whistles to place extra emphasis on the content. This magnifies the importance of well thought-out typography. The text must hold the site visitor’s attention and lead them down the page.
+We've stripped the design of HealthCare.gov of all the unnecessary bells and whistles to place extra emphasis on the content. This magnifies the importance of well thought-out typography. The text must hold the site visitor’s attention and lead them down the page.
 </div>
 
 <div class="hr"></div>

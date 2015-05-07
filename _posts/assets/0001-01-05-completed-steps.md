@@ -12,7 +12,7 @@ categories:
   - assets
 ---
 
-# Completed Steps
+# Completed steps
 
 <div class="intro">
 Many interactive tools used on HealthCare.gov present data as it is entered by the user. The data builds upon itself as the user completes steps along a process. In many cases this content can be edited after it has been entered. 
@@ -20,7 +20,7 @@ Many interactive tools used on HealthCare.gov present data as it is entered by t
 
 <div class="hr"></div>
 
-## Completed Steps: Tools 
+## Completed steps: Tools 
 
 Demographic information entered by a user stacks as the user completes steps. A glyphicon checkmark is displayed to indicate that a step has been successfully completed.
 

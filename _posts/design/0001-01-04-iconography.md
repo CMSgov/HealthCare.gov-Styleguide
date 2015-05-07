@@ -14,14 +14,14 @@ categories:
 # Iconography
 
 <div class="intro">
-The iconography used on HealthCare.gov is meant to provide a simple, easy-to-distinguish visual indicator of key actions or tasks and to provide visual interest or emphasis.
+We use iconography on HealthCare.gov to provide a simple, easy-to-distinguish visual indicator of key actions or tasks while creating stronger contextual emphasis on the page.
 </div>
 
 <div class="hr"></div>
 
 ## Bootstrap Glyphicons
 
-The Bootstrap Glyphicon family is the primary icon set used throughout HealthCare.gov. Glyphicons are used in various locations throughout the site including the Secondary CTA, the Action Bar, and the Footer.
+The Bootstrap Glyphicon family is the primary icon set used throughout HealthCare.gov. Glyphicons are used in various locations throughout the site including the secondary CTA, the action bar, and the footer.
 
 <br />
 <div class="iconography">

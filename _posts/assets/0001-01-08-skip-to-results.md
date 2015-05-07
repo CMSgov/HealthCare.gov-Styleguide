@@ -12,7 +12,7 @@ categories:
   - assets
 ---
 
-# Skip to Results
+# Skip to results
 
 <div class="intro">
 Many of the HealthCare.gov tools that require user-entered information, such as the See Plans and Prices tool and the Special Enrollment Period Screener, display a module that allows site visitors to skip directly to results without completing every step.
@@ -20,9 +20,9 @@ Many of the HealthCare.gov tools that require user-entered information, such as 
 
 <div class="hr"></div>
 
-## Skip to Results module 
+## Skip to results module 
 
-The Skip to Results module featured in various tools throughout HealthCare.gov is affixed to the right side of the browser window and appears after the user has entered their first set of background information. It allows them to skip directly to their results without completing every step along the path. 
+The skip to results module featured in various tools throughout HealthCare.gov is affixed to the right side of the browser window and appears after the user has entered their first set of background information. It allows them to skip directly to their results without completing every step along the path. 
 
 <h3 class="label-opensans">Example &amp; Code</h3>
 
@@ -51,9 +51,9 @@ The Skip to Results module featured in various tools throughout HealthCare.gov i
 
 * * *
 
-## Skip to Results module (with progress indicator)
+## Skip to results module (with progress indicator)
 
-The Skip to Results module featured in various tools throughout Healthcare.gov is affixed to the right side of the browser window and appears after the user has entered their first set of background information. It allows users to skip directly to their results without completing every step along the path. This version of the Skip to Results Module also has a progress indicator to show the user how far along the process they are before opting to skip to results.
+This version of the skip to results module includes a progress indicator to show how far along a user is in a process before they opt to skip to results.
 
 <h3 class="label-opensans">Example &amp; Code</h3>
 
