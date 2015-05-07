@@ -32,7 +32,7 @@ The Skip to Results module featured in various tools throughout HealthCare.gov i
 
 			<div class="notification-box">
 				<div><p>Based on the information you've given us so far, it looks like an exemption may apply to you</p></div>
-				<button id="seeResult" class="btn btn-primary" label="SEE RESULTS NOW">SEE RESULTS NOW</button>
+				<button id="seeResult" class="btn btn-primary" value="SEE RESULTS NOW">SEE RESULTS NOW</button>
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@ The Skip to Results module featured in various tools throughout HealthCare.gov i
 	<div>
 		<p>Based on the information you've given us so far, it looks like an exemption may apply to you</p>
 	</div>
-	<button id="seeResult" class="btn btn-primary" label="SEE RESULTS NOW">SEE RESULTS NOW</button>
+	<button id="seeResult" class="btn btn-primary" value="SEE RESULTS NOW">SEE RESULTS NOW</button>
 </div>
 		{% endhighlight %}
 	</div>
@@ -51,7 +51,7 @@ The Skip to Results module featured in various tools throughout HealthCare.gov i
 
 * * *
 
-## Skip to Results Module (with progress indicator)
+## Skip to Results module (with progress indicator)
 
 The Skip to Results module featured in various tools throughout Healthcare.gov is affixed to the right side of the browser window and appears after the user has entered their first set of background information. It allows users to skip directly to their results without completing every step along the path. This version of the Skip to Results Module also has a progress indicator to show the user how far along the process they are before opting to skip to results.
 
@@ -64,12 +64,12 @@ The Skip to Results module featured in various tools throughout Healthcare.gov i
 			<div class="notification-box">
 				<div>
 
-					<p><strong><a class="tip" aria-hidden="true" href="#" data-toggle="tooltip" data-placement="left" data-trigger="hover" title="" target="_self" data-original-title="If you go to plan results without answering these questions the cost estimates for the plans you’ll see won’t include the cost savings you might qualify for like a premium tax credit. Also the plan results won’t be specific to you and your household. You’ll see plans for a single person age 35 and a non-parent."><span class="glyphicon glyphicon-info-sign" aria-label="information"></span> <span data-ng-bind="progress" class="ng-binding">50</span>% of questions answered</a></strong></p>
+					<p><strong><a tabindex="0" role="button" class="tip" aria-hidden="true" href="#" data-toggle="tooltip" data-placement="left" data-trigger="hover focus" title="" target="_self" data-original-title="If you go to plan results without answering these questions the cost estimates for the plans you’ll see won’t include the cost savings you might qualify for like a premium tax credit. Also the plan results won’t be specific to you and your household. You’ll see plans for a single person age 35 and a non-parent."><span class="glyphicon glyphicon-info-sign" aria-label="information"></span> <span data-ng-bind="progress" class="ng-binding">50</span>% of questions answered</a></strong></p>
 
 					<p>Select See plans now to view plans in your area.</p>
 
 				</div>
-				<button id="seeResult" class="btn btn-primary" label="SEE PLANS NOW">SEE PLANS NOW</button>
+				<button id="seeResult" class="btn btn-primary" value="SEE PLANS NOW">SEE PLANS NOW</button>
 			</div>
 		</div>
 	</div>
@@ -81,12 +81,12 @@ The Skip to Results module featured in various tools throughout Healthcare.gov i
 		<div class="notification-box">
 			<div>
 
-				<p><strong><a class="tip" aria-hidden="true" href="#" data-toggle="tooltip" data-placement="left" data-trigger="hover" title="" target="_self" data-original-title="If you go to plan results without answering these questions the cost estimates for the plans you’ll see won’t include the cost savings you might qualify for like a premium tax credit. Also the plan results won’t be specific to you and your household. You’ll see plans for a single person age 35 and a non-parent."><span class="glyphicon glyphicon-info-sign" aria-label="information"></span> <span data-ng-bind="progress" class="ng-binding">50</span>% of questions answered</a></strong></p>
+				<p><strong><a tabindex="0" role="button" class="tip" aria-hidden="true" href="#" data-toggle="tooltip" data-placement="left" data-trigger="hover focus" title="" target="_self" data-original-title="If you go to plan results without answering these questions the cost estimates for the plans you’ll see won’t include the cost savings you might qualify for like a premium tax credit. Also the plan results won’t be specific to you and your household. You’ll see plans for a single person age 35 and a non-parent."><span class="glyphicon glyphicon-info-sign" aria-label="information"></span> <span data-ng-bind="progress" class="ng-binding">50</span>% of questions answered</a></strong></p>
 
 				<p>Select See plans now to view plans in your area.</p>
 
 			</div>
-			<button id="seeResult" class="btn btn-primary" label="SEE PLANS NOW">SEE PLANS NOW</button>
+			<button id="seeResult" class="btn btn-primary" value="SEE PLANS NOW">SEE PLANS NOW</button>
 		</div>
 		{% endhighlight %}
 	</div>
