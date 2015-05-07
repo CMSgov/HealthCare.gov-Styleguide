@@ -15,12 +15,12 @@ categories:
 # Accordions
 
 <div class="intro">
-The Accordion patterns used on HealthCare.gov are expandable sets of content intended to reduce the amount of text initially delivered on a page. They also allow site visitors to request more text without having to leave a page. Accordions are typically found on Explainer and Article pages and are also applied to sets of in-page navigation at various responsive breakpoints.
+The accordion patterns used on HealthCare.gov are expandable sets of content intended to reduce the amount of text initially delivered on a page. They also allow site visitors to request more text without having to leave a page. We typically use accordions on explainer and article pages as well as on some sets of in-page navigation at various responsive breakpoints.
 </div>
 
 <div class="hr"></div>
 
-## Content page Accordions
+## Content page accordions
 
 Accordion content can be placed at any location within the body of an [Explainer or Article page]({{site.baseurl}}/design/page-layouts/). Typically, the accordion is placed at the end of a block of text, allowing the user to get more detailed information if needed.
 
@@ -59,7 +59,7 @@ Accordion content can be placed at any location within the body of an [Explainer
 
 ## Navigation Accordions
 
-At the tablet breakpoints, the Get Answers navigation deep links stacks and provide an expandable accordion for users to show or hide these links as needed.
+The More Information section on the Get Answers page collapses at tablet breakpoints. The links beneath each topic are hidden from display unless a user opts to reveal them using the accordion caret. 
 
 <h3 class="label-opensans">Example &amp; Code</h3>
 
