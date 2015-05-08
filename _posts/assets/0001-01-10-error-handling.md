@@ -12,17 +12,17 @@ categories:
   - assets
 ---
 
-# Error Handling
+# Error handling
 
 <div class="intro">
-Content goes here
+When a user enters information into a form field that doesn't conform to accepted values for that field, an error message is displayed. We strive to write instructive, clear errors messages so the person interacting with the form knows exactly what type of information should be entered into the field, and in  what format. 
 </div>
 
 <div class="hr"></div>
 
-## Error Handling and Messaging 
+## Error handling and messaging 
 
-Content goes here
+
 
 <h3 class="label-opensans">Example &amp; Code</h3>
 
