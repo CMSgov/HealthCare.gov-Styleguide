@@ -15,7 +15,7 @@ categories:
 # Secondary CTA 
 
 <div class="intro">
-There are two variations of the secondary call to action (CTA). The Individuals &amp; Families and Small Businesses are slight variations of one another. This module is "dynamic" in the sense that it can be turned "off" or "on" by a content team depending on whether there is messaging to display. The container height should be fixed at 100px. Character limitations exist to prevent copy from wrapping in the English version of the site. Glyphicons are used for the icons and the green CTA button uses the standard green button treatment.
+There are two variations of the secondary call to action (CTA). The Individuals &amp; Families and Small Businesses are slight variations of one another. This module is "dynamic" in the sense that it can be turned "off" or "on" by a content team depending on whether there is messaging to display. The container height should be fixed at 100px. Character limitations exist to prevent copy from wrapping. Glyphicons are used for the icons and the green CTA button uses the standard green button treatment.
 </div>
 
 <div class="hr"></div>

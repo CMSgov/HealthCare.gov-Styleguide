@@ -57,7 +57,7 @@ Accordion content can be placed at any location within the body of an [explainer
 
 <hr />
 
-## Navigation Accordions
+## Navigation accordions
 
 The More Information section on the Get Answers page collapses at tablet breakpoints. The links beneath each topic are hidden from display unless a user opts to reveal them using the accordion caret. 
 
