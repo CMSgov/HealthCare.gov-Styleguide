@@ -22,7 +22,7 @@ When a user enters information into a form field that doesn't conform to accepte
 
 ## Error handling and messaging 
 
-The error message display is made up of multiple parts for maximum visibility and accessibilty. A message above the form, in white text on a red (#B01827) background, describes  the number and type of errors on the form. Beneath each form field instructions in red text outline kind of information should be entered in that specific form field.  Additionally, each form field with an error is surrounded by a red border.
+The error message display is made up of multiple parts for maximum visibility and accessibility. A message above the form, in white text on a red (#B01827) background, describes the number and type of errors on the form. Beneath each form field instructions, in red text, describe what kind of information should be entered into that specific form field. Additionally, each form field with an error is surrounded by a red border.
 
 <h3 class="label-opensans">Example &amp; Code</h3>
 
