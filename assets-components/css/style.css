@@ -10185,6 +10185,73 @@ ul#hc-gov-assets .nav-tabs {
     font-size: 8px;
   }
 }
+#hc-gov-assets .error-styling {
+  padding: 20px;
+}
+#hc-gov-assets .error-styling .error-msg {
+  background: #B01827;
+  color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+#hc-gov-assets .error-styling .error-msg p.error-title,
+#hc-gov-assets .error-styling .error-msg p.error-message {
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+#hc-gov-assets .error-styling .error-msg p.error-title {
+  font-weight: bold;
+  font-size: 15px;
+}
+#hc-gov-assets .error-styling .form-select select.errorBorder,
+#hc-gov-assets .error-styling .form-control.errorBorder {
+  border: 2px #B01827 solid;
+  width: 100%;
+  background: #eee;
+  font-size: 15px;
+  height: 45px;
+  color: #777;
+  padding-left: 15px;
+}
+#hc-gov-assets .error-styling .no-padding-left {
+  padding-left: 0;
+}
+#hc-gov-assets .error-styling .no-padding-right {
+  padding-right: 0;
+}
+#hc-gov-assets .error-styling .error-text {
+  color: #a00;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+#hc-gov-assets .error-styling label,
+#hc-gov-assets .error-styling .privacy {
+  font-size: 14px;
+}
+#hc-gov-assets .error-styling .footer {
+  margin-top: 25px;
+}
+#hc-gov-assets .error-styling .dropdown .caret,
+#hc-gov-assets .error-styling .form-select .caret {
+  position: absolute;
+  pointer-events: none;
+  top: 20px;
+  right: 12px;
+}
+#hc-gov-assets .error-styling .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 10px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
 #hc-gov-assets .tophat {
   border-bottom: 4px solid #aaa;
 }
