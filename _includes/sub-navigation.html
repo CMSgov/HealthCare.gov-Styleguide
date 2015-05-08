@@ -1,6 +1,6 @@
 <div class="col-sm-3">
 	<div class="subnav-wrapper">
-		<ul class="subnav">
+		<ul class="subnav" aria-label="sub navigation" role="navigation">
 			{% comment %}<!-- Variable Assignment -->{% endcomment %}
 			{% assign subNav = false %}
 			{% assign currentCategory = "" %}
@@ -48,7 +48,7 @@
 
 	{% if page.section != 'governance' || page.section != 'about'%}
 		<div class="mobile-subnav-wrapper">
-			<select class="form-control" name="dropdown-name" aria-label="menu" data-type="" onchange="location = this.options[this.selectedIndex].value;">
+			<select class="form-control" name="dropdown-name" aria-label="sub navigation" role="navigation" data-type="" onchange="location = this.options[this.selectedIndex].value;">
 				<option value="">Menu</option>
 				{% for post in site.posts reversed %}
 					{% comment %}<!-- Iterate Over Pages that match landing page / section -->{% endcomment %}

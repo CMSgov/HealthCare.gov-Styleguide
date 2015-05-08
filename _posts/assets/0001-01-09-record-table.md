@@ -12,17 +12,18 @@ categories:
   - assets
 ---
 
-# Record Table
+# Record table
 
 <div class="intro">
-Many interactive tools used throughout Healthcare.gov include visual feedback of user entered data. This feedback builds upon itself as the user completes the pertinent steps along the process. In many cases this content is able to be edited after it has been entered. Record table data is similar to the Completed Steps pattern and is ultimately added to the information included within a completed step.
+We use many interactive tools on HealthCare.gov which present data as it is entered by the user. The data builds upon itself as the user completes steps along a process. In many cases this content can be edited after it has been entered. The data captured in the record table is ultimately added to the information included within a completed step.
 </div>
 
 <div class="hr"></div>
 
-## Household Members Record Table 
+## Household members record table 
 
-Information specific to household members that is entered by a user stacks as the user adds members. These records are numbered and presented in stacking rows with alternating background color. 
+As a user enters information about specific household members, the data for each member is presented as a new row in the record table. These records are numbered and presented in stacking rows with alternating background color.
+
 <h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">

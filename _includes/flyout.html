@@ -1,6 +1,6 @@
 <div id="sidr" class="visible-xs">
 	<div id="sidr-submenu">
-		<ul class="utility-section">
+		<ul class="utility-section" aria-label="main" role="navigation">
 			{% for navItem in t.[page.lang].header.nav %}
 		  		<li><a href="{{site.baseurl}}{{ navItem.location }}">{{ navItem.link }}</a></lI>
 		  	{% endfor %}
