@@ -31,7 +31,7 @@ HealthCare.gov utilizes the Bootstrap responsive, mobile-first fluid grid system
 
 ## Landing
 
-We designed the first-tier landing pages throughout HealthCare.gov to engage users with bold, engaging imagery and simplified, clutter-free content to direct consumers to the most pertinent action(s) to take. All of the landing pages use the global header, hero and footer modules and any combination of the following major modules: secondary call to action (CTA), action bar, email signup, blog and listings. The hero module has a variable height, with a minimum height of 380px. Like the secondary CTA and action bar, this module should span 100% width.
+We designed the first-tier landing pages throughout HealthCare.gov to engage users with bold, engaging imagery and simplified, clutter-free content to direct consumers to the most pertinent action(s) to take. All of the landing pages use the global header, hero and footer modules, and any combination of the following major modules: secondary call to action (CTA), action bar, email signup, blog, and listings. The hero module has a variable height, with a minimum height of 380px. Like the secondary CTA and action bar, this module should span 100% width.
 
 <div class="row">
 	<div class="col-sm-6">
@@ -78,7 +78,7 @@ We designed the first-tier landing pages throughout HealthCare.gov to engage use
 
 ## Explainer / Article
 
-Explainer and article pages contain detailed information for consumers on specific topics. Explainer pages include multiple subsections of content under a particular topic and require the use of subnavigation. Article pages are typically used for content outside or ancillary to the topics covered in the explainers. Both types of templates also include a page feedback component below the main content area.
+Explainer and article pages contain detailed information for consumers on specific topics. Explainer pages include multiple subsections of content under a particular topic and require the use of subnavigation. Article pages are typically used for content outside, or ancillary to, the topics covered in the explainers. Both types of templates also include a page feedback component below the main content area.
 
 <div class="row">
 	<div class="col-sm-6">
@@ -94,7 +94,7 @@ Explainer and article pages contain detailed information for consumers on specif
 <hr>
 
 ## Blog
-The Healthcare.gov Blog is comprised of four major sections including the page title, posts, filters and on individual post pages, a comments section. Blog posts and comments take up the first eight columns on the left, with Filters taking up the remaining four to the right.
+The Healthcare.gov Blog is comprised of four major sections including the page title, posts, filters, and on individual post pages, a comments section. Blog posts and comments take up the first eight columns on the left, with filters taking up the remaining four to the right.
 
 <div class="row">
 	<div class="col-sm-6">
