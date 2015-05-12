@@ -10267,7 +10267,7 @@ ul#hc-gov-assets .nav-tabs {
 }
 #hc-gov-assets .error-styling #error-title,
 #hc-gov-assets .error-styling .error-msg h2 .errorNumber {
-  font-family: Bitter, Georgia, serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   color: #fff;
 }
