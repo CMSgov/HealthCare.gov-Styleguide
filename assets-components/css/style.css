@@ -9328,6 +9328,7 @@ ul#hc-gov-assets .nav-tabs {
   appearance: none;
   text-indent: 0.01px;
   text-overflow: '';
+  width: 100%;
 }
 #hc-gov-assets .form-select select::-ms-expand {
   display: none;
