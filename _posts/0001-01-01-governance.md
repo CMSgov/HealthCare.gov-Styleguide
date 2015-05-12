@@ -13,6 +13,7 @@ title: "Governance of the HealthCare.gov Styleguide"
 <div class="intro">
 Styleguide.HealthCare.gov provides the major styles, page layouts, and assets for HealthCare.gov. It’s geared primarily towards HealthCare.gov team designers and developers to ensure that the design of all future styles, interfaces, and page layouts adhere to the same guidelines. </div>
 
+
 <div class="hr"></div>
 
 As a collaborative and open source project, both federal employees and members of the public are strongly encouraged to improve the Styleguide through their [contributions](https://github.com/CMSgov/cmsgov.github.io/blob/master/CONTRIBUTING.md). 
