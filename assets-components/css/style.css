@@ -10188,11 +10188,30 @@ ul#hc-gov-assets .nav-tabs {
 #hc-gov-assets .error-styling {
   padding: 20px;
 }
+#hc-gov-assets .error-styling .shadow_select {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+#hc-gov-assets .error-styling .shadow_select:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+}
 #hc-gov-assets .error-styling .error-msg {
-  background: #B01827;
+  background: #B20000;
   color: #fff;
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 20px 15px;
+  margin-bottom: 10px;
 }
 #hc-gov-assets .error-styling .error-msg p.error-title,
 #hc-gov-assets .error-styling .error-msg p.error-message {
@@ -10208,11 +10227,11 @@ ul#hc-gov-assets .nav-tabs {
 }
 #hc-gov-assets .error-styling .form-select select.errorBorder,
 #hc-gov-assets .error-styling .form-control.errorBorder {
-  border: 2px #B01827 solid;
+  border: 1px #B20000 solid;
   width: 100%;
   background: #eee;
   font-size: 15px;
-  height: 45px;
+  height: 40px;
   color: #777;
   padding-left: 15px;
 }
@@ -10222,18 +10241,39 @@ ul#hc-gov-assets .nav-tabs {
 #hc-gov-assets .error-styling .no-padding-right {
   padding-right: 0;
 }
+#hc-gov-assets .error-styling .error-text-box {
+  border: medium none;
+  color: #fff;
+  cursor: pointer;
+  display: list-item;
+  margin: 0 0 5px 20px;
+  text-decoration: underline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
 #hc-gov-assets .error-styling .error-text {
   color: #a00;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0px;
+  line-height: 1.25em;
+  margin-top: 5px;
 }
-#hc-gov-assets .error-styling label,
-#hc-gov-assets .error-styling .privacy {
-  font-size: 14px;
+#hc-gov-assets .error-styling .error-msg h2 {
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  color: #fff;
 }
-#hc-gov-assets .error-styling .footer {
-  margin-top: 25px;
+#hc-gov-assets .error-styling #error-title,
+#hc-gov-assets .error-styling .error-msg h2 .errorNumber {
+  font-family: Bitter, Georgia, serif;
+  font-size: 18px;
+  color: #fff;
+}
+#hc-gov-assets .error-styling label {
+  font-size: 15px;
+  margin-top: 15px;
 }
 #hc-gov-assets .error-styling .dropdown .caret,
 #hc-gov-assets .error-styling .form-select .caret {
