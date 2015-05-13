@@ -144,16 +144,18 @@ We use several forms throughout HealthCare.gov. Generally forms are presented ag
 	<div class="question-section blue-bg clearfix">
 		<div class="filter-question form-group">
 			<div class="visible-radio-label sm hidden-md hidden-lg">When we have many screener statements, stack them as filter questions.</div>
-			<div class="toggle-buttons" data-toggle="buttons">
-				<a href="javascript:;" class="btn btn-primary radio-label active">
-					<input type="radio" name="filter-question-name" value="true" aria-label="yes" checked="checked" />
-					yes
-				</a>
-				<a href="javascript:;" class="btn btn-primary radio-label">
-					<input type="radio" name="filter-question-name" value="false" aria-label="no" checked="checked" />
-					no
-				</a>
-			</div>
+			<fieldset>
+				<div class="toggle-buttons">
+					<label for="screener-statements-blue-background-01" class="btn radio-label">
+						<input id="screener-statements-blue-background-01" type="radio" name="filter-question-name" value="true" aria-label="yes" checked="checked" />
+						yes
+					</label>
+					<label for="screener-statements-blue-background-02" class="btn radio-label">
+						<input type="radio" name="filter-question-name" value="false" aria-label="no" checked="checked" />
+						no
+					</label>
+				</div>
+			</fieldset>
 			<span class="visible-radio-label col-md-10 hidden-sm hidden-xs">When we have many screener statements, stack them as filter questions.</span>
 			<div class="spacer spacer-bottom25 hidden-md hidden-lg"></div>
 		</div>
