@@ -6906,6 +6906,10 @@ a[name="skipnav"] {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+#landing-page h3,
+#detail-page h3 {
+  font-size: 20px;
+}
 #landing-page .code-wrapper pre,
 #detail-page .code-wrapper pre {
   font-size: 15px;
