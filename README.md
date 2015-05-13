@@ -43,6 +43,8 @@ We provide compiled CSS (`style.css`), as well as the CSS Less source. Fonts fro
 - `https://assets.healthcare.gov/resources/libs/jquery/1.11/js/jquery.min.js`
 - `https://assets.healthcare.gov/resources/libs/bootstrap/3.1.1/js/bootstrap.min.js`
 
+Note: [Assets.healthcare.gov](https://asssets.healthcare.gov) gives you Section 508 compliant, cross-browser compatible UI components that you can use in your accessible web site or web application. Assets is an accessible, responsive, and modern framework.
+
 ## Bugs and feature requests
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/CMSgov/HealthCare.gov-Styleguide/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/CMSgov/HealthCare.gov-Styleguide/issues/new).
