@@ -10242,6 +10242,14 @@ ul#hc-gov-assets .nav-tabs {
 #hc-gov-assets .error-styling .no-padding-right {
   padding-right: 0;
 }
+@media (max-width: 991px) {
+  #hc-gov-assets .error-styling .no-padding-left {
+    padding-right: 0;
+  }
+  #hc-gov-assets .error-styling .no-padding-right {
+    padding-left: 0;
+  }
+}
 #hc-gov-assets .error-styling .error-text-box {
   border: medium none;
   color: #fff;
