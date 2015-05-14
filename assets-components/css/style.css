@@ -10630,6 +10630,19 @@ ul#hc-gov-assets .nav-tabs {
 #hc-gov-assets .sidebar .panel-body .select-filter:last-child {
   border-bottom: 0;
 }
+#hc-gov-assets .radio-label {
+  position: relative;
+}
+#hc-gov-assets .radio-label input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+#hc-gov-assets .radio-label-checked {
+  background: #12890E!important;
+  color: #fff!important;
+}
 @font-face {
   font-family: 'Glyphicons Regular';
   src: url('../fonts/glyphicons-regular/fonts/glyphicons-regular.eot');

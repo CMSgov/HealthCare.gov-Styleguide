@@ -144,42 +144,42 @@ We use several forms throughout HealthCare.gov. Generally forms are presented ag
 	<div class="question-section blue-bg clearfix">
 		<div class="filter-question form-group">
 			<div class="visible-radio-label sm hidden-md hidden-lg">When we have many screener statements, stack them as filter questions.</div>
-			<fieldset>
-				<div class="toggle-buttons">
-					<label for="screener-statements-blue-background-01" class="btn radio-label">
-						<input id="screener-statements-blue-background-01" type="radio" name="filter-question-name" value="true" aria-label="yes" checked="checked" />
-						yes
-					</label>
-					<label for="screener-statements-blue-background-02" class="btn radio-label">
-						<input type="radio" name="filter-question-name" value="false" aria-label="no" checked="checked" />
-						no
-					</label>
-				</div>
-			</fieldset>
+			<div class="toggle-buttons">
+				<label class="btn radio-label">
+					<input type="radio" name="filter-question-name" value="true"/>
+					yes
+				</label>
+				<label class="btn radio-label">
+					<input type="radio" name="filter-question-name" value="false"/>
+					no
+				</label>
+			</div>
 			<span class="visible-radio-label col-md-10 hidden-sm hidden-xs">When we have many screener statements, stack them as filter questions.</span>
 			<div class="spacer spacer-bottom25 hidden-md hidden-lg"></div>
 		</div>
 	</div>
 </div>
-<pre>
-<code id="blue-screener-code">&ltdiv class="question-section blue-bg clearfix"&gt
-	&ltdiv class="filter-question form-group"&gt
-		&ltdiv class="visible-radio-label sm hidden-md hidden-lg"&gtWhen we have many screener statements, stack them as filter questions.&lt/div&gt
-		&ltdiv class="toggle-buttons" data-toggle="buttons"&gt
-			&lta href="javascript:;" class="btn btn-primary radio-label active"&gt
-				&ltinput type="radio" name="filter-question-name" value="true" aria-label="yes" checked="checked" /&gt
+<div id="blue-screener-code">
+{% highlight text %}
+<div class="question-section blue-bg clearfix">
+	<div class="filter-question form-group">
+		<div class="visible-radio-label sm hidden-md hidden-lg">When we have many screener statements, stack them as filter questions.</div>
+		<div class="toggle-buttons">
+			<label class="btn radio-label">
+				<input type="radio" name="filter-question-name" value="true"/>
 				yes
-			&lt/a&gt
-			&lta href="javascript:;" class="btn btn-primary radio-label"&gt
-				&ltinput type="radio" name="filter-question-name" value="false" aria-label="no" checked="checked" /&gt
+			</label>
+			<label class="btn radio-label">
+				<input type="radio" name="filter-question-name" value="false"/>
 				no
-			&lt/a&gt
-		&lt/div&gt
-		&ltspan class="visible-radio-label col-md-10 hidden-sm hidden-xs"&gtWhen we have many screener statements, stack them as filter questions.&lt/span&gt
-		&ltdiv class="spacer spacer-bottom25 hidden-md hidden-lg"&gt&lt/div&gt
-	&lt/div&gt
-&lt/div&gt</code>
-</pre>
+			</label>
+		</div>
+		<span class="visible-radio-label col-md-10 hidden-sm hidden-xs">When we have many screener statements, stack them as filter questions.</span>
+		<div class="spacer spacer-bottom25 hidden-md hidden-lg"></div>
+	</div>
+</div>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-screener-code" role="button">Copy</a>
 </div>
 
@@ -194,17 +194,30 @@ These buttons are used throughout the site for yes/no and true/false type questi
 <div class="code-wrapper">
 <div class="preview clearfix">
 	<div class="toggle-buttons">
-		<a href="javascript:;" class="btn radio-label active">Yes</a>
-		<a href="javascript:;" class="btn radio-label">No</a>
+		<label class="btn radio-label">
+			<input type="radio" name="filter-question-name-white-example" value="true"/>
+			yes
+		</label>
+		<label class="btn radio-label">
+			<input type="radio" name="filter-question-name-white-example" value="false"/>
+			no
+		</label>
 	</div>
 </div>
-<pre>
-<code id="toggle-code">&ltdiv class="toggle-buttons"&gt
-	&lta href="javascript:;" class="btn radio-label active"&gtYes&lt/a&gt
-	&lta href="javascript:;" class="btn radio-label"&gtNo&lt/a&gt
-&lt/div&gt
-</code>
-</pre>
+<div id="toggle-code">
+{%  highlight text %}
+<div class="toggle-buttons">
+	<label class="btn radio-label">
+		<input type="radio" name="filter-question-name-white-example" value="true"/>
+		yes
+	</label>
+	<label class="btn radio-label">
+		<input type="radio" name="filter-question-name-white-example" value="false"/>
+		no
+	</label>
+</div>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="toggle-code" role="button">Copy</a>
 </div>
 
@@ -215,44 +228,46 @@ These buttons are used throughout the site for yes/no and true/false type questi
 <h3 class="label-opensans">Example &amp; Code</h3>
 
 <div class="code-wrapper">
-<div class="preview has-background">
-	<div class="question blue-bg">
-		<div class="question-label">When we have a multiple choice question here, display the choices vertically.</div>
-		<div class="btn-group btn-group-vertical" data-toggle="buttons">
-			<label tabindex="0" class="btn radio-label">
-				<input type="radio" name="multipleChoice" values="one" aria-label="Multiple Choice" />
-				First Option
-			</label>
-			<label tabindex="0" class="btn radio-label">
-				<input type="radio" name="multipleChoice" values="two" aria-label="Multiple Choice" />
-				Second Option
-			</label>
-			<label tabindex="0" class="btn radio-label active">
-				<input type="radio" name="multipleChoice" values="three" aria-label="Multiple Choice" />
-				Third Option
-			</label>
+	<div class="preview has-background">
+		<div class="question blue-bg">
+			<div class="question-label">When we have a multiple choice question here, display the choices vertically.</div>
+			<div class="btn-group btn-group-vertical">
+				<label tabindex="0" class="btn radio-label">
+					<input type="radio" name="multipleChoice" values="one"/>
+					First Option
+				</label>
+				<label tabindex="0" class="btn radio-label">
+					<input type="radio" name="multipleChoice" values="two"/>
+					Second Option
+				</label>
+				<label tabindex="0" class="btn radio-label">
+					<input type="radio" name="multipleChoice" values="three"/>
+					Third Option
+				</label>
+			</div>
 		</div>
 	</div>
-</div>
-<pre>
-<code id="blue-multiple-code">&ltdiv class="question blue-bg"&gt
-	&ltdiv class="question-label"&gtWhen we have a multiple choice question here, display the choices vertically.&lt/div&gt
-	&ltdiv class="btn-group btn-group-vertical" data-toggle="buttons"&gt
-		&ltlabel tabindex="0" class="btn radio-label"&gt
-			&ltinput type="radio" name="multipleChoice" values="one" aria-label="Multiple Choice" /&gt
+<div id="blue-multiple-code">
+{% highlight text %}
+<div class="question blue-bg">
+	<div class="question-label">When we have a multiple choice question here, display the choices vertically.</div>
+	<div class="btn-group btn-group-vertical">
+		<label tabindex="0" class="btn radio-label">
+			<input type="radio" name="multipleChoice" values="one"/>
 			First Option
-		&lt/label&gt
-		&ltlabel tabindex="0" class="btn radio-label"&gt
-			&ltinput type="radio" name="multipleChoice" values="two" aria-label="Multiple Choice" /&gt
+		</label>
+		<label tabindex="0" class="btn radio-label">
+			<input type="radio" name="multipleChoice" values="two"/>
 			Second Option
-		&lt/label&gt
-		&ltlabel tabindex="0" class="btn radio-label active"&gt
-			&ltinput type="radio" name="multipleChoice" values="three" aria-label="Multiple Choice" /&gt
+		</label>
+		<label tabindex="0" class="btn radio-label">
+			<input type="radio" name="multipleChoice" values="three"/>
 			Third Option
-		&lt/label&gt
-	&lt/div&gt
-&lt/div&gt</code>
-</pre>
+		</label>
+	</div>
+</div>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-multiple-code" role="button">Copy</a>
 </div>
 
@@ -282,25 +297,27 @@ These buttons are used throughout the site for yes/no and true/false type questi
 		</form>
 	</div>
 </div>
-<pre>
-<code id="blue-dropdown-code">&lt;div class="question  blue-bg"&gt;
-&lt;form class="form-inline"&gt;
-    &lt;div class="question-label"&gt;A blue background screener select question.&lt;/div&gt;
-    &lt;div class="row"&gt;
-      &lt;div class="col-sm-3"&gt;
-        &lt;div class="form-select "&gt;
-          &lt;select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type=""&gt;
-            &lt;option value="option-value-1"&gt;Option 1&lt;/option&gt;
-            &lt;option value="option-value-2"&gt;Option 2&lt;/option&gt;
-            &lt;option value="option-value-3"&gt;Option 3&lt;/option&gt;
-          &lt;/select&gt;
-          &lt;span class="caret"&gt;&lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/form&gt;
-  &lt;/div&gt;</code>
-</pre>
+<div id="blue-dropdown-code">
+{% highlight text %}
+<div class="question blue-bg">
+	<form class="form-inline">
+		<div class="question-label">A blue background screener select question.</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="form-select ">
+				  <select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
+				    <option value="option-value-1">Option 1</option>
+				    <option value="option-value-2">Option 2</option>
+				    <option value="option-value-3">Option 3</option>
+				  </select>
+				  <span class="caret"></span>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-dropdown-code" role="button">Copy</a>
 </div>
 
@@ -328,16 +345,19 @@ These buttons are used throughout the site for yes/no and true/false type questi
 		</div>
 	</div>
 </div>
-<pre>
-<code id="white-dropdown-code">&lt;div class="form-select "&gt;
-  &lt;select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type=""&gt;
-    &lt;option value="option-value-1"&gt;Option 1&lt;/option&gt;
-    &lt;option value="option-value-2"&gt;Option 2&lt;/option&gt;
-    &lt;option value="option-value-3"&gt;Option 3&lt;/option&gt;
-  &lt;/select&gt;
-  &lt;span class="caret"&gt;&lt;/span&gt;
-&lt;/div&gt;</code>
-</pre>
+<div id="white-dropdown-code">
+{% highlight text %}
+<div class="header-label">Dropdown</div>
+<div class="form-select">
+	<select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
+	    <option value="option-value-1">Option 1</option>
+	    <option value="option-value-2">Option 2</option>
+	    <option value="option-value-3">Option 3</option>
+ 	</select>
+ 	<span class="caret"></span>
+</div>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code" role="button">Copy</a>
 </div>
 
@@ -347,7 +367,7 @@ These buttons are used throughout the site for yes/no and true/false type questi
 		<div class="col-sm-4">
 			<div class="lite-card">
 				<div class="header-label">Dropdown with default text</div>
-				<div class="form-select ">
+				<div class="form-select">
 				  <select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
 				    
 				    <option value="" selected="selected">Select Option</option>
@@ -362,21 +382,22 @@ These buttons are used throughout the site for yes/no and true/false type questi
 		</div>
 	</div>
 </div>
-<pre>
-<code id="white-dropdown-code">&ltdiv class="form-select"&gt
-	&ltdiv class="row"&gt
-		&ltdiv class="col-sm-4"&gt
-			&ltspan&gtDropdown with default text&lt/span&gt
-			&ltselect class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type=""&gt
-				&ltoption value="" selected="selected"&gtSelect Option&lt/option&gt
-				&ltoption value="option-value-1"&gtOption 1&lt/option&gt
-				&ltoption value="option-value-2"&gtOption 2&lt/option&gt
-				&ltoption value="option-value-3"&gtOption 3&lt/option&gt
-			&lt/select&gt
-		&lt/div&gt
-	&lt/div&gt
-&lt/div&gt</code>
-</pre>
+<div id="white-dropdown-code">
+{% highlight text %}
+<div class="header-label">Dropdown with default text</div>
+<div class="form-select">
+  <select class="form-control" name="dropdown-name" aria-label="Dropdown Label" data-type="">
+    
+    <option value="" selected="selected">Select Option</option>
+    
+    <option value="option-value-1">Option 1</option>
+    <option value="option-value-2">Option 2</option>
+    <option value="option-value-3">Option 3</option>
+  </select>
+  <span class="caret"></span>
+</div>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code" role="button">Copy</a>
 </div>
 
@@ -395,12 +416,14 @@ These buttons are used throughout the site for yes/no and true/false type questi
 	    </div>
 	</div>
 </div>
-<pre>
-<code id="questions-code">&ltdiv class="question"&gt
-	&ltdiv class="question-label"&gtIs this a question?&lt/div&gt
-	&ltinput class="form-control" type="text" value="Yes!"&gt
-&lt/div&gt</code>
-</pre>
+<div id="questions-code">
+{% highlight text %}
+<div class="question">
+    <div class="question-label">Is this a question?</div>
+    <input class="form-control" type="text" value="Yes!">
+</div>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="questions-code" role="button">Copy</a>
 </div>
 
@@ -413,15 +436,29 @@ These buttons are used throughout the site for yes/no and true/false type questi
 <div class="code-wrapper">
 <div class="preview">
 	<div class="btn-group-vertical filter-question">
-		<label tabindex="0" class="btn radio-label active">Active radio select</label>
-		<label tabindex="0" class="btn radio-label">Default radio select</label>
+		<label tabindex="0" class="btn radio-label">
+			<input type="radio" name="radio-selects-example" values="option-a"/>
+			Option A
+		</label>
+		<label tabindex="0" class="btn radio-label">
+			<input type="radio" name="radio-selects-example" values="option-b"/>
+			Option B
+		</label>
 	</div>
 </div>
-<pre>
-<code id="radio-code">&ltdiv tabindex="0" class="btn-group-vertical filter-question"&gt
-	&ltlabel tabindex="0" class="btn radio-label active"&gtActive radio select&lt/label&gt
-	&ltlabel tabindex="0" class="btn radio-label"&gtDefault radio select&lt/label&gt
-&lt/div&gt</code>
-</pre>
+<div id="radio-code">
+{% highlight text %}
+<div class="btn-group-vertical filter-question">
+	<label tabindex="0" class="btn radio-label">
+		<input type="radio" name="radio-selects-example" values="option-a"/>
+		Option A
+	</label>
+	<label tabindex="0" class="btn radio-label">
+		<input type="radio" name="radio-selects-example" values="option-b"/>
+		Option B
+	</label>
+</div>
+{% endhighlight %}
+</div>
 <a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="radio-code" role="button">Copy</a>
 </div>
