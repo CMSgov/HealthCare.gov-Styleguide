@@ -82,30 +82,6 @@ $(function() {
 // Glossary Terms
 gov.hc.glossaryTerms = {
   options_tooltip : {
-    placement: function (context, source) {
-      var position = $(source).offset();
-      var rtOffset = ($(window).width() - ($(source).offset().left + $(source).outerWidth()));
-      var lftOffset = (position.left - $(window).scrollLeft());
-      var topOffset = (position.top - $(window).scrollTop());
-      var bottomOffset = ($(window).height() - topOffset);
-
-      if (rtOffset > lftOffset) {
-          if (topOffset < 300) {
-              return "bottom";
-          } else if (bottomOffset < 300) {
-              return "top";
-          }
-          return "right";
-      }
-      else {
-          if (topOffset < 300) {
-              return "bottom";
-          } else if (bottomOffset < 300) {
-              return "top";
-          }
-          return "left";
-      }
-    },
     trigger: "hover focus",
     container: "#hc-gov-assets"
   },
@@ -113,20 +89,53 @@ gov.hc.glossaryTerms = {
 
     $(terms).each(function(){
         var uid = gov.hc.util.getUID('tooltip'), //Polyfill
-            className = 'popover',
+            className = '',
+            tooltipTemplate = '<div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+            popoverTemplate = '<div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>',
             $this = $(this);
-        if(this.className.indexOf('tooltip') !== -1){
-            className += ' fade left';
-            $this.attr('aria-label','tooltip');
+        
+        $this.attr({'aria-describedby': uid});
+
+        // Polyfill 
+        if(this.className.indexOf('tip') !== -1){
+          
+            className += 'left tooltip';
+            gov.hc.glossaryTerms.options_tooltip.template = '<div aria-role="tooltip" class="'+ className + '" id="' + uid + '">' + tooltipTemplate;
+            
+            $(this).tooltip(gov.hc.glossaryTerms.options_tooltip);
+
         } else {
-            className += ' popover-glossary';
+            
+            className += 'popover popover-glossary';
+            gov.hc.glossaryTerms.options_tooltip.template = '<div aria-role="tooltip" class="'+ className + '" id="' + uid + '">' + popoverTemplate;
+            gov.hc.glossaryTerms.options_tooltip.placement = function (context, source) {
+              var position = $(source).offset();
+              var rtOffset = ($(window).width() - ($(source).offset().left + $(source).outerWidth()));
+              var lftOffset = (position.left - $(window).scrollLeft());
+              var topOffset = (position.top - $(window).scrollTop());
+              var bottomOffset = ($(window).height() - topOffset);
+
+              if (rtOffset > lftOffset) {
+                  if (topOffset < 300) {
+                      return "bottom";
+                  } else if (bottomOffset < 300) {
+                      return "top";
+                  }
+                  return "right";
+              }
+              else {
+                  if (topOffset < 300) {
+                      return "bottom";
+                  } else if (bottomOffset < 300) {
+                      return "top";
+                  }
+                  return "left";
+              };
+            }
+            
+          $(this).popover(gov.hc.glossaryTerms.options_tooltip);
+
         }
-        // Polyfill
-        gov.hc.glossaryTerms.options_tooltip.template = '<div aria-role="tooltip" class="'+ className + '" id="' + uid + '"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>';
-        $this.attr({
-                'aria-describedby': uid
-              })
-              .popover(gov.hc.glossaryTerms.options_tooltip);
 
         // prevent link from firing natural event
         // and appending a "#" to the url.
@@ -148,4 +157,5 @@ gov.hc.glossaryTerms = {
 
 $(function() {
   gov.hc.glossaryTerms.setAria(".glossary-term");
+  gov.hc.glossaryTerms.setAria(".tip");
 })
