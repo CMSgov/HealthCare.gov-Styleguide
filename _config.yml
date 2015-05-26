@@ -1,5 +1,5 @@
 title: HealthCare.gov Styleguide
-baseurl: /
+baseurl: 
 canonical-url: https://styleguide.healthcare.gov
 permalink: /:categories/:title
 markdown: rdiscount
