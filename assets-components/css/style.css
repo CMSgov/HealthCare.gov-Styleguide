@@ -13526,58 +13526,61 @@ ul#hc-gov-assets .nav-tabs {
 #hc-gov-assets .glyphicons-icon.server_new {
   background-position: -428px -2197px;
 }
-#hc-gov-assets .ie .hidden-ie {
+.ie .hidden-ie {
   display: none;
 }
-#hc-gov-assets .ie8 .blue-bg .lite-screener.post-enrollment .form-select,
-#hc-gov-assets .ie8 .blue-bg .lite-card .form-select,
-#hc-gov-assets .ie8 .blue-bg .lite-card-inner .form-select,
-#hc-gov-assets .ie8 .blue-bg .security-questions-section .form-select {
+.ie8 #hc-gov-assets .blue-bg .lite-screener.post-enrollment .form-select,
+.ie8 #hc-gov-assets .blue-bg .lite-card .form-select,
+.ie8 #hc-gov-assets .blue-bg .lite-card-inner .form-select,
+.ie8 #hc-gov-assets .blue-bg .security-questions-section .form-select {
   width: 100%;
   overflow: hidden;
 }
-#hc-gov-assets .ie8 .blue-bg .lite-screener.post-enrollment .form-select SELECT,
-#hc-gov-assets .ie8 .blue-bg .lite-card .form-select SELECT,
-#hc-gov-assets .ie8 .blue-bg .lite-card-inner .form-select SELECT,
-#hc-gov-assets .ie8 .blue-bg .security-questions-section .form-select SELECT {
+.ie8 #hc-gov-assets .blue-bg .lite-screener.post-enrollment .form-select SELECT,
+.ie8 #hc-gov-assets .blue-bg .lite-card .form-select SELECT,
+.ie8 #hc-gov-assets .blue-bg .lite-card-inner .form-select SELECT,
+.ie8 #hc-gov-assets .blue-bg .security-questions-section .form-select SELECT {
   width: 110%;
   border: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
 }
-#hc-gov-assets .ie8 .blue-bg .lite-screener FORM .btn-lg {
+.ie8 #hc-gov-assets .blue-bg .lite-screener FORM .btn-lg {
   min-width: 80%;
   width: 100%;
 }
-#hc-gov-assets .ie8 .lite-card input[type="text"],
-#hc-gov-assets .ie8 .lite-card input[type="email"],
-#hc-gov-assets .ie8 .lite-card input[type="number"],
-#hc-gov-assets .ie8 .lite-card input[type="tel"],
-#hc-gov-assets .ie8 .lite-card input[type="url"],
-#hc-gov-assets .ie8 .lite-card .dropdown .dropdown-toggle,
-#hc-gov-assets .ie8 .lite-card select,
-#hc-gov-assets .ie8 .lite-card .ethnicity-race-toggle,
-#hc-gov-assets .ie8 .lite-card .coverage-state-toggle {
+.ie8 #hc-gov-assets .form-select .caret {
+  display: none;
+}
+.ie8 #hc-gov-assets .lite-card input[type="text"],
+.ie8 #hc-gov-assets .lite-card input[type="email"],
+.ie8 #hc-gov-assets .lite-card input[type="number"],
+.ie8 #hc-gov-assets .lite-card input[type="tel"],
+.ie8 #hc-gov-assets .lite-card input[type="url"],
+.ie8 #hc-gov-assets .lite-card .dropdown .dropdown-toggle,
+.ie8 #hc-gov-assets .lite-card select,
+.ie8 #hc-gov-assets .lite-card .ethnicity-race-toggle,
+.ie8 #hc-gov-assets .lite-card .coverage-state-toggle {
   line-height: 34px;
 }
-#hc-gov-assets .ie8 .lite-card .ethnicity-race-dropdown .other-race-text-container input[type="text"] {
+.ie8 #hc-gov-assets .lite-card .ethnicity-race-dropdown .other-race-text-container input[type="text"] {
   line-height: 30px;
 }
-#hc-gov-assets .ie8 .lite-account-creation input[type="text"],
-#hc-gov-assets .ie8 .lite-account-creation input[type="tel"],
-#hc-gov-assets .ie8 .lite-account-creation input[type="email"],
-#hc-gov-assets .ie8 .lite-account-creation input[type="number"],
-#hc-gov-assets .ie8 .lite-account-creation input[type="url"],
-#hc-gov-assets .ie8 .lite-account-creation input[type="password"] {
+.ie8 #hc-gov-assets .lite-account-creation input[type="text"],
+.ie8 #hc-gov-assets .lite-account-creation input[type="tel"],
+.ie8 #hc-gov-assets .lite-account-creation input[type="email"],
+.ie8 #hc-gov-assets .lite-account-creation input[type="number"],
+.ie8 #hc-gov-assets .lite-account-creation input[type="url"],
+.ie8 #hc-gov-assets .lite-account-creation input[type="password"] {
   line-height: 50px;
 }
-#hc-gov-assets .ie8 .lite-account-creation .security-questions-section input[type="text"],
-#hc-gov-assets .ie8 .lite-account-creation .security-questions-section input[type="tel"],
-#hc-gov-assets .ie8 .lite-account-creation .security-questions-section input[type="email"],
-#hc-gov-assets .ie8 .lite-account-creation .security-questions-section input[type="number"],
-#hc-gov-assets .ie8 .lite-account-creation .security-questions-section input[type="url"],
-#hc-gov-assets .ie8 .lite-account-creation .security-questions-section input[type="password"] {
+.ie8 #hc-gov-assets .lite-account-creation .security-questions-section input[type="text"],
+.ie8 #hc-gov-assets .lite-account-creation .security-questions-section input[type="tel"],
+.ie8 #hc-gov-assets .lite-account-creation .security-questions-section input[type="email"],
+.ie8 #hc-gov-assets .lite-account-creation .security-questions-section input[type="number"],
+.ie8 #hc-gov-assets .lite-account-creation .security-questions-section input[type="url"],
+.ie8 #hc-gov-assets .lite-account-creation .security-questions-section input[type="password"] {
   height: 50px;
   line-height: 50px;
 }
