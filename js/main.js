@@ -139,3 +139,23 @@ gov.hc.sg.interiorNav = {
 $(function() {
   gov.hc.sg.interiorNav.init();
 });
+
+var gov = gov || {};
+gov.hc = gov.hc || {};
+gov.hc.sg = gov.hc.sg || {};
+
+// Form Elements
+gov.hc.sg.formElements = {
+  setStyles: function() {
+
+    $(".btn.radio-label input[type=radio]").click(function(e){
+      // set label styling from radio button
+      $("input[name=" + $(this).attr("name") + "]").parent().removeClass("radio-label-checked");
+      $(this).parent().addClass("radio-label-checked");
+    });
+  }
+}
+
+$(function(){
+  gov.hc.sg.formElements.setStyles();
+})

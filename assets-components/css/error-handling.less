@@ -1,0 +1,130 @@
+.error-styling {
+
+  .shadow_select {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+  }
+  .shadow_select:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0;
+    outline: thin dotted \9;
+    /* IE6-9 */
+
+  }
+  
+  .error-msg {
+    background:#B20000;
+    color:#fff;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+  }
+  .error-msg p.error-title,
+  .error-msg p.error-message {
+    color:#fff;
+    line-height:1.5em;
+    font-size:14px;
+    margin:0;
+    padding:0;
+  }
+  .error-msg p.error-title {
+    font-weight:bold;
+    font-size:15px;
+  }
+
+  .form-select select.errorBorder,
+  .form-control.errorBorder {
+    border:1px #B20000 solid; 
+    width:100%;
+    background:#eee;
+    font-size:15px;
+    height:40px;
+    color:#777;
+    padding-left:15px;
+  }
+
+  .no-padding-left {
+    padding-left:0;
+  }
+
+  .no-padding-right {
+    padding-right:0;
+  }
+
+  @media (max-width: 991px) {     
+    .no-padding-left {       
+      padding-right: 0;     
+    }
+    .no-padding-right {       
+      padding-left: 0;     
+    }
+  }
+
+  .error-text-box {
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: list-item;
+    margin: 0 0 5px 20px;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+
+  .error-text {
+    color:#a00;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:0px;
+    line-height:1.25em;
+    margin-top:5px;
+  }
+  
+  .error-msg h2 {
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    color: #fff;
+  }
+
+  #error-title, .error-msg h2 .errorNumber {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color:#fff;
+  }
+
+  label {
+    font-size: 15px;
+    margin-top:15px;
+  }
+
+  .dropdown .caret, 
+    .form-select .caret {
+    position: absolute;
+    pointer-events: none;
+    top: 20px;
+    right: 12px;
+  }
+  .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+
+
+
+  padding:20px;
+}
