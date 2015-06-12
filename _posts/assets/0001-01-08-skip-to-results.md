@@ -64,7 +64,7 @@ This version of the skip to results module includes a progress indicator to show
 			<div class="notification-box">
 				<div>
 
-					<p><strong><a tabindex="0" role="button" class="tip" data-placement="left" title="If you go to plan results without answering these questions the cost estimates for the plans you’ll see won’t include the cost savings you might qualify for like a premium tax credit. Also the plan results won’t be specific to you and your household. You’ll see plans for a single person age 35 and a non-parent."><span class="glyphicon glyphicon-info-sign" aria-label="information"></span> 50% of questions answered</a></strong></p>
+					<p><strong><a tabindex="0" class="tip" data-placement="left" title="If you go to plan results without answering these questions the cost estimates for the plans you’ll see won’t include the cost savings you might qualify for like a premium tax credit. Also the plan results won’t be specific to you and your household. You’ll see plans for a single person age 35 and a non-parent."><span class="glyphicon glyphicon-info-sign" aria-label="information"></span> 50% of questions answered</a></strong></p>
 
 					<p>Select See plans now to view plans in your area.</p>
 
@@ -81,7 +81,7 @@ This version of the skip to results module includes a progress indicator to show
 		<div class="notification-box">
 			<div>
 
-				<p><strong><a tabindex="0" role="button" class="tip" data-placement="left" title="If you go to plan results without answering these questions the cost estimates for the plans you’ll see won’t include the cost savings you might qualify for like a premium tax credit. Also the plan results won’t be specific to you and your household. You’ll see plans for a single person age 35 and a non-parent."><span class="glyphicon glyphicon-info-sign" aria-label="information"></span> 50% of questions answered</a></strong></p>
+				<p><strong><a tabindex="0" class="tip" data-placement="left" title="If you go to plan results without answering these questions the cost estimates for the plans you’ll see won’t include the cost savings you might qualify for like a premium tax credit. Also the plan results won’t be specific to you and your household. You’ll see plans for a single person age 35 and a non-parent."><span class="glyphicon glyphicon-info-sign" aria-label="information"></span> 50% of questions answered</a></strong></p>
 
 				<p>Select See plans now to view plans in your area.</p>
 
