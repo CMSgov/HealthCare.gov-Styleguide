@@ -68,7 +68,7 @@ Here are examples of correct and incorrect photo styling for HealthCare.gov.
 <div class="row usage">
 	<div class="col-sm-6">
 		<img class="full" src="{{site.baseurl}}/images/design/photography/8_Natural.jpg" alt="Example of correctly styled photography showing subjects appearing happy and natural"/>
-		<span aria-label="Correct" class="glyphicon glyphicon-remove green"></span> Happy and natural
+		<span aria-label="Correct" class="glyphicon glyphicon-ok green"></span> Happy and natural
 	</div>
 	<div class="col-sm-6">
 		<img class="full" src="{{site.baseurl}}/images/design/photography/9_Posed.jpg" alt="Example of incorrect photography styling showing subjects overly posed"/>
@@ -76,7 +76,7 @@ Here are examples of correct and incorrect photo styling for HealthCare.gov.
 	</div>
 	<div class="col-sm-6">
 		<img class="full" src="{{site.baseurl}}/images/design/photography/10_WarmTones.jpg" alt="Example of correctly styled photography showing warm tones"/>
-		<span aria-label="Correct" class="glyphicon glyphicon-remove green"></span> Warm tones
+		<span aria-label="Correct" class="glyphicon glyphicon-ok green"></span> Warm tones
 	</div>
 	<div class="col-sm-6">
 		<img class="full" src="{{site.baseurl}}/images/design/photography/11_CoolTones.jpg" alt="Example of incorrectly styled photography using cool tones"/>
