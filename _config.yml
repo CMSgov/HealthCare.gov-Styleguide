@@ -1,6 +1,6 @@
 title: HealthCare.gov Styleguide
 baseurl:
-canonical-url: https://styleguide.healthcare.gov
+canonical-url: http://styleguide.healthcare.gov
 permalink: /:categories/:title
 markdown: rdiscount
 highlighter: null
