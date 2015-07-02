@@ -4,7 +4,11 @@ To get started with the HealthCare.gov assets library, you’ll need to use the 
 
 More detail info can be found at [styleguide.healthcare.gov](https://styleguide.healthcare.gov)
 
+<<<<<<< HEAD
 ## Table of contents
+=======
+## Table of contents 
+>>>>>>> 66504914828fe2a1a414b4eacb006c9524e6a993
 
 - [Quick start](#quick-start)
 - [What's included](#whats-included)
