@@ -7126,14 +7126,15 @@ a[name="skipnav"] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  font-size: 18px;
 }
 #homepage .deep-dive-link .description h4 {
   margin-top: 94px;
-  font-size: 25px;
+  font-size: 30px;
   color: #fff;
 }
 #homepage .deep-dive-link .description span {
-  color: #e3e1e4;
+  color: #fff;
 }
 #homepage .intro p {
   line-height: 31px;
