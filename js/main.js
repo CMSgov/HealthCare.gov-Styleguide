@@ -93,7 +93,7 @@ gov.hc.sg.interiorNav = {
         // Toggle submenu in interior navigation
         $('.toggle-interior-nav').click(function () {
             $(this).toggleClass('closed');
-            var ul = $(this).siblings('ul');
+            var ul = $(this).siblings('ul');            
             ul.toggle();
             var ariaHiddenBoolean = true;
             var chevron = $(this).siblings('.glyphicon');
@@ -112,7 +112,7 @@ gov.hc.sg.interiorNav = {
             }
 
             ul.attr("aria-hidden", ariaHiddenBoolean);            
-
+            $( "li" ).attr("aria-hidden", ariaHiddenBoolean);
         });
 
         gov.hc.sg.interiorNav.fixToTop();
