@@ -88,52 +88,54 @@ $(function() {
 
 // Interior Left Navigation
 gov.hc.sg.interiorNav = {
-  init: function() {
- 
-    // Toggle submenu in interior navigation
-    $('.toggle-interior-nav').click(function(){
-      $(this).toggleClass('closed');
-      var ul = $(this).siblings('ul');
-      ul.toggle();
-      var ariaHiddenBoolean = true;
-      var chevron = $(this).siblings('.glyphicon');
+    init: function () {
 
-      if(chevron.hasClass('glyphicon-chevron-right')){
-        chevron.removeClass('glyphicon-chevron-right');
-        chevron.addClass('glyphicon-chevron-down');
-        ariaHiddenBoolean = false;
-      
-      } else{
-        chevron.removeClass('glyphicon-chevron-down');
-        chevron.addClass('glyphicon-chevron-right');
-        
-      }
-      
-      ul.attr("aria-hidden", ariaHiddenBoolean);
+        // Toggle submenu in interior navigation
+        $('.toggle-interior-nav').click(function () {
+            $(this).toggleClass('closed');
+            var ul = $(this).siblings('ul');
+            ul.toggle();
+            var ariaHiddenBoolean = true;
+            var chevron = $(this).siblings('.glyphicon');
 
-    });
+            if (chevron.hasClass('glyphicon-chevron-right')) {
+                chevron.removeClass('glyphicon-chevron-right');
+                chevron.addClass('glyphicon-chevron-down');
+                ariaHiddenBoolean = false;
+                ul.attr("aria-live", "polite");
 
-    gov.hc.sg.interiorNav.fixToTop();
-  },
-  fixToTop: function() {
+            } else {
+                chevron.removeClass('glyphicon-chevron-down');
+                chevron.addClass('glyphicon-chevron-right');
+                ul.removeAttr("aria-live");
 
-    // fix to top of page
-    if($("#landing-page").length > 0) {
-      
-      $(window).scroll(function() {
-        var subnav = $(".subnav-wrapper");
-        var y = Math.floor(subnav[0].getBoundingClientRect().top) - $(window).scrollTop();
+            }
 
-        if (y < 0)
-            subnav.addClass("fixed-nav");
-        else
-            subnav.removeClass("fixed-nav");
+            ul.attr("aria-hidden", ariaHiddenBoolean);            
 
-      });
+        });
 
-    } else if($("#detail-page").length > 0)
-      $("#detail-page .subnav-wrapper").addClass("fixed-nav");
-  }
+        gov.hc.sg.interiorNav.fixToTop();
+    },
+    fixToTop: function () {
+
+        // fix to top of page
+        if ($("#landing-page").length > 0) {
+
+            $(window).scroll(function () {
+                var subnav = $(".subnav-wrapper");
+                var y = Math.floor(subnav[0].getBoundingClientRect().top) - $(window).scrollTop();
+
+                if (y < 0)
+                    subnav.addClass("fixed-nav");
+                else
+                    subnav.removeClass("fixed-nav");
+
+            });
+
+        } else if ($("#detail-page").length > 0)
+            $("#detail-page .subnav-wrapper").addClass("fixed-nav");
+    }
 };
 
 $(function() {
