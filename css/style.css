@@ -6766,7 +6766,7 @@ h4 {
   display: none;
   margin: 25px 0;
 }
-@media (max-width: 780px) {
+@media (max-width: 991px) {
   .subnav-wrapper {
     display: none;
   }
@@ -6992,7 +6992,7 @@ a[name="skipnav"] {
   position: fixed;
   top: 84px;
 }
-@media (max-width: 780px) {
+@media (max-width: 767px) {
   .header-wrap .site-header .navbar {
     display: none;
   }
@@ -7004,7 +7004,7 @@ a[name="skipnav"] {
     margin: 7px 0 0 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 779px) {
   .header-wrap .site-header .logo img {
     margin: 20px 0 15px 0;
     width: 251px;
@@ -7145,7 +7145,6 @@ a[name="skipnav"] {
 }
 #homepage .deep-dive-link.design {
   color: #fff;
-  margin-top: 20px;
   background: #1d94c8;
 }
 #homepage .deep-dive-link.assets {
@@ -7191,7 +7190,6 @@ a[name="skipnav"] {
     display: block;
   }
   #homepage .deep-dive-link.design {
-    margin-top: 0;
     background: url("../images/DesignDefault.png") center;
     background-size: cover;
   }
