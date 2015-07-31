@@ -57,9 +57,9 @@ We appreciate any contribution. Before contributing, we encourage you to read ou
 
 Your changes will appear once they are approved. Ultimately, the goal is for users to contribute to the project by suggesting changes to the code or content. You can start a new discussion within GitHub's [issues](https://github.com/CMSgov/cmsgov.github.io/issues) or [submit a pull request](https://help.github.com/articles/creating-a-pull-request/).  There are two acceptable branches to submit pull requests against:
 
-* If your change or suggestion refers to the code ofhttp://styleguide.healthcare.gov, then submit pull requests to the gh-pages branch.
+* If your change or suggestion refers to the code of http://styleguide.healthcare.gov, then submit pull requests to the gh-pages branch.
 
-* If your change or suggestion refers tothe code that can be downloaded from the [assets landing page](http://styleguide.healthcare.gov/assets/), then submit pull requests to the master branch.  If the change is accepted, we will ensure this update is also available on the http://styleguide.healthcare.gov website as well.
+* If your change or suggestion refers to the code that can be downloaded from the [assets landing page](http://styleguide.healthcare.gov/assets/), then submit pull requests to the master branch.  If the change is accepted, we will ensure this update is also available on the http://styleguide.healthcare.gov website as well.
 
 ### Notifications
 
