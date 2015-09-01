@@ -1,0 +1,43 @@
+{
+  "name": "healthCare.gov-styleguide",
+  "version": "1.0.0",
+  "homepage": "https://github.com/CMSgov/HealthCare.gov-Styleguide",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CMSgov/HealthCare.gov-Styleguide.git"
+  },
+  "authors": [
+    "Centers for Medicare & Medicaid Services"
+  ],
+  "description": "Healthcare.gov Styleguide Assets Components",
+  "main": [
+    "assets-components/css/all.less"
+  ],
+  "keywords": [
+    "less"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "_includes",
+    "_layouts",
+    "_posts",
+    "_site",
+    "css",
+    "downloads",
+    "fonts",
+    "images",
+    "js",
+    "libary",
+    ".*"
+  ],
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-less": "~1.0.1"
+  }
+}
