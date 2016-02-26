@@ -46,7 +46,6 @@ The skip to results module featured in various tools throughout HealthCare.gov i
 </div>
 		{% endhighlight %}
 	</div>
-	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="skip-to-results-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -90,5 +89,4 @@ This version of the skip to results module includes a progress indicator to show
 		</div>
 		{% endhighlight %}
 	</div>
-	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="skip-to-results-progress-code" role="button">Copy</a>
 </div>

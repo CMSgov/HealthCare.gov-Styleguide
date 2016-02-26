@@ -29,7 +29,6 @@ We use several forms throughout HealthCare.gov. Generally forms are presented ag
 <code id="form-code">&ltdiv id="table-form-container"&gt&lt/div&gt
 </code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="form-code" role="button">Copy</a>
 </div>
 
 <div class="code-wrapper">
@@ -58,7 +57,6 @@ We use several forms throughout HealthCare.gov. Generally forms are presented ag
 }),
 </code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="view-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -79,7 +77,6 @@ We use several forms throughout HealthCare.gov. Generally forms are presented ag
 &lt/fieldset&gt
 </code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -103,7 +100,6 @@ We use several forms throughout HealthCare.gov. Generally forms are presented ag
 </fieldset>
 {% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="fieldset-instructions-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -130,7 +126,6 @@ We use several forms throughout HealthCare.gov. Generally forms are presented ag
 &lt/div&gt
 </code>
 </pre>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -180,7 +175,6 @@ We use several forms throughout HealthCare.gov. Generally forms are presented ag
 </div>
 {% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-screener-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -218,7 +212,6 @@ These buttons are used throughout the site for yes/no and true/false type questi
 </div>
 {% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="toggle-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -268,7 +261,6 @@ These buttons are used throughout the site for yes/no and true/false type questi
 </div>
 {% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-multiple-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -318,7 +310,6 @@ These buttons are used throughout the site for yes/no and true/false type questi
 </div>
 {% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-dropdown-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -358,7 +349,6 @@ These buttons are used throughout the site for yes/no and true/false type questi
 </div>
 {% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code" role="button">Copy</a>
 </div>
 
 <div class="code-wrapper">
@@ -398,7 +388,6 @@ These buttons are used throughout the site for yes/no and true/false type questi
 </div>
 {% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="white-dropdown-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -424,7 +413,6 @@ These buttons are used throughout the site for yes/no and true/false type questi
 </div>
 {% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="questions-code" role="button">Copy</a>
 </div>
 
 * * *
@@ -460,5 +448,4 @@ These buttons are used throughout the site for yes/no and true/false type questi
 </div>
 {% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="radio-code" role="button">Copy</a>
 </div>
