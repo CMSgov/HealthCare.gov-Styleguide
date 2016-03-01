@@ -52,7 +52,6 @@ Accordion content can be placed at any location within the body of an [explainer
 		</div>
 		{% endhighlight %}
 	</div>
-	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="accordion-code" role="button">Copy</a>
 </div>
 
 <hr />
@@ -238,5 +237,4 @@ The More Information section on the Get Answers page collapses at tablet breakpo
 <div class="clearfix"></div>
 		{% endhighlight %}
 	</div>
-	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="navigation-accordion-code" role="button">Copy</a>
 </div>

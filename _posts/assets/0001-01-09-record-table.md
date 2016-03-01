@@ -164,5 +164,4 @@ As a user enters information about specific household members, the data for each
 </table>
 		{% endhighlight %}
 	</div>
-	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="record-table-code" role="button">Copy</a>
 </div>

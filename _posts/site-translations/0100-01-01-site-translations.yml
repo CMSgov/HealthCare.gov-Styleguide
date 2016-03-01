@@ -27,7 +27,8 @@ en:
 
   home-secondary:
     title: "Creating a unified user experience – in open collaboration with the public"
-    description: "With a second successful Open Enrollment period under our belts, we’re now focusing on the next wave of improvements to HealthCare.gov. One of our most important challenges is to create a more unified user experience, allowing citizens to move smoothly from one part of the site to the next. So we’re developing this Styleguide — and opening our work to the public. <a href='about/'>What we’re doing and why</a>."
+    description: "One of our most important challenges at HealthCare.gov is to make it easy for American citizens to enroll in health coverage. This requires us to create a seamless experience for consumers using a wide variety of devices across a number of different platforms, applications, tools, and website features. We’ve created this Styleguide to support our efforts –and to open our work to the public. <a href='about/'>What we’re doing and why</a>."
+
     breakdown:
       title: "Breakdown"
       text: "The Design and Assets sections of the Styleguide contain design guidance and component-level artifacts with code snippets used across the various properties of HealthCare.gov."
@@ -62,7 +63,8 @@ es:
 
   home-secondary:
     title: "Creating a unified user experience – in open collaboration with the public"
-    description: "With a second successful Open Enrollment period under our belts, we’re now focusing on the next wave of improvements to HealthCare.gov. One of our most important challenges is to create a more unified user experience, allowing citizens to move smoothly from one part of the site to the next. So we’re developing this Styleguide — and opening our work to the public. <a href='/about/'>What we’re doing and why</a>."
+    description: "Creating a unified user experience – in open collaboration with the public"
+    description: "One of our most important challenges at HealthCare.gov is to make it easy for American citizens to enroll in health coverage. This requires us to create a seamless experience for consumers using a wide variety of devices across a number of different platforms, applications, tools, and website features. We’ve created this Styleguide to support our efforts –and to open our work to the public. <a href='about/'>What we’re doing and why</a>."
     breakdown:
       title: "Breakdown"
       text: '[Visual styles](/# "styles") lipsum dollir sit amet inventore veritatis laudantium et quasi [assets](/# "assets") beatae vitae dicta nemo enim ipsam voice and tone or content eos quirati.'
