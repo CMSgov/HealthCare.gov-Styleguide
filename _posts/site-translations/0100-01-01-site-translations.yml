@@ -3,7 +3,7 @@ published: true
 en:
   header:
     meta-title: "Get an overview of the major styles, page layouts, assets, and editorial guidelines for HealthCare.gov"
-    meta-description: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers and copywriters."
+    meta-description-en: "The HealthCare.gov Styleguide provides an overview of styles, page layouts, assets, & editorial guidelines for HealthCare.gov. The site is primarily geared to HealthCare.gov team designers, developers and copywriters."
     nav:
       - { link: 'Design', location: '/design', title: 'design' }
       - { link: 'Assets', location: '/assets', title: 'assets' }

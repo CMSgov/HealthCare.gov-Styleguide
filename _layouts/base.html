@@ -25,11 +25,11 @@
 
   {% if page.url == "/index.html" %}
     <link rel="canonical" href="{{site.canonical-url}}/">
-    <meta name='description' content="{{ t.[page.lang].header.meta-description }}" />
+    <meta name='description' content="{{ t.[page.lang].header.meta-description-en }}" />
     <title>{{ t.[page.lang].header.meta-title }}</title>
   {% else %}
     <link rel="canonical" href="{{site.canonical-url}}{{page.url}}/">
-    <meta name='description' content="{% if page.meta-description %}{{page.meta-description}}{% endif %}" />
+    <meta name='description' content="{% if page.meta-description-en %}{{page.meta-description-en}}{% endif %}" />
     <title>{% if page.meta-title %}{{page.meta-title}}{% else %}{{page.title}}{% endif %} | {{ site.title }}</title>
   {% endif %}
 
