@@ -143,5 +143,4 @@ Demographic information entered by a user stacks as the user completes steps. A 
           </ol>
 	{% endhighlight %}
 </div>
-<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="blue-alert-code" role="button">Copy</a>
 </div>

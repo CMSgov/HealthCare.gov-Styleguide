@@ -113,5 +113,4 @@ The error message display is made up of multiple parts for maximum visibility an
 </form>
 		{% endhighlight %}
 	</div>
-	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="error-handling-code" role="button">Copy</a>
 </div>

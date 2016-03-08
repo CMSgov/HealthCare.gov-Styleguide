@@ -243,5 +243,4 @@ The See Plans tool can return hundreds of results based on user entered backgrou
 <div class="clearfix"></div>
 	{% endhighlight %}
 	</div>
-	<a href="javascript:;" class="copy-button" title="Click to copy me." data-clipboard-target="skip-to-results-code" role="button">Copy</a>
 </div>
