@@ -1,8 +1,8 @@
 title: HealthCare.gov Styleguide
 baseurl:
 canonical-url: http://styleguide.healthcare.gov
-permalink: /:categories/:title
-markdown: rdiscount
+permalink: /:categories/:title/
+markdown: kramdown
 highlighter: null
 encoding: utf-8
 #exclude : ['sass', 'config.rb', 'README.md']

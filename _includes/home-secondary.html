@@ -1,30 +1,41 @@
 <div class="container">
 	<div class="row">
+		{% for home-secondary-item in site.data.home-secondary-items %}
 		<div class="col-sm-4">
-			<h2>{{ t.[page.lang].home-secondary.title }}</h2>
+			<h2>{{ home-secondary-item.secondary-title }}</h2>
 		</div>
 		<div class="col-sm-8">
 			<div class="intro">
-				<p>{{ t.[page.lang].home-secondary.description }}</p>
+				<p>{{ home-secondary-item.secondary-description }}</p>
 			</div>
 			<div class="hr"></div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-4">
-			<h3>{{ t.[page.lang].home-secondary.breakdown.title }}</h3>
-			{{ t.[page.lang].home-secondary.breakdown.text | append: "" | markdownify }}
+			<h3>{{ home-secondary-item.breakdown-title }}</h3>
+			{{ home-secondary-item.breakdown-text | append: "" | markdownify }}
 		</div>
-		{% for box in t.[page.lang].home-secondary.boxes %}
-			<div class="col-sm-4">
-				<a href="{{ site.baseurl }}{{ box.location }}" class="deep-dive-link {{ box.css-class }}">
-					<span class="title"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span><span class="text">{{ box.title }}</span></span>
-					<span class="description">
-						<h4>{{ box.subtitle }}</h4>
-						<span>{{ box.description}}</span>
-					</span>
-				</a>
-			</div>
 		{% endfor %}
+		<div class="col-sm-4">
+			<a href="{{ site.baseurl }}/design" class="deep-dive-link design">
+				<span class="title"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span><span class="text">Design</span></span>
+				<span class="description">
+				<h4>Design</h4>
+				<span>Provides detailed guidance on various interactive modules and brand elements.</span>
+				</span>
+				</a>
+		</div>
+
+		<div class="col-sm-4">
+			<a href="{{ site.baseurl }}/assets" class="deep-dive-link assets">
+				<span class="title"><span aria-hidden="true" class="glyphicon glyphicon-plus"></span><span class="text">Assets</span></span>
+				<span class="description">
+				<h4>Assets</h4>
+				<span>Features individual artifacts paired with code snippets and descriptions.</span>
+				</span>
+				</a>
+		</div>
+
 	</div>
 </div>
