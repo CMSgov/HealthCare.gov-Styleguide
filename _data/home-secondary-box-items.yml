@@ -1,0 +1,12 @@
+  boxes:
+      - css-class: design
+        title: Design
+        location: /design
+        subtitle: Design
+        description: Provides detailed guidance on various interactive modules and brand elements.
+      
+      - css-class: assets
+        title: Assets
+        location: /assets
+        subtitle: Assets
+        description: Features individual artifacts paired with code snippets and descriptions.
