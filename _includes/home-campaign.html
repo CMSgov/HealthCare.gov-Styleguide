@@ -2,11 +2,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
+				{% for home-campaign-item in site.data.home-campaign-items %}
 				<h1>
-					{{ t.[page.lang].campaign.title }} <br />
-					{{ t.[page.lang].campaign.title-two }}
+					{{ home-campaign-item.title }} <br />
+					{{ home-campaign-item.title-two }}
 				</h1>
-				<span class="subtitle">{{ t.[page.lang].campaign.description }}</span>
+				<span class="subtitle">{{ home-campaign-item.description }}</span>
+				{% endfor %}
 			</div>
 			<div class="col-sm-6">
 				<img src="{{site.baseurl}}/images/MonitorTabletMobile.png" alt="" />
