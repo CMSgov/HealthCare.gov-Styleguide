@@ -9,8 +9,8 @@
   	{% comment %}<!-- Navigation -->{% endcomment %}
 	<nav class="navbar navbar-default" aria-label="main" role="navigation">
 	  	<ul>
-		  	{% for navItem in t.[page.lang].header.nav %}
-		  		<li><a class="{% if navItem.title == page.section %}current{% endif %}" href="{{site.baseurl}}{{ navItem.location }}">{{ navItem.link }}</a></lI>
+		  	{% for nav-link in site.data.nav-links %}
+		  		<li><a class="{% if nav-link.title == page.section %}current{% endif %}" href="{{site.baseurl}}{{ nav-link.location }}">{{ nav-link.link }}</a></lI>
 		  	{% endfor %}
 	  	</ul>
 	  	<a class="github-link" href="https://github.com/CMSgov/HealthCare.gov-Styleguide"><img src="{{site.baseurl}}/images/RepoIcon.png" alt="github repo"/></a>

@@ -1,18 +1,20 @@
 <section class="footer-wrap">
   <footer class="sub-footer" aria-label="footer" role="content info">
+    {% for footer-item in site.data.footer-items %}
   	<ul class="clearfix">
   		<li><a href="https://www.healthcare.gov/"><img src="{{site.baseurl}}/images/HealthcareGovFooterLogo.png" alt="healthcare.gov"/></a></li>
-  		<li>{{ t.[page.lang].footer.manage }} {{ t.[page.lang].footer.address }}</li>
-  		<li><span><a href="{{ t.[page.lang].footer.feedback-url }}">{{ t.[page.lang].footer.feedback }}</a></span></li>
+  		<li>{{ footer-item.manage }} {{ footer-item.address }}</li>
+  		<li><span><a href="{{ footer-item.feedback-url }}">{{ footer-item.feedback }}</a></span></li>
   	</ul>
   </footer>
   <footer class="mobile-sub-footer" aria-label="footer" role="content info">
   	<div><a href="https://www.healthcare.gov/"><img src="{{site.baseurl}}/images/HealthcareGovFooterLogo.png" alt="healthcare.gov"/></a></div>
   	<p>
-  		{{ t.[page.lang].footer.manage }}
+  		{{ footer-item.manage }}
   	</p>
   	<p>
-  		{{ t.[page.lang].footer.address }}<span><a href="{{ t.[page.lang].footer.feedback-url }}">{{ t.[page.lang].footer.feedback }}</a></span>
+  		{{ footer-item.address }}<span><a href="{{ footer-item.feedback-url }}">{{ footer-item.feedback }}</a></span>
   	<p>
+    {% endfor %}
   </footer>
 </section>
