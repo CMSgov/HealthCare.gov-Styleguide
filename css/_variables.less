@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Variables - Plan Compare 2.0
+   Variables
    ========================================================================== */
 
 /*
@@ -11,6 +11,7 @@
 * - Type Scale
 * - Type Weights and letterspacing
 * - Colors
+* Bootstrap Overrides
 */
 
 
@@ -21,7 +22,6 @@
 /*
    §§ Spacing Scales
    ========================================================================== */
-
 @space-giga: 48px;
 @space-mega: 36px;
 @space-kilo: 24px;
@@ -288,11 +288,11 @@
 @input-color-placeholder:        @black-500;
 
 //** Default `.form-control` height
-@input-height-base:              inherit;
+@input-height-base:              @line-height-computed;
 //** Large `.form-control` height
-@input-height-large:             inherit;
+@input-height-large:             @line-height-computed;
 //** Small `.form-control` height
-@input-height-small:             inherit;
+@input-height-small:             @line-height-computed;
 
 //** `.form-group` margin
 @form-group-margin-bottom:       @space-hecto;
@@ -594,7 +594,7 @@
 @state-success-border:           @green-900;
 
 @state-info-text:                @white;
-@state-info-bg:                  @brand-info;
+@state-info-bg:                  @blue-300;
 @state-info-border:              @blue-700;
 
 @state-warning-text:             @white;
