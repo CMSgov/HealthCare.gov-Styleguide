@@ -1,0 +1,202 @@
+/**
+ * Step/Breadcrumb Navigation
+ *
+ * Styleguide 2.1.3.
+ *
+ */
+
+
+/*
+* TOC
+*
+* Variables
+*/
+
+
+/**
+ *
+ * § Variables
+ * Variables for Step/Breadcrumb Navigation
+ *
+ */
+
+@cms-breadcrumbNav-color: @white;
+@cms-breadcrumbNav-bg: @blue-500;
+@cms-breadcrumbNav_item-completed-color: @white;
+@cms-breadcrumbNav_item-completed-bg: @blue-900;
+@cms-breadcrumbNav_item-completed-icon: @green-500;
+@cms-breadcrumbNav_item-current-color: @white;
+@cms-breadcrumbNav_item-current-bg: @blue-700;
+@cms-breadcrumbNav_item-future-color: @blue-100;
+@cms-breadcrumbNav_item-future-bg: @blue-300;
+@cms-breadcrumbNav_item-future-icon: @blue-500;
+
+/**
+ *
+ * § PointyBit Mixin
+ * Pointybit Mixin adds the arrows to breadcrumb navigation
+ *
+ * @heigh  - Determines height of arrow
+ * @width  - Sets width of arrow
+ * @offset - How far right should we pull the seperating arrow
+ *
+ */
+
+.pointybit(@height, @width, @offset: 0px) {
+  position: absolute;
+  top: 50%;
+  right: (@width + @offset) * -1;
+  margin-top: @height * -1;
+  border-top: @height solid transparent;
+  border-bottom: @height solid transparent;
+  border-left: @width solid;
+}
+
+
+/**
+ * § Breadcrumb nav
+ *
+ * Breadcrumbs that show us progress through the site.
+ * Some of this is a little redundant CSS because it's pulled from FFM,
+ * and we don't actually have many different states,
+ * but we want to at least match FFM first.
+ *
+ */
+
+.cms-breadcrumbNav {
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  font-weight: bold;
+  line-height: @line-height-hecto;
+  letter-spacing: normal;
+  color: @cms-breadcrumbNav-color;
+}
+
+
+/**
+ *
+ * §§ BreadcrumbNav Item
+ *
+ * .current-step   - Highlights current step
+ * .completed-step - Disable and show success in a completed step
+ * .future-step    - Make future steps visible, but with less distration
+ *
+ */
+
+.cms-breadcrumbNav_item {
+  position: relative;
+  display: inline-block;
+  padding: @space-deca @space-kilo @space-deca @space-kilo;
+  margin: 0;
+  font-size: @font-size;
+}
+
+.cms-breadcrumbNav_item:before {
+  z-index: 1;
+  border-left-color: @cms-breadcrumbNav-bg;
+
+  .pointybit(@space-kilo, @space-hecto, (@space-kilo - @space-deca) * -1));
+}
+
+.cms-breadcrumbNav_item:after {
+  z-index: 2;
+
+  .pointybit(@space-kilo, @space-hecto );
+}
+
+.cms-breadcrumbNav_item.first {
+  padding-left: @space-hecto;
+  border-top-left-radius: @border-radius;
+  border-bottom-left-radius: @border-radius;
+}
+
+.cms-breadcrumbNav_item.last {
+  &,
+  &:before,
+  & .before,
+  &:after,
+  & .after {
+    padding-right: (@space-kilo - @space)*-1;
+    border-left: none;
+    border-top-right-radius: @border-radius;
+    border-bottom-right-radius: @border-radius;
+  }
+}
+
+.cms-breadcrumbNav_item.current-step {
+  color: @cms-breadcrumbNav_item-current-color;
+  background: @cms-breadcrumbNav_item-current-bg;
+
+  // the colors of the right side
+  &:after,
+  .after {
+    border-left-color: @cms-breadcrumbNav_item-current-bg;
+  }
+
+
+  .glyphicon {
+    color: @cms-breadcrumbNav_item-current-icon;
+  }
+}
+
+.cms-breadcrumbNav_item.completed-step {
+  color: @cms-breadcrumbNav_item-completed-color;
+  background: @cms-breadcrumbNav_item-completed-bg;
+
+  &:after,
+  .after {
+    border-left-color: @cms-breadcrumbNav_item-completed-bg;
+  }
+
+
+  .glyphicon {
+    color: @cms-breadcrumbNav_item-completed-icon;
+  }
+}
+
+.cms-breadcrumbNav_item.future-step {
+  color: @cms-breadcrumbNav_item-future-color;
+  background: @cms-breadcrumbNav_item-future-bg;
+
+  &:after,
+  .after,
+  {
+    border-left-color: @cms-breadcrumbNav_item-future-bg;
+  }
+
+
+  .glyphicon {
+    color: @cms-breadcrumbNav_item-future-icon;
+  }
+}
+
+// Hack for typography,
+// Inspired by https://pilot.co/blog/implementing-baseline-rhythm-in-css/
+.cms-breadcrumbNav_offset {
+  display: block;
+  margin-top: -1px;
+}
+
+
+/*
+   IE7 styling not required for us but copied over from FFM
+ */
+
+.IE7 {
+  .cms-breadcrumbNav_item .after,
+  .cms-breadcrumbNav_item .before {
+    content: "";
+
+    .pointybit(18px, 18px);
+  }
+  .cms-breadcrumbNav_item[class*="Step"]:after,
+  .cms-breadcrumbNav_item[class*="Step"]:before,
+  .cms-breadcrumbNav_item[class*="Step"] .after,
+  .cms-breadcrumbNav_item[class*="Step"] .before {
+    height: 0px;
+  }
+}
+
