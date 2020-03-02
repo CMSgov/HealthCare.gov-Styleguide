@@ -1,4 +1,4 @@
-WARNING: This website is no longer being updated or supported. Please refer to the [CMS Design System](https://design.cms.gov).
+**WARNING:** This website is no longer being updated or supported. Please refer to the [CMS Design System](https://design.cms.gov).
 
 # [styleguide.healthcare.gov](https://styleguide.healthcare.gov)
 
