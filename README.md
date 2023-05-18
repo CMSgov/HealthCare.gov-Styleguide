@@ -1,3 +1,8 @@
+# DEPRECATED: This styleguide has been deprecated 
+It has been replaced by the CMS Design System:
+- [Design system documentation site](https://design.cms.gov/)
+- [Design system GitHub repository](https://github.com/CMSgov/design-system)
+
 # [styleguide.healthcare.gov](https://styleguide.healthcare.gov)
 
 To get started with the HealthCare.gov assets library, you’ll need to use the required HTML, grid system framework, JavaScript, and CSS.
